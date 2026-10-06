@@ -1,411 +1,117 @@
 {
   "single_source_nodes": [
     {
-      "node": "SUP-00077",
-      "node_type": "supplier",
-      "sole_supplier": "LOG-00084",
-      "supplier_type": "logistics_provider"
-    },
-    {
-      "node": "DST-00100",
+      "node": "DST-00135",
       "node_type": "distributor",
-      "sole_supplier": "MFG-00142",
+      "sole_supplier": "MFG-00040",
       "supplier_type": "manufacturer"
     },
     {
-      "node": "SUP-00236",
-      "node_type": "supplier",
-      "sole_supplier": "LOG-00072",
-      "supplier_type": "logistics_provider"
-    },
-    {
-      "node": "SUP-00199",
-      "node_type": "supplier",
-      "sole_supplier": "LOG-00029",
-      "supplier_type": "logistics_provider"
-    },
-    {
-      "node": "SUP-00097",
-      "node_type": "supplier",
-      "sole_supplier": "LOG-00099",
-      "supplier_type": "logistics_provider"
-    },
-    {
-      "node": "SUP-00031",
-      "node_type": "supplier",
-      "sole_supplier": "LOG-00005",
-      "supplier_type": "logistics_provider"
-    },
-    {
-      "node": "SUP-00297",
-      "node_type": "supplier",
-      "sole_supplier": "LOG-00036",
-      "supplier_type": "logistics_provider"
-    },
-    {
-      "node": "SUP-00290",
-      "node_type": "supplier",
-      "sole_supplier": "LOG-00062",
-      "supplier_type": "logistics_provider"
-    },
-    {
-      "node": "SUP-00276",
-      "node_type": "supplier",
-      "sole_supplier": "LOG-00049",
-      "supplier_type": "logistics_provider"
-    },
-    {
-      "node": "SUP-00068",
-      "node_type": "supplier",
-      "sole_supplier": "LOG-00046",
-      "supplier_type": "logistics_provider"
-    },
-    {
-      "node": "SUP-00257",
-      "node_type": "supplier",
-      "sole_supplier": "LOG-00050",
-      "supplier_type": "logistics_provider"
-    },
-    {
-      "node": "SUP-00261",
-      "node_type": "supplier",
-      "sole_supplier": "LOG-00088",
-      "supplier_type": "logistics_provider"
-    },
-    {
-      "node": "SUP-00056",
-      "node_type": "supplier",
-      "sole_supplier": "LOG-00089",
-      "supplier_type": "logistics_provider"
-    },
-    {
-      "node": "SUP-00026",
-      "node_type": "supplier",
-      "sole_supplier": "LOG-00098",
-      "supplier_type": "logistics_provider"
-    },
-    {
-      "node": "SUP-00299",
-      "node_type": "supplier",
-      "sole_supplier": "LOG-00004",
-      "supplier_type": "logistics_provider"
-    },
-    {
-      "node": "SUP-00260",
-      "node_type": "supplier",
-      "sole_supplier": "LOG-00070",
-      "supplier_type": "logistics_provider"
-    },
-    {
-      "node": "SUP-00200",
-      "node_type": "supplier",
-      "sole_supplier": "LOG-00035",
-      "supplier_type": "logistics_provider"
-    },
-    {
-      "node": "SUP-00030",
-      "node_type": "supplier",
-      "sole_supplier": "LOG-00080",
-      "supplier_type": "logistics_provider"
-    },
-    {
-      "node": "SUP-00250",
-      "node_type": "supplier",
-      "sole_supplier": "LOG-00039",
-      "supplier_type": "logistics_provider"
-    },
-    {
-      "node": "SUP-00034",
-      "node_type": "supplier",
-      "sole_supplier": "LOG-00039",
-      "supplier_type": "logistics_provider"
-    },
-    {
-      "node": "SUP-00004",
-      "node_type": "supplier",
-      "sole_supplier": "LOG-00037",
-      "supplier_type": "logistics_provider"
-    },
-    {
-      "node": "SUP-00287",
-      "node_type": "supplier",
-      "sole_supplier": "LOG-00036",
-      "supplier_type": "logistics_provider"
-    },
-    {
-      "node": "DST-00182",
+      "node": "DST-00002",
       "node_type": "distributor",
-      "sole_supplier": "WHS-00064",
+      "sole_supplier": "WHS-00014",
       "supplier_type": "warehouse"
     },
     {
-      "node": "SUP-00251",
-      "node_type": "supplier",
-      "sole_supplier": "LOG-00031",
-      "supplier_type": "logistics_provider"
-    },
-    {
-      "node": "SUP-00010",
-      "node_type": "supplier",
-      "sole_supplier": "LOG-00052",
-      "supplier_type": "logistics_provider"
-    },
-    {
-      "node": "SUP-00082",
-      "node_type": "supplier",
-      "sole_supplier": "LOG-00076",
-      "supplier_type": "logistics_provider"
-    },
-    {
-      "node": "DST-00019",
+      "node": "DST-00110",
       "node_type": "distributor",
-      "sole_supplier": "WHS-00034",
+      "sole_supplier": "WHS-00050",
       "supplier_type": "warehouse"
     },
     {
-      "node": "SUP-00008",
-      "node_type": "supplier",
-      "sole_supplier": "LOG-00058",
-      "supplier_type": "logistics_provider"
+      "node": "DST-00032",
+      "node_type": "distributor",
+      "sole_supplier": "MFG-00009",
+      "supplier_type": "manufacturer"
     },
     {
-      "node": "SUP-00156",
-      "node_type": "supplier",
-      "sole_supplier": "LOG-00033",
-      "supplier_type": "logistics_provider"
+      "node": "DST-00070",
+      "node_type": "distributor",
+      "sole_supplier": "WHS-00026",
+      "supplier_type": "warehouse"
     },
     {
-      "node": "SUP-00229",
-      "node_type": "supplier",
-      "sole_supplier": "LOG-00005",
-      "supplier_type": "logistics_provider"
+      "node": "DST-00033",
+      "node_type": "distributor",
+      "sole_supplier": "MFG-00038",
+      "supplier_type": "manufacturer"
     },
     {
-      "node": "SUP-00080",
-      "node_type": "supplier",
-      "sole_supplier": "LOG-00040",
-      "supplier_type": "logistics_provider"
+      "node": "DST-00131",
+      "node_type": "distributor",
+      "sole_supplier": "WHS-00051",
+      "supplier_type": "warehouse"
     },
     {
-      "node": "SUP-00001",
-      "node_type": "supplier",
-      "sole_supplier": "LOG-00016",
-      "supplier_type": "logistics_provider"
+      "node": "DST-00189",
+      "node_type": "distributor",
+      "sole_supplier": "MFG-00100",
+      "supplier_type": "manufacturer"
     },
     {
-      "node": "SUP-00182",
-      "node_type": "supplier",
-      "sole_supplier": "LOG-00025",
-      "supplier_type": "logistics_provider"
+      "node": "DST-00136",
+      "node_type": "distributor",
+      "sole_supplier": "MFG-00069",
+      "supplier_type": "manufacturer"
     },
     {
-      "node": "SUP-00275",
-      "node_type": "supplier",
-      "sole_supplier": "LOG-00001",
-      "supplier_type": "logistics_provider"
+      "node": "DST-00185",
+      "node_type": "distributor",
+      "sole_supplier": "MFG-00037",
+      "supplier_type": "manufacturer"
     },
     {
-      "node": "SUP-00292",
-      "node_type": "supplier",
-      "sole_supplier": "LOG-00030",
-      "supplier_type": "logistics_provider"
+      "node": "MFG-00117",
+      "node_type": "manufacturer",
+      "sole_supplier": "SUP-00259",
+      "supplier_type": "supplier"
     },
     {
-      "node": "SUP-00136",
-      "node_type": "supplier",
-      "sole_supplier": "LOG-00019",
-      "supplier_type": "logistics_provider"
+      "node": "DST-00109",
+      "node_type": "distributor",
+      "sole_supplier": "WHS-00049",
+      "supplier_type": "warehouse"
     },
     {
-      "node": "SUP-00165",
-      "node_type": "supplier",
-      "sole_supplier": "LOG-00087",
-      "supplier_type": "logistics_provider"
+      "node": "DST-00142",
+      "node_type": "distributor",
+      "sole_supplier": "MFG-00131",
+      "supplier_type": "manufacturer"
     },
     {
-      "node": "SUP-00029",
-      "node_type": "supplier",
-      "sole_supplier": "LOG-00013",
-      "supplier_type": "logistics_provider"
+      "node": "DST-00171",
+      "node_type": "distributor",
+      "sole_supplier": "WHS-00093",
+      "supplier_type": "warehouse"
     },
     {
-      "node": "SUP-00007",
-      "node_type": "supplier",
-      "sole_supplier": "LOG-00051",
-      "supplier_type": "logistics_provider"
+      "node": "DST-00020",
+      "node_type": "distributor",
+      "sole_supplier": "MFG-00147",
+      "supplier_type": "manufacturer"
     },
     {
-      "node": "SUP-00235",
-      "node_type": "supplier",
-      "sole_supplier": "LOG-00052",
-      "supplier_type": "logistics_provider"
+      "node": "DST-00161",
+      "node_type": "distributor",
+      "sole_supplier": "MFG-00060",
+      "supplier_type": "manufacturer"
     },
     {
-      "node": "SUP-00109",
-      "node_type": "supplier",
-      "sole_supplier": "LOG-00021",
-      "supplier_type": "logistics_provider"
-    },
-    {
-      "node": "SUP-00025",
-      "node_type": "supplier",
-      "sole_supplier": "LOG-00098",
-      "supplier_type": "logistics_provider"
-    },
-    {
-      "node": "SUP-00249",
-      "node_type": "supplier",
-      "sole_supplier": "LOG-00075",
-      "supplier_type": "logistics_provider"
-    },
-    {
-      "node": "SUP-00115",
-      "node_type": "supplier",
-      "sole_supplier": "LOG-00017",
-      "supplier_type": "logistics_provider"
-    },
-    {
-      "node": "SUP-00093",
-      "node_type": "supplier",
-      "sole_supplier": "LOG-00091",
-      "supplier_type": "logistics_provider"
-    },
-    {
-      "node": "SUP-00178",
-      "node_type": "supplier",
-      "sole_supplier": "LOG-00081",
-      "supplier_type": "logistics_provider"
-    },
-    {
-      "node": "SUP-00258",
-      "node_type": "supplier",
-      "sole_supplier": "LOG-00026",
-      "supplier_type": "logistics_provider"
-    },
-    {
-      "node": "SUP-00223",
-      "node_type": "supplier",
-      "sole_supplier": "LOG-00100",
-      "supplier_type": "logistics_provider"
-    },
-    {
-      "node": "SUP-00180",
-      "node_type": "supplier",
-      "sole_supplier": "LOG-00054",
-      "supplier_type": "logistics_provider"
-    },
-    {
-      "node": "SUP-00154",
-      "node_type": "supplier",
-      "sole_supplier": "LOG-00031",
-      "supplier_type": "logistics_provider"
-    },
-    {
-      "node": "SUP-00076",
-      "node_type": "supplier",
-      "sole_supplier": "LOG-00029",
-      "supplier_type": "logistics_provider"
-    },
-    {
-      "node": "SUP-00118",
-      "node_type": "supplier",
-      "sole_supplier": "LOG-00083",
-      "supplier_type": "logistics_provider"
-    },
-    {
-      "node": "SUP-00117",
-      "node_type": "supplier",
-      "sole_supplier": "LOG-00059",
-      "supplier_type": "logistics_provider"
-    },
-    {
-      "node": "SUP-00264",
-      "node_type": "supplier",
-      "sole_supplier": "LOG-00029",
-      "supplier_type": "logistics_provider"
-    },
-    {
-      "node": "SUP-00176",
-      "node_type": "supplier",
-      "sole_supplier": "LOG-00023",
-      "supplier_type": "logistics_provider"
-    },
-    {
-      "node": "SUP-00246",
-      "node_type": "supplier",
-      "sole_supplier": "LOG-00082",
-      "supplier_type": "logistics_provider"
-    },
-    {
-      "node": "SUP-00116",
-      "node_type": "supplier",
-      "sole_supplier": "LOG-00031",
-      "supplier_type": "logistics_provider"
-    },
-    {
-      "node": "SUP-00017",
-      "node_type": "supplier",
-      "sole_supplier": "LOG-00086",
-      "supplier_type": "logistics_provider"
-    },
-    {
-      "node": "SUP-00163",
-      "node_type": "supplier",
-      "sole_supplier": "LOG-00072",
-      "supplier_type": "logistics_provider"
-    },
-    {
-      "node": "SUP-00153",
-      "node_type": "supplier",
-      "sole_supplier": "LOG-00062",
-      "supplier_type": "logistics_provider"
-    },
-    {
-      "node": "SUP-00227",
-      "node_type": "supplier",
-      "sole_supplier": "LOG-00059",
-      "supplier_type": "logistics_provider"
-    },
-    {
-      "node": "SUP-00037",
-      "node_type": "supplier",
-      "sole_supplier": "LOG-00071",
-      "supplier_type": "logistics_provider"
-    },
-    {
-      "node": "SUP-00263",
-      "node_type": "supplier",
-      "sole_supplier": "LOG-00021",
-      "supplier_type": "logistics_provider"
-    },
-    {
-      "node": "SUP-00148",
-      "node_type": "supplier",
-      "sole_supplier": "LOG-00007",
-      "supplier_type": "logistics_provider"
-    },
-    {
-      "node": "SUP-00187",
-      "node_type": "supplier",
-      "sole_supplier": "LOG-00088",
-      "supplier_type": "logistics_provider"
-    },
-    {
-      "node": "SUP-00184",
-      "node_type": "supplier",
-      "sole_supplier": "LOG-00029",
-      "supplier_type": "logistics_provider"
-    },
-    {
-      "node": "SUP-00203",
-      "node_type": "supplier",
-      "sole_supplier": "LOG-00004",
-      "supplier_type": "logistics_provider"
+      "node": "RET-00064",
+      "node_type": "retailer",
+      "sole_supplier": "DST-00147",
+      "supplier_type": "distributor"
     },
     {
       "node": "DST-00175",
       "node_type": "distributor",
-      "sole_supplier": "MFG-00114",
+      "sole_supplier": "MFG-00135",
+      "supplier_type": "manufacturer"
+    },
+    {
+      "node": "DST-00178",
+      "node_type": "distributor",
+      "sole_supplier": "MFG-00111",
       "supplier_type": "manufacturer"
     },
     {
@@ -415,91 +121,43 @@
       "supplier_type": "manufacturer"
     },
     {
-      "node": "SUP-00036",
-      "node_type": "supplier",
-      "sole_supplier": "LOG-00092",
-      "supplier_type": "logistics_provider"
+      "node": "DST-00023",
+      "node_type": "distributor",
+      "sole_supplier": "WHS-00013",
+      "supplier_type": "warehouse"
     },
     {
-      "node": "SUP-00171",
-      "node_type": "supplier",
-      "sole_supplier": "LOG-00012",
-      "supplier_type": "logistics_provider"
+      "node": "DST-00170",
+      "node_type": "distributor",
+      "sole_supplier": "WHS-00073",
+      "supplier_type": "warehouse"
     },
     {
-      "node": "SUP-00218",
-      "node_type": "supplier",
-      "sole_supplier": "LOG-00028",
-      "supplier_type": "logistics_provider"
+      "node": "DST-00040",
+      "node_type": "distributor",
+      "sole_supplier": "WHS-00089",
+      "supplier_type": "warehouse"
     },
     {
-      "node": "SUP-00005",
-      "node_type": "supplier",
-      "sole_supplier": "LOG-00026",
-      "supplier_type": "logistics_provider"
-    },
-    {
-      "node": "SUP-00129",
-      "node_type": "supplier",
-      "sole_supplier": "LOG-00097",
-      "supplier_type": "logistics_provider"
-    },
-    {
-      "node": "SUP-00015",
-      "node_type": "supplier",
-      "sole_supplier": "LOG-00036",
-      "supplier_type": "logistics_provider"
-    },
-    {
-      "node": "SUP-00157",
-      "node_type": "supplier",
-      "sole_supplier": "LOG-00084",
-      "supplier_type": "logistics_provider"
-    },
-    {
-      "node": "SUP-00270",
-      "node_type": "supplier",
-      "sole_supplier": "LOG-00034",
-      "supplier_type": "logistics_provider"
-    },
-    {
-      "node": "SUP-00202",
-      "node_type": "supplier",
-      "sole_supplier": "LOG-00067",
-      "supplier_type": "logistics_provider"
-    },
-    {
-      "node": "SUP-00274",
-      "node_type": "supplier",
-      "sole_supplier": "LOG-00002",
-      "supplier_type": "logistics_provider"
-    },
-    {
-      "node": "SUP-00161",
-      "node_type": "supplier",
-      "sole_supplier": "LOG-00007",
-      "supplier_type": "logistics_provider"
-    },
-    {
-      "node": "SUP-00192",
-      "node_type": "supplier",
-      "sole_supplier": "LOG-00064",
-      "supplier_type": "logistics_provider"
-    },
-    {
-      "node": "SUP-00021",
-      "node_type": "supplier",
-      "sole_supplier": "LOG-00002",
-      "supplier_type": "logistics_provider"
+      "node": "DST-00055",
+      "node_type": "distributor",
+      "sole_supplier": "WHS-00054",
+      "supplier_type": "warehouse"
     }
   ],
-  "single_source_count": 82,
-  "high_concentration_count": 90,
+  "single_source_count": 24,
+  "dependency_note": "Supplier counts and concentration ratios exclude logistics-provider edges",
+  "high_concentration_count": 27,
   "critical_upstream_nodes": [
     {
       "node": "MFG-00141",
       "node_type": "manufacturer",
-      "downstream_count": 58
+      "downstream_count": 56
+    },
+    {
+      "node": "MFG-00028",
+      "node_type": "manufacturer",
+      "downstream_count": 55
     },
     {
       "node": "MFG-00131",
@@ -507,503 +165,213 @@
       "downstream_count": 55
     },
     {
-      "node": "MFG-00028",
-      "node_type": "manufacturer",
-      "downstream_count": 53
-    },
-    {
-      "node": "DST-00147",
+      "node": "DST-00149",
       "node_type": "distributor",
-      "downstream_count": 36
+      "downstream_count": 43
     },
     {
-      "node": "DST-00116",
+      "node": "DST-00162",
       "node_type": "distributor",
-      "downstream_count": 35
-    },
-    {
-      "node": "MFG-00082",
-      "node_type": "manufacturer",
-      "downstream_count": 20
-    },
-    {
-      "node": "WHS-00068",
-      "node_type": "warehouse",
-      "downstream_count": 19
-    },
-    {
-      "node": "DST-00060",
-      "node_type": "distributor",
-      "downstream_count": 19
-    },
-    {
-      "node": "MFG-00062",
-      "node_type": "manufacturer",
-      "downstream_count": 18
-    },
-    {
-      "node": "MFG-00078",
-      "node_type": "manufacturer",
-      "downstream_count": 18
-    },
-    {
-      "node": "MFG-00089",
-      "node_type": "manufacturer",
-      "downstream_count": 18
-    },
-    {
-      "node": "SUP-00164",
-      "node_type": "supplier",
-      "downstream_count": 18
-    },
-    {
-      "node": "SUP-00031",
-      "node_type": "supplier",
-      "downstream_count": 17
-    },
-    {
-      "node": "DST-00080",
-      "node_type": "distributor",
-      "downstream_count": 17
-    },
-    {
-      "node": "SUP-00165",
-      "node_type": "supplier",
-      "downstream_count": 17
-    },
-    {
-      "node": "SUP-00029",
-      "node_type": "supplier",
-      "downstream_count": 17
-    },
-    {
-      "node": "DST-00082",
-      "node_type": "distributor",
-      "downstream_count": 17
-    },
-    {
-      "node": "DST-00067",
-      "node_type": "distributor",
-      "downstream_count": 17
-    },
-    {
-      "node": "DST-00166",
-      "node_type": "distributor",
-      "downstream_count": 17
-    },
-    {
-      "node": "DST-00020",
-      "node_type": "distributor",
-      "downstream_count": 17
-    },
-    {
-      "node": "MFG-00004",
-      "node_type": "manufacturer",
-      "downstream_count": 17
-    },
-    {
-      "node": "MFG-00147",
-      "node_type": "manufacturer",
-      "downstream_count": 16
-    },
-    {
-      "node": "SUP-00106",
-      "node_type": "supplier",
-      "downstream_count": 16
-    },
-    {
-      "node": "DST-00010",
-      "node_type": "distributor",
-      "downstream_count": 16
-    },
-    {
-      "node": "DST-00141",
-      "node_type": "distributor",
-      "downstream_count": 15
-    },
-    {
-      "node": "SUP-00228",
-      "node_type": "supplier",
-      "downstream_count": 15
-    },
-    {
-      "node": "MFG-00110",
-      "node_type": "manufacturer",
-      "downstream_count": 15
-    },
-    {
-      "node": "SUP-00016",
-      "node_type": "supplier",
-      "downstream_count": 15
-    },
-    {
-      "node": "MFG-00057",
-      "node_type": "manufacturer",
-      "downstream_count": 15
-    },
-    {
-      "node": "MFG-00120",
-      "node_type": "manufacturer",
-      "downstream_count": 15
-    },
-    {
-      "node": "DST-00192",
-      "node_type": "distributor",
-      "downstream_count": 15
-    },
-    {
-      "node": "LOG-00091",
-      "node_type": "logistics_provider",
-      "downstream_count": 15
-    },
-    {
-      "node": "WHS-00012",
-      "node_type": "warehouse",
-      "downstream_count": 15
-    },
-    {
-      "node": "MFG-00073",
-      "node_type": "manufacturer",
-      "downstream_count": 15
-    },
-    {
-      "node": "SUP-00088",
-      "node_type": "supplier",
-      "downstream_count": 15
-    },
-    {
-      "node": "WHS-00038",
-      "node_type": "warehouse",
-      "downstream_count": 14
-    },
-    {
-      "node": "MFG-00019",
-      "node_type": "manufacturer",
-      "downstream_count": 14
-    },
-    {
-      "node": "DST-00079",
-      "node_type": "distributor",
-      "downstream_count": 14
-    },
-    {
-      "node": "MFG-00133",
-      "node_type": "manufacturer",
-      "downstream_count": 14
-    },
-    {
-      "node": "SUP-00209",
-      "node_type": "supplier",
-      "downstream_count": 14
-    },
-    {
-      "node": "DST-00108",
-      "node_type": "distributor",
-      "downstream_count": 14
-    },
-    {
-      "node": "LOG-00050",
-      "node_type": "logistics_provider",
-      "downstream_count": 14
-    },
-    {
-      "node": "DST-00036",
-      "node_type": "distributor",
-      "downstream_count": 14
-    },
-    {
-      "node": "MFG-00125",
-      "node_type": "manufacturer",
-      "downstream_count": 14
-    },
-    {
-      "node": "DST-00069",
-      "node_type": "distributor",
-      "downstream_count": 14
-    },
-    {
-      "node": "WHS-00066",
-      "node_type": "warehouse",
-      "downstream_count": 14
-    },
-    {
-      "node": "SUP-00258",
-      "node_type": "supplier",
-      "downstream_count": 14
-    },
-    {
-      "node": "MFG-00025",
-      "node_type": "manufacturer",
-      "downstream_count": 14
-    },
-    {
-      "node": "SUP-00272",
-      "node_type": "supplier",
-      "downstream_count": 14
-    },
-    {
-      "node": "MFG-00021",
-      "node_type": "manufacturer",
-      "downstream_count": 14
-    },
-    {
-      "node": "DST-00062",
-      "node_type": "distributor",
-      "downstream_count": 14
-    },
-    {
-      "node": "SUP-00187",
-      "node_type": "supplier",
-      "downstream_count": 14
-    },
-    {
-      "node": "MFG-00142",
-      "node_type": "manufacturer",
-      "downstream_count": 14
-    },
-    {
-      "node": "DST-00056",
-      "node_type": "distributor",
-      "downstream_count": 14
-    },
-    {
-      "node": "DST-00125",
-      "node_type": "distributor",
-      "downstream_count": 14
-    },
-    {
-      "node": "LOG-00055",
-      "node_type": "logistics_provider",
-      "downstream_count": 14
-    },
-    {
-      "node": "SUP-00033",
-      "node_type": "supplier",
-      "downstream_count": 14
-    },
-    {
-      "node": "MFG-00119",
-      "node_type": "manufacturer",
-      "downstream_count": 14
-    },
-    {
-      "node": "SUP-00041",
-      "node_type": "supplier",
-      "downstream_count": 14
-    },
-    {
-      "node": "SUP-00140",
-      "node_type": "supplier",
-      "downstream_count": 13
-    },
-    {
-      "node": "DST-00086",
-      "node_type": "distributor",
-      "downstream_count": 13
-    },
-    {
-      "node": "SUP-00032",
-      "node_type": "supplier",
-      "downstream_count": 13
-    },
-    {
-      "node": "SUP-00083",
-      "node_type": "supplier",
-      "downstream_count": 13
-    },
-    {
-      "node": "SUP-00291",
-      "node_type": "supplier",
-      "downstream_count": 13
-    },
-    {
-      "node": "DST-00052",
-      "node_type": "distributor",
-      "downstream_count": 13
-    },
-    {
-      "node": "SUP-00156",
-      "node_type": "supplier",
-      "downstream_count": 13
-    },
-    {
-      "node": "MFG-00123",
-      "node_type": "manufacturer",
-      "downstream_count": 13
-    },
-    {
-      "node": "DST-00081",
-      "node_type": "distributor",
-      "downstream_count": 13
-    },
-    {
-      "node": "SUP-00080",
-      "node_type": "supplier",
-      "downstream_count": 13
-    },
-    {
-      "node": "MFG-00017",
-      "node_type": "manufacturer",
-      "downstream_count": 13
-    },
-    {
-      "node": "SUP-00126",
-      "node_type": "supplier",
-      "downstream_count": 13
-    },
-    {
-      "node": "SUP-00070",
-      "node_type": "supplier",
-      "downstream_count": 13
-    },
-    {
-      "node": "MFG-00124",
-      "node_type": "manufacturer",
-      "downstream_count": 13
-    },
-    {
-      "node": "MFG-00143",
-      "node_type": "manufacturer",
-      "downstream_count": 13
-    },
-    {
-      "node": "DST-00018",
-      "node_type": "distributor",
-      "downstream_count": 13
-    },
-    {
-      "node": "WHS-00016",
-      "node_type": "warehouse",
-      "downstream_count": 13
-    },
-    {
-      "node": "DST-00148",
-      "node_type": "distributor",
-      "downstream_count": 13
-    },
-    {
-      "node": "LOG-00007",
-      "node_type": "logistics_provider",
-      "downstream_count": 13
-    },
-    {
-      "node": "DST-00102",
-      "node_type": "distributor",
-      "downstream_count": 13
-    },
-    {
-      "node": "MFG-00144",
-      "node_type": "manufacturer",
-      "downstream_count": 13
-    },
-    {
-      "node": "LOG-00037",
-      "node_type": "logistics_provider",
-      "downstream_count": 13
-    },
-    {
-      "node": "MFG-00054",
-      "node_type": "manufacturer",
-      "downstream_count": 13
-    },
-    {
-      "node": "DST-00120",
-      "node_type": "distributor",
-      "downstream_count": 13
-    },
-    {
-      "node": "SUP-00018",
-      "node_type": "supplier",
-      "downstream_count": 13
-    },
-    {
-      "node": "MFG-00065",
-      "node_type": "manufacturer",
-      "downstream_count": 13
-    },
-    {
-      "node": "MFG-00104",
-      "node_type": "manufacturer",
-      "downstream_count": 13
-    },
-    {
-      "node": "SUP-00009",
-      "node_type": "supplier",
-      "downstream_count": 13
-    },
-    {
-      "node": "LOG-00036",
-      "node_type": "logistics_provider",
-      "downstream_count": 13
-    },
-    {
-      "node": "SUP-00243",
-      "node_type": "supplier",
-      "downstream_count": 13
-    },
-    {
-      "node": "SUP-00096",
-      "node_type": "supplier",
-      "downstream_count": 13
-    },
-    {
-      "node": "SUP-00201",
-      "node_type": "supplier",
-      "downstream_count": 13
-    },
-    {
-      "node": "SUP-00028",
-      "node_type": "supplier",
-      "downstream_count": 13
-    },
-    {
-      "node": "MFG-00079",
-      "node_type": "manufacturer",
-      "downstream_count": 13
-    },
-    {
-      "node": "SUP-00063",
-      "node_type": "supplier",
-      "downstream_count": 13
-    },
-    {
-      "node": "WHS-00077",
-      "node_type": "warehouse",
-      "downstream_count": 13
-    },
-    {
-      "node": "SUP-00162",
-      "node_type": "supplier",
-      "downstream_count": 13
+      "downstream_count": 41
     },
     {
       "node": "DST-00112",
       "node_type": "distributor",
-      "downstream_count": 13
+      "downstream_count": 40
     },
     {
-      "node": "WHS-00050",
+      "node": "DST-00042",
+      "node_type": "distributor",
+      "downstream_count": 40
+    },
+    {
+      "node": "DST-00019",
+      "node_type": "distributor",
+      "downstream_count": 39
+    },
+    {
+      "node": "WHS-00014",
       "node_type": "warehouse",
-      "downstream_count": 13
+      "downstream_count": 39
     },
     {
-      "node": "MFG-00114",
+      "node": "DST-00084",
+      "node_type": "distributor",
+      "downstream_count": 38
+    },
+    {
+      "node": "WHS-00044",
+      "node_type": "warehouse",
+      "downstream_count": 38
+    },
+    {
+      "node": "DST-00115",
+      "node_type": "distributor",
+      "downstream_count": 38
+    },
+    {
+      "node": "DST-00116",
+      "node_type": "distributor",
+      "downstream_count": 37
+    },
+    {
+      "node": "WHS-00063",
+      "node_type": "warehouse",
+      "downstream_count": 36
+    },
+    {
+      "node": "DST-00147",
+      "node_type": "distributor",
+      "downstream_count": 31
+    },
+    {
+      "node": "WHS-00051",
+      "node_type": "warehouse",
+      "downstream_count": 17
+    },
+    {
+      "node": "SUP-00166",
+      "node_type": "supplier",
+      "downstream_count": 16
+    },
+    {
+      "node": "MFG-00017",
+      "node_type": "manufacturer",
+      "downstream_count": 16
+    },
+    {
+      "node": "MFG-00062",
+      "node_type": "manufacturer",
+      "downstream_count": 15
+    },
+    {
+      "node": "DST-00029",
+      "node_type": "distributor",
+      "downstream_count": 15
+    },
+    {
+      "node": "SUP-00202",
+      "node_type": "supplier",
+      "downstream_count": 15
+    },
+    {
+      "node": "WHS-00045",
+      "node_type": "warehouse",
+      "downstream_count": 14
+    },
+    {
+      "node": "MFG-00094",
+      "node_type": "manufacturer",
+      "downstream_count": 14
+    },
+    {
+      "node": "SUP-00018",
+      "node_type": "supplier",
+      "downstream_count": 14
+    },
+    {
+      "node": "SUP-00284",
+      "node_type": "supplier",
+      "downstream_count": 14
+    },
+    {
+      "node": "WHS-00023",
+      "node_type": "warehouse",
+      "downstream_count": 14
+    },
+    {
+      "node": "MFG-00087",
+      "node_type": "manufacturer",
+      "downstream_count": 14
+    },
+    {
+      "node": "MFG-00048",
+      "node_type": "manufacturer",
+      "downstream_count": 14
+    },
+    {
+      "node": "SUP-00157",
+      "node_type": "supplier",
+      "downstream_count": 14
+    },
+    {
+      "node": "SUP-00059",
+      "node_type": "supplier",
+      "downstream_count": 14
+    },
+    {
+      "node": "MFG-00014",
+      "node_type": "manufacturer",
+      "downstream_count": 14
+    },
+    {
+      "node": "MFG-00083",
       "node_type": "manufacturer",
       "downstream_count": 13
     },
     {
-      "node": "DST-00072",
-      "node_type": "distributor",
-      "downstream_count": 12
+      "node": "SUP-00266",
+      "node_type": "supplier",
+      "downstream_count": 13
     },
     {
-      "node": "WHS-00088",
-      "node_type": "warehouse",
-      "downstream_count": 12
+      "node": "MFG-00033",
+      "node_type": "manufacturer",
+      "downstream_count": 13
     },
     {
-      "node": "DST-00050",
+      "node": "SUP-00082",
+      "node_type": "supplier",
+      "downstream_count": 13
+    },
+    {
+      "node": "SUP-00174",
+      "node_type": "supplier",
+      "downstream_count": 13
+    },
+    {
+      "node": "DST-00139",
       "node_type": "distributor",
+      "downstream_count": 13
+    },
+    {
+      "node": "MFG-00118",
+      "node_type": "manufacturer",
+      "downstream_count": 13
+    },
+    {
+      "node": "MFG-00127",
+      "node_type": "manufacturer",
+      "downstream_count": 13
+    },
+    {
+      "node": "SUP-00117",
+      "node_type": "supplier",
+      "downstream_count": 13
+    },
+    {
+      "node": "DST-00021",
+      "node_type": "distributor",
+      "downstream_count": 13
+    },
+    {
+      "node": "SUP-00195",
+      "node_type": "supplier",
+      "downstream_count": 13
+    },
+    {
+      "node": "DST-00060",
+      "node_type": "distributor",
+      "downstream_count": 13
+    },
+    {
+      "node": "DST-00049",
+      "node_type": "distributor",
+      "downstream_count": 13
+    },
+    {
+      "node": "SUP-00097",
+      "node_type": "supplier",
       "downstream_count": 12
     },
     {
@@ -1012,356 +380,566 @@
       "downstream_count": 12
     },
     {
-      "node": "DST-00121",
-      "node_type": "distributor",
-      "downstream_count": 12
-    },
-    {
-      "node": "SUP-00024",
+      "node": "SUP-00276",
       "node_type": "supplier",
       "downstream_count": 12
     },
     {
-      "node": "SUP-00068",
-      "node_type": "supplier",
-      "downstream_count": 12
-    },
-    {
-      "node": "MFG-00083",
-      "node_type": "manufacturer",
-      "downstream_count": 12
-    },
-    {
-      "node": "WHS-00064",
-      "node_type": "warehouse",
-      "downstream_count": 12
-    },
-    {
-      "node": "DST-00150",
-      "node_type": "distributor",
-      "downstream_count": 12
-    },
-    {
-      "node": "MFG-00130",
-      "node_type": "manufacturer",
-      "downstream_count": 12
-    },
-    {
-      "node": "DST-00045",
-      "node_type": "distributor",
-      "downstream_count": 12
-    },
-    {
-      "node": "MFG-00066",
-      "node_type": "manufacturer",
-      "downstream_count": 12
-    },
-    {
-      "node": "SUP-00200",
-      "node_type": "supplier",
-      "downstream_count": 12
-    },
-    {
-      "node": "SUP-00250",
-      "node_type": "supplier",
-      "downstream_count": 12
-    },
-    {
-      "node": "MFG-00006",
-      "node_type": "manufacturer",
-      "downstream_count": 12
-    },
-    {
-      "node": "DST-00070",
-      "node_type": "distributor",
-      "downstream_count": 12
-    },
-    {
-      "node": "MFG-00058",
-      "node_type": "manufacturer",
-      "downstream_count": 12
-    },
-    {
-      "node": "MFG-00150",
-      "node_type": "manufacturer",
-      "downstream_count": 12
-    },
-    {
-      "node": "DST-00004",
-      "node_type": "distributor",
-      "downstream_count": 12
-    },
-    {
-      "node": "SUP-00229",
-      "node_type": "supplier",
-      "downstream_count": 12
-    },
-    {
-      "node": "MFG-00003",
-      "node_type": "manufacturer",
-      "downstream_count": 12
-    },
-    {
-      "node": "DST-00057",
-      "node_type": "distributor",
-      "downstream_count": 12
-    },
-    {
-      "node": "MFG-00012",
-      "node_type": "manufacturer",
-      "downstream_count": 12
-    },
-    {
-      "node": "MFG-00134",
-      "node_type": "manufacturer",
-      "downstream_count": 12
-    },
-    {
-      "node": "DST-00136",
-      "node_type": "distributor",
-      "downstream_count": 12
-    },
-    {
-      "node": "SUP-00044",
-      "node_type": "supplier",
-      "downstream_count": 12
-    },
-    {
-      "node": "MFG-00132",
-      "node_type": "manufacturer",
-      "downstream_count": 12
-    },
-    {
-      "node": "SUP-00154",
-      "node_type": "supplier",
-      "downstream_count": 12
-    },
-    {
-      "node": "MFG-00070",
-      "node_type": "manufacturer",
-      "downstream_count": 12
-    },
-    {
-      "node": "SUP-00269",
-      "node_type": "supplier",
-      "downstream_count": 12
-    },
-    {
-      "node": "SUP-00163",
-      "node_type": "supplier",
-      "downstream_count": 12
-    },
-    {
-      "node": "LOG-00052",
+      "node": "LOG-00015",
       "node_type": "logistics_provider",
       "downstream_count": 12
     },
     {
-      "node": "SUP-00280",
+      "node": "SUP-00245",
       "node_type": "supplier",
       "downstream_count": 12
     },
     {
-      "node": "SUP-00294",
+      "node": "SUP-00287",
       "node_type": "supplier",
       "downstream_count": 12
     },
     {
-      "node": "SUP-00203",
+      "node": "MFG-00082",
+      "node_type": "manufacturer",
+      "downstream_count": 12
+    },
+    {
+      "node": "SUP-00212",
       "node_type": "supplier",
       "downstream_count": 12
     },
     {
-      "node": "SUP-00130",
+      "node": "SUP-00228",
       "node_type": "supplier",
       "downstream_count": 12
     },
     {
-      "node": "WHS-00086",
+      "node": "SUP-00194",
+      "node_type": "supplier",
+      "downstream_count": 12
+    },
+    {
+      "node": "DST-00051",
+      "node_type": "distributor",
+      "downstream_count": 12
+    },
+    {
+      "node": "SUP-00265",
+      "node_type": "supplier",
+      "downstream_count": 12
+    },
+    {
+      "node": "DST-00069",
+      "node_type": "distributor",
+      "downstream_count": 12
+    },
+    {
+      "node": "DST-00034",
+      "node_type": "distributor",
+      "downstream_count": 12
+    },
+    {
+      "node": "DST-00133",
+      "node_type": "distributor",
+      "downstream_count": 12
+    },
+    {
+      "node": "DST-00102",
+      "node_type": "distributor",
+      "downstream_count": 12
+    },
+    {
+      "node": "MFG-00135",
+      "node_type": "manufacturer",
+      "downstream_count": 12
+    },
+    {
+      "node": "MFG-00005",
+      "node_type": "manufacturer",
+      "downstream_count": 12
+    },
+    {
+      "node": "MFG-00004",
+      "node_type": "manufacturer",
+      "downstream_count": 12
+    },
+    {
+      "node": "LOG-00003",
+      "node_type": "logistics_provider",
+      "downstream_count": 12
+    },
+    {
+      "node": "SUP-00259",
+      "node_type": "supplier",
+      "downstream_count": 12
+    },
+    {
+      "node": "LOG-00097",
+      "node_type": "logistics_provider",
+      "downstream_count": 12
+    },
+    {
+      "node": "MFG-00079",
+      "node_type": "manufacturer",
+      "downstream_count": 12
+    },
+    {
+      "node": "SUP-00041",
+      "node_type": "supplier",
+      "downstream_count": 12
+    },
+    {
+      "node": "LOG-00042",
+      "node_type": "logistics_provider",
+      "downstream_count": 12
+    },
+    {
+      "node": "SUP-00162",
+      "node_type": "supplier",
+      "downstream_count": 12
+    },
+    {
+      "node": "WHS-00080",
       "node_type": "warehouse",
       "downstream_count": 12
     },
     {
-      "node": "SUP-00234",
-      "node_type": "supplier",
-      "downstream_count": 12
-    },
-    {
-      "node": "DST-00196",
+      "node": "DST-00027",
       "node_type": "distributor",
       "downstream_count": 12
     },
     {
-      "node": "MFG-00093",
-      "node_type": "manufacturer",
-      "downstream_count": 12
-    },
-    {
-      "node": "DST-00193",
+      "node": "DST-00059",
       "node_type": "distributor",
       "downstream_count": 12
     },
     {
-      "node": "MFG-00092",
-      "node_type": "manufacturer",
+      "node": "DST-00151",
+      "node_type": "distributor",
       "downstream_count": 12
     },
     {
-      "node": "SUP-00035",
+      "node": "SUP-00072",
       "node_type": "supplier",
       "downstream_count": 12
     },
     {
-      "node": "MFG-00046",
-      "node_type": "manufacturer",
+      "node": "SUP-00107",
+      "node_type": "supplier",
       "downstream_count": 12
     },
     {
-      "node": "MFG-00014",
+      "node": "MFG-00112",
       "node_type": "manufacturer",
-      "downstream_count": 12
+      "downstream_count": 11
+    },
+    {
+      "node": "SUP-00077",
+      "node_type": "supplier",
+      "downstream_count": 11
+    },
+    {
+      "node": "DST-00135",
+      "node_type": "distributor",
+      "downstream_count": 11
+    },
+    {
+      "node": "WHS-00030",
+      "node_type": "warehouse",
+      "downstream_count": 11
+    },
+    {
+      "node": "SUP-00067",
+      "node_type": "supplier",
+      "downstream_count": 11
+    },
+    {
+      "node": "SUP-00056",
+      "node_type": "supplier",
+      "downstream_count": 11
+    },
+    {
+      "node": "SUP-00045",
+      "node_type": "supplier",
+      "downstream_count": 11
+    },
+    {
+      "node": "MFG-00130",
+      "node_type": "manufacturer",
+      "downstream_count": 11
+    },
+    {
+      "node": "DST-00013",
+      "node_type": "distributor",
+      "downstream_count": 11
+    },
+    {
+      "node": "MFG-00032",
+      "node_type": "manufacturer",
+      "downstream_count": 11
+    },
+    {
+      "node": "MFG-00045",
+      "node_type": "manufacturer",
+      "downstream_count": 11
+    },
+    {
+      "node": "SUP-00032",
+      "node_type": "supplier",
+      "downstream_count": 11
+    },
+    {
+      "node": "SUP-00004",
+      "node_type": "supplier",
+      "downstream_count": 11
+    },
+    {
+      "node": "MFG-00007",
+      "node_type": "manufacturer",
+      "downstream_count": 11
+    },
+    {
+      "node": "MFG-00099",
+      "node_type": "manufacturer",
+      "downstream_count": 11
+    },
+    {
+      "node": "MFG-00081",
+      "node_type": "manufacturer",
+      "downstream_count": 11
+    },
+    {
+      "node": "SUP-00197",
+      "node_type": "supplier",
+      "downstream_count": 11
+    },
+    {
+      "node": "DST-00138",
+      "node_type": "distributor",
+      "downstream_count": 11
+    },
+    {
+      "node": "SUP-00173",
+      "node_type": "supplier",
+      "downstream_count": 11
+    },
+    {
+      "node": "MFG-00001",
+      "node_type": "manufacturer",
+      "downstream_count": 11
+    },
+    {
+      "node": "MFG-00125",
+      "node_type": "manufacturer",
+      "downstream_count": 11
+    },
+    {
+      "node": "SUP-00165",
+      "node_type": "supplier",
+      "downstream_count": 11
+    },
+    {
+      "node": "SUP-00074",
+      "node_type": "supplier",
+      "downstream_count": 11
+    },
+    {
+      "node": "SUP-00133",
+      "node_type": "supplier",
+      "downstream_count": 11
+    },
+    {
+      "node": "DST-00058",
+      "node_type": "distributor",
+      "downstream_count": 11
+    },
+    {
+      "node": "WHS-00066",
+      "node_type": "warehouse",
+      "downstream_count": 11
+    },
+    {
+      "node": "MFG-00134",
+      "node_type": "manufacturer",
+      "downstream_count": 11
+    },
+    {
+      "node": "SUP-00084",
+      "node_type": "supplier",
+      "downstream_count": 11
+    },
+    {
+      "node": "DST-00184",
+      "node_type": "distributor",
+      "downstream_count": 11
+    },
+    {
+      "node": "MFG-00113",
+      "node_type": "manufacturer",
+      "downstream_count": 11
+    },
+    {
+      "node": "DST-00144",
+      "node_type": "distributor",
+      "downstream_count": 11
+    },
+    {
+      "node": "MFG-00117",
+      "node_type": "manufacturer",
+      "downstream_count": 11
+    },
+    {
+      "node": "SUP-00154",
+      "node_type": "supplier",
+      "downstream_count": 11
+    },
+    {
+      "node": "MFG-00147",
+      "node_type": "manufacturer",
+      "downstream_count": 11
+    },
+    {
+      "node": "DST-00171",
+      "node_type": "distributor",
+      "downstream_count": 11
+    },
+    {
+      "node": "SUP-00039",
+      "node_type": "supplier",
+      "downstream_count": 11
+    },
+    {
+      "node": "MFG-00023",
+      "node_type": "manufacturer",
+      "downstream_count": 11
+    },
+    {
+      "node": "DST-00031",
+      "node_type": "distributor",
+      "downstream_count": 11
+    },
+    {
+      "node": "SUP-00163",
+      "node_type": "supplier",
+      "downstream_count": 11
+    },
+    {
+      "node": "LOG-00001",
+      "node_type": "logistics_provider",
+      "downstream_count": 11
+    },
+    {
+      "node": "MFG-00104",
+      "node_type": "manufacturer",
+      "downstream_count": 11
+    },
+    {
+      "node": "MFG-00116",
+      "node_type": "manufacturer",
+      "downstream_count": 11
+    },
+    {
+      "node": "WHS-00042",
+      "node_type": "warehouse",
+      "downstream_count": 11
+    },
+    {
+      "node": "SUP-00233",
+      "node_type": "supplier",
+      "downstream_count": 11
+    },
+    {
+      "node": "LOG-00046",
+      "node_type": "logistics_provider",
+      "downstream_count": 11
+    },
+    {
+      "node": "DST-00125",
+      "node_type": "distributor",
+      "downstream_count": 11
+    },
+    {
+      "node": "SUP-00005",
+      "node_type": "supplier",
+      "downstream_count": 11
+    },
+    {
+      "node": "DST-00043",
+      "node_type": "distributor",
+      "downstream_count": 11
+    },
+    {
+      "node": "MFG-00038",
+      "node_type": "manufacturer",
+      "downstream_count": 11
+    },
+    {
+      "node": "WHS-00070",
+      "node_type": "warehouse",
+      "downstream_count": 11
+    },
+    {
+      "node": "DST-00117",
+      "node_type": "distributor",
+      "downstream_count": 11
+    },
+    {
+      "node": "SUP-00161",
+      "node_type": "supplier",
+      "downstream_count": 11
+    },
+    {
+      "node": "MFG-00073",
+      "node_type": "manufacturer",
+      "downstream_count": 11
+    },
+    {
+      "node": "SUP-00103",
+      "node_type": "supplier",
+      "downstream_count": 11
     }
   ],
   "high_betweenness_bridges": [
     {
+      "bridge_node": "WHS-00014",
+      "bridge_type": "warehouse",
+      "betweenness": 0.0522681346463242,
+      "upstream_count": 48,
+      "downstream_count": 39
+    },
+    {
+      "bridge_node": "DST-00112",
+      "bridge_type": "distributor",
+      "betweenness": 0.04609694753751951,
+      "upstream_count": 13,
+      "downstream_count": 40
+    },
+    {
+      "bridge_node": "WHS-00063",
+      "bridge_type": "warehouse",
+      "betweenness": 0.03581215649350179,
+      "upstream_count": 35,
+      "downstream_count": 36
+    },
+    {
+      "bridge_node": "DST-00042",
+      "bridge_type": "distributor",
+      "betweenness": 0.03372958359775368,
+      "upstream_count": 10,
+      "downstream_count": 40
+    },
+    {
+      "bridge_node": "WHS-00044",
+      "bridge_type": "warehouse",
+      "betweenness": 0.031842678084430386,
+      "upstream_count": 29,
+      "downstream_count": 38
+    },
+    {
       "bridge_node": "MFG-00131",
       "bridge_type": "manufacturer",
-      "betweenness": 0.019171092181559428,
-      "upstream_count": 19,
+      "betweenness": 0.02700818344324037,
+      "upstream_count": 17,
       "downstream_count": 55
+    },
+    {
+      "bridge_node": "DST-00162",
+      "bridge_type": "distributor",
+      "betweenness": 0.025838211151524116,
+      "upstream_count": 14,
+      "downstream_count": 41
+    },
+    {
+      "bridge_node": "DST-00149",
+      "bridge_type": "distributor",
+      "betweenness": 0.025501014347732314,
+      "upstream_count": 15,
+      "downstream_count": 43
     },
     {
       "bridge_node": "MFG-00028",
       "bridge_type": "manufacturer",
-      "betweenness": 0.0062595905325689115,
-      "upstream_count": 10,
-      "downstream_count": 53
+      "betweenness": 0.02052239212480765,
+      "upstream_count": 15,
+      "downstream_count": 55
     },
     {
-      "bridge_node": "MFG-00141",
-      "bridge_type": "manufacturer",
-      "betweenness": 0.0010344464025157027,
-      "upstream_count": 4,
-      "downstream_count": 58
-    },
-    {
-      "bridge_node": "WHS-00080",
+      "bridge_node": "WHS-00036",
       "bridge_type": "warehouse",
-      "betweenness": 0.006492696373334007,
-      "upstream_count": 37,
-      "downstream_count": 11
-    },
-    {
-      "bridge_node": "DST-00116",
-      "bridge_type": "distributor",
-      "betweenness": 0.007758401664414546,
-      "upstream_count": 10,
-      "downstream_count": 35
-    },
-    {
-      "bridge_node": "WHS-00025",
-      "bridge_type": "warehouse",
-      "betweenness": 0.008876958390114058,
-      "upstream_count": 34,
-      "downstream_count": 11
-    },
-    {
-      "bridge_node": "WHS-00026",
-      "bridge_type": "warehouse",
-      "betweenness": 0.012138849779371155,
-      "upstream_count": 33,
-      "downstream_count": 11
-    },
-    {
-      "bridge_node": "WHS-00031",
-      "bridge_type": "warehouse",
-      "betweenness": 0.0069855121412233465,
-      "upstream_count": 37,
-      "downstream_count": 7
-    },
-    {
-      "bridge_node": "WHS-00038",
-      "bridge_type": "warehouse",
-      "betweenness": 0.007912959813752809,
-      "upstream_count": 30,
-      "downstream_count": 14
-    },
-    {
-      "bridge_node": "DST-00147",
-      "bridge_type": "distributor",
-      "betweenness": 0.008797860901686667,
-      "upstream_count": 7,
-      "downstream_count": 36
-    },
-    {
-      "bridge_node": "WHS-00088",
-      "bridge_type": "warehouse",
-      "betweenness": 0.008279613817687735,
-      "upstream_count": 30,
-      "downstream_count": 12
-    },
-    {
-      "bridge_node": "WHS-00068",
-      "bridge_type": "warehouse",
-      "betweenness": 0.012974134878709711,
-      "upstream_count": 22,
-      "downstream_count": 19
-    },
-    {
-      "bridge_node": "WHS-00020",
-      "bridge_type": "warehouse",
-      "betweenness": 0.009281148942724093,
-      "upstream_count": 35,
-      "downstream_count": 6
-    },
-    {
-      "bridge_node": "WHS-00012",
-      "bridge_type": "warehouse",
-      "betweenness": 0.01822921494071153,
-      "upstream_count": 26,
-      "downstream_count": 15
-    },
-    {
-      "bridge_node": "WHS-00050",
-      "bridge_type": "warehouse",
-      "betweenness": 0.006880585516899116,
-      "upstream_count": 28,
-      "downstream_count": 13
-    },
-    {
-      "bridge_node": "WHS-00002",
-      "bridge_type": "warehouse",
-      "betweenness": 0.007829255668772772,
-      "upstream_count": 32,
-      "downstream_count": 8
-    },
-    {
-      "bridge_node": "WHS-00095",
-      "bridge_type": "warehouse",
-      "betweenness": 0.005165943806812884,
-      "upstream_count": 36,
-      "downstream_count": 3
-    },
-    {
-      "bridge_node": "WHS-00075",
-      "bridge_type": "warehouse",
-      "betweenness": 0.009133398605618275,
-      "upstream_count": 29,
+      "betweenness": 0.019116260900476096,
+      "upstream_count": 17,
       "downstream_count": 10
+    },
+    {
+      "bridge_node": "DST-00115",
+      "bridge_type": "distributor",
+      "betweenness": 0.018887817616005498,
+      "upstream_count": 17,
+      "downstream_count": 38
+    },
+    {
+      "bridge_node": "DST-00084",
+      "bridge_type": "distributor",
+      "betweenness": 0.01571284825328493,
+      "upstream_count": 16,
+      "downstream_count": 38
+    },
+    {
+      "bridge_node": "WHS-00041",
+      "bridge_type": "warehouse",
+      "betweenness": 0.014746720426137509,
+      "upstream_count": 49,
+      "downstream_count": 10
+    },
+    {
+      "bridge_node": "WHS-00070",
+      "bridge_type": "warehouse",
+      "betweenness": 0.014728413640469411,
+      "upstream_count": 30,
+      "downstream_count": 11
     },
     {
       "bridge_node": "WHS-00005",
       "bridge_type": "warehouse",
-      "betweenness": 0.004386265287073354,
-      "upstream_count": 30,
+      "betweenness": 0.014244832865257325,
+      "upstream_count": 21,
       "downstream_count": 8
     },
     {
-      "bridge_node": "MFG-00062",
-      "bridge_type": "manufacturer",
-      "betweenness": 0.005091615395336133,
-      "upstream_count": 20,
-      "downstream_count": 18
+      "bridge_node": "WHS-00003",
+      "bridge_type": "warehouse",
+      "betweenness": 0.013655126064744137,
+      "upstream_count": 28,
+      "downstream_count": 7
+    },
+    {
+      "bridge_node": "WHS-00027",
+      "bridge_type": "warehouse",
+      "betweenness": 0.01359872430129043,
+      "upstream_count": 35,
+      "downstream_count": 9
+    },
+    {
+      "bridge_node": "WHS-00093",
+      "bridge_type": "warehouse",
+      "betweenness": 0.012239219688788222,
+      "upstream_count": 26,
+      "downstream_count": 9
+    },
+    {
+      "bridge_node": "WHS-00092",
+      "bridge_type": "warehouse",
+      "betweenness": 0.012181587306757951,
+      "upstream_count": 47,
+      "downstream_count": 9
+    },
+    {
+      "bridge_node": "WHS-00085",
+      "bridge_type": "warehouse",
+      "betweenness": 0.011381898534748728,
+      "upstream_count": 23,
+      "downstream_count": 8
     }
   ]
 }

@@ -81,6 +81,12 @@ def main(argv: list[str] | None = None) -> None:
     cent_stats = load_json("centrality_stats.json")
     summary = load_json("summary.json")
 
+    gt_path = data_dir / "ground_truth.json"
+    ground_truth: dict[str, Any] = {}
+    if gt_path.exists():
+        with gt_path.open() as fh:
+            ground_truth = json.load(fh)
+
     # Load resilience results
     resilience_results: dict[str, pd.DataFrame] = {}
     for strategy in ["random", "degree", "betweenness", "pagerank"]:
@@ -98,6 +104,9 @@ def main(argv: list[str] | None = None) -> None:
         snapshot_df=snapshot_df,
         resilience_results=resilience_results,
         figures_dir=figures_dir,
+        kcore_df=kcore_df,
+        dep_df=dep_df,
+        ground_truth=ground_truth,
     )
 
     # ── Generate tables ───────────────────────────────────────────────────────
@@ -144,11 +153,11 @@ def _generate_tables(
     """
     if not centrality_df.empty:
         # Top 20 by each metric
-        for metric in ["total_degree", "betweenness", "pagerank", "closeness"]:
+        for metric in ["total_degree", "betweenness", "pagerank", "pagerank_reversed", "closeness"]:
             if metric in centrality_df.columns:
                 top = centrality_df.nlargest(20, metric)[
                     ["node"] + [m for m in ["in_degree", "out_degree", "total_degree",
-                                            "betweenness", "pagerank", "closeness", "eigenvector"] if m in centrality_df.columns]
+                                            "betweenness", "pagerank", "pagerank_reversed", "closeness", "eigenvector"] if m in centrality_df.columns]
                 ]
                 top.to_csv(tables_dir / f"top20_{metric}.csv", index=False)
 
@@ -224,7 +233,7 @@ def _generate_summary_markdown(
     # Centrality findings
     lines.append("## 2. Centrality Findings\n")
     if not centrality_df.empty:
-        for metric in ["total_degree", "betweenness", "pagerank"]:
+        for metric in ["total_degree", "betweenness", "pagerank", "pagerank_reversed"]:
             if metric in centrality_df.columns:
                 top3 = centrality_df.nlargest(3, metric)[["node", metric]]
                 lines.append(f"### Top 3 by {metric.replace('_', ' ').title()}")
@@ -253,6 +262,7 @@ def _generate_summary_markdown(
     if not dep_df.empty and "supplier_dependency_ratio" in dep_df.columns:
         high_conc = dep_df[dep_df["supplier_dependency_ratio"] > 0.8]
         lines += [
+            "- Logistics-provider edges are excluded from supplier counts",
             f"- **Nodes with >80% upstream concentration**: {len(high_conc)}",
             f"- **Mean supplier dependency ratio**: {dep_df['supplier_dependency_ratio'].mean():.4f}",
         ]
@@ -267,6 +277,9 @@ def _generate_summary_markdown(
             f"- **Edge count range**: {int(snapshot_df['num_edges'].min())}–{int(snapshot_df['num_edges'].max())}",
             f"- **Density trend**: {snapshot_df.iloc[0]['density']:.6f} → {snapshot_df.iloc[-1]['density']:.6f}",
         ]
+        if "num_communities" in snapshot_df.columns:
+            lines.append(f"- **Detected communities per month**: {int(snapshot_df['num_communities'].min())}–{int(snapshot_df['num_communities'].max())}")
+            lines.append(f"- **Modularity range**: {snapshot_df['modularity'].min():.4f}–{snapshot_df['modularity'].max():.4f}")
     lines.append("\n---\n")
 
     # Resilience findings
@@ -283,16 +296,30 @@ def _generate_summary_markdown(
     # Ground-truth evaluation
     lines.append("## 7. Ground-Truth Evaluation\n")
     if gt_results:
+        exp_a = gt_results.get("experiment_A_hub_recovery", {})
+        for metric in ["total_degree", "betweenness", "pagerank", "pagerank_reversed"]:
+            rate = exp_a.get(f"recovery_rate_{metric}")
+            if rate is not None:
+                lines.append(f"- **Hub recovery in top-{exp_a.get('top_n')} by {metric}**: {rate:.2f}")
         exp_b = gt_results.get("experiment_B_bridge_recovery", {})
         if exp_b:
-            lines.append(f"- **Bridge recovery rate**: {exp_b.get('recovery_rate', 'N/A')}")
+            lines.append(f"- **Bridge recovery in top-{exp_b.get('top_n')} betweenness**: {exp_b.get('recovery_rate', 'N/A')}")
+            lines.append(f"- **Median betweenness rank of planted bridges**: {exp_b.get('median_betweenness_rank', 'N/A')}")
+            lines.append(f"- **Median degree rank of planted bridges**: {exp_b.get('median_total_degree_rank', 'N/A')}")
         exp_c = gt_results.get("experiment_C_community_recovery", {})
         if exp_c:
             lines.append(f"- **Community ARI**: {exp_c.get('ari', 'N/A')}")
             lines.append(f"- **Community NMI**: {exp_c.get('nmi', 'N/A')}")
+        exp_d = gt_results.get("experiment_D_dependency_recovery", {})
+        if exp_d.get("dependency_group_results"):
+            lines.append(f"- **Planted dependents whose top supplier is the planted critical supplier**: {exp_d.get('top_supplier_identification_rate', 0):.2f}")
+            lines.append(f"- **Planted dependents flagged as high-dependency (top {exp_d.get('top_fraction', 0):.0%} of manufacturers)**: {exp_d.get('high_dependency_flag_rate', 0):.2f}")
+            n_groups = len(exp_d["dependency_group_results"])
+            lines.append(f"- **Critical suppliers in top {exp_d.get('top_fraction', 0):.0%} of suppliers by weighted out-degree**: {exp_d.get('critical_suppliers_in_top_by_out_strength')}/{n_groups}")
+            lines.append(f"- **Critical suppliers in top {exp_d.get('top_fraction', 0):.0%} of suppliers by reversed PageRank**: {exp_d.get('critical_suppliers_in_top_by_pagerank_reversed')}/{n_groups}")
         exp_e = gt_results.get("experiment_E_critical_node_resilience", {})
         if exp_e:
-            lines.append(f"- **Efficiency change after removing critical nodes**: {exp_e.get('efficiency_change', 'N/A')}")
+            lines.append(f"- **Efficiency change after removing planted hubs**: {exp_e.get('efficiency_change', 'N/A')}")
     lines.append("\n---\n")
 
     lines.append("## 8. Limitations\n")

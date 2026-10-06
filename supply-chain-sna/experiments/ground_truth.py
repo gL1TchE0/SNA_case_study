@@ -102,7 +102,7 @@ def _hub_recovery(
         "top_n": top_n,
     }
 
-    for metric in ["total_degree", "pagerank", "betweenness"]:
+    for metric in ["total_degree", "pagerank", "pagerank_reversed", "betweenness"]:
         if f"{metric}_rank" not in centrality_df.columns:
             continue
         top_nodes = centrality_df.nsmallest(top_n, f"{metric}_rank")["node"].tolist()
@@ -137,11 +137,23 @@ def _bridge_recovery(
     top_by_betweenness = centrality_df.nsmallest(top_n, "betweenness_rank")["node"].tolist()
     recovered = [b for b in planted_bridges if b in top_by_betweenness]
 
+    bridge_rows = centrality_df[centrality_df["node"].isin(planted_bridges)]
+    bridge_ranks = {
+        row["node"]: {
+            "betweenness_rank": int(row["betweenness_rank"]),
+            "total_degree_rank": int(row["total_degree_rank"]),
+        }
+        for _, row in bridge_rows.iterrows()
+    }
+
     return {
         "planted_bridges": planted_bridges,
         "top_n": top_n,
         "recovered_bridges": recovered,
         "recovery_rate": len(recovered) / max(1, len(planted_bridges)),
+        "median_betweenness_rank": float(bridge_rows["betweenness_rank"].median()) if not bridge_rows.empty else None,
+        "median_total_degree_rank": float(bridge_rows["total_degree_rank"].median()) if not bridge_rows.empty else None,
+        "bridge_ranks": bridge_ranks,
         "note": f"{len(recovered)}/{len(planted_bridges)} planted bridges found in top-{top_n} betweenness",
     }
 
@@ -150,13 +162,27 @@ def _dependency_recovery(
     G: nx.DiGraph,
     centrality_df: pd.DataFrame,
     dependency_groups: list[dict[str, Any]],
+    top_fraction: float = 0.10,
 ) -> dict[str, Any]:
-    """Check whether dependency analysis identifies planted dependency groups.
+    """Check whether dependency analysis exposes the planted dependency groups.
+
+    The generator plants one critical supplier per group and routes extra
+    volume from it to several manufacturers. Nothing in the analysis is told
+    which edges were planted. Two things are tested:
+
+      1. Manufacturer side: does the dependency analysis name the planted
+         supplier as each manufacturer's top supplier, and is that
+         manufacturer's dependency ratio in the top ``top_fraction`` of all
+         manufacturers?
+      2. Supplier side: is the critical supplier in the top ``top_fraction``
+         of suppliers by reversed PageRank (upstream importance) and by
+         weighted out-degree?
 
     Args:
         G: Directed graph.
         centrality_df: Centrality DataFrame.
         dependency_groups: List of planted dependency group dicts.
+        top_fraction: Fraction defining "highly ranked".
 
     Returns:
         Evaluation dictionary.
@@ -164,41 +190,73 @@ def _dependency_recovery(
     if not dependency_groups:
         return {"note": "No planted dependency groups"}
 
+    from sna.dependencies import analyze_dependencies
+
+    conc = analyze_dependencies(G)["upstream_concentration"]
+    if conc.empty:
+        return {"note": "No dependency data available"}
+
+    mfg_conc = conc[conc["node_type"] == "manufacturer"].set_index("node")
+    ratio_threshold = float(mfg_conc["supplier_dependency_ratio"].quantile(1 - top_fraction))
+
+    suppliers = [n for n, d in G.nodes(data=True) if d.get("organization_type") == "supplier"]
+    out_strength = pd.Series({n: G.out_degree(n, weight="weight") for n in suppliers})
+    strength_rank = out_strength.rank(ascending=False, method="min")
+    rev_pr = pd.Series(dtype=float)
+    if not centrality_df.empty and "pagerank_reversed" in centrality_df.columns:
+        rev_pr = centrality_df.set_index("node")["pagerank_reversed"].reindex(suppliers)
+    rev_pr_rank = rev_pr.rank(ascending=False, method="min")
+    supplier_cutoff = max(1, round(len(suppliers) * top_fraction))
+
     results: list[dict[str, Any]] = []
     for group in dependency_groups:
-        upstream = group.get("upstream_manufacturer")
-        suppliers = group.get("dependent_suppliers", [])
-
-        if not upstream or not suppliers:
+        supplier = group.get("critical_supplier")
+        manufacturers = group.get("dependent_manufacturers", [])
+        if not supplier or not manufacturers:
             continue
 
-        # Check how many suppliers actually have edges to the upstream node
-        actual_connections = [s for s in suppliers if G.has_edge(s, upstream)]
-        connectivity_rate = len(actual_connections) / max(1, len(suppliers))
+        named = [
+            m for m in manufacturers
+            if m in mfg_conc.index and mfg_conc.loc[m, "top_supplier"] == supplier
+        ]
+        flagged = [
+            m for m in named
+            if mfg_conc.loc[m, "supplier_dependency_ratio"] >= ratio_threshold
+        ]
+        ratios = [
+            float(mfg_conc.loc[m, "supplier_dependency_ratio"])
+            for m in manufacturers if m in mfg_conc.index
+        ]
 
-        # Check if upstream node is highly ranked
-        upstream_pagerank_rank = None
-        if not centrality_df.empty and "pagerank_rank" in centrality_df.columns:
-            row = centrality_df[centrality_df["node"] == upstream]
-            if not row.empty:
-                upstream_pagerank_rank = int(row.iloc[0]["pagerank_rank"])
+        s_rank = int(strength_rank[supplier]) if supplier in strength_rank.index else None
+        p_rank = int(rev_pr_rank[supplier]) if supplier in rev_pr_rank.index and pd.notna(rev_pr_rank[supplier]) else None
 
         results.append(
             {
                 "group_id": group.get("group_id"),
-                "upstream_manufacturer": upstream,
-                "planted_suppliers": len(suppliers),
-                "connected_suppliers": len(actual_connections),
-                "connectivity_rate": round(connectivity_rate, 3),
-                "upstream_pagerank_rank": upstream_pagerank_rank,
+                "critical_supplier": supplier,
+                "planted_manufacturers": len(manufacturers),
+                "top_supplier_identified": len(named),
+                "flagged_high_dependency": len(flagged),
+                "mean_dependency_ratio": round(sum(ratios) / max(1, len(ratios)), 4),
+                "supplier_out_strength_rank": s_rank,
+                "supplier_pagerank_reversed_rank": p_rank,
+                "supplier_in_top_by_out_strength": s_rank is not None and s_rank <= supplier_cutoff,
+                "supplier_in_top_by_pagerank_reversed": p_rank is not None and p_rank <= supplier_cutoff,
             }
         )
 
+    total_planted = sum(r["planted_manufacturers"] for r in results)
     return {
         "dependency_group_results": results,
-        "avg_connectivity_rate": float(
-            sum(r["connectivity_rate"] for r in results) / max(1, len(results))
-        ) if results else 0.0,
+        "top_fraction": top_fraction,
+        "manufacturer_ratio_threshold": round(ratio_threshold, 4),
+        "population_mean_manufacturer_ratio": round(float(mfg_conc["supplier_dependency_ratio"].mean()), 4),
+        "num_suppliers_ranked": len(suppliers),
+        "top_supplier_identification_rate": sum(r["top_supplier_identified"] for r in results) / max(1, total_planted),
+        "high_dependency_flag_rate": sum(r["flagged_high_dependency"] for r in results) / max(1, total_planted),
+        "critical_suppliers_in_top_by_out_strength": sum(r["supplier_in_top_by_out_strength"] for r in results),
+        "critical_suppliers_in_top_by_pagerank_reversed": sum(r["supplier_in_top_by_pagerank_reversed"] for r in results),
     }
 
 

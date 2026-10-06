@@ -18,6 +18,7 @@ A comprehensive Social Network Analysis platform for modeling, analyzing, and vi
   - [Quick Smoke Test](#quick-smoke-test)
 - [Interactive Dashboard](#interactive-dashboard)
 - [Running Individual Experiments](#running-individual-experiments)
+- [Gephi Export & Comparison](#gephi-export--comparison)
 - [Running Tests](#running-tests)
 - [Configuration](#configuration)
 - [Output & Reports](#output--reports)
@@ -46,13 +47,13 @@ The entire pipeline — from data generation to report output — is reproducibl
 
 | Feature | Description |
 |---|---|
-| **Synthetic Data Generator** | Produces organizations (with type, region, industry, size), edges with power-law degree distribution, transactions with pricing/quantity, and temporal dynamics (entry/exit, disruptions, seasonality) |
+| **Synthetic Data Generator** | Produces organizations (with type, region, industry, size), edges with heterogeneous connectivity (planted hubs plus preferential attachment), transactions with pricing/quantity, and temporal dynamics (entry/exit, disruptions, seasonality) |
 | **Graph Construction** | Builds a `networkx.DiGraph` with configurable edge weights (`frequency`, `quantity`, `transaction_value`) |
-| **Centrality Analysis** | Degree (in/out/total), Betweenness, Closeness, Eigenvector, and PageRank — with rank correlation (Spearman) |
+| **Centrality Analysis** | Degree (in/out/total), Betweenness, Closeness, Eigenvector, PageRank and reversed PageRank (upstream importance) — with rank correlation (Spearman) |
 | **Community Detection** | Louvain algorithm on undirected projection; modularity score and inter-community edge analysis |
 | **K-Core Decomposition** | Identifies the densely connected core of the network |
-| **Hidden Dependency Analysis** | Computes supplier dependency ratios, single-source nodes, and critical upstream organizations |
-| **Temporal SNA** | Monthly cumulative snapshots tracking node/edge count, density, centrality evolution over time |
+| **Hidden Dependency Analysis** | Computes supplier dependency ratios, single-source nodes, and critical upstream organizations (logistics-provider edges excluded) |
+| **Temporal SNA** | Monthly snapshots of the organizations and relationships active in each month, tracking node/edge count, density, communities and centrality over time |
 | **Resilience Testing** | Node-removal experiments comparing Random, Degree, Betweenness, and PageRank attack strategies (multi-seed) |
 | **Ground-Truth Evaluation** | Validates SNA findings against planted structural features (hubs, bridges, communities, dependency groups) |
 | **Interactive Dashboard** | 7-page Streamlit app with Plotly visualizations for exploring all analytics |
@@ -110,7 +111,7 @@ supply-chain-sna/
 │
 ├── generator/                       # Synthetic data generation
 │   ├── organization_generator.py    # Creates orgs with types, regions, industries
-│   ├── network_generator.py         # Power-law edge generation with planted hubs/bridges
+│   ├── network_generator.py         # Region-aware edge generation with planted hubs/bridges
 │   ├── transaction_generator.py     # Pricing, quantity, and transaction records
 │   ├── temporal_generator.py        # Entry/exit, disruptions, seasonal dynamics
 │   └── generate.py                  # CLI entry point: python -m generator.generate
@@ -118,7 +119,9 @@ supply-chain-sna/
 ├── graph/                           # Graph construction
 │   ├── builder.py                   # Builds networkx.DiGraph + temporal snapshots
 │   ├── validation.py                # Validates graph integrity
-│   └── build.py                     # CLI entry point: python -m graph.build
+│   ├── build.py                     # CLI entry point: python -m graph.build
+│   ├── export_gephi.py              # Exports the graph to GEXF for Gephi
+│   └── compare_gephi.py             # Compares Gephi's statistics with this project's
 │
 ├── sna/                             # SNA analysis modules
 │   ├── network_metrics.py           # Global stats (density, WCC, clustering, efficiency)
@@ -170,7 +173,7 @@ supply-chain-sna/
 
 ## Prerequisites
 
-- **Python 3.10+** (uses `X | Y` union type syntax and `match` statements)
+- **Python 3.10+** (uses `X | Y` union type syntax)
 - **pip** (or any Python package manager)
 - **Git** (to clone the repository)
 - **(Optional)** Bash shell — for `run_pipeline.sh`. Windows users can run steps individually via Python (see below).
@@ -216,7 +219,7 @@ This installs all required packages:
 
 | Category | Packages |
 |---|---|
-| Core | `numpy`, `pandas`, `scipy` |
+| Core | `numpy`, `pandas`, `scipy`, `scikit-learn` (ARI/NMI) |
 | Graph Analysis | `networkx`, `python-louvain` |
 | Data Generation | `Faker` |
 | Visualization | `plotly`, `matplotlib`, `kaleido` |
@@ -327,6 +330,48 @@ python -m experiments.run --experiment ground_truth
 
 ---
 
+## Gephi Export & Comparison
+
+The graph can be opened in [Gephi](https://gephi.org) to cross-check the results with an independent tool. Run the experiments first so the export includes their scores.
+
+```bash
+# Write data/exports/supply_chain.gexf and data/exports/gephi_nodes.csv
+python -m graph.export_gephi
+```
+
+Every node carries its organization attributes, the centrality scores computed here (`nx_*` columns), its detected community, core number and planted role, so Gephi can colour and size nodes directly.
+
+To compare Gephi's own statistics with this project's:
+
+1. Open `data/exports/supply_chain.gexf` in Gephi.
+2. In the Statistics panel run Average Degree, Network Diameter (betweenness, closeness), Eigenvector Centrality, PageRank and Modularity.
+3. In the Data Laboratory, export the nodes table to `data/exports/gephi_statistics.csv`.
+4. Run the comparison:
+
+```bash
+python -m graph.compare_gephi data/exports/gephi_statistics.csv
+```
+
+This prints, per metric, the Spearman rank correlation, the top-20 overlap and the largest absolute difference, plus the ARI between Gephi's modularity classes and the detected communities, and saves the table to `reports/tables/gephi_comparison.csv`. Rank agreement is the figure to read: Gephi normalises some measures differently (betweenness, closeness), so absolute values can differ while the rankings match.
+
+---
+
+## Gephi Export
+
+Gephi is used as a second tool for visualization and to cross-check the statistics.
+
+```bash
+# Write data/exports/supply_chain.gexf (open this file in Gephi)
+python -m graph.export_gephi
+
+# After exporting Gephi's node table to CSV, compare it with the NetworkX results
+python -m graph.compare_gephi data/exports/gephi_statistics.csv
+```
+
+See [`docs/gephi_guide.md`](docs/gephi_guide.md) for the settings to use in Gephi.
+
+---
+
 ## Running Tests
 
 ```bash
@@ -352,7 +397,8 @@ All parameters are controlled via YAML configuration files in `config/`.
 | `regions` | List of region names | Geographic regions for orgs |
 | `industries` | List of industry names | Industry classifications |
 | `planted_structures` | `num_hubs`, `num_bridges`, `num_communities`, `num_dependency_groups` | Ground-truth features injected into the network for validation |
-| `temporal` | `organization_entry_rate`, `disruption_months`, `seasonal_peak_months` | Controls network evolution dynamics |
+| `temporal` | `organization_entry_rate`, `organization_exit_rate`, `disruption_months`, `seasonal_peak_months` | Controls network evolution dynamics |
+| `snapshots` | `mode` | `monthly` (default) or `cumulative` temporal snapshots |
 | `resilience` | `removal_fractions`, `random_seeds` | Resilience experiment parameters |
 | `centrality` | `eigenvector_max_iter`, `pagerank_alpha` | Algorithm hyperparameters |
 | `community` | `algorithm`, `louvain_resolution` | Community detection settings |
@@ -377,12 +423,16 @@ After a full pipeline run, the following outputs are generated:
 ```
 data/
 ├── synthetic/
-│   ├── organizations.csv          # Organization master data
+│   ├── organizations.csv          # Organization master data (with entry/exit month)
+│   ├── events.csv                 # Organization entries, exits and disruptions
 │   ├── transactions.csv           # All transaction records
 │   └── ground_truth.json          # Planted hubs, bridges, communities, dependency groups
-└── processed/
-    ├── supply_chain_graph_frequency.pkl     # Main graph (edge weight = transaction count)
-    └── temporal_graphs_frequency.pkl        # Monthly snapshot graphs
+├── processed/
+│   ├── supply_chain_graph_frequency.pkl     # Main graph (edge weight = transaction count)
+│   └── temporal_graphs_frequency.pkl        # Monthly snapshot graphs
+└── exports/                       # Created by python -m graph.export_gephi
+    ├── supply_chain.gexf          # Graph with analysis results as node attributes
+    └── gephi_nodes.csv            # The same node table as CSV
 
 reports/
 ├── summary.md                     # Auto-generated research summary
@@ -403,7 +453,7 @@ reports/
 │   ├── resilience_pagerank.csv    # Resilience results (pagerank-targeted)
 │   ├── ground_truth_results.json  # Hub, bridge, community, dependency recovery
 │   └── summary.json              # Run metadata
-├── figures/                       # Exported Plotly charts (PNG)
+├── figures/                       # Exported Plotly charts (PNG) + README.md with captions
 └── tables/                        # Formatted CSV tables for reporting
 ```
 
@@ -411,13 +461,18 @@ reports/
 
 ## Methodology & Design Decisions
 
+The written case study, with interpretation of every result, is in [`docs/case_study_report.md`](docs/case_study_report.md).
+
 Key architectural and methodological choices are documented in [`BUILD_DECISIONS.md`](BUILD_DECISIONS.md). Highlights:
 
 - **Directed Graph**: Supply chains have directional flow (Supplier → Manufacturer → Distributor → Retailer), so `networkx.DiGraph` is used.
 - **Louvain on Undirected Projection**: Community detection requires undirected graphs; the directed graph is projected before applying Louvain.
 - **Eigenvector → PageRank Fallback**: If eigenvector centrality fails to converge on the directed graph, PageRank is used as a fallback.
-- **Multi-Seed Resilience**: Random removal uses 10 seeds with mean ± std for statistical reliability.
-- **Cumulative Temporal Snapshots**: Each monthly snapshot includes all transactions up to that month (not a sliding window).
+- **Multi-Seed Resilience**: Random removal uses 5 seeds (set in `resilience.random_seeds`) with mean ± std for statistical reliability.
+- **Monthly Temporal Snapshots**: Each snapshot contains the organizations and relationships active in that month. Set `snapshots.mode: cumulative` to accumulate instead.
+- **Edge Weights**: PageRank and eigenvector centrality use transaction frequency as weight; degree, betweenness and closeness are unweighted.
+- **Reversed PageRank**: Standard PageRank rewards sinks (retailers); PageRank on the reversed graph measures upstream importance.
+- **Logistics Edges**: Excluded from supplier counts and dependency ratios.
 - **Decoupled Transaction Layer**: The SNA engine only consumes DataFrames — it doesn't know or care whether data comes from CSV files or a blockchain.
 
 ---

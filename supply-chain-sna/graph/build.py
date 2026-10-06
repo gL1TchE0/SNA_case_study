@@ -77,7 +77,10 @@ def main(argv: list[str] | None = None) -> None:
     logger.info("Saved graph → %s (%d nodes, %d edges)", graph_path, G.number_of_nodes(), G.number_of_edges())
 
     # Build temporal graphs
-    temporal_graphs = build_temporal_graphs(organizations, transactions, weight_mode=weight_mode)
+    snapshot_mode = config.get("snapshots", {}).get("mode", "monthly")
+    temporal_graphs = build_temporal_graphs(
+        organizations, transactions, weight_mode=weight_mode, mode=snapshot_mode
+    )
     temporal_path = graph_dir / f"temporal_graphs_{weight_mode}.pkl"
     with temporal_path.open("wb") as fh:
         pickle.dump(temporal_graphs, fh)

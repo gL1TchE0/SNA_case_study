@@ -11,84 +11,162 @@
     "recovered_by_total_degree": [
       "MFG-00131",
       "DST-00116",
-      "DST-00147",
       "MFG-00141",
       "MFG-00028"
     ],
-    "recovery_rate_total_degree": 1.0,
+    "recovery_rate_total_degree": 0.8,
     "recovered_by_pagerank": [],
     "recovery_rate_pagerank": 0.0,
+    "recovered_by_pagerank_reversed": [
+      "MFG-00131",
+      "MFG-00141",
+      "MFG-00028"
+    ],
+    "recovery_rate_pagerank_reversed": 0.6,
     "recovered_by_betweenness": [
       "MFG-00131",
-      "DST-00116",
-      "DST-00147"
+      "MFG-00028"
     ],
-    "recovery_rate_betweenness": 0.6
+    "recovery_rate_betweenness": 0.4
   },
   "experiment_B_bridge_recovery": {
     "planted_bridges": [
-      "DST-00010",
-      "DST-00020",
-      "LOG-00026",
-      "LOG-00007",
+      "DST-00042",
+      "WHS-00063",
+      "DST-00112",
+      "DST-00149",
       "DST-00115",
-      "DST-00033",
-      "LOG-00059",
-      "LOG-00084",
-      "DST-00102",
-      "DST-00042"
+      "DST-00019",
+      "WHS-00044",
+      "DST-00084",
+      "DST-00162",
+      "WHS-00014"
     ],
     "top_n": 30,
-    "recovered_bridges": [],
-    "recovery_rate": 0.0,
-    "note": "0/10 planted bridges found in top-30 betweenness"
+    "recovered_bridges": [
+      "DST-00042",
+      "WHS-00063",
+      "DST-00112",
+      "DST-00149",
+      "DST-00115",
+      "WHS-00044",
+      "DST-00084",
+      "DST-00162",
+      "WHS-00014"
+    ],
+    "recovery_rate": 0.9,
+    "median_betweenness_rank": 6.0,
+    "median_total_degree_rank": 10.0,
+    "bridge_ranks": {
+      "WHS-00014": {
+        "betweenness_rank": 1,
+        "total_degree_rank": 1
+      },
+      "WHS-00063": {
+        "betweenness_rank": 3,
+        "total_degree_rank": 4
+      },
+      "WHS-00044": {
+        "betweenness_rank": 5,
+        "total_degree_rank": 6
+      },
+      "DST-00149": {
+        "betweenness_rank": 8,
+        "total_degree_rank": 8
+      },
+      "DST-00162": {
+        "betweenness_rank": 7,
+        "total_degree_rank": 10
+      },
+      "DST-00115": {
+        "betweenness_rank": 11,
+        "total_degree_rank": 10
+      },
+      "DST-00084": {
+        "betweenness_rank": 12,
+        "total_degree_rank": 12
+      },
+      "DST-00112": {
+        "betweenness_rank": 2,
+        "total_degree_rank": 13
+      },
+      "DST-00042": {
+        "betweenness_rank": 4,
+        "total_degree_rank": 14
+      },
+      "DST-00019": {
+        "betweenness_rank": 32,
+        "total_degree_rank": 14
+      }
+    },
+    "note": "9/10 planted bridges found in top-30 betweenness"
   },
   "experiment_C_community_recovery": {
-    "ari": null,
-    "nmi": null,
-    "note": "sklearn not available for evaluation"
+    "ari": 0.9690234424583879,
+    "nmi": 0.9549513376336983,
+    "common_nodes_evaluated": 1000,
+    "interpretation": "Excellent community recovery"
   },
   "experiment_D_dependency_recovery": {
     "dependency_group_results": [
       {
         "group_id": "DEP-001",
-        "upstream_manufacturer": "MFG-00112",
-        "planted_suppliers": 5,
-        "connected_suppliers": 5,
-        "connectivity_rate": 1.0,
-        "upstream_pagerank_rank": 228
+        "critical_supplier": "SUP-00224",
+        "planted_manufacturers": 5,
+        "top_supplier_identified": 5,
+        "flagged_high_dependency": 4,
+        "mean_dependency_ratio": 0.5592,
+        "supplier_out_strength_rank": 3,
+        "supplier_pagerank_reversed_rank": 1,
+        "supplier_in_top_by_out_strength": true,
+        "supplier_in_top_by_pagerank_reversed": true
       },
       {
         "group_id": "DEP-002",
-        "upstream_manufacturer": "MFG-00020",
-        "planted_suppliers": 5,
-        "connected_suppliers": 5,
-        "connectivity_rate": 1.0,
-        "upstream_pagerank_rank": 390
+        "critical_supplier": "SUP-00041",
+        "planted_manufacturers": 5,
+        "top_supplier_identified": 5,
+        "flagged_high_dependency": 3,
+        "mean_dependency_ratio": 0.5736,
+        "supplier_out_strength_rank": 2,
+        "supplier_pagerank_reversed_rank": 3,
+        "supplier_in_top_by_out_strength": true,
+        "supplier_in_top_by_pagerank_reversed": true
       },
       {
         "group_id": "DEP-003",
-        "upstream_manufacturer": "MFG-00072",
-        "planted_suppliers": 5,
-        "connected_suppliers": 5,
-        "connectivity_rate": 1.0,
-        "upstream_pagerank_rank": 384
+        "critical_supplier": "SUP-00245",
+        "planted_manufacturers": 5,
+        "top_supplier_identified": 5,
+        "flagged_high_dependency": 3,
+        "mean_dependency_ratio": 0.5309,
+        "supplier_out_strength_rank": 1,
+        "supplier_pagerank_reversed_rank": 2,
+        "supplier_in_top_by_out_strength": true,
+        "supplier_in_top_by_pagerank_reversed": true
       }
     ],
-    "avg_connectivity_rate": 1.0
+    "top_fraction": 0.1,
+    "manufacturer_ratio_threshold": 0.5105,
+    "population_mean_manufacturer_ratio": 0.2262,
+    "num_suppliers_ranked": 300,
+    "top_supplier_identification_rate": 1.0,
+    "high_dependency_flag_rate": 0.6666666666666666,
+    "critical_suppliers_in_top_by_out_strength": 3,
+    "critical_suppliers_in_top_by_pagerank_reversed": 3
   },
   "experiment_E_critical_node_resilience": {
     "nodes_removed": 5,
     "fraction_removed": 0.005,
-    "lcc_before": 1000,
-    "lcc_after": 995,
-    "lcc_fraction_before": 1.0,
-    "lcc_fraction_after": 0.995,
-    "lcc_change": -5,
-    "efficiency_before": 0.37617047046835733,
-    "efficiency_after": 0.37232476938492914,
-    "efficiency_change": -0.003845701083428188,
-    "components_before": 1,
-    "components_after": 1
+    "lcc_before": 999,
+    "lcc_after": 993,
+    "lcc_fraction_before": 0.999,
+    "lcc_fraction_after": 0.993,
+    "lcc_change": -6,
+    "efficiency_before": 0.34422492492410844,
+    "efficiency_after": 0.33502593450112267,
+    "efficiency_change": -0.009198990422985776,
+    "components_before": 2,
+    "components_after": 3
   }
 }

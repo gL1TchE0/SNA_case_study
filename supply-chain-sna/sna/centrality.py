@@ -66,6 +66,16 @@ def compute_all_centrality(
         tol=centrality_cfg.get("pagerank_tol", 1e-6),
     )
 
+    # PageRank on the reversed graph. Standard PageRank flows downstream and
+    # rewards sinks (retailers); reversing the edges rewards organizations
+    # that many others ultimately draw supply from (upstream importance).
+    pagerank_rev_df = compute_pagerank(
+        G.reverse(copy=True),
+        alpha=centrality_cfg.get("pagerank_alpha", 0.85),
+        max_iter=centrality_cfg.get("pagerank_max_iter", 1000),
+        tol=centrality_cfg.get("pagerank_tol", 1e-6),
+    ).rename(columns={"pagerank": "pagerank_reversed"})
+
     # ── Merge into combined table ─────────────────────────────────────────────
     combined = degree_df[["node", "in_degree", "out_degree", "total_degree",
                            "in_degree_centrality", "out_degree_centrality"]].copy()
@@ -82,8 +92,12 @@ def compute_all_centrality(
         pagerank_df[["node", "pagerank"]], on="node", how="left"
     )
 
+    combined = combined.merge(
+        pagerank_rev_df[["node", "pagerank_reversed"]], on="node", how="left"
+    )
+
     # ── Compute ranks ─────────────────────────────────────────────────────────
-    for metric in ["total_degree", "betweenness", "closeness", "eigenvector", "pagerank"]:
+    for metric in ["total_degree", "betweenness", "closeness", "eigenvector", "pagerank", "pagerank_reversed"]:
         if metric in combined.columns:
             combined[f"{metric}_rank"] = combined[metric].rank(
                 ascending=False, method="min", na_option="bottom"
@@ -101,6 +115,8 @@ def compute_all_centrality(
         ("betweenness_rank", "pagerank_rank"),
         ("eigenvector_rank", "pagerank_rank"),
         ("betweenness_rank", "closeness_rank"),
+        ("total_degree_rank", "pagerank_reversed_rank"),
+        ("pagerank_rank", "pagerank_reversed_rank"),
     ]
 
     for col_a, col_b in metric_pairs:
@@ -110,12 +126,13 @@ def compute_all_centrality(
             corr_results[key] = {"spearman_r": float(corr), "p_value": float(pval)}
 
     # ── Identify divergent nodes ──────────────────────────────────────────────
-    # Nodes where betweenness rank >> degree rank (bridge despite low degree)
+    # Nodes ranked far better on betweenness than on degree (bridge despite
+    # modest connectivity): large positive total_degree_rank - betweenness_rank.
     if "betweenness_rank" in combined.columns and "total_degree_rank" in combined.columns:
         combined["bridge_without_hub"] = (
             combined["total_degree_rank"] - combined["betweenness_rank"]
         )
-        true_bridges = combined.nsmallest(10, "bridge_without_hub")[["node", "bridge_without_hub", "betweenness", "total_degree"]]
+        true_bridges = combined.nlargest(10, "bridge_without_hub")[["node", "bridge_without_hub", "betweenness", "total_degree"]]
     else:
         true_bridges = pd.DataFrame()
 
@@ -124,8 +141,14 @@ def compute_all_centrality(
         "top_by_degree": combined.nsmallest(10, "total_degree_rank")["node"].tolist(),
         "top_by_betweenness": combined.nsmallest(10, "betweenness_rank")["node"].tolist(),
         "top_by_pagerank": combined.nsmallest(10, "pagerank_rank")["node"].tolist(),
+        "top_by_pagerank_reversed": combined.nsmallest(10, "pagerank_reversed_rank")["node"].tolist(),
+        "weighting_note": (
+            "PageRank and eigenvector use edge weights (transaction frequency). "
+            "Degree, betweenness and closeness are unweighted: frequency is a "
+            "strength, not a distance, so it is not used as a path cost."
+        ),
         "bridge_without_hub_nodes": true_bridges.to_dict("records") if not true_bridges.empty else [],
     }
 
-    logger.info("Centrality comparison table built: %d nodes, %d metrics", len(combined), 5)
+    logger.info("Centrality comparison table built: %d nodes, %d metrics", len(combined), 6)
     return combined, stats

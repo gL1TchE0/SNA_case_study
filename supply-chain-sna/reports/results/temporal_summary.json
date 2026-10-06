@@ -1,16 +1,16 @@
 {
   "months_analyzed": 24,
   "node_count_range": {
-    "min": 1000,
-    "max": 1000
+    "min": 760,
+    "max": 905
   },
   "edge_count_range": {
-    "min": 4312,
-    "max": 5000
+    "min": 3068,
+    "max": 5034
   },
   "density_trend": {
-    "start": 0.005005005005005005,
-    "end": 0.004316316316316317,
-    "direction": "decreasing"
+    "start": 0.005318632549753831,
+    "end": 0.00615313156994084,
+    "direction": "increasing"
   }
 }

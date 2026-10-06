@@ -15,7 +15,7 @@ from typing import Any
 import pandas as pd
 
 from generator.organization_generator import generate_organizations
-from generator.network_generator import generate_network
+from generator.network_generator import _get_relationship_type, generate_network, pick_target
 from generator.transaction_generator import generate_transactions, _add_months
 
 logger = logging.getLogger(__name__)
@@ -60,7 +60,39 @@ def generate_temporal_dataset(
     logger.info("Generating base network structure…")
     base_edges, ground_truth = generate_network(organizations, ground_truth, config)
 
-    active_orgs = set(organizations["organization_id"].tolist())
+    planted_cfg = config.get("planted_structures", {})
+    intra_prob: float = planted_cfg.get("intra_community_edge_prob", 0.92)
+    dependency_volume_mult: float = planted_cfg.get("dependency_volume_multiplier", 8.0)
+
+    all_org_ids: list[str] = organizations["organization_id"].tolist()
+    org_type_map = dict(zip(organizations["organization_id"], organizations["organization_type"]))
+    org_region_map = dict(zip(organizations["organization_id"], organizations["region"]))
+    type_to_ids: dict[str, list[str]] = {}
+    region_type_ids: dict[tuple[str, str], list[str]] = {}
+    for oid in all_org_ids:
+        type_to_ids.setdefault(org_type_map[oid], []).append(oid)
+        region_type_ids.setdefault((org_region_map[oid], org_type_map[oid]), []).append(oid)
+
+    # Planted organizations stay in the network for the whole period so the
+    # ground-truth structures exist in every snapshot.
+    protected: set[str] = set(ground_truth["planted_hubs"]) | set(ground_truth["planted_bridges"])
+    dependency_edges: set[tuple[str, str]] = set()
+    for group in ground_truth["planted_dependency_groups"]:
+        protected.add(group["critical_supplier"])
+        protected.update(group["dependent_manufacturers"])
+        for mfg in group["dependent_manufacturers"]:
+            dependency_edges.add((group["critical_supplier"], mfg))
+
+    # Late entrants: organizations that join after the first month.
+    n_entries_per_month = max(0, round(len(all_org_ids) * org_entry_rate))
+    unprotected = [oid for oid in all_org_ids if oid not in protected]
+    n_late = min(n_entries_per_month * max(0, n_months - 1), len(unprotected) // 2)
+    pending_entrants: list[str] = rng.sample(unprotected, n_late)
+
+    active_orgs = set(all_org_ids) - set(pending_entrants)
+    entry_month: dict[str, str] = {}
+    exit_month: dict[str, str] = {}
+
     current_edges = set(zip(base_edges["source_node"], base_edges["target_node"]))
     edge_rel_types = dict(
         zip(
@@ -73,7 +105,20 @@ def generate_temporal_dataset(
     event_records: list[dict[str, Any]] = []
     temporal_snapshots: list[dict[str, Any]] = []
 
-    org_type_map = dict(zip(organizations["organization_id"], organizations["organization_type"]))
+    def _log_event(month_date: datetime, month_str: str, event_type: str,
+                   org_id: str | None, severity: str, description: str) -> None:
+        event_records.append(
+            {
+                "event_id": f"EVT-{len(event_records)+1:05d}",
+                "timestamp": month_date.isoformat(),
+                "event_type": event_type,
+                "organization_id": org_id,
+                "target_id": None,
+                "severity": severity,
+                "description": description,
+                "month": month_str,
+            }
+        )
 
     for month_idx in range(n_months):
         month_date = _add_months(start_date, month_idx)
@@ -82,75 +127,65 @@ def generate_temporal_dataset(
 
         logger.info("Processing month %s (index %d/%d)…", month_str, month_idx + 1, n_months)
 
-        # ── Determine event multipliers ───────────────────────────────────────
-        event_mults: dict[str, float] = {}
-
         is_disruption = (month_idx + 1) in disruption_months
         is_seasonal_peak = month_of_year in seasonal_peak_months
 
-        if is_disruption:
-            # Disrupt 10% of edges (reduce volume)
-            disrupted_edges = rng.sample(list(current_edges), max(1, len(current_edges) // 10))
-            for edge in disrupted_edges:
-                event_mults[f"{edge[0]}→{edge[1]}"] = 0.2
-            event_records.append(
-                {
-                    "event_id": f"EVT-{len(event_records)+1:05d}",
-                    "timestamp": month_date.isoformat(),
-                    "event_type": "disruption",
-                    "organization_id": None,
-                    "target_id": None,
-                    "severity": "high",
-                    "description": f"Supply disruption in month {month_str}: {len(disrupted_edges)} edges impacted",
-                    "month": month_str,
-                }
-            )
+        if month_idx > 0:
+            # ── Org entries ──────────────────────────────────────────────────
+            for org_id in pending_entrants[:n_entries_per_month]:
+                active_orgs.add(org_id)
+                entry_month[org_id] = month_str
+                _log_event(month_date, month_str, "organization_entry", org_id, "low",
+                           f"{org_id} joined the network in {month_str}")
+            pending_entrants = pending_entrants[n_entries_per_month:]
 
-        if is_seasonal_peak:
-            # Boost all volumes
-            for edge in current_edges:
-                event_mults[f"{edge[0]}→{edge[1]}"] = event_mults.get(f"{edge[0]}→{edge[1]}", 1.0) * 1.5
-
-        # ── Org exits ────────────────────────────────────────────────────────
-        n_exits = max(0, round(len(active_orgs) * org_exit_rate))
-        if n_exits > 0 and month_idx > 0:  # no exits in first month
-            exiting = rng.sample(list(active_orgs), min(n_exits, len(active_orgs)))
-            for org_id in exiting:
+            # ── Org exits ────────────────────────────────────────────────────
+            exit_candidates = sorted(active_orgs - protected)
+            n_exits = min(max(0, round(len(active_orgs) * org_exit_rate)), len(exit_candidates))
+            for org_id in rng.sample(exit_candidates, n_exits):
                 active_orgs.discard(org_id)
-                # Remove edges involving this org
+                exit_month[org_id] = month_str
                 current_edges = {(s, t) for s, t in current_edges if s != org_id and t != org_id}
-                event_records.append(
-                    {
-                        "event_id": f"EVT-{len(event_records)+1:05d}",
-                        "timestamp": month_date.isoformat(),
-                        "event_type": "organization_exit",
-                        "organization_id": org_id,
-                        "target_id": None,
-                        "severity": "medium",
-                        "description": f"{org_id} became inactive in {month_str}",
-                        "month": month_str,
-                    }
-                )
+                _log_event(month_date, month_str, "organization_exit", org_id, "medium",
+                           f"{org_id} became inactive in {month_str}")
 
-        # ── Edge drops ───────────────────────────────────────────────────────
-        n_edge_drops = max(0, round(len(current_edges) * rel_drop_rate))
-        if n_edge_drops > 0 and month_idx > 0:
-            dropping = rng.sample(list(current_edges), min(n_edge_drops, len(current_edges)))
-            for edge in dropping:
+            # ── Edge drops ───────────────────────────────────────────────────
+            droppable = sorted(current_edges - dependency_edges)
+            n_edge_drops = min(max(0, round(len(current_edges) * rel_drop_rate)), len(droppable))
+            for edge in rng.sample(droppable, n_edge_drops):
                 current_edges.discard(edge)
 
-        # ── Build active edges for this month ────────────────────────────────
-        active_edges_list = [
-            {
-                "source_node": s,
-                "target_node": t,
-                "relationship_type": edge_rel_types.get((s, t), "supply_chain_link"),
-            }
-            for s, t in current_edges
-            if s in active_orgs and t in active_orgs
-        ]
-        active_edges_df = pd.DataFrame(active_edges_list) if active_edges_list else pd.DataFrame(
-            columns=["source_node", "target_node", "relationship_type"]
+        # ── Active edges for this month ──────────────────────────────────────
+        active_edges = sorted(
+            (s, t) for s, t in current_edges if s in active_orgs and t in active_orgs
+        )
+
+        # ── Volume multipliers ───────────────────────────────────────────────
+        event_mults: dict[str, float] = {
+            f"{s}→{t}": dependency_volume_mult for s, t in dependency_edges
+        }
+        if is_disruption and active_edges:
+            disrupted_edges = rng.sample(active_edges, max(1, len(active_edges) // 10))
+            for s, t in disrupted_edges:
+                key = f"{s}→{t}"
+                event_mults[key] = event_mults.get(key, 1.0) * 0.2
+            _log_event(month_date, month_str, "disruption", None, "high",
+                       f"Supply disruption in month {month_str}: {len(disrupted_edges)} edges impacted")
+        if is_seasonal_peak:
+            for s, t in active_edges:
+                key = f"{s}→{t}"
+                event_mults[key] = event_mults.get(key, 1.0) * 1.5
+
+        active_edges_df = pd.DataFrame(
+            [
+                {
+                    "source_node": s,
+                    "target_node": t,
+                    "relationship_type": edge_rel_types.get((s, t), "supply_chain_link"),
+                }
+                for s, t in active_edges
+            ],
+            columns=["source_node", "target_node", "relationship_type"],
         )
 
         # ── Generate transactions for this month ─────────────────────────────
@@ -164,41 +199,43 @@ def generate_temporal_dataset(
             )
             all_transactions.append(month_txns)
 
-        # ── Record snapshot metadata ──────────────────────────────────────────
         temporal_snapshots.append(
             {
                 "month": month_str,
                 "month_index": month_idx,
                 "active_orgs": len(active_orgs),
-                "active_edges": len(active_edges_list),
+                "active_edges": len(active_edges),
                 "is_disruption": is_disruption,
                 "is_seasonal_peak": is_seasonal_peak,
             }
         )
 
-        # ── New edge relationships ────────────────────────────────────────────
-        n_new_edges = max(0, round(len(current_edges) * rel_new_rate))
-        active_org_list = list(active_orgs)
+        # ── New relationships (take effect next month) ───────────────────────
+        n_new_edges = max(0, round(len(active_edges) * rel_new_rate))
+        active_org_list = sorted(active_orgs)
         for _ in range(n_new_edges):
             if len(active_org_list) < 2:
                 break
             src = rng.choice(active_org_list)
-            src_type = org_type_map.get(src, "")
-            from generator.network_generator import ALLOWED_EDGES
-            allowed = ALLOWED_EDGES.get(src_type, [])
-            if not allowed:
-                continue
-            tgt_type = rng.choice(allowed)
-            candidates = [
-                o for o in active_org_list
-                if org_type_map.get(o, "") == tgt_type and o != src
-            ]
-            if candidates:
-                tgt = rng.choice(candidates)
-                new_edge = (src, tgt)
-                if new_edge not in current_edges:
-                    current_edges.add(new_edge)
-                    edge_rel_types[new_edge] = "supply_chain_link"
+            tgt = pick_target(
+                src, rng, org_type_map, org_region_map, type_to_ids, region_type_ids,
+                intra_prob=intra_prob, active=active_orgs,
+            )
+            if tgt is not None and (src, tgt) not in current_edges:
+                current_edges.add((src, tgt))
+                edge_rel_types[(src, tgt)] = _get_relationship_type(
+                    org_type_map.get(src, ""), org_type_map.get(tgt, "")
+                )
+
+    # ── Record lifecycle on the organization table ───────────────────────────
+    organizations = organizations.copy()
+    never_joined = set(pending_entrants)
+    organizations["entry_month"] = organizations["organization_id"].map(entry_month)
+    organizations["exit_month"] = organizations["organization_id"].map(exit_month)
+    organizations["status"] = [
+        "inactive" if (oid in exit_month or oid in never_joined) else "active"
+        for oid in organizations["organization_id"]
+    ]
 
     combined_transactions = pd.concat(all_transactions, ignore_index=True) if all_transactions else pd.DataFrame()
     event_log = pd.DataFrame(event_records) if event_records else pd.DataFrame()

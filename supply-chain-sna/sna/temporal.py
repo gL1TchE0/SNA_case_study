@@ -55,6 +55,7 @@ def analyze_temporal_snapshots(
 
         # Network-level stats
         stats = compute_network_statistics(G)
+        _, comm_stats = compute_communities(G)
         snapshot_records.append(
             {
                 "month": month,
@@ -66,6 +67,8 @@ def analyze_temporal_snapshots(
                 "avg_total_degree": stats["avg_total_degree"],
                 "global_efficiency": stats.get("global_efficiency"),
                 "avg_clustering": stats.get("avg_clustering_undirected"),
+                "num_communities": comm_stats.get("num_communities"),
+                "modularity": comm_stats.get("modularity"),
             }
         )
 

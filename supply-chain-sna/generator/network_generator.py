@@ -49,7 +49,10 @@ def generate_network(
 
     planted_cfg = config.get("planted_structures", {})
     hub_multiplier: float = planted_cfg.get("hub_connectivity_multiplier", 5.0)
-    bridge_links: int = planted_cfg.get("bridge_inter_community_links", 4)
+    bridge_regions: int = planted_cfg.get("bridge_inter_community_links", 4)
+    bridge_links_per_region: int = planted_cfg.get("bridge_links_per_community", 8)
+    bridge_inbound_links: int = planted_cfg.get("bridge_inbound_links", 6)
+    intra_prob: float = planted_cfg.get("intra_community_edge_prob", 0.92)
     target_edges: int = config["network"].get("target_edges", 5000)
 
     planted_hubs: list[str] = ground_truth["planted_hubs"]
@@ -96,52 +99,69 @@ def generate_network(
             for target in chosen:
                 edges.add((hub_id, target))
 
-    # ── 3. Bridge nodes: inter-community edges ───────────────────────────────
+    # ── 3. Bridge nodes: gateways between communities ─────────────────────────
+    # A bridge collects goods inside its own region and ships them to several
+    # organizations in other regions, so cross-region paths run through it.
     region_list = list(planted_communities.keys())
     for bridge_id in planted_bridges:
         bridge_region = org_region.get(bridge_id, "")
         bridge_type = org_type.get(bridge_id, "")
+
+        inbound_types = [
+            t for t, targets in ALLOWED_EDGES.items()
+            if bridge_type in targets and t != "logistics_provider"
+        ]
+        inbound_candidates = [
+            oid
+            for oid in planted_communities.get(bridge_region, [])
+            if org_type.get(oid, "") in inbound_types and oid != bridge_id
+        ]
+        for source in rng.sample(inbound_candidates, min(bridge_inbound_links, len(inbound_candidates))):
+            edges.add((source, bridge_id))
+
         other_regions = [r for r in region_list if r != bridge_region]
         rng.shuffle(other_regions)
-
-        for other_region in other_regions[:bridge_links]:
+        for other_region in other_regions[:bridge_regions]:
             other_candidates = [
                 oid
                 for oid in planted_communities.get(other_region, [])
                 if org_type.get(oid, "") in ALLOWED_EDGES.get(bridge_type, [])
             ]
-            if other_candidates:
-                target = rng.choice(other_candidates)
+            for target in rng.sample(other_candidates, min(bridge_links_per_region, len(other_candidates))):
                 edges.add((bridge_id, target))
 
-    # ── 4. Dependency groups: multiple suppliers → common manufacturer ────────
+    # ── 4. Dependency groups: one critical supplier → several manufacturers ───
     for dep_group in dependency_groups:
-        upstream_mfg = dep_group["upstream_manufacturer"]
-        for supplier_id in dep_group["dependent_suppliers"]:
-            if supplier_id != upstream_mfg:
-                edges.add((supplier_id, upstream_mfg))
+        supplier_id = dep_group["critical_supplier"]
+        for mfg_id in dep_group["dependent_manufacturers"]:
+            edges.add((supplier_id, mfg_id))
 
-    # ── 5. Fill to target_edges with additional hierarchical edges ────────────
+    # ── 5. Fill to target_edges ───────────────────────────────────────────────
+    # Mostly intra-region (keeps the planted communities visible), with
+    # preferential attachment so a few organizations become much better
+    # connected than the rest.
+    region_type_ids: dict[tuple[str, str], list[str]] = {}
+    for oid in organizations["organization_id"].tolist():
+        region_type_ids.setdefault((org_region[oid], org_type[oid]), []).append(oid)
+
+    in_degree: dict[str, int] = {}
+    for _, t in edges:
+        in_degree[t] = in_degree.get(t, 0) + 1
+
     all_orgs = organizations["organization_id"].tolist()
     attempts = 0
     max_attempts = target_edges * 10
     while len(edges) < target_edges and attempts < max_attempts:
-        source = rng.choice(all_orgs)
-        stype = org_type.get(source, "")
-        allowed_targets = ALLOWED_EDGES.get(stype, [])
-        if not allowed_targets:
-            attempts += 1
-            continue
-        target_type = rng.choice(allowed_targets)
-        candidates = [
-            oid for oid in type_to_ids.get(target_type, []) if oid != source
-        ]
-        if not candidates:
-            attempts += 1
-            continue
-        target = rng.choice(candidates)
-        edges.add((source, target))
         attempts += 1
+        source = rng.choice(all_orgs)
+        target = pick_target(
+            source, rng, org_type, org_region, type_to_ids, region_type_ids,
+            intra_prob=intra_prob, in_degree=in_degree,
+        )
+        if target is None or (source, target) in edges:
+            continue
+        edges.add((source, target))
+        in_degree[target] = in_degree.get(target, 0) + 1
 
     logger.info("Generated %d unique directed edges", len(edges))
 
@@ -151,11 +171,62 @@ def generate_network(
             "target_node": t,
             "relationship_type": _get_relationship_type(org_type.get(s, ""), org_type.get(t, "")),
         }
-        for s, t in edges
+        for s, t in sorted(edges)
     ]
 
     edges_df = pd.DataFrame(edge_records)
     return edges_df, ground_truth
+
+
+def pick_target(
+    source: str,
+    rng: random.Random,
+    org_type: dict[str, str],
+    org_region: dict[str, str],
+    type_to_ids: dict[str, list[str]],
+    region_type_ids: dict[tuple[str, str], list[str]],
+    intra_prob: float = 0.92,
+    in_degree: dict[str, int] | None = None,
+    active: set[str] | None = None,
+) -> str | None:
+    """Pick a valid downstream partner for ``source``.
+
+    The partner type follows ALLOWED_EDGES. With probability ``intra_prob``
+    it is drawn from the source's own region, otherwise from any region.
+    If ``in_degree`` is given, candidates are weighted by (in-degree + 1)
+    (preferential attachment).
+
+    Args:
+        source: Source organization ID.
+        rng: Random number generator.
+        org_type: Mapping org_id → organization type.
+        org_region: Mapping org_id → region.
+        type_to_ids: Mapping type → org_ids (all regions).
+        region_type_ids: Mapping (region, type) → org_ids.
+        intra_prob: Probability of choosing a same-region partner.
+        in_degree: Optional current in-degree per org for weighting.
+        active: Optional set restricting candidates to active organizations.
+
+    Returns:
+        Target organization ID, or None if no valid candidate exists.
+    """
+    allowed_targets = ALLOWED_EDGES.get(org_type.get(source, ""), [])
+    if not allowed_targets:
+        return None
+    target_type = rng.choice(allowed_targets)
+    if rng.random() < intra_prob:
+        pool = region_type_ids.get((org_region.get(source, ""), target_type), [])
+    else:
+        pool = type_to_ids.get(target_type, [])
+    candidates = [
+        oid for oid in pool if oid != source and (active is None or oid in active)
+    ]
+    if not candidates:
+        return None
+    if in_degree is None:
+        return rng.choice(candidates)
+    weights = [in_degree.get(oid, 0) + 1 for oid in candidates]
+    return rng.choices(candidates, weights=weights, k=1)[0]
 
 
 def _add_hierarchical_edges(

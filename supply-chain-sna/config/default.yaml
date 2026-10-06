@@ -62,11 +62,16 @@ planted_structures:
   num_dependency_groups: 3     # hidden dependency clusters
   hub_connectivity_multiplier: 5.0   # hubs have N times more connections
   bridge_inter_community_links: 4    # bridges connect to N different communities
+  bridge_links_per_community: 8      # outbound links from a bridge into each of those communities
+  bridge_inbound_links: 6            # inbound links a bridge collects inside its own community
+  intra_community_edge_prob: 0.92    # probability that a non-planted edge stays inside its region
+  dependency_group_size: 5           # manufacturers relying on each critical supplier
+  dependency_volume_multiplier: 8.0  # volume on a planted dependency edge vs. a normal edge
 
 # Temporal events
 temporal:
-  organization_entry_rate: 0.02     # fraction of orgs entering per month
-  organization_exit_rate: 0.01      # fraction becoming inactive per month
+  organization_entry_rate: 0.01     # fraction of all orgs joining per month (late entrants)
+  organization_exit_rate: 0.005     # fraction of active orgs becoming inactive per month
   relationship_new_rate: 0.03       # new edges per month fraction
   relationship_drop_rate: 0.01      # edges dropped per month fraction
   disruption_months: [12, 18]       # months with disruption events
@@ -85,6 +90,11 @@ centrality:
   pagerank_max_iter: 1000
   pagerank_tol: 1.0e-6
   betweenness_normalized: true
+
+# Temporal snapshots: 'monthly' = organizations and relationships active in that
+# month; 'cumulative' = everything seen up to and including that month.
+snapshots:
+  mode: monthly
 
 # Community detection
 community:

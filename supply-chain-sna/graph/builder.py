@@ -24,7 +24,8 @@ def build_graph(
     organizations: pd.DataFrame,
     transactions: pd.DataFrame,
     weight_mode: str = "frequency",
-    month_filter: str | None = None,
+    month_filter: str | list[str] | None = None,
+    active_only: bool = False,
 ) -> nx.DiGraph:
     """Build a directed, weighted NetworkX graph from transaction data.
 
@@ -38,7 +39,10 @@ def build_graph(
         transactions: DataFrame of all transactions.
         weight_mode: One of "frequency", "quantity", "transaction_value".
         month_filter: If specified, only include transactions from this
-            month (format "YYYY-MM"). None = all transactions.
+            month (format "YYYY-MM") or list of months. None = all transactions.
+        active_only: If True, only organizations that appear in the selected
+            transactions become nodes. If False, every organization is a node
+            (inactive ones are isolated).
 
     Returns:
         NetworkX DiGraph with node and edge attributes.
@@ -57,19 +61,25 @@ def build_graph(
     if month_filter is not None:
         if "month" not in txns.columns:
             raise ValueError("month_filter requires 'month' column in transactions")
-        txns = txns[txns["month"] == month_filter]
+        months = [month_filter] if isinstance(month_filter, str) else list(month_filter)
+        txns = txns[txns["month"].isin(months)]
 
     logger.info(
         "Building graph: weight_mode=%s, month=%s, transactions=%d",
         weight_mode,
-        month_filter or "all",
+        (month_filter if isinstance(month_filter, str) else f"{len(month_filter)} months") if month_filter is not None else "all",
         len(txns),
     )
 
     G = nx.DiGraph()
 
     # ── Add nodes with attributes ─────────────────────────────────────────────
-    for _, row in organizations.iterrows():
+    if active_only and not txns.empty:
+        active_ids = set(txns["source_node"]) | set(txns["target_node"])
+        node_rows = organizations[organizations["organization_id"].isin(active_ids)]
+    else:
+        node_rows = organizations
+    for _, row in node_rows.iterrows():
         G.add_node(
             row["organization_id"],
             organization_name=row.get("organization_name", ""),
@@ -109,7 +119,7 @@ def build_graph(
     if "relationship_type" in txns.columns:
         rel_type_map = (
             txns.groupby(["source_node", "target_node"])["relationship_type"]
-            .agg(lambda x: x.mode().iloc[0] if len(x) > 0 else "supply_chain_link")
+            .first()
             .to_dict()
         )
     else:
@@ -154,29 +164,42 @@ def build_temporal_graphs(
     organizations: pd.DataFrame,
     transactions: pd.DataFrame,
     weight_mode: str = "frequency",
+    mode: str = "monthly",
 ) -> dict[str, nx.DiGraph]:
     """Build a dictionary of monthly graph snapshots.
+
+    Each snapshot contains only the organizations that transacted in the
+    selected window, so organizations that have not yet joined or have
+    already exited do not appear as isolated nodes.
 
     Args:
         organizations: DataFrame of organizations.
         transactions: DataFrame of all transactions (with 'month' column).
         weight_mode: Weight mode for edges.
+        mode: "monthly" = transactions of that month only;
+            "cumulative" = all transactions up to and including that month.
 
     Returns:
         Dictionary mapping month string ("YYYY-MM") → DiGraph.
     """
     if "month" not in transactions.columns:
         raise ValueError("Transactions must have a 'month' column for temporal graphs")
+    if mode not in ("monthly", "cumulative"):
+        raise ValueError(f"Unknown snapshot mode '{mode}'. Must be 'monthly' or 'cumulative'")
 
     months = sorted(transactions["month"].unique().tolist())
     snapshots: dict[str, nx.DiGraph] = {}
 
-    for month in months:
-        G = build_graph(organizations, transactions, weight_mode=weight_mode, month_filter=month)
+    for i, month in enumerate(months):
+        window = month if mode == "monthly" else months[: i + 1]
+        G = build_graph(
+            organizations, transactions, weight_mode=weight_mode,
+            month_filter=window, active_only=True,
+        )
         snapshots[month] = G
         logger.debug("Built snapshot for %s: %d nodes, %d edges", month, G.number_of_nodes(), G.number_of_edges())
 
-    logger.info("Built %d temporal graph snapshots", len(snapshots))
+    logger.info("Built %d temporal graph snapshots (mode=%s)", len(snapshots), mode)
     return snapshots
 
 

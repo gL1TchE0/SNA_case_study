@@ -112,9 +112,11 @@ def generate_organizations(config: dict[str, Any]) -> tuple[pd.DataFrame, dict[s
     ].tolist()
     planted_hubs = rng.sample(hub_candidates, min(num_hubs, len(hub_candidates)))
 
-    # Bridges: prefer distributors and logistics providers
+    # Bridges: distributors and warehouses. Both receive goods and pass them
+    # on, so they can sit *between* regions. (Logistics providers have no
+    # inbound edges in this model, so they can never lie on a shortest path.)
     bridge_candidates = df[
-        df["organization_type"].isin(["distributor", "logistics_provider"])
+        df["organization_type"].isin(["distributor", "warehouse"])
         & ~df["organization_id"].isin(planted_hubs)
     ]["organization_id"].tolist()
     planted_bridges = rng.sample(bridge_candidates, min(num_bridges, len(bridge_candidates)))
@@ -124,21 +126,27 @@ def generate_organizations(config: dict[str, Any]) -> tuple[pd.DataFrame, dict[s
     for region in regions:
         planted_communities[region] = df[df["region"] == region]["organization_id"].tolist()
 
-    # Dependency groups: groups of suppliers that feed into same manufacturer
-    supplier_ids = df[df["organization_type"] == "supplier"]["organization_id"].tolist()
-    manufacturer_ids = df[df["organization_type"] == "manufacturer"]["organization_id"].tolist()
+    # Dependency groups: one critical supplier that several manufacturers
+    # rely on for most of their inbound volume (a hidden common dependency).
+    taken = set(planted_hubs) | set(planted_bridges)
+    supplier_ids = [
+        s for s in df[df["organization_type"] == "supplier"]["organization_id"].tolist()
+    ]
+    manufacturer_ids = [
+        m for m in df[df["organization_type"] == "manufacturer"]["organization_id"].tolist()
+        if m not in taken
+    ]
+    group_size: int = planted_cfg.get("dependency_group_size", 5)
+    n_groups = min(num_dependency_groups, len(supplier_ids), len(manufacturer_ids) // max(1, group_size))
+    critical_suppliers = rng.sample(supplier_ids, n_groups)
+    dependent_pool = rng.sample(manufacturer_ids, n_groups * group_size)
     dependency_groups: list[dict[str, Any]] = []
-    for i in range(min(num_dependency_groups, len(manufacturer_ids))):
-        upstream_mfg = manufacturer_ids[i]
-        group_suppliers = rng.sample(
-            [s for s in supplier_ids if s not in [g.get("upstream") for g in dependency_groups]],
-            k=min(5, len(supplier_ids) // max(1, num_dependency_groups)),
-        )
+    for i, supplier in enumerate(critical_suppliers):
         dependency_groups.append(
             {
                 "group_id": f"DEP-{i+1:03d}",
-                "upstream_manufacturer": upstream_mfg,
-                "dependent_suppliers": group_suppliers,
+                "critical_supplier": supplier,
+                "dependent_manufacturers": dependent_pool[i * group_size:(i + 1) * group_size],
             }
         )
 

@@ -2,7 +2,7 @@
   "config": "config/default.yaml",
   "seed": 42,
   "graph_nodes": 1000,
-  "graph_edges": 7517,
+  "graph_edges": 6806,
   "experiments_run": [
     "centrality",
     "communities",
@@ -11,72 +11,72 @@
     "ground_truth"
   ],
   "centrality": {
-    "top_degree_node": "MFG-00131",
-    "top_betweenness_node": "MFG-00131"
+    "top_degree_node": "WHS-00014",
+    "top_betweenness_node": "WHS-00014"
   },
   "communities": {
-    "num_communities": 16,
-    "modularity": 0.25243513995817374
+    "num_communities": 6,
+    "modularity": 0.6530717900778058
   },
   "dependencies": {
-    "single_source_count": 82,
-    "high_concentration_count": 90
+    "single_source_count": 24,
+    "high_concentration_count": 27
   },
   "network_statistics": {
     "num_nodes": 1000,
-    "num_edges": 7517,
+    "num_edges": 6806,
     "is_directed": true,
-    "density": 0.007524524524524525,
-    "avg_in_degree": 7.517,
-    "avg_out_degree": 7.517,
-    "avg_total_degree": 15.034,
-    "max_in_degree": 37,
-    "max_out_degree": 58,
+    "density": 0.006812812812812812,
+    "avg_in_degree": 6.806,
+    "avg_out_degree": 6.806,
+    "avg_total_degree": 13.612,
+    "max_in_degree": 49,
+    "max_out_degree": 56,
     "degree_distribution": {
       "in": {
         "min": 0,
-        "max": 37,
-        "mean": 7.517,
-        "std": 8.025690686788272,
-        "median": 6.0,
-        "p90": 18.100000000000023,
-        "p99": 31.0
+        "max": 49,
+        "mean": 6.806,
+        "std": 8.083214954459642,
+        "median": 4.0,
+        "p90": 18.0,
+        "p99": 35.0
       },
       "out": {
         "min": 0,
-        "max": 58,
-        "mean": 7.517,
-        "std": 5.111722899375512,
-        "median": 8.0,
-        "p90": 12.0,
-        "p99": 18.0
+        "max": 56,
+        "mean": 6.806,
+        "std": 5.73727844888149,
+        "median": 7.0,
+        "p90": 11.0,
+        "p99": 38.0
       }
     },
-    "weakly_connected_components": 1,
-    "largest_wcc_size": 1000,
-    "largest_wcc_fraction": 1.0,
-    "strongly_connected_components": 599,
-    "largest_scc_size": 402,
-    "avg_clustering_undirected": 0.018618187410201055,
+    "weakly_connected_components": 2,
+    "largest_wcc_size": 999,
+    "largest_wcc_fraction": 0.999,
+    "strongly_connected_components": 623,
+    "largest_scc_size": 378,
+    "avg_clustering_undirected": 0.07043109770643133,
     "clustering_note": "Computed on undirected projection of DiGraph",
-    "avg_path_length_largest_wcc": 2.8097577577577577,
-    "global_efficiency": 0.37617047046835733,
-    "reciprocity": 0.005055208194758547
+    "avg_path_length_largest_wcc": 3.110304693471026,
+    "global_efficiency": 0.34422492492410844,
+    "reciprocity": 0.01851307669703203
   },
   "temporal": {
     "months_analyzed": 24,
     "node_count_range": {
-      "min": 1000,
-      "max": 1000
+      "min": 760,
+      "max": 905
     },
     "edge_count_range": {
-      "min": 4312,
-      "max": 5000
+      "min": 3068,
+      "max": 5034
     },
     "density_trend": {
-      "start": 0.005005005005005005,
-      "end": 0.004316316316316317,
-      "direction": "decreasing"
+      "start": 0.005318632549753831,
+      "end": 0.00615313156994084,
+      "direction": "increasing"
     }
   }
 }

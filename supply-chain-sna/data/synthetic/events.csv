@@ -1,209 +1,327 @@
 event_id,timestamp,event_type,organization_id,target_id,severity,description,month
-EVT-00001,2024-02-01T00:00:00,organization_exit,MFG-00126,,medium,MFG-00126 became inactive in 2024-02,2024-02
-EVT-00002,2024-02-01T00:00:00,organization_exit,RET-00003,,medium,RET-00003 became inactive in 2024-02,2024-02
-EVT-00003,2024-02-01T00:00:00,organization_exit,WHS-00029,,medium,WHS-00029 became inactive in 2024-02,2024-02
-EVT-00004,2024-02-01T00:00:00,organization_exit,DST-00034,,medium,DST-00034 became inactive in 2024-02,2024-02
-EVT-00005,2024-02-01T00:00:00,organization_exit,WHS-00028,,medium,WHS-00028 became inactive in 2024-02,2024-02
-EVT-00006,2024-02-01T00:00:00,organization_exit,LOG-00009,,medium,LOG-00009 became inactive in 2024-02,2024-02
-EVT-00007,2024-02-01T00:00:00,organization_exit,MFG-00121,,medium,MFG-00121 became inactive in 2024-02,2024-02
-EVT-00008,2024-02-01T00:00:00,organization_exit,SUP-00278,,medium,SUP-00278 became inactive in 2024-02,2024-02
-EVT-00009,2024-02-01T00:00:00,organization_exit,MFG-00135,,medium,MFG-00135 became inactive in 2024-02,2024-02
-EVT-00010,2024-02-01T00:00:00,organization_exit,WHS-00040,,medium,WHS-00040 became inactive in 2024-02,2024-02
-EVT-00011,2024-03-01T00:00:00,organization_exit,WHS-00081,,medium,WHS-00081 became inactive in 2024-03,2024-03
-EVT-00012,2024-03-01T00:00:00,organization_exit,RET-00104,,medium,RET-00104 became inactive in 2024-03,2024-03
-EVT-00013,2024-03-01T00:00:00,organization_exit,MFG-00008,,medium,MFG-00008 became inactive in 2024-03,2024-03
-EVT-00014,2024-03-01T00:00:00,organization_exit,DST-00153,,medium,DST-00153 became inactive in 2024-03,2024-03
-EVT-00015,2024-03-01T00:00:00,organization_exit,SUP-00121,,medium,SUP-00121 became inactive in 2024-03,2024-03
-EVT-00016,2024-03-01T00:00:00,organization_exit,DST-00104,,medium,DST-00104 became inactive in 2024-03,2024-03
-EVT-00017,2024-03-01T00:00:00,organization_exit,SUP-00184,,medium,SUP-00184 became inactive in 2024-03,2024-03
-EVT-00018,2024-03-01T00:00:00,organization_exit,SUP-00197,,medium,SUP-00197 became inactive in 2024-03,2024-03
-EVT-00019,2024-03-01T00:00:00,organization_exit,RET-00080,,medium,RET-00080 became inactive in 2024-03,2024-03
-EVT-00020,2024-03-01T00:00:00,organization_exit,RET-00025,,medium,RET-00025 became inactive in 2024-03,2024-03
-EVT-00021,2024-04-01T00:00:00,organization_exit,SUP-00270,,medium,SUP-00270 became inactive in 2024-04,2024-04
-EVT-00022,2024-04-01T00:00:00,organization_exit,RET-00119,,medium,RET-00119 became inactive in 2024-04,2024-04
-EVT-00023,2024-04-01T00:00:00,organization_exit,RET-00007,,medium,RET-00007 became inactive in 2024-04,2024-04
-EVT-00024,2024-04-01T00:00:00,organization_exit,RET-00001,,medium,RET-00001 became inactive in 2024-04,2024-04
-EVT-00025,2024-04-01T00:00:00,organization_exit,SUP-00005,,medium,SUP-00005 became inactive in 2024-04,2024-04
-EVT-00026,2024-04-01T00:00:00,organization_exit,RET-00117,,medium,RET-00117 became inactive in 2024-04,2024-04
-EVT-00027,2024-04-01T00:00:00,organization_exit,LOG-00035,,medium,LOG-00035 became inactive in 2024-04,2024-04
-EVT-00028,2024-04-01T00:00:00,organization_exit,DST-00163,,medium,DST-00163 became inactive in 2024-04,2024-04
-EVT-00029,2024-04-01T00:00:00,organization_exit,SUP-00114,,medium,SUP-00114 became inactive in 2024-04,2024-04
-EVT-00030,2024-04-01T00:00:00,organization_exit,SUP-00222,,medium,SUP-00222 became inactive in 2024-04,2024-04
-EVT-00031,2024-05-01T00:00:00,organization_exit,MFG-00116,,medium,MFG-00116 became inactive in 2024-05,2024-05
-EVT-00032,2024-05-01T00:00:00,organization_exit,SUP-00181,,medium,SUP-00181 became inactive in 2024-05,2024-05
-EVT-00033,2024-05-01T00:00:00,organization_exit,SUP-00091,,medium,SUP-00091 became inactive in 2024-05,2024-05
-EVT-00034,2024-05-01T00:00:00,organization_exit,WHS-00048,,medium,WHS-00048 became inactive in 2024-05,2024-05
-EVT-00035,2024-05-01T00:00:00,organization_exit,DST-00170,,medium,DST-00170 became inactive in 2024-05,2024-05
-EVT-00036,2024-05-01T00:00:00,organization_exit,MFG-00077,,medium,MFG-00077 became inactive in 2024-05,2024-05
-EVT-00037,2024-05-01T00:00:00,organization_exit,SUP-00255,,medium,SUP-00255 became inactive in 2024-05,2024-05
-EVT-00038,2024-05-01T00:00:00,organization_exit,RET-00060,,medium,RET-00060 became inactive in 2024-05,2024-05
-EVT-00039,2024-05-01T00:00:00,organization_exit,WHS-00084,,medium,WHS-00084 became inactive in 2024-05,2024-05
-EVT-00040,2024-05-01T00:00:00,organization_exit,SUP-00168,,medium,SUP-00168 became inactive in 2024-05,2024-05
-EVT-00041,2024-06-01T00:00:00,organization_exit,DST-00054,,medium,DST-00054 became inactive in 2024-06,2024-06
-EVT-00042,2024-06-01T00:00:00,organization_exit,SUP-00158,,medium,SUP-00158 became inactive in 2024-06,2024-06
-EVT-00043,2024-06-01T00:00:00,organization_exit,MFG-00131,,medium,MFG-00131 became inactive in 2024-06,2024-06
-EVT-00044,2024-06-01T00:00:00,organization_exit,MFG-00018,,medium,MFG-00018 became inactive in 2024-06,2024-06
-EVT-00045,2024-06-01T00:00:00,organization_exit,MFG-00092,,medium,MFG-00092 became inactive in 2024-06,2024-06
-EVT-00046,2024-06-01T00:00:00,organization_exit,SUP-00295,,medium,SUP-00295 became inactive in 2024-06,2024-06
-EVT-00047,2024-06-01T00:00:00,organization_exit,DST-00179,,medium,DST-00179 became inactive in 2024-06,2024-06
-EVT-00048,2024-06-01T00:00:00,organization_exit,RET-00031,,medium,RET-00031 became inactive in 2024-06,2024-06
-EVT-00049,2024-06-01T00:00:00,organization_exit,DST-00130,,medium,DST-00130 became inactive in 2024-06,2024-06
-EVT-00050,2024-06-01T00:00:00,organization_exit,DST-00132,,medium,DST-00132 became inactive in 2024-06,2024-06
-EVT-00051,2024-07-01T00:00:00,organization_exit,DST-00152,,medium,DST-00152 became inactive in 2024-07,2024-07
-EVT-00052,2024-07-01T00:00:00,organization_exit,DST-00143,,medium,DST-00143 became inactive in 2024-07,2024-07
-EVT-00053,2024-07-01T00:00:00,organization_exit,RET-00147,,medium,RET-00147 became inactive in 2024-07,2024-07
-EVT-00054,2024-07-01T00:00:00,organization_exit,WHS-00015,,medium,WHS-00015 became inactive in 2024-07,2024-07
-EVT-00055,2024-07-01T00:00:00,organization_exit,MFG-00109,,medium,MFG-00109 became inactive in 2024-07,2024-07
-EVT-00056,2024-07-01T00:00:00,organization_exit,DST-00186,,medium,DST-00186 became inactive in 2024-07,2024-07
-EVT-00057,2024-07-01T00:00:00,organization_exit,WHS-00017,,medium,WHS-00017 became inactive in 2024-07,2024-07
-EVT-00058,2024-07-01T00:00:00,organization_exit,SUP-00137,,medium,SUP-00137 became inactive in 2024-07,2024-07
-EVT-00059,2024-07-01T00:00:00,organization_exit,SUP-00100,,medium,SUP-00100 became inactive in 2024-07,2024-07
-EVT-00060,2024-07-01T00:00:00,organization_exit,SUP-00190,,medium,SUP-00190 became inactive in 2024-07,2024-07
-EVT-00061,2024-08-01T00:00:00,organization_exit,LOG-00026,,medium,LOG-00026 became inactive in 2024-08,2024-08
-EVT-00062,2024-08-01T00:00:00,organization_exit,SUP-00087,,medium,SUP-00087 became inactive in 2024-08,2024-08
-EVT-00063,2024-08-01T00:00:00,organization_exit,MFG-00118,,medium,MFG-00118 became inactive in 2024-08,2024-08
-EVT-00064,2024-08-01T00:00:00,organization_exit,DST-00091,,medium,DST-00091 became inactive in 2024-08,2024-08
-EVT-00065,2024-08-01T00:00:00,organization_exit,MFG-00038,,medium,MFG-00038 became inactive in 2024-08,2024-08
-EVT-00066,2024-08-01T00:00:00,organization_exit,WHS-00032,,medium,WHS-00032 became inactive in 2024-08,2024-08
-EVT-00067,2024-08-01T00:00:00,organization_exit,SUP-00206,,medium,SUP-00206 became inactive in 2024-08,2024-08
-EVT-00068,2024-08-01T00:00:00,organization_exit,LOG-00054,,medium,LOG-00054 became inactive in 2024-08,2024-08
-EVT-00069,2024-08-01T00:00:00,organization_exit,LOG-00032,,medium,LOG-00032 became inactive in 2024-08,2024-08
-EVT-00070,2024-09-01T00:00:00,organization_exit,LOG-00076,,medium,LOG-00076 became inactive in 2024-09,2024-09
-EVT-00071,2024-09-01T00:00:00,organization_exit,SUP-00142,,medium,SUP-00142 became inactive in 2024-09,2024-09
-EVT-00072,2024-09-01T00:00:00,organization_exit,SUP-00010,,medium,SUP-00010 became inactive in 2024-09,2024-09
-EVT-00073,2024-09-01T00:00:00,organization_exit,RET-00015,,medium,RET-00015 became inactive in 2024-09,2024-09
-EVT-00074,2024-09-01T00:00:00,organization_exit,SUP-00284,,medium,SUP-00284 became inactive in 2024-09,2024-09
-EVT-00075,2024-09-01T00:00:00,organization_exit,DST-00007,,medium,DST-00007 became inactive in 2024-09,2024-09
-EVT-00076,2024-09-01T00:00:00,organization_exit,SUP-00215,,medium,SUP-00215 became inactive in 2024-09,2024-09
-EVT-00077,2024-09-01T00:00:00,organization_exit,RET-00002,,medium,RET-00002 became inactive in 2024-09,2024-09
-EVT-00078,2024-09-01T00:00:00,organization_exit,MFG-00027,,medium,MFG-00027 became inactive in 2024-09,2024-09
-EVT-00079,2024-10-01T00:00:00,organization_exit,MFG-00015,,medium,MFG-00015 became inactive in 2024-10,2024-10
-EVT-00080,2024-10-01T00:00:00,organization_exit,WHS-00046,,medium,WHS-00046 became inactive in 2024-10,2024-10
-EVT-00081,2024-10-01T00:00:00,organization_exit,DST-00076,,medium,DST-00076 became inactive in 2024-10,2024-10
-EVT-00082,2024-10-01T00:00:00,organization_exit,RET-00074,,medium,RET-00074 became inactive in 2024-10,2024-10
-EVT-00083,2024-10-01T00:00:00,organization_exit,SUP-00161,,medium,SUP-00161 became inactive in 2024-10,2024-10
-EVT-00084,2024-10-01T00:00:00,organization_exit,DST-00095,,medium,DST-00095 became inactive in 2024-10,2024-10
-EVT-00085,2024-10-01T00:00:00,organization_exit,WHS-00021,,medium,WHS-00021 became inactive in 2024-10,2024-10
-EVT-00086,2024-10-01T00:00:00,organization_exit,LOG-00004,,medium,LOG-00004 became inactive in 2024-10,2024-10
-EVT-00087,2024-10-01T00:00:00,organization_exit,DST-00017,,medium,DST-00017 became inactive in 2024-10,2024-10
-EVT-00088,2024-11-01T00:00:00,organization_exit,RET-00094,,medium,RET-00094 became inactive in 2024-11,2024-11
-EVT-00089,2024-11-01T00:00:00,organization_exit,LOG-00034,,medium,LOG-00034 became inactive in 2024-11,2024-11
-EVT-00090,2024-11-01T00:00:00,organization_exit,DST-00005,,medium,DST-00005 became inactive in 2024-11,2024-11
-EVT-00091,2024-11-01T00:00:00,organization_exit,DST-00071,,medium,DST-00071 became inactive in 2024-11,2024-11
-EVT-00092,2024-11-01T00:00:00,organization_exit,DST-00101,,medium,DST-00101 became inactive in 2024-11,2024-11
-EVT-00093,2024-11-01T00:00:00,organization_exit,MFG-00087,,medium,MFG-00087 became inactive in 2024-11,2024-11
-EVT-00094,2024-11-01T00:00:00,organization_exit,MFG-00110,,medium,MFG-00110 became inactive in 2024-11,2024-11
-EVT-00095,2024-11-01T00:00:00,organization_exit,MFG-00031,,medium,MFG-00031 became inactive in 2024-11,2024-11
-EVT-00096,2024-11-01T00:00:00,organization_exit,SUP-00245,,medium,SUP-00245 became inactive in 2024-11,2024-11
-EVT-00097,2024-12-01T00:00:00,disruption,,,high,Supply disruption in month 2024-12: 466 edges impacted,2024-12
-EVT-00098,2024-12-01T00:00:00,organization_exit,RET-00087,,medium,RET-00087 became inactive in 2024-12,2024-12
-EVT-00099,2024-12-01T00:00:00,organization_exit,SUP-00225,,medium,SUP-00225 became inactive in 2024-12,2024-12
-EVT-00100,2024-12-01T00:00:00,organization_exit,RET-00023,,medium,RET-00023 became inactive in 2024-12,2024-12
-EVT-00101,2024-12-01T00:00:00,organization_exit,DST-00051,,medium,DST-00051 became inactive in 2024-12,2024-12
-EVT-00102,2024-12-01T00:00:00,organization_exit,LOG-00093,,medium,LOG-00093 became inactive in 2024-12,2024-12
-EVT-00103,2024-12-01T00:00:00,organization_exit,LOG-00090,,medium,LOG-00090 became inactive in 2024-12,2024-12
-EVT-00104,2024-12-01T00:00:00,organization_exit,SUP-00196,,medium,SUP-00196 became inactive in 2024-12,2024-12
-EVT-00105,2024-12-01T00:00:00,organization_exit,MFG-00048,,medium,MFG-00048 became inactive in 2024-12,2024-12
-EVT-00106,2024-12-01T00:00:00,organization_exit,MFG-00106,,medium,MFG-00106 became inactive in 2024-12,2024-12
-EVT-00107,2025-01-01T00:00:00,organization_exit,SUP-00235,,medium,SUP-00235 became inactive in 2025-01,2025-01
-EVT-00108,2025-01-01T00:00:00,organization_exit,DST-00094,,medium,DST-00094 became inactive in 2025-01,2025-01
-EVT-00109,2025-01-01T00:00:00,organization_exit,LOG-00065,,medium,LOG-00065 became inactive in 2025-01,2025-01
-EVT-00110,2025-01-01T00:00:00,organization_exit,SUP-00155,,medium,SUP-00155 became inactive in 2025-01,2025-01
-EVT-00111,2025-01-01T00:00:00,organization_exit,SUP-00233,,medium,SUP-00233 became inactive in 2025-01,2025-01
-EVT-00112,2025-01-01T00:00:00,organization_exit,MFG-00091,,medium,MFG-00091 became inactive in 2025-01,2025-01
-EVT-00113,2025-01-01T00:00:00,organization_exit,DST-00114,,medium,DST-00114 became inactive in 2025-01,2025-01
-EVT-00114,2025-01-01T00:00:00,organization_exit,SUP-00259,,medium,SUP-00259 became inactive in 2025-01,2025-01
-EVT-00115,2025-01-01T00:00:00,organization_exit,RET-00021,,medium,RET-00021 became inactive in 2025-01,2025-01
-EVT-00116,2025-02-01T00:00:00,organization_exit,SUP-00065,,medium,SUP-00065 became inactive in 2025-02,2025-02
-EVT-00117,2025-02-01T00:00:00,organization_exit,LOG-00056,,medium,LOG-00056 became inactive in 2025-02,2025-02
-EVT-00118,2025-02-01T00:00:00,organization_exit,SUP-00275,,medium,SUP-00275 became inactive in 2025-02,2025-02
-EVT-00119,2025-02-01T00:00:00,organization_exit,LOG-00023,,medium,LOG-00023 became inactive in 2025-02,2025-02
-EVT-00120,2025-02-01T00:00:00,organization_exit,WHS-00022,,medium,WHS-00022 became inactive in 2025-02,2025-02
-EVT-00121,2025-02-01T00:00:00,organization_exit,DST-00175,,medium,DST-00175 became inactive in 2025-02,2025-02
-EVT-00122,2025-02-01T00:00:00,organization_exit,MFG-00098,,medium,MFG-00098 became inactive in 2025-02,2025-02
-EVT-00123,2025-02-01T00:00:00,organization_exit,SUP-00131,,medium,SUP-00131 became inactive in 2025-02,2025-02
-EVT-00124,2025-02-01T00:00:00,organization_exit,RET-00090,,medium,RET-00090 became inactive in 2025-02,2025-02
-EVT-00125,2025-03-01T00:00:00,organization_exit,SUP-00220,,medium,SUP-00220 became inactive in 2025-03,2025-03
-EVT-00126,2025-03-01T00:00:00,organization_exit,SUP-00073,,medium,SUP-00073 became inactive in 2025-03,2025-03
-EVT-00127,2025-03-01T00:00:00,organization_exit,WHS-00004,,medium,WHS-00004 became inactive in 2025-03,2025-03
-EVT-00128,2025-03-01T00:00:00,organization_exit,SUP-00169,,medium,SUP-00169 became inactive in 2025-03,2025-03
-EVT-00129,2025-03-01T00:00:00,organization_exit,DST-00133,,medium,DST-00133 became inactive in 2025-03,2025-03
-EVT-00130,2025-03-01T00:00:00,organization_exit,DST-00075,,medium,DST-00075 became inactive in 2025-03,2025-03
-EVT-00131,2025-03-01T00:00:00,organization_exit,SUP-00062,,medium,SUP-00062 became inactive in 2025-03,2025-03
-EVT-00132,2025-03-01T00:00:00,organization_exit,LOG-00031,,medium,LOG-00031 became inactive in 2025-03,2025-03
-EVT-00133,2025-03-01T00:00:00,organization_exit,SUP-00030,,medium,SUP-00030 became inactive in 2025-03,2025-03
-EVT-00134,2025-04-01T00:00:00,organization_exit,SUP-00288,,medium,SUP-00288 became inactive in 2025-04,2025-04
-EVT-00135,2025-04-01T00:00:00,organization_exit,SUP-00130,,medium,SUP-00130 became inactive in 2025-04,2025-04
-EVT-00136,2025-04-01T00:00:00,organization_exit,WHS-00070,,medium,WHS-00070 became inactive in 2025-04,2025-04
-EVT-00137,2025-04-01T00:00:00,organization_exit,SUP-00210,,medium,SUP-00210 became inactive in 2025-04,2025-04
-EVT-00138,2025-04-01T00:00:00,organization_exit,SUP-00248,,medium,SUP-00248 became inactive in 2025-04,2025-04
-EVT-00139,2025-04-01T00:00:00,organization_exit,DST-00023,,medium,DST-00023 became inactive in 2025-04,2025-04
-EVT-00140,2025-04-01T00:00:00,organization_exit,MFG-00012,,medium,MFG-00012 became inactive in 2025-04,2025-04
-EVT-00141,2025-04-01T00:00:00,organization_exit,MFG-00053,,medium,MFG-00053 became inactive in 2025-04,2025-04
-EVT-00142,2025-04-01T00:00:00,organization_exit,RET-00048,,medium,RET-00048 became inactive in 2025-04,2025-04
-EVT-00143,2025-05-01T00:00:00,organization_exit,DST-00038,,medium,DST-00038 became inactive in 2025-05,2025-05
-EVT-00144,2025-05-01T00:00:00,organization_exit,WHS-00041,,medium,WHS-00041 became inactive in 2025-05,2025-05
-EVT-00145,2025-05-01T00:00:00,organization_exit,SUP-00042,,medium,SUP-00042 became inactive in 2025-05,2025-05
-EVT-00146,2025-05-01T00:00:00,organization_exit,MFG-00097,,medium,MFG-00097 became inactive in 2025-05,2025-05
-EVT-00147,2025-05-01T00:00:00,organization_exit,SUP-00046,,medium,SUP-00046 became inactive in 2025-05,2025-05
-EVT-00148,2025-05-01T00:00:00,organization_exit,MFG-00111,,medium,MFG-00111 became inactive in 2025-05,2025-05
-EVT-00149,2025-05-01T00:00:00,organization_exit,RET-00054,,medium,RET-00054 became inactive in 2025-05,2025-05
-EVT-00150,2025-05-01T00:00:00,organization_exit,RET-00064,,medium,RET-00064 became inactive in 2025-05,2025-05
-EVT-00151,2025-05-01T00:00:00,organization_exit,SUP-00032,,medium,SUP-00032 became inactive in 2025-05,2025-05
-EVT-00152,2025-06-01T00:00:00,disruption,,,high,Supply disruption in month 2025-06: 453 edges impacted,2025-06
-EVT-00153,2025-06-01T00:00:00,organization_exit,SUP-00123,,medium,SUP-00123 became inactive in 2025-06,2025-06
-EVT-00154,2025-06-01T00:00:00,organization_exit,SUP-00285,,medium,SUP-00285 became inactive in 2025-06,2025-06
-EVT-00155,2025-06-01T00:00:00,organization_exit,DST-00033,,medium,DST-00033 became inactive in 2025-06,2025-06
-EVT-00156,2025-06-01T00:00:00,organization_exit,WHS-00099,,medium,WHS-00099 became inactive in 2025-06,2025-06
-EVT-00157,2025-06-01T00:00:00,organization_exit,LOG-00027,,medium,LOG-00027 became inactive in 2025-06,2025-06
-EVT-00158,2025-06-01T00:00:00,organization_exit,SUP-00160,,medium,SUP-00160 became inactive in 2025-06,2025-06
-EVT-00159,2025-06-01T00:00:00,organization_exit,WHS-00019,,medium,WHS-00019 became inactive in 2025-06,2025-06
-EVT-00160,2025-06-01T00:00:00,organization_exit,SUP-00219,,medium,SUP-00219 became inactive in 2025-06,2025-06
-EVT-00161,2025-07-01T00:00:00,organization_exit,RET-00046,,medium,RET-00046 became inactive in 2025-07,2025-07
-EVT-00162,2025-07-01T00:00:00,organization_exit,LOG-00074,,medium,LOG-00074 became inactive in 2025-07,2025-07
-EVT-00163,2025-07-01T00:00:00,organization_exit,DST-00182,,medium,DST-00182 became inactive in 2025-07,2025-07
-EVT-00164,2025-07-01T00:00:00,organization_exit,MFG-00024,,medium,MFG-00024 became inactive in 2025-07,2025-07
-EVT-00165,2025-07-01T00:00:00,organization_exit,DST-00144,,medium,DST-00144 became inactive in 2025-07,2025-07
-EVT-00166,2025-07-01T00:00:00,organization_exit,RET-00120,,medium,RET-00120 became inactive in 2025-07,2025-07
-EVT-00167,2025-07-01T00:00:00,organization_exit,SUP-00063,,medium,SUP-00063 became inactive in 2025-07,2025-07
-EVT-00168,2025-07-01T00:00:00,organization_exit,SUP-00290,,medium,SUP-00290 became inactive in 2025-07,2025-07
-EVT-00169,2025-08-01T00:00:00,organization_exit,DST-00088,,medium,DST-00088 became inactive in 2025-08,2025-08
-EVT-00170,2025-08-01T00:00:00,organization_exit,DST-00074,,medium,DST-00074 became inactive in 2025-08,2025-08
-EVT-00171,2025-08-01T00:00:00,organization_exit,MFG-00138,,medium,MFG-00138 became inactive in 2025-08,2025-08
-EVT-00172,2025-08-01T00:00:00,organization_exit,LOG-00046,,medium,LOG-00046 became inactive in 2025-08,2025-08
-EVT-00173,2025-08-01T00:00:00,organization_exit,DST-00161,,medium,DST-00161 became inactive in 2025-08,2025-08
-EVT-00174,2025-08-01T00:00:00,organization_exit,SUP-00072,,medium,SUP-00072 became inactive in 2025-08,2025-08
-EVT-00175,2025-08-01T00:00:00,organization_exit,SUP-00253,,medium,SUP-00253 became inactive in 2025-08,2025-08
-EVT-00176,2025-08-01T00:00:00,organization_exit,RET-00135,,medium,RET-00135 became inactive in 2025-08,2025-08
-EVT-00177,2025-09-01T00:00:00,organization_exit,SUP-00229,,medium,SUP-00229 became inactive in 2025-09,2025-09
-EVT-00178,2025-09-01T00:00:00,organization_exit,SUP-00227,,medium,SUP-00227 became inactive in 2025-09,2025-09
-EVT-00179,2025-09-01T00:00:00,organization_exit,DST-00097,,medium,DST-00097 became inactive in 2025-09,2025-09
-EVT-00180,2025-09-01T00:00:00,organization_exit,MFG-00114,,medium,MFG-00114 became inactive in 2025-09,2025-09
-EVT-00181,2025-09-01T00:00:00,organization_exit,DST-00068,,medium,DST-00068 became inactive in 2025-09,2025-09
-EVT-00182,2025-09-01T00:00:00,organization_exit,WHS-00034,,medium,WHS-00034 became inactive in 2025-09,2025-09
-EVT-00183,2025-09-01T00:00:00,organization_exit,WHS-00090,,medium,WHS-00090 became inactive in 2025-09,2025-09
-EVT-00184,2025-09-01T00:00:00,organization_exit,SUP-00189,,medium,SUP-00189 became inactive in 2025-09,2025-09
-EVT-00185,2025-10-01T00:00:00,organization_exit,MFG-00090,,medium,MFG-00090 became inactive in 2025-10,2025-10
-EVT-00186,2025-10-01T00:00:00,organization_exit,MFG-00115,,medium,MFG-00115 became inactive in 2025-10,2025-10
-EVT-00187,2025-10-01T00:00:00,organization_exit,DST-00142,,medium,DST-00142 became inactive in 2025-10,2025-10
-EVT-00188,2025-10-01T00:00:00,organization_exit,DST-00165,,medium,DST-00165 became inactive in 2025-10,2025-10
-EVT-00189,2025-10-01T00:00:00,organization_exit,MFG-00139,,medium,MFG-00139 became inactive in 2025-10,2025-10
-EVT-00190,2025-10-01T00:00:00,organization_exit,LOG-00068,,medium,LOG-00068 became inactive in 2025-10,2025-10
-EVT-00191,2025-10-01T00:00:00,organization_exit,MFG-00125,,medium,MFG-00125 became inactive in 2025-10,2025-10
-EVT-00192,2025-10-01T00:00:00,organization_exit,DST-00016,,medium,DST-00016 became inactive in 2025-10,2025-10
-EVT-00193,2025-11-01T00:00:00,organization_exit,SUP-00207,,medium,SUP-00207 became inactive in 2025-11,2025-11
-EVT-00194,2025-11-01T00:00:00,organization_exit,WHS-00085,,medium,WHS-00085 became inactive in 2025-11,2025-11
-EVT-00195,2025-11-01T00:00:00,organization_exit,DST-00022,,medium,DST-00022 became inactive in 2025-11,2025-11
-EVT-00196,2025-11-01T00:00:00,organization_exit,SUP-00071,,medium,SUP-00071 became inactive in 2025-11,2025-11
-EVT-00197,2025-11-01T00:00:00,organization_exit,SUP-00002,,medium,SUP-00002 became inactive in 2025-11,2025-11
-EVT-00198,2025-11-01T00:00:00,organization_exit,LOG-00098,,medium,LOG-00098 became inactive in 2025-11,2025-11
-EVT-00199,2025-11-01T00:00:00,organization_exit,SUP-00173,,medium,SUP-00173 became inactive in 2025-11,2025-11
-EVT-00200,2025-11-01T00:00:00,organization_exit,DST-00140,,medium,DST-00140 became inactive in 2025-11,2025-11
-EVT-00201,2025-12-01T00:00:00,organization_exit,SUP-00040,,medium,SUP-00040 became inactive in 2025-12,2025-12
-EVT-00202,2025-12-01T00:00:00,organization_exit,DST-00044,,medium,DST-00044 became inactive in 2025-12,2025-12
-EVT-00203,2025-12-01T00:00:00,organization_exit,DST-00070,,medium,DST-00070 became inactive in 2025-12,2025-12
-EVT-00204,2025-12-01T00:00:00,organization_exit,SUP-00144,,medium,SUP-00144 became inactive in 2025-12,2025-12
-EVT-00205,2025-12-01T00:00:00,organization_exit,WHS-00055,,medium,WHS-00055 became inactive in 2025-12,2025-12
-EVT-00206,2025-12-01T00:00:00,organization_exit,RET-00102,,medium,RET-00102 became inactive in 2025-12,2025-12
-EVT-00207,2025-12-01T00:00:00,organization_exit,SUP-00209,,medium,SUP-00209 became inactive in 2025-12,2025-12
-EVT-00208,2025-12-01T00:00:00,organization_exit,DST-00102,,medium,DST-00102 became inactive in 2025-12,2025-12
+EVT-00001,2024-02-01T00:00:00,organization_entry,MFG-00110,,low,MFG-00110 joined the network in 2024-02,2024-02
+EVT-00002,2024-02-01T00:00:00,organization_entry,WHS-00040,,low,WHS-00040 joined the network in 2024-02,2024-02
+EVT-00003,2024-02-01T00:00:00,organization_entry,SUP-00012,,low,SUP-00012 joined the network in 2024-02,2024-02
+EVT-00004,2024-02-01T00:00:00,organization_entry,DST-00090,,low,DST-00090 joined the network in 2024-02,2024-02
+EVT-00005,2024-02-01T00:00:00,organization_entry,SUP-00137,,low,SUP-00137 joined the network in 2024-02,2024-02
+EVT-00006,2024-02-01T00:00:00,organization_entry,MFG-00006,,low,MFG-00006 joined the network in 2024-02,2024-02
+EVT-00007,2024-02-01T00:00:00,organization_entry,RET-00095,,low,RET-00095 joined the network in 2024-02,2024-02
+EVT-00008,2024-02-01T00:00:00,organization_entry,MFG-00083,,low,MFG-00083 joined the network in 2024-02,2024-02
+EVT-00009,2024-02-01T00:00:00,organization_entry,MFG-00032,,low,MFG-00032 joined the network in 2024-02,2024-02
+EVT-00010,2024-02-01T00:00:00,organization_entry,SUP-00234,,low,SUP-00234 joined the network in 2024-02,2024-02
+EVT-00011,2024-02-01T00:00:00,organization_exit,MFG-00137,,medium,MFG-00137 became inactive in 2024-02,2024-02
+EVT-00012,2024-02-01T00:00:00,organization_exit,LOG-00039,,medium,LOG-00039 became inactive in 2024-02,2024-02
+EVT-00013,2024-02-01T00:00:00,organization_exit,DST-00070,,medium,DST-00070 became inactive in 2024-02,2024-02
+EVT-00014,2024-02-01T00:00:00,organization_exit,SUP-00113,,medium,SUP-00113 became inactive in 2024-02,2024-02
+EVT-00015,2024-03-01T00:00:00,organization_entry,MFG-00008,,low,MFG-00008 joined the network in 2024-03,2024-03
+EVT-00016,2024-03-01T00:00:00,organization_entry,MFG-00048,,low,MFG-00048 joined the network in 2024-03,2024-03
+EVT-00017,2024-03-01T00:00:00,organization_entry,DST-00058,,low,DST-00058 joined the network in 2024-03,2024-03
+EVT-00018,2024-03-01T00:00:00,organization_entry,SUP-00104,,low,SUP-00104 joined the network in 2024-03,2024-03
+EVT-00019,2024-03-01T00:00:00,organization_entry,SUP-00192,,low,SUP-00192 joined the network in 2024-03,2024-03
+EVT-00020,2024-03-01T00:00:00,organization_entry,RET-00056,,low,RET-00056 joined the network in 2024-03,2024-03
+EVT-00021,2024-03-01T00:00:00,organization_entry,RET-00127,,low,RET-00127 joined the network in 2024-03,2024-03
+EVT-00022,2024-03-01T00:00:00,organization_entry,RET-00014,,low,RET-00014 joined the network in 2024-03,2024-03
+EVT-00023,2024-03-01T00:00:00,organization_entry,MFG-00128,,low,MFG-00128 joined the network in 2024-03,2024-03
+EVT-00024,2024-03-01T00:00:00,organization_entry,RET-00126,,low,RET-00126 joined the network in 2024-03,2024-03
+EVT-00025,2024-03-01T00:00:00,organization_exit,DST-00179,,medium,DST-00179 became inactive in 2024-03,2024-03
+EVT-00026,2024-03-01T00:00:00,organization_exit,SUP-00242,,medium,SUP-00242 became inactive in 2024-03,2024-03
+EVT-00027,2024-03-01T00:00:00,organization_exit,DST-00110,,medium,DST-00110 became inactive in 2024-03,2024-03
+EVT-00028,2024-03-01T00:00:00,organization_exit,SUP-00028,,medium,SUP-00028 became inactive in 2024-03,2024-03
+EVT-00029,2024-04-01T00:00:00,organization_entry,DST-00124,,low,DST-00124 joined the network in 2024-04,2024-04
+EVT-00030,2024-04-01T00:00:00,organization_entry,RET-00035,,low,RET-00035 joined the network in 2024-04,2024-04
+EVT-00031,2024-04-01T00:00:00,organization_entry,SUP-00043,,low,SUP-00043 joined the network in 2024-04,2024-04
+EVT-00032,2024-04-01T00:00:00,organization_entry,MFG-00030,,low,MFG-00030 joined the network in 2024-04,2024-04
+EVT-00033,2024-04-01T00:00:00,organization_entry,DST-00032,,low,DST-00032 joined the network in 2024-04,2024-04
+EVT-00034,2024-04-01T00:00:00,organization_entry,DST-00002,,low,DST-00002 joined the network in 2024-04,2024-04
+EVT-00035,2024-04-01T00:00:00,organization_entry,LOG-00007,,low,LOG-00007 joined the network in 2024-04,2024-04
+EVT-00036,2024-04-01T00:00:00,organization_entry,SUP-00038,,low,SUP-00038 joined the network in 2024-04,2024-04
+EVT-00037,2024-04-01T00:00:00,organization_entry,RET-00109,,low,RET-00109 joined the network in 2024-04,2024-04
+EVT-00038,2024-04-01T00:00:00,organization_entry,SUP-00047,,low,SUP-00047 joined the network in 2024-04,2024-04
+EVT-00039,2024-04-01T00:00:00,organization_exit,SUP-00211,,medium,SUP-00211 became inactive in 2024-04,2024-04
+EVT-00040,2024-04-01T00:00:00,organization_exit,DST-00200,,medium,DST-00200 became inactive in 2024-04,2024-04
+EVT-00041,2024-04-01T00:00:00,organization_exit,DST-00055,,medium,DST-00055 became inactive in 2024-04,2024-04
+EVT-00042,2024-04-01T00:00:00,organization_exit,DST-00169,,medium,DST-00169 became inactive in 2024-04,2024-04
+EVT-00043,2024-05-01T00:00:00,organization_entry,LOG-00067,,low,LOG-00067 joined the network in 2024-05,2024-05
+EVT-00044,2024-05-01T00:00:00,organization_entry,SUP-00013,,low,SUP-00013 joined the network in 2024-05,2024-05
+EVT-00045,2024-05-01T00:00:00,organization_entry,SUP-00118,,low,SUP-00118 joined the network in 2024-05,2024-05
+EVT-00046,2024-05-01T00:00:00,organization_entry,SUP-00100,,low,SUP-00100 joined the network in 2024-05,2024-05
+EVT-00047,2024-05-01T00:00:00,organization_entry,MFG-00120,,low,MFG-00120 joined the network in 2024-05,2024-05
+EVT-00048,2024-05-01T00:00:00,organization_entry,RET-00064,,low,RET-00064 joined the network in 2024-05,2024-05
+EVT-00049,2024-05-01T00:00:00,organization_entry,RET-00044,,low,RET-00044 joined the network in 2024-05,2024-05
+EVT-00050,2024-05-01T00:00:00,organization_entry,SUP-00054,,low,SUP-00054 joined the network in 2024-05,2024-05
+EVT-00051,2024-05-01T00:00:00,organization_entry,WHS-00008,,low,WHS-00008 joined the network in 2024-05,2024-05
+EVT-00052,2024-05-01T00:00:00,organization_entry,DST-00120,,low,DST-00120 joined the network in 2024-05,2024-05
+EVT-00053,2024-05-01T00:00:00,organization_exit,MFG-00050,,medium,MFG-00050 became inactive in 2024-05,2024-05
+EVT-00054,2024-05-01T00:00:00,organization_exit,DST-00152,,medium,DST-00152 became inactive in 2024-05,2024-05
+EVT-00055,2024-05-01T00:00:00,organization_exit,MFG-00090,,medium,MFG-00090 became inactive in 2024-05,2024-05
+EVT-00056,2024-05-01T00:00:00,organization_exit,DST-00048,,medium,DST-00048 became inactive in 2024-05,2024-05
+EVT-00057,2024-06-01T00:00:00,organization_entry,WHS-00083,,low,WHS-00083 joined the network in 2024-06,2024-06
+EVT-00058,2024-06-01T00:00:00,organization_entry,SUP-00152,,low,SUP-00152 joined the network in 2024-06,2024-06
+EVT-00059,2024-06-01T00:00:00,organization_entry,WHS-00046,,low,WHS-00046 joined the network in 2024-06,2024-06
+EVT-00060,2024-06-01T00:00:00,organization_entry,RET-00060,,low,RET-00060 joined the network in 2024-06,2024-06
+EVT-00061,2024-06-01T00:00:00,organization_entry,LOG-00091,,low,LOG-00091 joined the network in 2024-06,2024-06
+EVT-00062,2024-06-01T00:00:00,organization_entry,SUP-00024,,low,SUP-00024 joined the network in 2024-06,2024-06
+EVT-00063,2024-06-01T00:00:00,organization_entry,DST-00015,,low,DST-00015 joined the network in 2024-06,2024-06
+EVT-00064,2024-06-01T00:00:00,organization_entry,SUP-00203,,low,SUP-00203 joined the network in 2024-06,2024-06
+EVT-00065,2024-06-01T00:00:00,organization_entry,DST-00067,,low,DST-00067 joined the network in 2024-06,2024-06
+EVT-00066,2024-06-01T00:00:00,organization_entry,DST-00095,,low,DST-00095 joined the network in 2024-06,2024-06
+EVT-00067,2024-06-01T00:00:00,organization_exit,RET-00139,,medium,RET-00139 became inactive in 2024-06,2024-06
+EVT-00068,2024-06-01T00:00:00,organization_exit,SUP-00063,,medium,SUP-00063 became inactive in 2024-06,2024-06
+EVT-00069,2024-06-01T00:00:00,organization_exit,SUP-00079,,medium,SUP-00079 became inactive in 2024-06,2024-06
+EVT-00070,2024-06-01T00:00:00,organization_exit,DST-00063,,medium,DST-00063 became inactive in 2024-06,2024-06
+EVT-00071,2024-07-01T00:00:00,organization_entry,WHS-00087,,low,WHS-00087 joined the network in 2024-07,2024-07
+EVT-00072,2024-07-01T00:00:00,organization_entry,RET-00111,,low,RET-00111 joined the network in 2024-07,2024-07
+EVT-00073,2024-07-01T00:00:00,organization_entry,RET-00022,,low,RET-00022 joined the network in 2024-07,2024-07
+EVT-00074,2024-07-01T00:00:00,organization_entry,SUP-00129,,low,SUP-00129 joined the network in 2024-07,2024-07
+EVT-00075,2024-07-01T00:00:00,organization_entry,SUP-00239,,low,SUP-00239 joined the network in 2024-07,2024-07
+EVT-00076,2024-07-01T00:00:00,organization_entry,MFG-00049,,low,MFG-00049 joined the network in 2024-07,2024-07
+EVT-00077,2024-07-01T00:00:00,organization_entry,RET-00073,,low,RET-00073 joined the network in 2024-07,2024-07
+EVT-00078,2024-07-01T00:00:00,organization_entry,DST-00119,,low,DST-00119 joined the network in 2024-07,2024-07
+EVT-00079,2024-07-01T00:00:00,organization_entry,DST-00039,,low,DST-00039 joined the network in 2024-07,2024-07
+EVT-00080,2024-07-01T00:00:00,organization_entry,WHS-00100,,low,WHS-00100 joined the network in 2024-07,2024-07
+EVT-00081,2024-07-01T00:00:00,organization_exit,WHS-00028,,medium,WHS-00028 became inactive in 2024-07,2024-07
+EVT-00082,2024-07-01T00:00:00,organization_exit,SUP-00016,,medium,SUP-00016 became inactive in 2024-07,2024-07
+EVT-00083,2024-07-01T00:00:00,organization_exit,SUP-00235,,medium,SUP-00235 became inactive in 2024-07,2024-07
+EVT-00084,2024-07-01T00:00:00,organization_exit,DST-00035,,medium,DST-00035 became inactive in 2024-07,2024-07
+EVT-00085,2024-08-01T00:00:00,organization_entry,DST-00024,,low,DST-00024 joined the network in 2024-08,2024-08
+EVT-00086,2024-08-01T00:00:00,organization_entry,MFG-00071,,low,MFG-00071 joined the network in 2024-08,2024-08
+EVT-00087,2024-08-01T00:00:00,organization_entry,SUP-00080,,low,SUP-00080 joined the network in 2024-08,2024-08
+EVT-00088,2024-08-01T00:00:00,organization_entry,LOG-00049,,low,LOG-00049 joined the network in 2024-08,2024-08
+EVT-00089,2024-08-01T00:00:00,organization_entry,SUP-00081,,low,SUP-00081 joined the network in 2024-08,2024-08
+EVT-00090,2024-08-01T00:00:00,organization_entry,DST-00020,,low,DST-00020 joined the network in 2024-08,2024-08
+EVT-00091,2024-08-01T00:00:00,organization_entry,MFG-00025,,low,MFG-00025 joined the network in 2024-08,2024-08
+EVT-00092,2024-08-01T00:00:00,organization_entry,DST-00114,,low,DST-00114 joined the network in 2024-08,2024-08
+EVT-00093,2024-08-01T00:00:00,organization_entry,RET-00007,,low,RET-00007 joined the network in 2024-08,2024-08
+EVT-00094,2024-08-01T00:00:00,organization_entry,RET-00129,,low,RET-00129 joined the network in 2024-08,2024-08
+EVT-00095,2024-08-01T00:00:00,organization_exit,WHS-00084,,medium,WHS-00084 became inactive in 2024-08,2024-08
+EVT-00096,2024-08-01T00:00:00,organization_exit,WHS-00022,,medium,WHS-00022 became inactive in 2024-08,2024-08
+EVT-00097,2024-08-01T00:00:00,organization_exit,DST-00043,,medium,DST-00043 became inactive in 2024-08,2024-08
+EVT-00098,2024-08-01T00:00:00,organization_exit,SUP-00221,,medium,SUP-00221 became inactive in 2024-08,2024-08
+EVT-00099,2024-09-01T00:00:00,organization_entry,SUP-00146,,low,SUP-00146 joined the network in 2024-09,2024-09
+EVT-00100,2024-09-01T00:00:00,organization_entry,WHS-00003,,low,WHS-00003 joined the network in 2024-09,2024-09
+EVT-00101,2024-09-01T00:00:00,organization_entry,WHS-00017,,low,WHS-00017 joined the network in 2024-09,2024-09
+EVT-00102,2024-09-01T00:00:00,organization_entry,SUP-00216,,low,SUP-00216 joined the network in 2024-09,2024-09
+EVT-00103,2024-09-01T00:00:00,organization_entry,DST-00174,,low,DST-00174 joined the network in 2024-09,2024-09
+EVT-00104,2024-09-01T00:00:00,organization_entry,DST-00113,,low,DST-00113 joined the network in 2024-09,2024-09
+EVT-00105,2024-09-01T00:00:00,organization_entry,RET-00045,,low,RET-00045 joined the network in 2024-09,2024-09
+EVT-00106,2024-09-01T00:00:00,organization_entry,DST-00107,,low,DST-00107 joined the network in 2024-09,2024-09
+EVT-00107,2024-09-01T00:00:00,organization_entry,DST-00191,,low,DST-00191 joined the network in 2024-09,2024-09
+EVT-00108,2024-09-01T00:00:00,organization_entry,SUP-00029,,low,SUP-00029 joined the network in 2024-09,2024-09
+EVT-00109,2024-09-01T00:00:00,organization_exit,SUP-00269,,medium,SUP-00269 became inactive in 2024-09,2024-09
+EVT-00110,2024-09-01T00:00:00,organization_exit,WHS-00081,,medium,WHS-00081 became inactive in 2024-09,2024-09
+EVT-00111,2024-09-01T00:00:00,organization_exit,DST-00187,,medium,DST-00187 became inactive in 2024-09,2024-09
+EVT-00112,2024-09-01T00:00:00,organization_exit,RET-00001,,medium,RET-00001 became inactive in 2024-09,2024-09
+EVT-00113,2024-10-01T00:00:00,organization_entry,MFG-00075,,low,MFG-00075 joined the network in 2024-10,2024-10
+EVT-00114,2024-10-01T00:00:00,organization_entry,SUP-00299,,low,SUP-00299 joined the network in 2024-10,2024-10
+EVT-00115,2024-10-01T00:00:00,organization_entry,SUP-00167,,low,SUP-00167 joined the network in 2024-10,2024-10
+EVT-00116,2024-10-01T00:00:00,organization_entry,LOG-00024,,low,LOG-00024 joined the network in 2024-10,2024-10
+EVT-00117,2024-10-01T00:00:00,organization_entry,SUP-00286,,low,SUP-00286 joined the network in 2024-10,2024-10
+EVT-00118,2024-10-01T00:00:00,organization_entry,WHS-00058,,low,WHS-00058 joined the network in 2024-10,2024-10
+EVT-00119,2024-10-01T00:00:00,organization_entry,SUP-00112,,low,SUP-00112 joined the network in 2024-10,2024-10
+EVT-00120,2024-10-01T00:00:00,organization_entry,SUP-00004,,low,SUP-00004 joined the network in 2024-10,2024-10
+EVT-00121,2024-10-01T00:00:00,organization_entry,SUP-00243,,low,SUP-00243 joined the network in 2024-10,2024-10
+EVT-00122,2024-10-01T00:00:00,organization_entry,MFG-00143,,low,MFG-00143 joined the network in 2024-10,2024-10
+EVT-00123,2024-10-01T00:00:00,organization_exit,DST-00087,,medium,DST-00087 became inactive in 2024-10,2024-10
+EVT-00124,2024-10-01T00:00:00,organization_exit,DST-00108,,medium,DST-00108 became inactive in 2024-10,2024-10
+EVT-00125,2024-10-01T00:00:00,organization_exit,SUP-00019,,medium,SUP-00019 became inactive in 2024-10,2024-10
+EVT-00126,2024-10-01T00:00:00,organization_exit,MFG-00136,,medium,MFG-00136 became inactive in 2024-10,2024-10
+EVT-00127,2024-11-01T00:00:00,organization_entry,LOG-00078,,low,LOG-00078 joined the network in 2024-11,2024-11
+EVT-00128,2024-11-01T00:00:00,organization_entry,DST-00007,,low,DST-00007 joined the network in 2024-11,2024-11
+EVT-00129,2024-11-01T00:00:00,organization_entry,RET-00088,,low,RET-00088 joined the network in 2024-11,2024-11
+EVT-00130,2024-11-01T00:00:00,organization_entry,MFG-00097,,low,MFG-00097 joined the network in 2024-11,2024-11
+EVT-00131,2024-11-01T00:00:00,organization_entry,SUP-00272,,low,SUP-00272 joined the network in 2024-11,2024-11
+EVT-00132,2024-11-01T00:00:00,organization_entry,DST-00033,,low,DST-00033 joined the network in 2024-11,2024-11
+EVT-00133,2024-11-01T00:00:00,organization_entry,SUP-00058,,low,SUP-00058 joined the network in 2024-11,2024-11
+EVT-00134,2024-11-01T00:00:00,organization_entry,LOG-00036,,low,LOG-00036 joined the network in 2024-11,2024-11
+EVT-00135,2024-11-01T00:00:00,organization_entry,DST-00196,,low,DST-00196 joined the network in 2024-11,2024-11
+EVT-00136,2024-11-01T00:00:00,organization_entry,SUP-00161,,low,SUP-00161 joined the network in 2024-11,2024-11
+EVT-00137,2024-11-01T00:00:00,organization_exit,LOG-00009,,medium,LOG-00009 became inactive in 2024-11,2024-11
+EVT-00138,2024-11-01T00:00:00,organization_exit,DST-00077,,medium,DST-00077 became inactive in 2024-11,2024-11
+EVT-00139,2024-11-01T00:00:00,organization_exit,SUP-00196,,medium,SUP-00196 became inactive in 2024-11,2024-11
+EVT-00140,2024-11-01T00:00:00,organization_exit,WHS-00057,,medium,WHS-00057 became inactive in 2024-11,2024-11
+EVT-00141,2024-12-01T00:00:00,organization_entry,WHS-00035,,low,WHS-00035 joined the network in 2024-12,2024-12
+EVT-00142,2024-12-01T00:00:00,organization_entry,SUP-00249,,low,SUP-00249 joined the network in 2024-12,2024-12
+EVT-00143,2024-12-01T00:00:00,organization_entry,MFG-00040,,low,MFG-00040 joined the network in 2024-12,2024-12
+EVT-00144,2024-12-01T00:00:00,organization_entry,WHS-00053,,low,WHS-00053 joined the network in 2024-12,2024-12
+EVT-00145,2024-12-01T00:00:00,organization_entry,MFG-00068,,low,MFG-00068 joined the network in 2024-12,2024-12
+EVT-00146,2024-12-01T00:00:00,organization_entry,RET-00115,,low,RET-00115 joined the network in 2024-12,2024-12
+EVT-00147,2024-12-01T00:00:00,organization_entry,SUP-00253,,low,SUP-00253 joined the network in 2024-12,2024-12
+EVT-00148,2024-12-01T00:00:00,organization_entry,DST-00028,,low,DST-00028 joined the network in 2024-12,2024-12
+EVT-00149,2024-12-01T00:00:00,organization_entry,MFG-00078,,low,MFG-00078 joined the network in 2024-12,2024-12
+EVT-00150,2024-12-01T00:00:00,organization_entry,SUP-00185,,low,SUP-00185 joined the network in 2024-12,2024-12
+EVT-00151,2024-12-01T00:00:00,organization_exit,RET-00007,,medium,RET-00007 became inactive in 2024-12,2024-12
+EVT-00152,2024-12-01T00:00:00,organization_exit,RET-00029,,medium,RET-00029 became inactive in 2024-12,2024-12
+EVT-00153,2024-12-01T00:00:00,organization_exit,SUP-00025,,medium,SUP-00025 became inactive in 2024-12,2024-12
+EVT-00154,2024-12-01T00:00:00,organization_exit,SUP-00014,,medium,SUP-00014 became inactive in 2024-12,2024-12
+EVT-00155,2024-12-01T00:00:00,disruption,,,high,Supply disruption in month 2024-12: 401 edges impacted,2024-12
+EVT-00156,2025-01-01T00:00:00,organization_entry,LOG-00016,,low,LOG-00016 joined the network in 2025-01,2025-01
+EVT-00157,2025-01-01T00:00:00,organization_entry,SUP-00030,,low,SUP-00030 joined the network in 2025-01,2025-01
+EVT-00158,2025-01-01T00:00:00,organization_entry,SUP-00238,,low,SUP-00238 joined the network in 2025-01,2025-01
+EVT-00159,2025-01-01T00:00:00,organization_entry,SUP-00266,,low,SUP-00266 joined the network in 2025-01,2025-01
+EVT-00160,2025-01-01T00:00:00,organization_entry,SUP-00207,,low,SUP-00207 joined the network in 2025-01,2025-01
+EVT-00161,2025-01-01T00:00:00,organization_entry,RET-00066,,low,RET-00066 joined the network in 2025-01,2025-01
+EVT-00162,2025-01-01T00:00:00,organization_entry,SUP-00017,,low,SUP-00017 joined the network in 2025-01,2025-01
+EVT-00163,2025-01-01T00:00:00,organization_entry,DST-00148,,low,DST-00148 joined the network in 2025-01,2025-01
+EVT-00164,2025-01-01T00:00:00,organization_entry,MFG-00098,,low,MFG-00098 joined the network in 2025-01,2025-01
+EVT-00165,2025-01-01T00:00:00,organization_entry,MFG-00142,,low,MFG-00142 joined the network in 2025-01,2025-01
+EVT-00166,2025-01-01T00:00:00,organization_exit,DST-00061,,medium,DST-00061 became inactive in 2025-01,2025-01
+EVT-00167,2025-01-01T00:00:00,organization_exit,RET-00081,,medium,RET-00081 became inactive in 2025-01,2025-01
+EVT-00168,2025-01-01T00:00:00,organization_exit,RET-00092,,medium,RET-00092 became inactive in 2025-01,2025-01
+EVT-00169,2025-01-01T00:00:00,organization_exit,MFG-00003,,medium,MFG-00003 became inactive in 2025-01,2025-01
+EVT-00170,2025-02-01T00:00:00,organization_entry,MFG-00124,,low,MFG-00124 joined the network in 2025-02,2025-02
+EVT-00171,2025-02-01T00:00:00,organization_entry,DST-00161,,low,DST-00161 joined the network in 2025-02,2025-02
+EVT-00172,2025-02-01T00:00:00,organization_entry,DST-00173,,low,DST-00173 joined the network in 2025-02,2025-02
+EVT-00173,2025-02-01T00:00:00,organization_entry,LOG-00093,,low,LOG-00093 joined the network in 2025-02,2025-02
+EVT-00174,2025-02-01T00:00:00,organization_entry,LOG-00066,,low,LOG-00066 joined the network in 2025-02,2025-02
+EVT-00175,2025-02-01T00:00:00,organization_entry,MFG-00109,,low,MFG-00109 joined the network in 2025-02,2025-02
+EVT-00176,2025-02-01T00:00:00,organization_entry,SUP-00159,,low,SUP-00159 joined the network in 2025-02,2025-02
+EVT-00177,2025-02-01T00:00:00,organization_entry,RET-00103,,low,RET-00103 joined the network in 2025-02,2025-02
+EVT-00178,2025-02-01T00:00:00,organization_entry,DST-00130,,low,DST-00130 joined the network in 2025-02,2025-02
+EVT-00179,2025-02-01T00:00:00,organization_entry,DST-00167,,low,DST-00167 joined the network in 2025-02,2025-02
+EVT-00180,2025-02-01T00:00:00,organization_exit,SUP-00046,,medium,SUP-00046 became inactive in 2025-02,2025-02
+EVT-00181,2025-02-01T00:00:00,organization_exit,DST-00083,,medium,DST-00083 became inactive in 2025-02,2025-02
+EVT-00182,2025-02-01T00:00:00,organization_exit,DST-00196,,medium,DST-00196 became inactive in 2025-02,2025-02
+EVT-00183,2025-02-01T00:00:00,organization_exit,SUP-00220,,medium,SUP-00220 became inactive in 2025-02,2025-02
+EVT-00184,2025-03-01T00:00:00,organization_entry,MFG-00101,,low,MFG-00101 joined the network in 2025-03,2025-03
+EVT-00185,2025-03-01T00:00:00,organization_entry,DST-00010,,low,DST-00010 joined the network in 2025-03,2025-03
+EVT-00186,2025-03-01T00:00:00,organization_entry,DST-00034,,low,DST-00034 joined the network in 2025-03,2025-03
+EVT-00187,2025-03-01T00:00:00,organization_entry,MFG-00057,,low,MFG-00057 joined the network in 2025-03,2025-03
+EVT-00188,2025-03-01T00:00:00,organization_entry,DST-00122,,low,DST-00122 joined the network in 2025-03,2025-03
+EVT-00189,2025-03-01T00:00:00,organization_entry,WHS-00085,,low,WHS-00085 joined the network in 2025-03,2025-03
+EVT-00190,2025-03-01T00:00:00,organization_entry,SUP-00098,,low,SUP-00098 joined the network in 2025-03,2025-03
+EVT-00191,2025-03-01T00:00:00,organization_entry,MFG-00095,,low,MFG-00095 joined the network in 2025-03,2025-03
+EVT-00192,2025-03-01T00:00:00,organization_entry,LOG-00045,,low,LOG-00045 joined the network in 2025-03,2025-03
+EVT-00193,2025-03-01T00:00:00,organization_entry,SUP-00205,,low,SUP-00205 joined the network in 2025-03,2025-03
+EVT-00194,2025-03-01T00:00:00,organization_exit,WHS-00094,,medium,WHS-00094 became inactive in 2025-03,2025-03
+EVT-00195,2025-03-01T00:00:00,organization_exit,MFG-00012,,medium,MFG-00012 became inactive in 2025-03,2025-03
+EVT-00196,2025-03-01T00:00:00,organization_exit,DST-00165,,medium,DST-00165 became inactive in 2025-03,2025-03
+EVT-00197,2025-03-01T00:00:00,organization_exit,SUP-00083,,medium,SUP-00083 became inactive in 2025-03,2025-03
+EVT-00198,2025-04-01T00:00:00,organization_entry,LOG-00058,,low,LOG-00058 joined the network in 2025-04,2025-04
+EVT-00199,2025-04-01T00:00:00,organization_entry,DST-00009,,low,DST-00009 joined the network in 2025-04,2025-04
+EVT-00200,2025-04-01T00:00:00,organization_entry,MFG-00089,,low,MFG-00089 joined the network in 2025-04,2025-04
+EVT-00201,2025-04-01T00:00:00,organization_entry,SUP-00271,,low,SUP-00271 joined the network in 2025-04,2025-04
+EVT-00202,2025-04-01T00:00:00,organization_entry,DST-00137,,low,DST-00137 joined the network in 2025-04,2025-04
+EVT-00203,2025-04-01T00:00:00,organization_entry,SUP-00009,,low,SUP-00009 joined the network in 2025-04,2025-04
+EVT-00204,2025-04-01T00:00:00,organization_entry,DST-00193,,low,DST-00193 joined the network in 2025-04,2025-04
+EVT-00205,2025-04-01T00:00:00,organization_entry,WHS-00047,,low,WHS-00047 joined the network in 2025-04,2025-04
+EVT-00206,2025-04-01T00:00:00,organization_entry,SUP-00062,,low,SUP-00062 joined the network in 2025-04,2025-04
+EVT-00207,2025-04-01T00:00:00,organization_entry,LOG-00018,,low,LOG-00018 joined the network in 2025-04,2025-04
+EVT-00208,2025-04-01T00:00:00,organization_exit,MFG-00054,,medium,MFG-00054 became inactive in 2025-04,2025-04
+EVT-00209,2025-04-01T00:00:00,organization_exit,DST-00052,,medium,DST-00052 became inactive in 2025-04,2025-04
+EVT-00210,2025-04-01T00:00:00,organization_exit,MFG-00143,,medium,MFG-00143 became inactive in 2025-04,2025-04
+EVT-00211,2025-04-01T00:00:00,organization_exit,RET-00088,,medium,RET-00088 became inactive in 2025-04,2025-04
+EVT-00212,2025-05-01T00:00:00,organization_entry,DST-00182,,low,DST-00182 joined the network in 2025-05,2025-05
+EVT-00213,2025-05-01T00:00:00,organization_entry,RET-00142,,low,RET-00142 joined the network in 2025-05,2025-05
+EVT-00214,2025-05-01T00:00:00,organization_entry,MFG-00092,,low,MFG-00092 joined the network in 2025-05,2025-05
+EVT-00215,2025-05-01T00:00:00,organization_entry,LOG-00008,,low,LOG-00008 joined the network in 2025-05,2025-05
+EVT-00216,2025-05-01T00:00:00,organization_entry,WHS-00021,,low,WHS-00021 joined the network in 2025-05,2025-05
+EVT-00217,2025-05-01T00:00:00,organization_entry,RET-00076,,low,RET-00076 joined the network in 2025-05,2025-05
+EVT-00218,2025-05-01T00:00:00,organization_entry,MFG-00122,,low,MFG-00122 joined the network in 2025-05,2025-05
+EVT-00219,2025-05-01T00:00:00,organization_entry,WHS-00099,,low,WHS-00099 joined the network in 2025-05,2025-05
+EVT-00220,2025-05-01T00:00:00,organization_entry,SUP-00110,,low,SUP-00110 joined the network in 2025-05,2025-05
+EVT-00221,2025-05-01T00:00:00,organization_entry,MFG-00129,,low,MFG-00129 joined the network in 2025-05,2025-05
+EVT-00222,2025-05-01T00:00:00,organization_exit,DST-00192,,medium,DST-00192 became inactive in 2025-05,2025-05
+EVT-00223,2025-05-01T00:00:00,organization_exit,RET-00064,,medium,RET-00064 became inactive in 2025-05,2025-05
+EVT-00224,2025-05-01T00:00:00,organization_exit,WHS-00071,,medium,WHS-00071 became inactive in 2025-05,2025-05
+EVT-00225,2025-05-01T00:00:00,organization_exit,DST-00010,,medium,DST-00010 became inactive in 2025-05,2025-05
+EVT-00226,2025-06-01T00:00:00,organization_entry,SUP-00138,,low,SUP-00138 joined the network in 2025-06,2025-06
+EVT-00227,2025-06-01T00:00:00,organization_entry,DST-00071,,low,DST-00071 joined the network in 2025-06,2025-06
+EVT-00228,2025-06-01T00:00:00,organization_entry,RET-00061,,low,RET-00061 joined the network in 2025-06,2025-06
+EVT-00229,2025-06-01T00:00:00,organization_entry,DST-00123,,low,DST-00123 joined the network in 2025-06,2025-06
+EVT-00230,2025-06-01T00:00:00,organization_entry,WHS-00067,,low,WHS-00067 joined the network in 2025-06,2025-06
+EVT-00231,2025-06-01T00:00:00,organization_entry,MFG-00024,,low,MFG-00024 joined the network in 2025-06,2025-06
+EVT-00232,2025-06-01T00:00:00,organization_entry,LOG-00083,,low,LOG-00083 joined the network in 2025-06,2025-06
+EVT-00233,2025-06-01T00:00:00,organization_entry,DST-00157,,low,DST-00157 joined the network in 2025-06,2025-06
+EVT-00234,2025-06-01T00:00:00,organization_entry,SUP-00011,,low,SUP-00011 joined the network in 2025-06,2025-06
+EVT-00235,2025-06-01T00:00:00,organization_entry,DST-00178,,low,DST-00178 joined the network in 2025-06,2025-06
+EVT-00236,2025-06-01T00:00:00,organization_exit,SUP-00246,,medium,SUP-00246 became inactive in 2025-06,2025-06
+EVT-00237,2025-06-01T00:00:00,organization_exit,RET-00134,,medium,RET-00134 became inactive in 2025-06,2025-06
+EVT-00238,2025-06-01T00:00:00,organization_exit,DST-00194,,medium,DST-00194 became inactive in 2025-06,2025-06
+EVT-00239,2025-06-01T00:00:00,organization_exit,RET-00079,,medium,RET-00079 became inactive in 2025-06,2025-06
+EVT-00240,2025-06-01T00:00:00,disruption,,,high,Supply disruption in month 2025-06: 453 edges impacted,2025-06
+EVT-00241,2025-07-01T00:00:00,organization_entry,SUP-00143,,low,SUP-00143 joined the network in 2025-07,2025-07
+EVT-00242,2025-07-01T00:00:00,organization_entry,RET-00141,,low,RET-00141 joined the network in 2025-07,2025-07
+EVT-00243,2025-07-01T00:00:00,organization_entry,SUP-00160,,low,SUP-00160 joined the network in 2025-07,2025-07
+EVT-00244,2025-07-01T00:00:00,organization_entry,MFG-00042,,low,MFG-00042 joined the network in 2025-07,2025-07
+EVT-00245,2025-07-01T00:00:00,organization_entry,SUP-00036,,low,SUP-00036 joined the network in 2025-07,2025-07
+EVT-00246,2025-07-01T00:00:00,organization_entry,LOG-00032,,low,LOG-00032 joined the network in 2025-07,2025-07
+EVT-00247,2025-07-01T00:00:00,organization_entry,SUP-00279,,low,SUP-00279 joined the network in 2025-07,2025-07
+EVT-00248,2025-07-01T00:00:00,organization_entry,RET-00065,,low,RET-00065 joined the network in 2025-07,2025-07
+EVT-00249,2025-07-01T00:00:00,organization_entry,SUP-00186,,low,SUP-00186 joined the network in 2025-07,2025-07
+EVT-00250,2025-07-01T00:00:00,organization_entry,RET-00012,,low,RET-00012 joined the network in 2025-07,2025-07
+EVT-00251,2025-07-01T00:00:00,organization_exit,SUP-00015,,medium,SUP-00015 became inactive in 2025-07,2025-07
+EVT-00252,2025-07-01T00:00:00,organization_exit,RET-00137,,medium,RET-00137 became inactive in 2025-07,2025-07
+EVT-00253,2025-07-01T00:00:00,organization_exit,LOG-00095,,medium,LOG-00095 became inactive in 2025-07,2025-07
+EVT-00254,2025-07-01T00:00:00,organization_exit,SUP-00122,,medium,SUP-00122 became inactive in 2025-07,2025-07
+EVT-00255,2025-08-01T00:00:00,organization_entry,SUP-00120,,low,SUP-00120 joined the network in 2025-08,2025-08
+EVT-00256,2025-08-01T00:00:00,organization_entry,RET-00003,,low,RET-00003 joined the network in 2025-08,2025-08
+EVT-00257,2025-08-01T00:00:00,organization_entry,RET-00128,,low,RET-00128 joined the network in 2025-08,2025-08
+EVT-00258,2025-08-01T00:00:00,organization_entry,SUP-00010,,low,SUP-00010 joined the network in 2025-08,2025-08
+EVT-00259,2025-08-01T00:00:00,organization_entry,MFG-00106,,low,MFG-00106 joined the network in 2025-08,2025-08
+EVT-00260,2025-08-01T00:00:00,organization_entry,SUP-00176,,low,SUP-00176 joined the network in 2025-08,2025-08
+EVT-00261,2025-08-01T00:00:00,organization_entry,MFG-00074,,low,MFG-00074 joined the network in 2025-08,2025-08
+EVT-00262,2025-08-01T00:00:00,organization_entry,RET-00062,,low,RET-00062 joined the network in 2025-08,2025-08
+EVT-00263,2025-08-01T00:00:00,organization_entry,DST-00022,,low,DST-00022 joined the network in 2025-08,2025-08
+EVT-00264,2025-08-01T00:00:00,organization_entry,SUP-00044,,low,SUP-00044 joined the network in 2025-08,2025-08
+EVT-00265,2025-08-01T00:00:00,organization_exit,MFG-00032,,medium,MFG-00032 became inactive in 2025-08,2025-08
+EVT-00266,2025-08-01T00:00:00,organization_exit,DST-00072,,medium,DST-00072 became inactive in 2025-08,2025-08
+EVT-00267,2025-08-01T00:00:00,organization_exit,SUP-00292,,medium,SUP-00292 became inactive in 2025-08,2025-08
+EVT-00268,2025-08-01T00:00:00,organization_exit,SUP-00236,,medium,SUP-00236 became inactive in 2025-08,2025-08
+EVT-00269,2025-09-01T00:00:00,organization_entry,LOG-00079,,low,LOG-00079 joined the network in 2025-09,2025-09
+EVT-00270,2025-09-01T00:00:00,organization_entry,SUP-00214,,low,SUP-00214 joined the network in 2025-09,2025-09
+EVT-00271,2025-09-01T00:00:00,organization_entry,DST-00146,,low,DST-00146 joined the network in 2025-09,2025-09
+EVT-00272,2025-09-01T00:00:00,organization_entry,SUP-00289,,low,SUP-00289 joined the network in 2025-09,2025-09
+EVT-00273,2025-09-01T00:00:00,organization_entry,MFG-00065,,low,MFG-00065 joined the network in 2025-09,2025-09
+EVT-00274,2025-09-01T00:00:00,organization_entry,RET-00074,,low,RET-00074 joined the network in 2025-09,2025-09
+EVT-00275,2025-09-01T00:00:00,organization_entry,SUP-00064,,low,SUP-00064 joined the network in 2025-09,2025-09
+EVT-00276,2025-09-01T00:00:00,organization_entry,MFG-00060,,low,MFG-00060 joined the network in 2025-09,2025-09
+EVT-00277,2025-09-01T00:00:00,organization_entry,SUP-00093,,low,SUP-00093 joined the network in 2025-09,2025-09
+EVT-00278,2025-09-01T00:00:00,organization_entry,SUP-00021,,low,SUP-00021 joined the network in 2025-09,2025-09
+EVT-00279,2025-09-01T00:00:00,organization_exit,SUP-00282,,medium,SUP-00282 became inactive in 2025-09,2025-09
+EVT-00280,2025-09-01T00:00:00,organization_exit,SUP-00119,,medium,SUP-00119 became inactive in 2025-09,2025-09
+EVT-00281,2025-09-01T00:00:00,organization_exit,MFG-00009,,medium,MFG-00009 became inactive in 2025-09,2025-09
+EVT-00282,2025-09-01T00:00:00,organization_exit,RET-00043,,medium,RET-00043 became inactive in 2025-09,2025-09
+EVT-00283,2025-10-01T00:00:00,organization_entry,SUP-00128,,low,SUP-00128 joined the network in 2025-10,2025-10
+EVT-00284,2025-10-01T00:00:00,organization_entry,RET-00042,,low,RET-00042 joined the network in 2025-10,2025-10
+EVT-00285,2025-10-01T00:00:00,organization_entry,SUP-00124,,low,SUP-00124 joined the network in 2025-10,2025-10
+EVT-00286,2025-10-01T00:00:00,organization_entry,DST-00164,,low,DST-00164 joined the network in 2025-10,2025-10
+EVT-00287,2025-10-01T00:00:00,organization_entry,LOG-00076,,low,LOG-00076 joined the network in 2025-10,2025-10
+EVT-00288,2025-10-01T00:00:00,organization_entry,MFG-00037,,low,MFG-00037 joined the network in 2025-10,2025-10
+EVT-00289,2025-10-01T00:00:00,organization_entry,RET-00078,,low,RET-00078 joined the network in 2025-10,2025-10
+EVT-00290,2025-10-01T00:00:00,organization_entry,DST-00185,,low,DST-00185 joined the network in 2025-10,2025-10
+EVT-00291,2025-10-01T00:00:00,organization_entry,WHS-00086,,low,WHS-00086 joined the network in 2025-10,2025-10
+EVT-00292,2025-10-01T00:00:00,organization_entry,SUP-00076,,low,SUP-00076 joined the network in 2025-10,2025-10
+EVT-00293,2025-10-01T00:00:00,organization_exit,WHS-00033,,medium,WHS-00033 became inactive in 2025-10,2025-10
+EVT-00294,2025-10-01T00:00:00,organization_exit,DST-00109,,medium,DST-00109 became inactive in 2025-10,2025-10
+EVT-00295,2025-10-01T00:00:00,organization_exit,SUP-00201,,medium,SUP-00201 became inactive in 2025-10,2025-10
+EVT-00296,2025-10-01T00:00:00,organization_exit,SUP-00210,,medium,SUP-00210 became inactive in 2025-10,2025-10
+EVT-00297,2025-11-01T00:00:00,organization_entry,LOG-00006,,low,LOG-00006 joined the network in 2025-11,2025-11
+EVT-00298,2025-11-01T00:00:00,organization_entry,MFG-00080,,low,MFG-00080 joined the network in 2025-11,2025-11
+EVT-00299,2025-11-01T00:00:00,organization_entry,SUP-00215,,low,SUP-00215 joined the network in 2025-11,2025-11
+EVT-00300,2025-11-01T00:00:00,organization_entry,MFG-00064,,low,MFG-00064 joined the network in 2025-11,2025-11
+EVT-00301,2025-11-01T00:00:00,organization_entry,RET-00025,,low,RET-00025 joined the network in 2025-11,2025-11
+EVT-00302,2025-11-01T00:00:00,organization_entry,DST-00016,,low,DST-00016 joined the network in 2025-11,2025-11
+EVT-00303,2025-11-01T00:00:00,organization_entry,WHS-00091,,low,WHS-00091 joined the network in 2025-11,2025-11
+EVT-00304,2025-11-01T00:00:00,organization_entry,RET-00036,,low,RET-00036 joined the network in 2025-11,2025-11
+EVT-00305,2025-11-01T00:00:00,organization_entry,DST-00170,,low,DST-00170 joined the network in 2025-11,2025-11
+EVT-00306,2025-11-01T00:00:00,organization_entry,SUP-00053,,low,SUP-00053 joined the network in 2025-11,2025-11
+EVT-00307,2025-11-01T00:00:00,organization_exit,WHS-00048,,medium,WHS-00048 became inactive in 2025-11,2025-11
+EVT-00308,2025-11-01T00:00:00,organization_exit,RET-00133,,medium,RET-00133 became inactive in 2025-11,2025-11
+EVT-00309,2025-11-01T00:00:00,organization_exit,DST-00046,,medium,DST-00046 became inactive in 2025-11,2025-11
+EVT-00310,2025-11-01T00:00:00,organization_exit,LOG-00071,,medium,LOG-00071 became inactive in 2025-11,2025-11
+EVT-00311,2025-11-01T00:00:00,organization_exit,LOG-00025,,medium,LOG-00025 became inactive in 2025-11,2025-11
+EVT-00312,2025-12-01T00:00:00,organization_entry,RET-00019,,low,RET-00019 joined the network in 2025-12,2025-12
+EVT-00313,2025-12-01T00:00:00,organization_entry,LOG-00020,,low,LOG-00020 joined the network in 2025-12,2025-12
+EVT-00314,2025-12-01T00:00:00,organization_entry,SUP-00057,,low,SUP-00057 joined the network in 2025-12,2025-12
+EVT-00315,2025-12-01T00:00:00,organization_entry,RET-00122,,low,RET-00122 joined the network in 2025-12,2025-12
+EVT-00316,2025-12-01T00:00:00,organization_entry,DST-00121,,low,DST-00121 joined the network in 2025-12,2025-12
+EVT-00317,2025-12-01T00:00:00,organization_entry,RET-00015,,low,RET-00015 joined the network in 2025-12,2025-12
+EVT-00318,2025-12-01T00:00:00,organization_entry,WHS-00019,,low,WHS-00019 joined the network in 2025-12,2025-12
+EVT-00319,2025-12-01T00:00:00,organization_entry,SUP-00026,,low,SUP-00026 joined the network in 2025-12,2025-12
+EVT-00320,2025-12-01T00:00:00,organization_entry,RET-00094,,low,RET-00094 joined the network in 2025-12,2025-12
+EVT-00321,2025-12-01T00:00:00,organization_entry,RET-00087,,low,RET-00087 joined the network in 2025-12,2025-12
+EVT-00322,2025-12-01T00:00:00,organization_exit,DST-00191,,medium,DST-00191 became inactive in 2025-12,2025-12
+EVT-00323,2025-12-01T00:00:00,organization_exit,RET-00117,,medium,RET-00117 became inactive in 2025-12,2025-12
+EVT-00324,2025-12-01T00:00:00,organization_exit,SUP-00215,,medium,SUP-00215 became inactive in 2025-12,2025-12
+EVT-00325,2025-12-01T00:00:00,organization_exit,SUP-00069,,medium,SUP-00069 became inactive in 2025-12,2025-12
+EVT-00326,2025-12-01T00:00:00,organization_exit,RET-00027,,medium,RET-00027 became inactive in 2025-12,2025-12

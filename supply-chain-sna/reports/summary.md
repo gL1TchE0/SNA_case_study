@@ -1,6 +1,6 @@
 # Supply Chain Social Network Analysis — Research Summary
 
-**Generated**: 2026-09-23 10:00 UTC  
+**Generated**: 2026-10-01 05:28 UTC  
 **Seed**: 42  
 **Dataset Version**: v1  
 
@@ -9,80 +9,99 @@
 ## 1. Dataset Statistics
 
 - **Nodes**: 1000
-- **Edges**: 7517
-- **Density**: 0.007525
-- **Weakly Connected Components**: 1
-- **Largest WCC Fraction**: 1.0000
-- **Average Total Degree**: 15.03
-- **Avg Clustering (undirected)**: 0.0186
-- **Global Efficiency**: 0.37617047046835733
+- **Edges**: 6806
+- **Density**: 0.006813
+- **Weakly Connected Components**: 2
+- **Largest WCC Fraction**: 0.9990
+- **Average Total Degree**: 13.61
+- **Avg Clustering (undirected)**: 0.0704
+- **Global Efficiency**: 0.34422492492410844
 
 ---
 
 ## 2. Centrality Findings
 
 ### Top 3 by Total Degree
-- MFG-00131: 74.000000
-- MFG-00028: 63.000000
-- MFG-00141: 62.000000
+- WHS-00014: 87.000000
+- MFG-00141: 73.000000
+- MFG-00131: 72.000000
 ### Top 3 by Betweenness
-- MFG-00131: 0.019171
-- WHS-00012: 0.018229
-- WHS-00068: 0.012974
+- WHS-00014: 0.052268
+- DST-00112: 0.046097
+- WHS-00063: 0.035812
 ### Top 3 by Pagerank
-- RET-00032: 0.003657
-- RET-00029: 0.003577
-- WHS-00002: 0.003550
+- WHS-00041: 0.005443
+- WHS-00014: 0.004980
+- RET-00067: 0.004886
+### Top 3 by Pagerank Reversed
+- MFG-00028: 0.006389
+- MFG-00131: 0.005753
+- MFG-00141: 0.005289
 
 ### Rank Correlations (Spearman)
-- total_degree_vs_betweenness: r = 0.7753
-- total_degree_vs_pagerank: r = 0.7461
-- betweenness_vs_pagerank: r = 0.5775
-- eigenvector_vs_pagerank: r = 0.9657
-- betweenness_vs_closeness: r = 0.4823
+- total_degree_vs_betweenness: r = 0.7084
+- total_degree_vs_pagerank: r = 0.7636
+- betweenness_vs_pagerank: r = 0.6016
+- eigenvector_vs_pagerank: r = 0.9591
+- betweenness_vs_closeness: r = 0.5189
+- total_degree_vs_pagerank_reversed: r = 0.2194
+- pagerank_vs_pagerank_reversed: r = -0.2500
 
 ---
 
 ## 3. Community Detection
 
 - **Algorithm**: louvain
-- **Communities Detected**: 16
-- **Modularity**: 0.25243513995817374
-- **Inter-community Edge Fraction**: 0.7501
+- **Communities Detected**: 6
+- **Modularity**: 0.6530717900778058
+- **Inter-community Edge Fraction**: 0.1238
 
 ---
 
 ## 4. Dependency Analysis
 
-- **Nodes with >80% upstream concentration**: 90
-- **Mean supplier dependency ratio**: 0.2944
+- Logistics-provider edges are excluded from supplier counts
+- **Nodes with >80% upstream concentration**: 27
+- **Mean supplier dependency ratio**: 0.2542
 
 ---
 
 ## 5. Temporal Analysis
 
 - **Months analyzed**: 24
-- **Node count range**: 1000–1000
-- **Edge count range**: 4312–5000
-- **Density trend**: 0.005005 → 0.004316
+- **Node count range**: 760–905
+- **Edge count range**: 3068–5034
+- **Density trend**: 0.005319 → 0.006153
+- **Detected communities per month**: 5–8
+- **Modularity range**: 0.6047–0.6772
 
 ---
 
 ## 6. Resilience Findings
 
-- **Random removal at 10%**: LCC = 0.9998
-- **Degree removal at 10%**: LCC = 0.9989
-- **Betweenness removal at 10%**: LCC = 0.9978
-- **Pagerank removal at 10%**: LCC = 1.0000
+- **Random removal at 10%**: LCC = 0.9989
+- **Degree removal at 10%**: LCC = 0.9911
+- **Betweenness removal at 10%**: LCC = 0.9922
+- **Pagerank removal at 10%**: LCC = 0.9978
 
 ---
 
 ## 7. Ground-Truth Evaluation
 
-- **Bridge recovery rate**: 0.0
-- **Community ARI**: None
-- **Community NMI**: None
-- **Efficiency change after removing critical nodes**: -0.003845701083428188
+- **Hub recovery in top-20 by total_degree**: 0.80
+- **Hub recovery in top-20 by betweenness**: 0.40
+- **Hub recovery in top-20 by pagerank**: 0.00
+- **Hub recovery in top-20 by pagerank_reversed**: 0.60
+- **Bridge recovery in top-30 betweenness**: 0.9
+- **Median betweenness rank of planted bridges**: 6.0
+- **Median degree rank of planted bridges**: 10.0
+- **Community ARI**: 0.9690234424583879
+- **Community NMI**: 0.9549513376336983
+- **Planted dependents whose top supplier is the planted critical supplier**: 1.00
+- **Planted dependents flagged as high-dependency (top 10% of manufacturers)**: 0.67
+- **Critical suppliers in top 10% of suppliers by weighted out-degree**: 3/3
+- **Critical suppliers in top 10% of suppliers by reversed PageRank**: 3/3
+- **Efficiency change after removing planted hubs**: -0.009198990422985776
 
 ---
 

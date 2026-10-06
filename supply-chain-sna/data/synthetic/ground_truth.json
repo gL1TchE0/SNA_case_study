@@ -7,16 +7,16 @@
     "MFG-00028"
   ],
   "planted_bridges": [
-    "DST-00010",
-    "DST-00020",
-    "LOG-00026",
-    "LOG-00007",
+    "DST-00042",
+    "WHS-00063",
+    "DST-00112",
+    "DST-00149",
     "DST-00115",
-    "DST-00033",
-    "LOG-00059",
-    "LOG-00084",
-    "DST-00102",
-    "DST-00042"
+    "DST-00019",
+    "WHS-00044",
+    "DST-00084",
+    "DST-00162",
+    "WHS-00014"
   ],
   "planted_communities": {
     "North": [
@@ -1033,35 +1033,35 @@
   "planted_dependency_groups": [
     {
       "group_id": "DEP-001",
-      "upstream_manufacturer": "MFG-00112",
-      "dependent_suppliers": [
-        "SUP-00224",
-        "SUP-00041",
-        "SUP-00245",
-        "SUP-00232",
-        "SUP-00152"
+      "critical_supplier": "SUP-00224",
+      "dependent_manufacturers": [
+        "MFG-00099",
+        "MFG-00104",
+        "MFG-00146",
+        "MFG-00113",
+        "MFG-00034"
       ]
     },
     {
       "group_id": "DEP-002",
-      "upstream_manufacturer": "MFG-00020",
-      "dependent_suppliers": [
-        "SUP-00089",
-        "SUP-00114",
-        "SUP-00250",
-        "SUP-00034",
-        "SUP-00265"
+      "critical_supplier": "SUP-00041",
+      "dependent_manufacturers": [
+        "MFG-00007",
+        "MFG-00134",
+        "MFG-00081",
+        "MFG-00036",
+        "MFG-00138"
       ]
     },
     {
       "group_id": "DEP-003",
-      "upstream_manufacturer": "MFG-00072",
-      "dependent_suppliers": [
-        "SUP-00078",
-        "SUP-00076",
-        "SUP-00052",
-        "SUP-00038",
-        "SUP-00048"
+      "critical_supplier": "SUP-00245",
+      "dependent_manufacturers": [
+        "MFG-00107",
+        "MFG-00058",
+        "MFG-00094",
+        "MFG-00004",
+        "MFG-00021"
       ]
     }
   ],
@@ -1069,192 +1069,192 @@
     {
       "month": "2024-01",
       "month_index": 0,
-      "active_orgs": 1000,
-      "active_edges": 5000,
+      "active_orgs": 770,
+      "active_edges": 3068,
       "is_disruption": false,
       "is_seasonal_peak": false
     },
     {
       "month": "2024-02",
       "month_index": 1,
-      "active_orgs": 990,
-      "active_edges": 4908,
+      "active_orgs": 776,
+      "active_edges": 3182,
       "is_disruption": false,
       "is_seasonal_peak": false
     },
     {
       "month": "2024-03",
       "month_index": 2,
-      "active_orgs": 980,
-      "active_edges": 4874,
+      "active_orgs": 782,
+      "active_edges": 3305,
       "is_disruption": false,
       "is_seasonal_peak": true
     },
     {
       "month": "2024-04",
       "month_index": 3,
-      "active_orgs": 970,
-      "active_edges": 4853,
+      "active_orgs": 788,
+      "active_edges": 3379,
       "is_disruption": false,
       "is_seasonal_peak": false
     },
     {
       "month": "2024-05",
       "month_index": 4,
-      "active_orgs": 960,
-      "active_edges": 4798,
+      "active_orgs": 794,
+      "active_edges": 3439,
       "is_disruption": false,
       "is_seasonal_peak": false
     },
     {
       "month": "2024-06",
       "month_index": 5,
-      "active_orgs": 950,
-      "active_edges": 4698,
+      "active_orgs": 800,
+      "active_edges": 3517,
       "is_disruption": false,
       "is_seasonal_peak": false
     },
     {
       "month": "2024-07",
       "month_index": 6,
-      "active_orgs": 940,
-      "active_edges": 4664,
+      "active_orgs": 806,
+      "active_edges": 3624,
       "is_disruption": false,
       "is_seasonal_peak": false
     },
     {
       "month": "2024-08",
       "month_index": 7,
-      "active_orgs": 931,
-      "active_edges": 4638,
+      "active_orgs": 812,
+      "active_edges": 3679,
       "is_disruption": false,
       "is_seasonal_peak": false
     },
     {
       "month": "2024-09",
       "month_index": 8,
-      "active_orgs": 922,
-      "active_edges": 4636,
+      "active_orgs": 818,
+      "active_edges": 3752,
       "is_disruption": false,
       "is_seasonal_peak": true
     },
     {
       "month": "2024-10",
       "month_index": 9,
-      "active_orgs": 913,
-      "active_edges": 4596,
+      "active_orgs": 824,
+      "active_edges": 3811,
       "is_disruption": false,
       "is_seasonal_peak": false
     },
     {
       "month": "2024-11",
       "month_index": 10,
-      "active_orgs": 904,
-      "active_edges": 4559,
+      "active_orgs": 830,
+      "active_edges": 3911,
       "is_disruption": false,
       "is_seasonal_peak": false
     },
     {
       "month": "2024-12",
       "month_index": 11,
-      "active_orgs": 895,
-      "active_edges": 4548,
+      "active_orgs": 836,
+      "active_edges": 4017,
       "is_disruption": true,
       "is_seasonal_peak": false
     },
     {
       "month": "2025-01",
       "month_index": 12,
-      "active_orgs": 886,
-      "active_edges": 4552,
+      "active_orgs": 842,
+      "active_edges": 4107,
       "is_disruption": false,
       "is_seasonal_peak": false
     },
     {
       "month": "2025-02",
       "month_index": 13,
-      "active_orgs": 877,
-      "active_edges": 4525,
+      "active_orgs": 848,
+      "active_edges": 4204,
       "is_disruption": false,
       "is_seasonal_peak": false
     },
     {
       "month": "2025-03",
       "month_index": 14,
-      "active_orgs": 868,
-      "active_edges": 4500,
+      "active_orgs": 854,
+      "active_edges": 4300,
       "is_disruption": false,
       "is_seasonal_peak": true
     },
     {
       "month": "2025-04",
       "month_index": 15,
-      "active_orgs": 859,
-      "active_edges": 4474,
+      "active_orgs": 860,
+      "active_edges": 4365,
       "is_disruption": false,
       "is_seasonal_peak": false
     },
     {
       "month": "2025-05",
       "month_index": 16,
-      "active_orgs": 850,
-      "active_edges": 4423,
+      "active_orgs": 866,
+      "active_edges": 4458,
       "is_disruption": false,
       "is_seasonal_peak": false
     },
     {
       "month": "2025-06",
       "month_index": 17,
-      "active_orgs": 842,
-      "active_edges": 4417,
+      "active_orgs": 872,
+      "active_edges": 4539,
       "is_disruption": true,
       "is_seasonal_peak": false
     },
     {
       "month": "2025-07",
       "month_index": 18,
-      "active_orgs": 834,
-      "active_edges": 4417,
+      "active_orgs": 878,
+      "active_edges": 4622,
       "is_disruption": false,
       "is_seasonal_peak": false
     },
     {
       "month": "2025-08",
       "month_index": 19,
-      "active_orgs": 826,
-      "active_edges": 4407,
+      "active_orgs": 884,
+      "active_edges": 4716,
       "is_disruption": false,
       "is_seasonal_peak": false
     },
     {
       "month": "2025-09",
       "month_index": 20,
-      "active_orgs": 818,
-      "active_edges": 4366,
+      "active_orgs": 890,
+      "active_edges": 4781,
       "is_disruption": false,
       "is_seasonal_peak": true
     },
     {
       "month": "2025-10",
       "month_index": 21,
-      "active_orgs": 810,
-      "active_edges": 4338,
+      "active_orgs": 896,
+      "active_edges": 4872,
       "is_disruption": false,
       "is_seasonal_peak": false
     },
     {
       "month": "2025-11",
       "month_index": 22,
-      "active_orgs": 802,
-      "active_edges": 4337,
+      "active_orgs": 901,
+      "active_edges": 4967,
       "is_disruption": false,
       "is_seasonal_peak": false
     },
     {
       "month": "2025-12",
       "month_index": 23,
-      "active_orgs": 794,
-      "active_edges": 4312,
+      "active_orgs": 906,
+      "active_edges": 5034,
       "is_disruption": false,
       "is_seasonal_peak": false
     }

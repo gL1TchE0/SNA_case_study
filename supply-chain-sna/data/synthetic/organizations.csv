@@ -1,1001 +1,1001 @@
-organization_id,organization_name,organization_type,region,industry,size_category,status,created_at
-DST-00072,Holmes-Mcintyre,distributor,East,Automotive,Enterprise,active,2024-01-01
-WHS-00088,Gray-Tran,warehouse,South,Chemicals,Large,active,2024-01-01
-WHS-00091,"Mueller, Knight and Hodge",warehouse,East,Automotive,Enterprise,active,2024-01-01
-WHS-00011,Foster Inc,warehouse,East,Food_Beverage,Medium,active,2024-01-01
-MFG-00112,Graham Group,manufacturer,South,Textiles,Large,active,2024-01-01
-WHS-00029,Wheeler Group,warehouse,West,Automotive,Small,active,2024-01-01
-DST-00177,Lopez-Curry,distributor,North,Pharmaceuticals,Medium,active,2024-01-01
-DST-00064,Cisneros and Sons,distributor,West,Textiles,Medium,active,2024-01-01
-RET-00010,"Martinez, Cline and Wright",retailer,South,Electronics,Small,active,2024-01-01
-SUP-00137,"Lewis, Kennedy and Santana",supplier,South,Pharmaceuticals,Enterprise,active,2024-01-01
-LOG-00062,"Wilson, Sweeney and Wong",logistics_provider,North,Automotive,Enterprise,active,2024-01-01
-SUP-00077,"Woods, Calhoun and Schmidt",supplier,West,Food_Beverage,Small,active,2024-01-01
-DST-00187,Wilcox-Robertson,distributor,South,Textiles,Medium,active,2024-01-01
-RET-00124,Crane Group,retailer,Central,Food_Beverage,Enterprise,active,2024-01-01
-RET-00089,"Flores, Mckenzie and Duncan",retailer,East,Food_Beverage,Small,active,2024-01-01
-RET-00050,Wright Ltd,retailer,North,Electronics,Small,active,2024-01-01
-SUP-00281,Garner-Thornton,supplier,East,Chemicals,Medium,active,2024-01-01
-RET-00034,Rios-Padilla,retailer,South,Electronics,Large,active,2024-01-01
-LOG-00012,"Moore, Price and Ward",logistics_provider,East,Textiles,Medium,active,2024-01-01
-MFG-00020,"Shaw, Nelson and Martin",manufacturer,North,Automotive,Enterprise,active,2024-01-01
-DST-00100,Miller Ltd,distributor,West,Automotive,Small,active,2024-01-01
-SUP-00175,Ramirez-Bean,supplier,North,Textiles,Medium,active,2024-01-01
-MFG-00072,Davis Inc,manufacturer,West,Pharmaceuticals,Medium,active,2024-01-01
-DST-00078,Contreras-Mckinney,distributor,South,Pharmaceuticals,Large,active,2024-01-01
-SUP-00211,"Pierce, Bell and Chavez",supplier,South,Electronics,Medium,active,2024-01-01
-SUP-00236,"Harrison, Johnson and Roberts",supplier,South,Automotive,Large,active,2024-01-01
-SUP-00102,"Patterson, Smith and Jones",supplier,South,Automotive,Enterprise,active,2024-01-01
-RET-00137,Gomez and Sons,retailer,Central,Electronics,Medium,active,2024-01-01
-RET-00053,Abbott Ltd,retailer,West,Electronics,Large,active,2024-01-01
-RET-00098,Oconnor PLC,retailer,West,Pharmaceuticals,Enterprise,active,2024-01-01
-MFG-00047,Jones PLC,manufacturer,East,Food_Beverage,Medium,active,2024-01-01
-SUP-00140,Chambers and Sons,supplier,West,Automotive,Large,active,2024-01-01
-DST-00172,Morris-Brewer,distributor,North,Chemicals,Large,active,2024-01-01
-DST-00050,Kelly-Norman,distributor,North,Food_Beverage,Enterprise,active,2024-01-01
-MFG-00071,Mcdaniel Group,manufacturer,North,Automotive,Large,active,2024-01-01
-SUP-00199,Ramirez Group,supplier,Central,Textiles,Small,active,2024-01-01
-WHS-00038,"Shelton, Peters and Williams",warehouse,North,Pharmaceuticals,Large,active,2024-01-01
-DST-00135,"Patel, Erickson and Evans",distributor,Central,Food_Beverage,Enterprise,active,2024-01-01
-RET-00052,"Griffith, Mitchell and Pugh",retailer,Central,Textiles,Large,active,2024-01-01
-SUP-00060,Gomez-Jenkins,supplier,Central,Textiles,Enterprise,active,2024-01-01
-MFG-00029,Harvey PLC,manufacturer,East,Chemicals,Enterprise,active,2024-01-01
-SUP-00097,Wagner-King,supplier,South,Food_Beverage,Small,active,2024-01-01
-MFG-00013,Robinson-Lee,manufacturer,South,Electronics,Enterprise,active,2024-01-01
-RET-00125,"Adkins, Wright and Murray",retailer,Central,Pharmaceuticals,Enterprise,active,2024-01-01
-SUP-00300,Harvey-Allen,supplier,West,Automotive,Enterprise,active,2024-01-01
-SUP-00278,Gibson-Morris,supplier,North,Pharmaceuticals,Large,active,2024-01-01
-RET-00075,"Smith, Crawford and Reed",retailer,Central,Pharmaceuticals,Medium,active,2024-01-01
-DST-00152,Payne-Lowe,distributor,East,Chemicals,Small,active,2024-01-01
-MFG-00140,King-York,manufacturer,Central,Textiles,Large,active,2024-01-01
-LOG-00088,"Wagner, Simpson and Cohen",logistics_provider,East,Food_Beverage,Small,active,2024-01-01
-DST-00121,"Khan, Pena and Ruiz",distributor,Central,Automotive,Small,active,2024-01-01
-RET-00030,Pena LLC,retailer,Central,Food_Beverage,Large,active,2024-01-01
-SUP-00262,"Anderson, Roberts and Gilmore",supplier,West,Electronics,Small,active,2024-01-01
-DST-00129,"Mcmillan, Fischer and Gonzalez",distributor,Central,Automotive,Medium,active,2024-01-01
-SUP-00024,Morales-Jones,supplier,North,Textiles,Medium,active,2024-01-01
-SUP-00031,Burton Ltd,supplier,Central,Chemicals,Large,active,2024-01-01
-DST-00168,Love-Garcia,distributor,South,Textiles,Large,active,2024-01-01
-SUP-00011,Blair PLC,supplier,South,Automotive,Small,active,2024-01-01
-SUP-00222,Harrison-Alexander,supplier,Central,Electronics,Small,active,2024-01-01
-LOG-00071,Ray PLC,logistics_provider,South,Automotive,Small,active,2024-01-01
-SUP-00297,Howard-Jordan,supplier,East,Food_Beverage,Large,active,2024-01-01
-SUP-00055,Jones Inc,supplier,South,Textiles,Small,active,2024-01-01
-DST-00093,Torres and Sons,distributor,South,Pharmaceuticals,Medium,active,2024-01-01
-SUP-00210,"Wood, Tran and Cooper",supplier,North,Electronics,Medium,active,2024-01-01
-DST-00155,"Evans, David and Hendrix",distributor,North,Pharmaceuticals,Enterprise,active,2024-01-01
-WHS-00043,"Thomas, Ford and Brown",warehouse,Central,Automotive,Enterprise,active,2024-01-01
-WHS-00013,"Brown, Mcknight and Michael",warehouse,East,Pharmaceuticals,Enterprise,active,2024-01-01
-RET-00017,"Smith, Schroeder and Oconnor",retailer,North,Electronics,Enterprise,active,2024-01-01
-SUP-00071,Gray Group,supplier,East,Chemicals,Enterprise,active,2024-01-01
-DST-00094,Donovan-Perez,distributor,East,Electronics,Enterprise,active,2024-01-01
-SUP-00108,Dickson-Brady,supplier,East,Electronics,Medium,active,2024-01-01
-DST-00044,"Marshall, Dominguez and Welch",distributor,East,Pharmaceuticals,Medium,active,2024-01-01
-DST-00141,"Williams, Castillo and Warren",distributor,South,Food_Beverage,Enterprise,active,2024-01-01
-WHS-00092,Jacobson Inc,warehouse,Central,Textiles,Enterprise,active,2024-01-01
-SUP-00293,Bright-Francis,supplier,East,Textiles,Small,active,2024-01-01
-SUP-00290,"James, Stewart and Higgins",supplier,West,Chemicals,Large,active,2024-01-01
-WHS-00003,"Cox, Stark and Rodriguez",warehouse,West,Chemicals,Large,active,2024-01-01
-SUP-00040,"Romero, Gonzalez and Brooks",supplier,South,Chemicals,Enterprise,active,2024-01-01
-DST-00140,"Patton, Parsons and Lane",distributor,West,Food_Beverage,Large,active,2024-01-01
-MFG-00008,Armstrong-Andrews,manufacturer,East,Textiles,Medium,active,2024-01-01
-WHS-00030,"Powers, Brennan and Sanchez",warehouse,West,Electronics,Medium,active,2024-01-01
-SUP-00067,Williams PLC,supplier,Central,Pharmaceuticals,Small,active,2024-01-01
-SUP-00276,"Burns, Hernandez and Ryan",supplier,North,Food_Beverage,Enterprise,active,2024-01-01
-SUP-00068,Novak and Sons,supplier,North,Chemicals,Small,active,2024-01-01
-MFG-00019,Buchanan LLC,manufacturer,West,Pharmaceuticals,Medium,active,2024-01-01
-DST-00099,"Morgan, Bradshaw and Williams",distributor,West,Electronics,Medium,active,2024-01-01
-RET-00149,"Robinson, Huang and Osborne",retailer,South,Chemicals,Large,active,2024-01-01
-WHS-00065,"Pena, Cohen and Scott",warehouse,East,Automotive,Medium,active,2024-01-01
-LOG-00004,Peterson PLC,logistics_provider,East,Food_Beverage,Medium,active,2024-01-01
-MFG-00028,Rodriguez-Hall,manufacturer,South,Food_Beverage,Small,active,2024-01-01
-MFG-00083,"Austin, Day and Johnson",manufacturer,Central,Food_Beverage,Large,active,2024-01-01
-DST-00002,Stanley PLC,distributor,East,Automotive,Large,active,2024-01-01
-DST-00073,Green LLC,distributor,South,Textiles,Small,active,2024-01-01
-SUP-00219,Williams-Brown,supplier,West,Chemicals,Medium,active,2024-01-01
-LOG-00038,Benton Group,logistics_provider,North,Chemicals,Medium,active,2024-01-01
-MFG-00137,Ortiz-Morgan,manufacturer,North,Electronics,Enterprise,active,2024-01-01
-LOG-00015,Miller Group,logistics_provider,West,Chemicals,Enterprise,active,2024-01-01
-SUP-00089,Suarez LLC,supplier,West,Automotive,Enterprise,active,2024-01-01
-SUP-00064,"West, Henderson and Ramirez",supplier,North,Pharmaceuticals,Medium,active,2024-01-01
-LOG-00077,"Mccarthy, Evans and Mendez",logistics_provider,West,Pharmaceuticals,Large,active,2024-01-01
-WHS-00067,Murray-Oconnor,warehouse,East,Textiles,Large,active,2024-01-01
-MFG-00052,Guerrero Inc,manufacturer,West,Textiles,Medium,active,2024-01-01
-RET-00087,Tran Ltd,retailer,South,Chemicals,Small,active,2024-01-01
-SUP-00257,Cordova Group,supplier,Central,Automotive,Medium,active,2024-01-01
-DST-00186,Thompson Ltd,distributor,West,Food_Beverage,Large,active,2024-01-01
-DST-00195,Sullivan PLC,distributor,East,Textiles,Small,active,2024-01-01
-DST-00105,Evans-Jones,distributor,North,Chemicals,Large,active,2024-01-01
-RET-00110,Bates-Anderson,retailer,West,Textiles,Enterprise,active,2024-01-01
-SUP-00169,"Yates, Ramsey and Pittman",supplier,West,Textiles,Small,active,2024-01-01
-RET-00068,Herrera Group,retailer,West,Chemicals,Medium,active,2024-01-01
-DST-00079,"Daniels, Vance and York",distributor,West,Pharmaceuticals,Medium,active,2024-01-01
-LOG-00074,Rose-Fowler,logistics_provider,North,Automotive,Enterprise,active,2024-01-01
-RET-00136,Reyes Group,retailer,West,Pharmaceuticals,Small,active,2024-01-01
-LOG-00067,Foster-Mclaughlin,logistics_provider,South,Food_Beverage,Small,active,2024-01-01
-SUP-00087,"Ferrell, Jones and Lewis",supplier,South,Food_Beverage,Small,active,2024-01-01
-MFG-00133,Hayes LLC,manufacturer,West,Food_Beverage,Small,active,2024-01-01
-SUP-00185,Rodriguez-Johnson,supplier,East,Automotive,Small,active,2024-01-01
-RET-00129,Aguilar LLC,retailer,East,Pharmaceuticals,Medium,active,2024-01-01
-DST-00085,Salazar Inc,distributor,West,Electronics,Enterprise,active,2024-01-01
-SUP-00295,"Brennan, Wallace and Benson",supplier,East,Pharmaceuticals,Enterprise,active,2024-01-01
-RET-00043,Jones PLC,retailer,West,Chemicals,Medium,active,2024-01-01
-MFG-00126,"Brown, Romero and Collins",manufacturer,South,Automotive,Large,active,2024-01-01
-WHS-00064,Hudson-Sanchez,warehouse,Central,Automotive,Medium,active,2024-01-01
-SUP-00261,Wolf-Harris,supplier,South,Electronics,Large,active,2024-01-01
-SUP-00238,"Hall, Baker and Moody",supplier,Central,Electronics,Medium,active,2024-01-01
-DST-00110,Anderson-Wood,distributor,South,Pharmaceuticals,Enterprise,active,2024-01-01
-DST-00134,"Kirby, Wheeler and Romero",distributor,North,Automotive,Large,active,2024-01-01
-MFG-00146,"Osborn, Gaines and Davis",manufacturer,South,Electronics,Large,active,2024-01-01
-RET-00018,"Stanton, Reid and Terry",retailer,West,Food_Beverage,Enterprise,active,2024-01-01
-LOG-00051,Garcia and Sons,logistics_provider,South,Chemicals,Small,active,2024-01-01
-DST-00150,Fox-Edwards,distributor,East,Food_Beverage,Small,active,2024-01-01
-LOG-00100,Gonzales Inc,logistics_provider,North,Electronics,Enterprise,active,2024-01-01
-SUP-00266,Gay Inc,supplier,North,Pharmaceuticals,Small,active,2024-01-01
-RET-00146,Castillo-Harrington,retailer,East,Electronics,Enterprise,active,2024-01-01
-DST-00080,"Mckinney, Graves and Thompson",distributor,South,Pharmaceuticals,Small,active,2024-01-01
-SUP-00056,Jones-Young,supplier,North,Chemicals,Enterprise,active,2024-01-01
-SUP-00121,White-Estes,supplier,South,Chemicals,Enterprise,active,2024-01-01
-SUP-00216,"Carlson, Hooper and Wall",supplier,South,Automotive,Small,active,2024-01-01
-SUP-00026,Wilkerson-Day,supplier,South,Food_Beverage,Enterprise,active,2024-01-01
-SUP-00073,Henderson-Bernard,supplier,Central,Textiles,Enterprise,active,2024-01-01
-SUP-00045,"Arroyo, Miller and Tucker",supplier,East,Electronics,Large,active,2024-01-01
-SUP-00248,"Matthews, Smith and Hubbard",supplier,East,Automotive,Large,active,2024-01-01
-WHS-00072,Duran Group,warehouse,East,Chemicals,Enterprise,active,2024-01-01
-SUP-00282,Hughes-Alvarado,supplier,West,Electronics,Medium,active,2024-01-01
-RET-00044,Bishop and Sons,retailer,West,Automotive,Large,active,2024-01-01
-RET-00065,"Wang, Henderson and Morales",retailer,East,Electronics,Enterprise,active,2024-01-01
-LOG-00061,"Chavez, Jones and Williams",logistics_provider,West,Textiles,Enterprise,active,2024-01-01
-SUP-00245,"Fernandez, Kim and George",supplier,West,Textiles,Large,active,2024-01-01
-LOG-00073,Wilson-Lambert,logistics_provider,Central,Chemicals,Medium,active,2024-01-01
-MFG-00022,Brock-Mcdonald,manufacturer,North,Automotive,Large,active,2024-01-01
-DST-00194,"Young, Contreras and Marshall",distributor,Central,Automotive,Medium,active,2024-01-01
-SUP-00159,Mccarthy Inc,supplier,West,Textiles,Small,active,2024-01-01
-RET-00128,Parks-Pace,retailer,Central,Pharmaceuticals,Enterprise,active,2024-01-01
-MFG-00130,Ford-Spencer,manufacturer,Central,Chemicals,Medium,active,2024-01-01
-RET-00092,Finley Inc,retailer,West,Automotive,Enterprise,active,2024-01-01
-DST-00013,"Taylor, Wright and Davidson",distributor,East,Food_Beverage,Enterprise,active,2024-01-01
-MFG-00010,Smith-Grimes,manufacturer,North,Electronics,Medium,active,2024-01-01
-WHS-00048,"Calderon, Williams and Bennett",warehouse,East,Chemicals,Medium,active,2024-01-01
-SUP-00061,"Brown, Valdez and Lucas",supplier,South,Textiles,Medium,active,2024-01-01
-RET-00035,Lewis Inc,retailer,Central,Textiles,Enterprise,active,2024-01-01
-DST-00146,Shaw-Carr,distributor,North,Electronics,Large,active,2024-01-01
-LOG-00018,"Davis, George and Nguyen",logistics_provider,Central,Food_Beverage,Large,active,2024-01-01
-DST-00200,Todd-Pham,distributor,North,Electronics,Large,active,2024-01-01
-WHS-00001,Gill Ltd,warehouse,South,Textiles,Enterprise,active,2024-01-01
-RET-00016,Gibson-Freeman,retailer,South,Automotive,Small,active,2024-01-01
-WHS-00019,Miller-Brandt,warehouse,South,Pharmaceuticals,Enterprise,active,2024-01-01
-SUP-00299,"Sparks, Jackson and Miller",supplier,South,Automotive,Enterprise,active,2024-01-01
-WHS-00040,"Flores, Butler and Hernandez",warehouse,South,Textiles,Medium,active,2024-01-01
-MFG-00015,"Becker, Taylor and Davis",manufacturer,West,Chemicals,Large,active,2024-01-01
-MFG-00011,"Beltran, Lozano and Mcgee",manufacturer,South,Automotive,Small,active,2024-01-01
-MFG-00062,Lam LLC,manufacturer,East,Electronics,Enterprise,active,2024-01-01
-DST-00030,Barnes PLC,distributor,North,Automotive,Enterprise,active,2024-01-01
-SUP-00111,Patton-Jenkins,supplier,Central,Chemicals,Small,active,2024-01-01
-RET-00140,Holland Group,retailer,South,Food_Beverage,Enterprise,active,2024-01-01
-DST-00037,"Hartman, Romero and Smith",distributor,Central,Electronics,Enterprise,active,2024-01-01
-MFG-00064,"Kelley, Nguyen and Vang",manufacturer,Central,Chemicals,Enterprise,active,2024-01-01
-SUP-00255,Roberts-Landry,supplier,East,Electronics,Medium,active,2024-01-01
-SUP-00260,Dean-Jimenez,supplier,West,Food_Beverage,Large,active,2024-01-01
-LOG-00053,Griffin Group,logistics_provider,Central,Pharmaceuticals,Small,active,2024-01-01
-WHS-00028,Allen Inc,warehouse,East,Chemicals,Large,active,2024-01-01
-DST-00045,Brown Group,distributor,Central,Pharmaceuticals,Small,active,2024-01-01
-WHS-00021,"Long, Anderson and Irwin",warehouse,East,Food_Beverage,Small,active,2024-01-01
-MFG-00078,Bell-Lane,manufacturer,South,Pharmaceuticals,Enterprise,active,2024-01-01
-DST-00077,Osborn-Cochran,distributor,North,Automotive,Large,active,2024-01-01
-LOG-00096,Weaver-Sherman,logistics_provider,West,Pharmaceuticals,Large,active,2024-01-01
-SUP-00138,"Jackson, Miller and Robertson",supplier,East,Automotive,Medium,active,2024-01-01
-MFG-00056,Strickland-Palmer,manufacturer,North,Food_Beverage,Large,active,2024-01-01
-MFG-00066,"Wilson, Pena and Rich",manufacturer,South,Chemicals,Medium,active,2024-01-01
-RET-00093,Cline-Ayala,retailer,West,Chemicals,Medium,active,2024-01-01
-WHS-00100,"Allen, Davenport and Price",warehouse,West,Textiles,Large,active,2024-01-01
-RET-00099,Hernandez Group,retailer,East,Food_Beverage,Small,active,2024-01-01
-LOG-00080,Brooks and Sons,logistics_provider,West,Pharmaceuticals,Medium,active,2024-01-01
-WHS-00007,"Burns, Nolan and Griffin",warehouse,South,Food_Beverage,Enterprise,active,2024-01-01
-SUP-00200,Christensen PLC,supplier,West,Textiles,Small,active,2024-01-01
-SUP-00214,"Tapia, Vaughn and Lee",supplier,West,Chemicals,Large,active,2024-01-01
-MFG-00109,Jackson-Meza,manufacturer,South,Pharmaceuticals,Large,active,2024-01-01
-MFG-00033,Torres Group,manufacturer,North,Food_Beverage,Small,active,2024-01-01
-SUP-00209,Holt-Torres,supplier,South,Chemicals,Small,active,2024-01-01
-DST-00164,"Nelson, Hoffman and Nelson",distributor,South,Electronics,Small,active,2024-01-01
-SUP-00079,Jones Inc,supplier,East,Electronics,Medium,active,2024-01-01
-SUP-00030,"Snyder, Campos and Callahan",supplier,East,Electronics,Medium,active,2024-01-01
-DST-00086,Parker Ltd,distributor,East,Chemicals,Medium,active,2024-01-01
-WHS-00046,Rivera Inc,warehouse,North,Food_Beverage,Large,active,2024-01-01
-DST-00108,Edwards Ltd,distributor,West,Food_Beverage,Small,active,2024-01-01
-LOG-00087,Lee Group,logistics_provider,East,Pharmaceuticals,Large,active,2024-01-01
-DST-00147,Salas-Fitzgerald,distributor,East,Automotive,Enterprise,active,2024-01-01
-SUP-00166,Medina-Navarro,supplier,North,Pharmaceuticals,Large,active,2024-01-01
-RET-00069,"Walters, Davenport and Becker",retailer,East,Automotive,Medium,active,2024-01-01
-DST-00046,Carter Inc,distributor,South,Chemicals,Enterprise,active,2024-01-01
-LOG-00075,"Price, Long and Wilson",logistics_provider,Central,Textiles,Small,active,2024-01-01
-SUP-00066,Morton-Chase,supplier,Central,Textiles,Medium,active,2024-01-01
-SUP-00142,Riggs PLC,supplier,Central,Food_Beverage,Large,active,2024-01-01
-RET-00076,"Logan, Le and Jackson",retailer,Central,Electronics,Enterprise,active,2024-01-01
-LOG-00078,Powers LLC,logistics_provider,East,Electronics,Medium,active,2024-01-01
-WHS-00006,Wilson-Harris,warehouse,North,Chemicals,Small,active,2024-01-01
-MFG-00032,"Turner, Ortiz and Taylor",manufacturer,Central,Textiles,Large,active,2024-01-01
-WHS-00015,Mitchell and Sons,warehouse,South,Pharmaceuticals,Small,active,2024-01-01
-SUP-00250,Ruiz Ltd,supplier,East,Electronics,Medium,active,2024-01-01
-RET-00058,"Wheeler, Rice and Levine",retailer,West,Pharmaceuticals,Small,active,2024-01-01
-WHS-00059,"Harrison, Franco and Rocha",warehouse,West,Textiles,Enterprise,active,2024-01-01
-MFG-00006,Bruce-Gonzalez,manufacturer,Central,Automotive,Enterprise,active,2024-01-01
-WHS-00085,Branch and Sons,warehouse,Central,Chemicals,Small,active,2024-01-01
-RET-00126,Martinez Inc,retailer,West,Pharmaceuticals,Enterprise,active,2024-01-01
-SUP-00050,"Harris, Collins and Carney",supplier,South,Automotive,Medium,active,2024-01-01
-RET-00047,Miller Inc,retailer,East,Electronics,Medium,active,2024-01-01
-SUP-00003,"Mcclain, Miller and Henderson",supplier,North,Chemicals,Small,active,2024-01-01
-DST-00095,"Jacobson, Singleton and King",distributor,East,Textiles,Small,active,2024-01-01
-MFG-00051,Fernandez and Sons,manufacturer,Central,Food_Beverage,Medium,active,2024-01-01
-RET-00055,Adkins LLC,retailer,Central,Pharmaceuticals,Medium,active,2024-01-01
-DST-00087,"Mendoza, Jenkins and Ortiz",distributor,West,Textiles,Large,active,2024-01-01
-MFG-00045,"Harper, Smith and Buchanan",manufacturer,North,Electronics,Large,active,2024-01-01
-RET-00145,Mayo Ltd,retailer,West,Electronics,Medium,active,2024-01-01
-DST-00032,Carlson-Smith,distributor,East,Electronics,Enterprise,active,2024-01-01
-DST-00126,"Cole, Pierce and Bryan",distributor,East,Pharmaceuticals,Small,active,2024-01-01
-SUP-00034,Frazier Inc,supplier,South,Automotive,Medium,active,2024-01-01
-SUP-00032,Carlson-Cruz,supplier,South,Chemicals,Enterprise,active,2024-01-01
-SUP-00232,"Choi, Garcia and Farmer",supplier,East,Food_Beverage,Medium,active,2024-01-01
-RET-00114,Taylor PLC,retailer,East,Automotive,Medium,active,2024-01-01
-SUP-00193,Short-Garcia,supplier,North,Automotive,Large,active,2024-01-01
-MFG-00034,Davis PLC,manufacturer,Central,Food_Beverage,Small,active,2024-01-01
-SUP-00004,Davis and Sons,supplier,Central,Food_Beverage,Small,active,2024-01-01
-SUP-00205,Miller Ltd,supplier,East,Automotive,Enterprise,active,2024-01-01
-DST-00065,"Gregory, Kim and Martinez",distributor,East,Automotive,Large,active,2024-01-01
-LOG-00050,Sheppard-Jordan,logistics_provider,Central,Chemicals,Small,active,2024-01-01
-MFG-00007,Castaneda-Rodriguez,manufacturer,West,Electronics,Medium,active,2024-01-01
-SUP-00110,Johnson-Doyle,supplier,West,Textiles,Large,active,2024-01-01
-MFG-00131,"Huang, Cole and Pacheco",manufacturer,West,Food_Beverage,Medium,active,2024-01-01
-SUP-00078,Yu Inc,supplier,North,Electronics,Enterprise,active,2024-01-01
-SUP-00085,"Evans, Stewart and Walton",supplier,North,Pharmaceuticals,Medium,active,2024-01-01
-SUP-00287,"Booker, Jones and Harrington",supplier,East,Chemicals,Enterprise,active,2024-01-01
-SUP-00083,Donovan-Harris,supplier,North,Food_Beverage,Small,active,2024-01-01
-RET-00142,Ramirez and Sons,retailer,Central,Electronics,Large,active,2024-01-01
-LOG-00040,Fuentes Group,logistics_provider,Central,Food_Beverage,Medium,active,2024-01-01
-RET-00045,Bell-Lewis,retailer,North,Electronics,Small,active,2024-01-01
-MFG-00099,"Brown, Harris and Dougherty",manufacturer,East,Textiles,Large,active,2024-01-01
-MFG-00024,"Ramsey, Whitney and Coffey",manufacturer,South,Food_Beverage,Enterprise,active,2024-01-01
-DST-00070,"Richardson, Edwards and Ramirez",distributor,East,Automotive,Medium,active,2024-01-01
-RET-00067,Miller-Mccall,retailer,East,Food_Beverage,Large,active,2024-01-01
-RET-00073,Parker Ltd,retailer,East,Food_Beverage,Large,active,2024-01-01
-SUP-00006,"Gardner, Robinson and Lawrence",supplier,South,Textiles,Small,active,2024-01-01
-WHS-00082,"Hernandez, Lee and Fox",warehouse,West,Chemicals,Medium,active,2024-01-01
-DST-00016,Cole-Palmer,distributor,Central,Electronics,Large,active,2024-01-01
-SUP-00098,Davis Group,supplier,Central,Pharmaceuticals,Small,active,2024-01-01
-SUP-00267,Valentine-Holland,supplier,Central,Food_Beverage,Medium,active,2024-01-01
-MFG-00058,"Williams, Logan and Camacho",manufacturer,East,Food_Beverage,Large,active,2024-01-01
-RET-00019,Flynn Group,retailer,North,Chemicals,Small,active,2024-01-01
-LOG-00049,"Terrell, Byrd and Ross",logistics_provider,Central,Electronics,Enterprise,active,2024-01-01
-MFG-00081,"Richardson, Farmer and Andrews",manufacturer,Central,Electronics,Enterprise,active,2024-01-01
-DST-00182,"Mcdonald, Lee and Rodriguez",distributor,East,Food_Beverage,Enterprise,active,2024-01-01
-MFG-00082,Bruce-Villegas,manufacturer,East,Chemicals,Large,active,2024-01-01
-DST-00041,"Fuller, Ingram and Moss",distributor,Central,Textiles,Medium,active,2024-01-01
-SUP-00119,May-Ross,supplier,East,Electronics,Small,active,2024-01-01
-RET-00051,Wright PLC,retailer,East,Textiles,Small,active,2024-01-01
-SUP-00251,Moon-White,supplier,South,Pharmaceuticals,Enterprise,active,2024-01-01
-DST-00074,"Griffin, Davies and Mitchell",distributor,East,Textiles,Enterprise,active,2024-01-01
-SUP-00010,Abbott-Munoz,supplier,East,Automotive,Medium,active,2024-01-01
-SUP-00197,Marshall-Petersen,supplier,West,Automotive,Enterprise,active,2024-01-01
-DST-00154,Lee-Wright,distributor,East,Textiles,Medium,active,2024-01-01
-SUP-00082,Sandoval-Cunningham,supplier,East,Food_Beverage,Medium,active,2024-01-01
-LOG-00034,Bennett-Velasquez,logistics_provider,West,Electronics,Large,active,2024-01-01
-DST-00138,Robles-Swanson,distributor,East,Automotive,Small,active,2024-01-01
-LOG-00048,"Ortega, Jackson and Salazar",logistics_provider,South,Electronics,Small,active,2024-01-01
-SUP-00240,"Walker, Hernandez and Baker",supplier,West,Textiles,Medium,active,2024-01-01
-SUP-00291,Brennan-Johnson,supplier,Central,Automotive,Small,active,2024-01-01
-SUP-00212,King-Martinez,supplier,South,Pharmaceuticals,Enterprise,active,2024-01-01
-WHS-00068,Jackson-Cortez,warehouse,East,Electronics,Enterprise,active,2024-01-01
-MFG-00060,Boone-Simmons,manufacturer,North,Pharmaceuticals,Enterprise,active,2024-01-01
-MFG-00150,Jones Inc,manufacturer,Central,Chemicals,Large,active,2024-01-01
-SUP-00228,"Duran, Obrien and Gibbs",supplier,West,Pharmaceuticals,Large,active,2024-01-01
-RET-00101,"Franco, Wiley and Tapia",retailer,East,Electronics,Large,active,2024-01-01
-RET-00097,Vargas-Snyder,retailer,East,Automotive,Large,active,2024-01-01
-LOG-00047,Rodriguez and Sons,logistics_provider,Central,Electronics,Medium,active,2024-01-01
-DST-00052,Paul-Kline,distributor,East,Textiles,Small,active,2024-01-01
-DST-00015,"Rosales, Mitchell and Hines",distributor,West,Automotive,Medium,active,2024-01-01
-MFG-00063,"Hernandez, Martinez and Weber",manufacturer,East,Electronics,Small,active,2024-01-01
-DST-00019,Brown-Shaw,distributor,North,Pharmaceuticals,Enterprise,active,2024-01-01
-RET-00086,Mora-White,retailer,North,Pharmaceuticals,Large,active,2024-01-01
-MFG-00129,Gilbert PLC,manufacturer,North,Chemicals,Small,active,2024-01-01
-SUP-00008,"Henderson, Ramirez and Lewis",supplier,South,Food_Beverage,Large,active,2024-01-01
-SUP-00156,Hill Inc,supplier,Central,Pharmaceuticals,Medium,active,2024-01-01
-DST-00092,"Bartlett, Brown and Martinez",distributor,Central,Textiles,Enterprise,active,2024-01-01
-MFG-00141,"Marks, Cook and Aguilar",manufacturer,North,Food_Beverage,Large,active,2024-01-01
-DST-00033,"Andrews, Higgins and Carter",distributor,North,Automotive,Medium,active,2024-01-01
-MFG-00123,"Downs, Morris and Maddox",manufacturer,West,Chemicals,Enterprise,active,2024-01-01
-LOG-00029,Alexander-Jordan,logistics_provider,North,Food_Beverage,Large,active,2024-01-01
-RET-00100,Hall LLC,retailer,West,Chemicals,Enterprise,active,2024-01-01
-MFG-00035,Price LLC,manufacturer,South,Food_Beverage,Medium,active,2024-01-01
-DST-00127,"Becker, Wilson and Hester",distributor,Central,Chemicals,Large,active,2024-01-01
-RET-00085,Williams LLC,retailer,Central,Textiles,Small,active,2024-01-01
-DST-00118,Landry PLC,distributor,North,Textiles,Large,active,2024-01-01
-DST-00145,Hernandez-Vaughn,distributor,Central,Automotive,Large,active,2024-01-01
-DST-00081,Hicks-Martinez,distributor,East,Electronics,Small,active,2024-01-01
-DST-00132,"Barry, Taylor and Velazquez",distributor,West,Electronics,Large,active,2024-01-01
-WHS-00058,Owens-Lang,warehouse,Central,Pharmaceuticals,Large,active,2024-01-01
-MFG-00149,Lee-Cooke,manufacturer,West,Textiles,Small,active,2024-01-01
-DST-00004,White Ltd,distributor,Central,Chemicals,Enterprise,active,2024-01-01
-SUP-00229,Rowe Group,supplier,Central,Textiles,Enterprise,active,2024-01-01
-MFG-00053,Smith and Sons,manufacturer,South,Food_Beverage,Large,active,2024-01-01
-WHS-00079,Nichols-Mitchell,warehouse,North,Chemicals,Medium,active,2024-01-01
-SUP-00213,Stewart Ltd,supplier,North,Textiles,Medium,active,2024-01-01
-SUP-00080,"Hensley, Powell and David",supplier,South,Pharmaceuticals,Enterprise,active,2024-01-01
-SUP-00149,Bryant Group,supplier,East,Electronics,Enterprise,active,2024-01-01
-MFG-00003,Santana-Byrd,manufacturer,East,Electronics,Enterprise,active,2024-01-01
-DST-00179,"Morrison, Hebert and Rogers",distributor,East,Textiles,Large,active,2024-01-01
-LOG-00028,Cook-Oliver,logistics_provider,Central,Food_Beverage,Large,active,2024-01-01
-DST-00057,"Carter, Garcia and Murphy",distributor,West,Textiles,Small,active,2024-01-01
-MFG-00043,Lopez-Martinez,manufacturer,West,Electronics,Small,active,2024-01-01
-DST-00036,Jones-Fox,distributor,South,Food_Beverage,Enterprise,active,2024-01-01
-WHS-00062,Tran-Silva,warehouse,East,Textiles,Enterprise,active,2024-01-01
-SUP-00134,"Carroll, Sullivan and Bass",supplier,East,Food_Beverage,Medium,active,2024-01-01
-WHS-00054,Dominguez Ltd,warehouse,East,Food_Beverage,Medium,active,2024-01-01
-MFG-00012,Parsons-Hall,manufacturer,Central,Food_Beverage,Small,active,2024-01-01
-WHS-00073,Kirby and Sons,warehouse,South,Pharmaceuticals,Large,active,2024-01-01
-DST-00180,Hays-Daniels,distributor,West,Textiles,Medium,active,2024-01-01
-SUP-00001,"Rodriguez, Figueroa and Sanchez",supplier,North,Electronics,Large,active,2024-01-01
-MFG-00017,"Diaz, Anderson and Browning",manufacturer,West,Food_Beverage,Enterprise,active,2024-01-01
-WHS-00057,"Howard, Green and Hunt",warehouse,North,Chemicals,Medium,active,2024-01-01
-DST-00098,"Moore, Hopkins and Le",distributor,West,Textiles,Medium,active,2024-01-01
-RET-00023,Kramer-Shannon,retailer,South,Pharmaceuticals,Enterprise,active,2024-01-01
-DST-00083,Johnson-Spencer,distributor,Central,Food_Beverage,Medium,active,2024-01-01
-DST-00028,"Bentley, Lynch and Henderson",distributor,North,Food_Beverage,Small,active,2024-01-01
-MFG-00105,Graham Group,manufacturer,Central,Pharmaceuticals,Small,active,2024-01-01
-SUP-00173,White-Green,supplier,North,Food_Beverage,Medium,active,2024-01-01
-SUP-00126,Smith-Frost,supplier,Central,Textiles,Medium,active,2024-01-01
-MFG-00095,"Ramos, Nelson and Fischer",manufacturer,West,Textiles,Enterprise,active,2024-01-01
-MFG-00121,Marshall-Elliott,manufacturer,North,Food_Beverage,Enterprise,active,2024-01-01
-DST-00103,May-Turner,distributor,West,Electronics,Large,active,2024-01-01
-RET-00054,Harris-Lawson,retailer,West,Food_Beverage,Small,active,2024-01-01
-SUP-00091,"Turner, Riggs and Roman",supplier,South,Pharmaceuticals,Large,active,2024-01-01
-RET-00090,Shaw Inc,retailer,North,Electronics,Large,active,2024-01-01
-SUP-00182,"Gould, Marshall and Scott",supplier,Central,Food_Beverage,Medium,active,2024-01-01
-SUP-00275,Monroe-Carpenter,supplier,Central,Electronics,Medium,active,2024-01-01
-RET-00046,"Hernandez, Jenkins and Parks",retailer,East,Food_Beverage,Large,active,2024-01-01
-SUP-00070,Hancock Inc,supplier,East,Electronics,Medium,active,2024-01-01
-SUP-00292,Young Ltd,supplier,North,Pharmaceuticals,Small,active,2024-01-01
-SUP-00132,Spencer-Lee,supplier,South,Pharmaceuticals,Medium,active,2024-01-01
-MFG-00001,"Thomas, Murray and King",manufacturer,Central,Electronics,Enterprise,active,2024-01-01
-MFG-00125,Welch-Hogan,manufacturer,Central,Pharmaceuticals,Small,active,2024-01-01
-MFG-00027,Richards-Carson,manufacturer,South,Textiles,Enterprise,active,2024-01-01
-SUP-00145,Hernandez Ltd,supplier,North,Electronics,Enterprise,active,2024-01-01
-MFG-00124,Hernandez-Jones,manufacturer,North,Electronics,Large,active,2024-01-01
-DST-00131,"Cook, Wells and Bryant",distributor,South,Pharmaceuticals,Small,active,2024-01-01
-SUP-00136,"Lawson, Morris and Ramos",supplier,West,Electronics,Enterprise,active,2024-01-01
-DST-00001,"Wise, Conley and Stephenson",distributor,North,Pharmaceuticals,Large,active,2024-01-01
-SUP-00165,Castaneda-Ashley,supplier,East,Textiles,Large,active,2024-01-01
-SUP-00029,"Ross, Robinson and Bright",supplier,North,Automotive,Enterprise,active,2024-01-01
-LOG-00024,Fisher-Washington,logistics_provider,Central,Food_Beverage,Small,active,2024-01-01
-SUP-00194,Reid-Poole,supplier,West,Food_Beverage,Medium,active,2024-01-01
-MFG-00089,Bennett Group,manufacturer,North,Electronics,Large,active,2024-01-01
-RET-00003,Martin-Taylor,retailer,North,Pharmaceuticals,Enterprise,active,2024-01-01
-SUP-00170,Hooper PLC,supplier,West,Food_Beverage,Medium,active,2024-01-01
-WHS-00056,"Morris, Campbell and Owens",warehouse,West,Textiles,Enterprise,active,2024-01-01
-SUP-00141,Hernandez Inc,supplier,North,Automotive,Large,active,2024-01-01
-SUP-00174,Lewis-Murphy,supplier,South,Chemicals,Enterprise,active,2024-01-01
-SUP-00007,Blake and Sons,supplier,Central,Pharmaceuticals,Enterprise,active,2024-01-01
-WHS-00096,White LLC,warehouse,East,Chemicals,Medium,active,2024-01-01
-DST-00029,Young-Martinez,distributor,West,Electronics,Enterprise,active,2024-01-01
-SUP-00074,"Stanley, Tucker and Lee",supplier,South,Food_Beverage,Enterprise,active,2024-01-01
-RET-00061,Best-Townsend,retailer,North,Automotive,Large,active,2024-01-01
-LOG-00064,"Thompson, Moore and Castro",logistics_provider,West,Pharmaceuticals,Large,active,2024-01-01
-SUP-00239,"Guerrero, Peck and Coleman",supplier,North,Pharmaceuticals,Enterprise,active,2024-01-01
-SUP-00146,Stafford Inc,supplier,East,Chemicals,Large,active,2024-01-01
-LOG-00043,Ewing-Mendoza,logistics_provider,Central,Food_Beverage,Medium,active,2024-01-01
-SUP-00235,Ortiz Ltd,supplier,East,Pharmaceuticals,Enterprise,active,2024-01-01
-SUP-00221,Garcia-Smith,supplier,North,Chemicals,Large,active,2024-01-01
-RET-00074,"Yang, Wilson and Zimmerman",retailer,West,Automotive,Small,active,2024-01-01
-DST-00051,"Rivera, Martinez and Richardson",distributor,East,Automotive,Small,active,2024-01-01
-SUP-00133,"Bentley, Byrd and Orr",supplier,West,Electronics,Medium,active,2024-01-01
-RET-00141,Andrade-Mendoza,retailer,Central,Textiles,Small,active,2024-01-01
-LOG-00025,Ward and Sons,logistics_provider,Central,Food_Beverage,Small,active,2024-01-01
-SUP-00186,Johnston-Odonnell,supplier,South,Pharmaceuticals,Medium,active,2024-01-01
-SUP-00042,George Group,supplier,West,Textiles,Enterprise,active,2024-01-01
-WHS-00047,Boone-Davis,warehouse,North,Textiles,Enterprise,active,2024-01-01
-SUP-00109,Hancock and Sons,supplier,East,Automotive,Medium,active,2024-01-01
-DST-00139,"Soto, Carlson and Baker",distributor,East,Food_Beverage,Enterprise,active,2024-01-01
-SUP-00057,"Washington, Ryan and Cummings",supplier,North,Textiles,Medium,active,2024-01-01
-MFG-00106,Atkins PLC,manufacturer,Central,Pharmaceuticals,Medium,active,2024-01-01
-MFG-00143,"Hale, Myers and Larson",manufacturer,East,Textiles,Large,active,2024-01-01
-LOG-00008,Lopez-Willis,logistics_provider,South,Electronics,Small,active,2024-01-01
-RET-00148,Nelson-Johnson,retailer,West,Electronics,Medium,active,2024-01-01
-SUP-00025,"Walter, Edwards and Rios",supplier,Central,Chemicals,Medium,active,2024-01-01
-DST-00018,Wilkerson-Arias,distributor,Central,Food_Beverage,Large,active,2024-01-01
-DST-00090,Humphrey PLC,distributor,East,Chemicals,Enterprise,active,2024-01-01
-DST-00082,Conner and Sons,distributor,East,Textiles,Medium,active,2024-01-01
-DST-00169,Smith PLC,distributor,West,Pharmaceuticals,Small,active,2024-01-01
-WHS-00045,Price LLC,warehouse,North,Automotive,Large,active,2024-01-01
-RET-00077,Brady LLC,retailer,South,Food_Beverage,Large,active,2024-01-01
-MFG-00039,Crosby-Ramirez,manufacturer,East,Chemicals,Enterprise,active,2024-01-01
-SUP-00052,Walker LLC,supplier,Central,Automotive,Enterprise,active,2024-01-01
-DST-00058,Parker-Morrison,distributor,West,Textiles,Medium,active,2024-01-01
-DST-00067,Reyes-Bradley,distributor,Central,Electronics,Large,active,2024-01-01
-RET-00071,"Ashley, Allen and Sanchez",retailer,West,Automotive,Large,active,2024-01-01
-LOG-00032,Carter-Neal,logistics_provider,West,Automotive,Small,active,2024-01-01
-SUP-00265,Tran Inc,supplier,South,Pharmaceuticals,Large,active,2024-01-01
-LOG-00068,Cole Group,logistics_provider,Central,Food_Beverage,Enterprise,active,2024-01-01
-WHS-00061,Figueroa Inc,warehouse,Central,Automotive,Large,active,2024-01-01
-WHS-00033,"Holder, Young and Hendricks",warehouse,Central,Automotive,Small,active,2024-01-01
-LOG-00083,"Ellison, Arias and Thompson",logistics_provider,Central,Chemicals,Large,active,2024-01-01
-DST-00069,Hines-Berry,distributor,Central,Chemicals,Enterprise,active,2024-01-01
-MFG-00148,Bean LLC,manufacturer,East,Textiles,Medium,active,2024-01-01
-SUP-00019,"Adams, Zuniga and Wong",supplier,East,Electronics,Medium,active,2024-01-01
-WHS-00066,Levy-May,warehouse,West,Automotive,Enterprise,active,2024-01-01
-DST-00034,Mendez and Sons,distributor,Central,Food_Beverage,Large,active,2024-01-01
-DST-00119,Levy-Lewis,distributor,South,Textiles,Enterprise,active,2024-01-01
-MFG-00134,"Miller, Lucas and Williams",manufacturer,East,Food_Beverage,Large,active,2024-01-01
-MFG-00068,Gutierrez Group,manufacturer,North,Chemicals,Small,active,2024-01-01
-SUP-00084,"Edwards, Baker and Anderson",supplier,North,Chemicals,Small,active,2024-01-01
-SUP-00062,Powell LLC,supplier,East,Food_Beverage,Large,active,2024-01-01
-DST-00189,Holden Group,distributor,North,Textiles,Medium,active,2024-01-01
-SUP-00273,Morgan-French,supplier,East,Chemicals,Small,active,2024-01-01
-SUP-00286,Bowen Group,supplier,West,Electronics,Enterprise,active,2024-01-01
-MFG-00061,Henry Group,manufacturer,Central,Automotive,Large,active,2024-01-01
-MFG-00055,"Fisher, Wilson and Brown",manufacturer,West,Automotive,Medium,active,2024-01-01
-DST-00007,Bishop-Goodwin,distributor,West,Food_Beverage,Enterprise,active,2024-01-01
-SUP-00279,Pollard and Sons,supplier,East,Chemicals,Enterprise,active,2024-01-01
-SUP-00013,Arnold Ltd,supplier,East,Automotive,Large,active,2024-01-01
-SUP-00183,Jackson-Lawson,supplier,East,Food_Beverage,Small,active,2024-01-01
-MFG-00069,Perry-Davis,manufacturer,East,Food_Beverage,Small,active,2024-01-01
-RET-00032,Williams Ltd,retailer,North,Textiles,Large,active,2024-01-01
-DST-00166,Sanchez Ltd,distributor,Central,Electronics,Large,active,2024-01-01
-SUP-00224,Wilson-Jones,supplier,East,Electronics,Large,active,2024-01-01
-DST-00123,Luna-Gallagher,distributor,West,Food_Beverage,Small,active,2024-01-01
-RET-00121,Hernandez-Dawson,retailer,South,Automotive,Small,active,2024-01-01
-WHS-00004,"Leach, Harris and Herrera",warehouse,East,Food_Beverage,Medium,active,2024-01-01
-DST-00096,"Huber, Hill and Weber",distributor,Central,Electronics,Large,active,2024-01-01
-DST-00133,Martin-Ewing,distributor,South,Electronics,Medium,active,2024-01-01
-DST-00184,Higgins-Smith,distributor,Central,Electronics,Medium,active,2024-01-01
-SUP-00177,Curry Inc,supplier,West,Chemicals,Large,active,2024-01-01
-WHS-00016,Cannon Ltd,warehouse,North,Automotive,Enterprise,active,2024-01-01
-WHS-00024,"Gray, Hall and Murray",warehouse,North,Electronics,Large,active,2024-01-01
-DST-00136,Richardson Ltd,distributor,East,Electronics,Medium,active,2024-01-01
-RET-00024,Williams Ltd,retailer,East,Electronics,Small,active,2024-01-01
-MFG-00094,"Miller, Ramos and Coleman",manufacturer,West,Chemicals,Small,active,2024-01-01
-SUP-00164,Smith-Bell,supplier,South,Chemicals,Small,active,2024-01-01
-SUP-00249,Johnston-Hines,supplier,South,Electronics,Medium,active,2024-01-01
-DST-00185,Gibbs-Bradley,distributor,East,Chemicals,Small,active,2024-01-01
-RET-00036,Wheeler PLC,retailer,East,Electronics,Large,active,2024-01-01
-WHS-00020,"Anderson, Dalton and Wilson",warehouse,Central,Food_Beverage,Enterprise,active,2024-01-01
-MFG-00076,"Pugh, Henderson and Moon",manufacturer,East,Chemicals,Large,active,2024-01-01
-MFG-00113,"Miller, Harrell and Reese",manufacturer,North,Pharmaceuticals,Large,active,2024-01-01
-SUP-00075,Novak PLC,supplier,South,Electronics,Small,active,2024-01-01
-SUP-00114,Gonzalez Group,supplier,North,Chemicals,Medium,active,2024-01-01
-DST-00149,Hoffman Ltd,distributor,South,Chemicals,Enterprise,active,2024-01-01
-RET-00112,Haynes-Moss,retailer,South,Automotive,Small,active,2024-01-01
-MFG-00091,Frank-Bradley,manufacturer,South,Textiles,Medium,active,2024-01-01
-SUP-00105,Nolan-Flynn,supplier,North,Food_Beverage,Small,active,2024-01-01
-SUP-00115,Torres-Pope,supplier,East,Automotive,Medium,active,2024-01-01
-MFG-00118,Thomas and Sons,manufacturer,West,Textiles,Medium,active,2024-01-01
-DST-00076,Hayes Ltd,distributor,West,Textiles,Large,active,2024-01-01
-DST-00008,Young-Allen,distributor,East,Pharmaceuticals,Large,active,2024-01-01
-MFG-00110,Collier-Gillespie,manufacturer,South,Electronics,Small,active,2024-01-01
-SUP-00093,"Garcia, Humphrey and Baker",supplier,East,Electronics,Small,active,2024-01-01
-RET-00081,"Ward, Porter and Bradley",retailer,West,Food_Beverage,Small,active,2024-01-01
-SUP-00090,Moore-Bass,supplier,East,Food_Beverage,Enterprise,active,2024-01-01
-MFG-00037,"Newton, Moore and Perry",manufacturer,East,Textiles,Enterprise,active,2024-01-01
-RET-00139,Mendez PLC,retailer,South,Textiles,Large,active,2024-01-01
-RET-00072,Wilson-Salazar,retailer,West,Textiles,Medium,active,2024-01-01
-RET-00084,Williams Inc,retailer,Central,Electronics,Large,active,2024-01-01
-DST-00156,Bush-Vaughn,distributor,North,Pharmaceuticals,Small,active,2024-01-01
-DST-00144,Smith LLC,distributor,North,Food_Beverage,Medium,active,2024-01-01
-DST-00162,Reed Group,distributor,Central,Automotive,Enterprise,active,2024-01-01
-SUP-00095,Campbell-Clark,supplier,North,Textiles,Small,active,2024-01-01
-SUP-00012,Dudley Group,supplier,North,Food_Beverage,Small,active,2024-01-01
-MFG-00097,Gregory-Watkins,manufacturer,South,Food_Beverage,Enterprise,active,2024-01-01
-DST-00084,Mcdonald-Bird,distributor,South,Pharmaceuticals,Medium,active,2024-01-01
-SUP-00044,Allen-Allen,supplier,North,Chemicals,Large,active,2024-01-01
-SUP-00043,Rodriguez LLC,supplier,Central,Automotive,Small,active,2024-01-01
-MFG-00030,Herman-Walker,manufacturer,West,Food_Beverage,Medium,active,2024-01-01
-SUP-00168,Johnson-Rogers,supplier,North,Electronics,Medium,active,2024-01-01
-DST-00048,Robertson-Hays,distributor,Central,Chemicals,Large,active,2024-01-01
-RET-00027,Harris-Barker,retailer,South,Textiles,Medium,active,2024-01-01
-DST-00148,Thornton PLC,distributor,Central,Chemicals,Enterprise,active,2024-01-01
-LOG-00007,Kelly Group,logistics_provider,East,Chemicals,Large,active,2024-01-01
-SUP-00101,Figueroa PLC,supplier,East,Pharmaceuticals,Large,active,2024-01-01
-MFG-00127,Johnson-Wood,manufacturer,West,Textiles,Large,active,2024-01-01
-SUP-00179,"Williams, Johnson and Wright",supplier,Central,Food_Beverage,Medium,active,2024-01-01
-MFG-00145,"Conner, Li and Santiago",manufacturer,South,Chemicals,Enterprise,active,2024-01-01
-MFG-00117,"Mullen, Brewer and Hernandez",manufacturer,Central,Textiles,Small,active,2024-01-01
-RET-00021,Adams-Clayton,retailer,West,Chemicals,Large,active,2024-01-01
-RET-00033,Barber-Fischer,retailer,North,Electronics,Enterprise,active,2024-01-01
-WHS-00031,Morales and Sons,warehouse,East,Textiles,Large,active,2024-01-01
-SUP-00178,Walker-Jones,supplier,West,Textiles,Enterprise,active,2024-01-01
-MFG-00096,Reed Inc,manufacturer,East,Electronics,Large,active,2024-01-01
-RET-00062,Matthews Inc,retailer,South,Chemicals,Enterprise,active,2024-01-01
-LOG-00044,Ferguson-Mclean,logistics_provider,South,Food_Beverage,Large,active,2024-01-01
-RET-00111,Green-Edwards,retailer,West,Electronics,Medium,active,2024-01-01
-WHS-00035,Young-Walter,warehouse,East,Automotive,Large,active,2024-01-01
-MFG-00084,"Gallegos, Adams and White",manufacturer,North,Chemicals,Medium,active,2024-01-01
-RET-00107,Haynes-Watson,retailer,West,Pharmaceuticals,Enterprise,active,2024-01-01
-LOG-00002,"Ramsey, Mason and Mccann",logistics_provider,South,Pharmaceuticals,Enterprise,active,2024-01-01
-SUP-00258,"Bryan, Smith and Booth",supplier,West,Electronics,Small,active,2024-01-01
-DST-00089,Owens-Holmes,distributor,East,Food_Beverage,Medium,active,2024-01-01
-MFG-00036,"Avery, Horton and Fernandez",manufacturer,North,Food_Beverage,Large,active,2024-01-01
-SUP-00016,Galloway-Wyatt,supplier,North,Textiles,Large,active,2024-01-01
-MFG-00025,"Diaz, Gibbs and Smith",manufacturer,East,Automotive,Enterprise,active,2024-01-01
-LOG-00009,Miller-Montgomery,logistics_provider,West,Automotive,Medium,active,2024-01-01
-SUP-00223,Sheppard LLC,supplier,East,Textiles,Enterprise,active,2024-01-01
-SUP-00180,Howell and Sons,supplier,West,Food_Beverage,Large,active,2024-01-01
-RET-00134,Jackson PLC,retailer,West,Chemicals,Enterprise,active,2024-01-01
-SUP-00023,Perez Inc,supplier,South,Chemicals,Large,active,2024-01-01
-MFG-00057,Hayes and Sons,manufacturer,Central,Automotive,Enterprise,active,2024-01-01
-WHS-00017,"Stuart, Brooks and Vance",warehouse,Central,Food_Beverage,Medium,active,2024-01-01
-RET-00012,Burns-Ray,retailer,South,Textiles,Large,active,2024-01-01
-MFG-00041,Garcia-Jennings,manufacturer,South,Chemicals,Large,active,2024-01-01
-MFG-00132,"Lopez, Jacobs and Mason",manufacturer,West,Automotive,Enterprise,active,2024-01-01
-DST-00102,"Fowler, Jimenez and Burton",distributor,Central,Automotive,Medium,active,2024-01-01
-LOG-00084,Burns and Sons,logistics_provider,East,Automotive,Large,active,2024-01-01
-SUP-00204,"Beard, Peters and Black",supplier,East,Pharmaceuticals,Enterprise,active,2024-01-01
-DST-00181,Small-Anderson,distributor,Central,Electronics,Small,active,2024-01-01
-SUP-00094,Newton and Sons,supplier,Central,Food_Beverage,Medium,active,2024-01-01
-DST-00109,Gross-Valencia,distributor,North,Electronics,Large,active,2024-01-01
-SUP-00069,Russell Group,supplier,South,Electronics,Small,active,2024-01-01
-DST-00173,Pearson and Sons,distributor,East,Chemicals,Small,active,2024-01-01
-SUP-00285,Garcia-Lozano,supplier,East,Textiles,Large,active,2024-01-01
-LOG-00095,Adams PLC,logistics_provider,East,Food_Beverage,Enterprise,active,2024-01-01
-MFG-00135,"Kim, Gonzales and Mills",manufacturer,East,Automotive,Medium,active,2024-01-01
-SUP-00154,Green-Wright,supplier,Central,Automotive,Enterprise,active,2024-01-01
-SUP-00076,"Daniels, Adkins and Brown",supplier,West,Automotive,Enterprise,active,2024-01-01
-WHS-00081,Rodriguez Inc,warehouse,West,Chemicals,Enterprise,active,2024-01-01
-MFG-00147,"Henderson, Cox and Cox",manufacturer,Central,Automotive,Small,active,2024-01-01
-SUP-00189,Garcia LLC,supplier,West,Automotive,Enterprise,active,2024-01-01
-SUP-00272,"Suarez, Shields and Hill",supplier,South,Chemicals,Medium,active,2024-01-01
-SUP-00237,Warner-Gibson,supplier,East,Automotive,Large,active,2024-01-01
-DST-00038,Williams-Hughes,distributor,East,Chemicals,Large,active,2024-01-01
-SUP-00118,Rasmussen LLC,supplier,North,Electronics,Enterprise,active,2024-01-01
-RET-00094,Murphy-Tran,retailer,East,Electronics,Enterprise,active,2024-01-01
-DST-00063,"Sullivan, Palmer and Brady",distributor,North,Pharmaceuticals,Enterprise,active,2024-01-01
-LOG-00076,Bruce-Williamson,logistics_provider,North,Pharmaceuticals,Medium,active,2024-01-01
-DST-00142,"Harvey, Randall and Hernandez",distributor,East,Textiles,Large,active,2024-01-01
-SUP-00127,"Mcdaniel, Bentley and Mclaughlin",supplier,West,Pharmaceuticals,Small,active,2024-01-01
-SUP-00117,Ross LLC,supplier,Central,Food_Beverage,Large,active,2024-01-01
-DST-00024,Lowery-Kennedy,distributor,West,Chemicals,Enterprise,active,2024-01-01
-WHS-00044,Faulkner-Grant,warehouse,Central,Automotive,Enterprise,active,2024-01-01
-SUP-00058,"Johnston, Sanchez and Kennedy",supplier,South,Chemicals,Enterprise,active,2024-01-01
-RET-00014,Schultz Inc,retailer,North,Automotive,Enterprise,active,2024-01-01
-RET-00063,Lewis-Livingston,retailer,Central,Textiles,Medium,active,2024-01-01
-MFG-00070,Edwards-Scott,manufacturer,Central,Automotive,Medium,active,2024-01-01
-SUP-00269,Hicks-Hill,supplier,West,Automotive,Enterprise,active,2024-01-01
-SUP-00047,Anderson Group,supplier,North,Chemicals,Large,active,2024-01-01
-MFG-00050,"Smith, Garrison and Thomas",manufacturer,South,Pharmaceuticals,Small,active,2024-01-01
-SUP-00196,"Nelson, Morton and Medina",supplier,West,Food_Beverage,Small,active,2024-01-01
-RET-00150,Stokes Group,retailer,Central,Chemicals,Enterprise,active,2024-01-01
-LOG-00085,Edwards Group,logistics_provider,Central,Food_Beverage,Enterprise,active,2024-01-01
-WHS-00087,"Frey, Santos and Johnson",warehouse,North,Food_Beverage,Enterprise,active,2024-01-01
-SUP-00264,"Lloyd, Mckinney and Collins",supplier,Central,Chemicals,Small,active,2024-01-01
-MFG-00144,Collins Group,manufacturer,East,Electronics,Medium,active,2024-01-01
-WHS-00026,Johnson Ltd,warehouse,East,Textiles,Small,active,2024-01-01
-MFG-00005,"Evans, Hayden and Vaughn",manufacturer,West,Electronics,Medium,active,2024-01-01
-MFG-00042,"Winters, Newman and Brown",manufacturer,South,Chemicals,Small,active,2024-01-01
-RET-00117,"Howard, Townsend and Hayes",retailer,Central,Food_Beverage,Enterprise,active,2024-01-01
-SUP-00150,"Schmidt, Hansen and Stewart",supplier,North,Textiles,Medium,active,2024-01-01
-SUP-00125,Scott Ltd,supplier,Central,Electronics,Large,active,2024-01-01
-LOG-00037,Maldonado PLC,logistics_provider,West,Food_Beverage,Enterprise,active,2024-01-01
-SUP-00051,"Brooks, Lam and Hayes",supplier,Central,Textiles,Small,active,2024-01-01
-MFG-00054,"Morris, Thompson and Williams",manufacturer,West,Automotive,Small,active,2024-01-01
-RET-00078,"Tanner, Wise and Johnson",retailer,North,Food_Beverage,Enterprise,active,2024-01-01
-SUP-00143,Gibson Ltd,supplier,North,Electronics,Large,active,2024-01-01
-DST-00021,Walker-Flores,distributor,South,Automotive,Medium,active,2024-01-01
-MFG-00100,Duran LLC,manufacturer,North,Food_Beverage,Large,active,2024-01-01
-DST-00176,Osborn Group,distributor,East,Textiles,Medium,active,2024-01-01
-MFG-00021,Coffey-Phillips,manufacturer,East,Textiles,Large,active,2024-01-01
-SUP-00020,"Reid, Ferguson and Sanchez",supplier,North,Food_Beverage,Large,active,2024-01-01
-LOG-00060,Alvarez-Kim,logistics_provider,Central,Textiles,Medium,active,2024-01-01
-LOG-00041,"Porter, Schultz and Allen",logistics_provider,South,Electronics,Small,active,2024-01-01
-LOG-00059,Mueller-Boyd,logistics_provider,East,Automotive,Small,active,2024-01-01
-MFG-00108,Roberts-Sullivan,manufacturer,Central,Electronics,Large,active,2024-01-01
-DST-00088,"Jones, Compton and Day",distributor,West,Pharmaceuticals,Medium,active,2024-01-01
-DST-00171,Santos-Avila,distributor,South,Chemicals,Enterprise,active,2024-01-01
-SUP-00039,Harrell LLC,supplier,North,Electronics,Medium,active,2024-01-01
-SUP-00176,King-Miller,supplier,North,Food_Beverage,Medium,active,2024-01-01
-SUP-00246,Navarro-Munoz,supplier,West,Chemicals,Large,active,2024-01-01
-LOG-00079,Allen Inc,logistics_provider,South,Chemicals,Small,active,2024-01-01
-WHS-00018,Kane-Knox,warehouse,South,Automotive,Large,active,2024-01-01
-LOG-00005,"Sanders, Ayala and Johnson",logistics_provider,West,Automotive,Large,active,2024-01-01
-RET-00009,Sellers-Riddle,retailer,Central,Chemicals,Enterprise,active,2024-01-01
-SUP-00155,"Ramirez, Strickland and Washington",supplier,East,Food_Beverage,Large,active,2024-01-01
-SUP-00288,Morgan-Schwartz,supplier,East,Textiles,Enterprise,active,2024-01-01
-DST-00153,"Becker, Lara and Baker",distributor,North,Chemicals,Enterprise,active,2024-01-01
-DST-00120,Williams-Campbell,distributor,South,Chemicals,Small,active,2024-01-01
-WHS-00094,"Alvarez, Williams and Jones",warehouse,East,Pharmaceuticals,Small,active,2024-01-01
-SUP-00018,"Flowers, Martin and Kelly",supplier,North,Electronics,Medium,active,2024-01-01
-SUP-00128,Diaz Inc,supplier,East,Automotive,Small,active,2024-01-01
-MFG-00023,Taylor and Sons,manufacturer,Central,Textiles,Enterprise,active,2024-01-01
-SUP-00256,"Johnson, Miller and King",supplier,East,Electronics,Small,active,2024-01-01
-WHS-00008,Chavez PLC,warehouse,West,Food_Beverage,Medium,active,2024-01-01
-RET-00115,Moore and Sons,retailer,West,Electronics,Large,active,2024-01-01
-SUP-00191,Reed Group,supplier,West,Food_Beverage,Small,active,2024-01-01
-SUP-00116,Walker Ltd,supplier,East,Pharmaceuticals,Large,active,2024-01-01
-DST-00167,"Perez, Hall and Garcia",distributor,East,Chemicals,Enterprise,active,2024-01-01
-DST-00157,Stewart-Bailey,distributor,South,Chemicals,Large,active,2024-01-01
-SUP-00181,Wells Inc,supplier,South,Chemicals,Large,active,2024-01-01
-MFG-00002,Estrada-Nolan,manufacturer,North,Automotive,Large,active,2024-01-01
-LOG-00010,Marquez Inc,logistics_provider,West,Chemicals,Large,active,2024-01-01
-WHS-00063,"Butler, Hernandez and Rivera",warehouse,South,Pharmaceuticals,Large,active,2024-01-01
-WHS-00074,Mann Inc,warehouse,Central,Chemicals,Large,active,2024-01-01
-WHS-00036,"Boyd, Gutierrez and Hill",warehouse,South,Pharmaceuticals,Enterprise,active,2024-01-01
-RET-00130,Johnson Inc,retailer,East,Food_Beverage,Small,active,2024-01-01
-DST-00068,"Hernandez, Cole and Watson",distributor,North,Automotive,Small,active,2024-01-01
-RET-00135,Underwood-Foster,retailer,West,Chemicals,Enterprise,active,2024-01-01
-SUP-00046,Spence PLC,supplier,West,Pharmaceuticals,Enterprise,active,2024-01-01
-RET-00060,"Fisher, Payne and Thompson",retailer,West,Automotive,Enterprise,active,2024-01-01
-SUP-00158,"Miller, Hernandez and Reyes",supplier,South,Textiles,Large,active,2024-01-01
-RET-00002,"Norris, Callahan and Bishop",retailer,North,Chemicals,Medium,active,2024-01-01
-SUP-00172,"Alvarado, Miller and Patterson",supplier,South,Pharmaceuticals,Small,active,2024-01-01
-SUP-00017,James Group,supplier,Central,Automotive,Medium,active,2024-01-01
-DST-00062,"Whitney, Gould and Jones",distributor,North,Textiles,Medium,active,2024-01-01
-SUP-00049,Hickman Ltd,supplier,East,Chemicals,Medium,active,2024-01-01
-RET-00122,Foster-Williams,retailer,South,Automotive,Small,active,2024-01-01
-RET-00091,Walker PLC,retailer,South,Textiles,Medium,active,2024-01-01
-DST-00066,Osborne LLC,distributor,West,Food_Beverage,Large,active,2024-01-01
-RET-00103,"Acosta, Garcia and Moreno",retailer,North,Automotive,Small,active,2024-01-01
-DST-00031,Brown-Copeland,distributor,Central,Food_Beverage,Enterprise,active,2024-01-01
-SUP-00284,"Sanford, Rivera and Garcia",supplier,North,Electronics,Medium,active,2024-01-01
-WHS-00069,White-Preston,warehouse,West,Automotive,Medium,active,2024-01-01
-RET-00028,Khan LLC,retailer,West,Electronics,Large,active,2024-01-01
-SUP-00226,Hernandez PLC,supplier,North,Food_Beverage,Large,active,2024-01-01
-SUP-00027,Baker and Sons,supplier,East,Chemicals,Medium,active,2024-01-01
-RET-00105,Dawson Inc,retailer,Central,Pharmaceuticals,Medium,active,2024-01-01
-MFG-00138,"Williams, Mccoy and Cook",manufacturer,North,Chemicals,Large,active,2024-01-01
-RET-00102,Blake Group,retailer,North,Chemicals,Small,active,2024-01-01
-MFG-00065,"Phillips, Wagner and Jordan",manufacturer,East,Pharmaceuticals,Large,active,2024-01-01
-SUP-00230,Kerr-Evans,supplier,West,Food_Beverage,Large,active,2024-01-01
-SUP-00038,"Baker, Mason and White",supplier,Central,Food_Beverage,Small,active,2024-01-01
-RET-00116,Owens-Russell,retailer,West,Textiles,Large,active,2024-01-01
-MFG-00075,"Hoffman, Santiago and Jenkins",manufacturer,South,Automotive,Enterprise,active,2024-01-01
-DST-00020,Hughes Inc,distributor,Central,Electronics,Small,active,2024-01-01
-RET-00118,Baker-Wilson,retailer,Central,Electronics,Large,active,2024-01-01
-RET-00001,Clark Ltd,retailer,South,Chemicals,Medium,active,2024-01-01
-WHS-00055,Sanders and Sons,warehouse,West,Chemicals,Medium,active,2024-01-01
-LOG-00092,Medina and Sons,logistics_provider,East,Pharmaceuticals,Enterprise,active,2024-01-01
-SUP-00195,"Hernandez, Thompson and Boyd",supplier,West,Pharmaceuticals,Large,active,2024-01-01
-RET-00005,"Bell, Campbell and Ryan",retailer,West,Electronics,Small,active,2024-01-01
-RET-00015,Robertson-Ramirez,retailer,West,Textiles,Medium,active,2024-01-01
-DST-00054,"Jimenez, Glass and Stone",distributor,North,Electronics,Large,active,2024-01-01
-RET-00120,"Terry, Williams and Huff",retailer,East,Textiles,Small,active,2024-01-01
-LOG-00081,"Price, Carlson and Andrews",logistics_provider,West,Pharmaceuticals,Large,active,2024-01-01
-DST-00130,"Morales, Williams and Williams",distributor,West,Chemicals,Enterprise,active,2024-01-01
-RET-00119,Aguirre LLC,retailer,East,Food_Beverage,Medium,active,2024-01-01
-SUP-00163,"Smith, Gilmore and Johnston",supplier,South,Textiles,Enterprise,active,2024-01-01
-RET-00059,Peck-Anderson,retailer,South,Food_Beverage,Large,active,2024-01-01
-SUP-00153,Manning Group,supplier,North,Chemicals,Large,active,2024-01-01
-LOG-00052,"Burgess, Grant and Watts",logistics_provider,West,Food_Beverage,Medium,active,2024-01-01
-RET-00144,"Wright, Mcknight and Stephens",retailer,West,Textiles,Medium,active,2024-01-01
-LOG-00006,Bowers-Hayes,logistics_provider,East,Textiles,Small,active,2024-01-01
-SUP-00112,"Shields, Cochran and Adams",supplier,Central,Automotive,Small,active,2024-01-01
-SUP-00227,Miller-Wright,supplier,West,Chemicals,Medium,active,2024-01-01
-WHS-00039,David-Powers,warehouse,West,Textiles,Enterprise,active,2024-01-01
-SUP-00104,"Tran, Jordan and Williams",supplier,West,Automotive,Small,active,2024-01-01
-MFG-00122,"Cole, Glass and Cunningham",manufacturer,West,Chemicals,Small,active,2024-01-01
-MFG-00120,Thompson Ltd,manufacturer,West,Chemicals,Small,active,2024-01-01
-LOG-00001,"Rivera, Campos and Taylor",logistics_provider,North,Food_Beverage,Small,active,2024-01-01
-DST-00137,Whitney PLC,distributor,East,Automotive,Small,active,2024-01-01
-LOG-00031,"Harris, Edwards and Oconnell",logistics_provider,Central,Electronics,Small,active,2024-01-01
-WHS-00023,Nunez-Stephens,warehouse,South,Pharmaceuticals,Large,active,2024-01-01
-SUP-00120,"Rivera, Johnson and Wiley",supplier,East,Pharmaceuticals,Large,active,2024-01-01
-SUP-00054,"Robinson, Jones and Welch",supplier,East,Pharmaceuticals,Small,active,2024-01-01
-SUP-00152,"Simmons, Meadows and Griffin",supplier,East,Textiles,Large,active,2024-01-01
-MFG-00104,Jones-Hensley,manufacturer,East,Pharmaceuticals,Medium,active,2024-01-01
-RET-00096,"Mueller, Stevenson and Sanchez",retailer,North,Electronics,Medium,active,2024-01-01
-SUP-00208,Davis and Sons,supplier,Central,Electronics,Large,active,2024-01-01
-WHS-00009,Bryant-Brown,warehouse,East,Textiles,Medium,active,2024-01-01
-LOG-00094,Dunn-Wilson,logistics_provider,Central,Chemicals,Large,active,2024-01-01
-LOG-00013,Smith LLC,logistics_provider,South,Pharmaceuticals,Enterprise,active,2024-01-01
-SUP-00009,Garcia-James,supplier,North,Pharmaceuticals,Enterprise,active,2024-01-01
-LOG-00058,Bailey LLC,logistics_provider,Central,Pharmaceuticals,Enterprise,active,2024-01-01
-SUP-00037,Smith-Bowen,supplier,East,Pharmaceuticals,Medium,active,2024-01-01
-DST-00003,Harper and Sons,distributor,North,Pharmaceuticals,Medium,active,2024-01-01
-WHS-00002,"Marks, Miller and Griffin",warehouse,Central,Chemicals,Small,active,2024-01-01
-SUP-00254,"Garcia, Martin and Jenkins",supplier,South,Automotive,Medium,active,2024-01-01
-MFG-00004,Jones LLC,manufacturer,Central,Electronics,Enterprise,active,2024-01-01
-WHS-00097,Ali PLC,warehouse,North,Chemicals,Large,active,2024-01-01
-DST-00122,"Smith, Rodriguez and Anderson",distributor,Central,Textiles,Small,active,2024-01-01
-DST-00174,"Rodgers, Jefferson and Johnson",distributor,Central,Textiles,Large,active,2024-01-01
-WHS-00083,Adams-Sanders,warehouse,East,Automotive,Large,active,2024-01-01
-RET-00042,May Ltd,retailer,North,Automotive,Medium,active,2024-01-01
-SUP-00263,Martinez-Dudley,supplier,West,Food_Beverage,Small,active,2024-01-01
-DST-00161,Williams-Moses,distributor,North,Textiles,Medium,active,2024-01-01
-SUP-00298,Schmidt PLC,supplier,East,Chemicals,Small,active,2024-01-01
-MFG-00115,Dixon Inc,manufacturer,Central,Electronics,Small,active,2024-01-01
-SUP-00151,Salazar-Ball,supplier,East,Food_Beverage,Small,active,2024-01-01
-LOG-00039,"Clark, Salinas and Guerra",logistics_provider,East,Electronics,Medium,active,2024-01-01
-DST-00191,Young-Molina,distributor,East,Chemicals,Medium,active,2024-01-01
-RET-00040,"Shaffer, Garcia and Richardson",retailer,North,Textiles,Large,active,2024-01-01
-DST-00101,"Baker, Clark and Armstrong",distributor,West,Electronics,Enterprise,active,2024-01-01
-RET-00037,"Wallace, Smith and Cooper",retailer,West,Food_Beverage,Medium,active,2024-01-01
-DST-00039,King-Smith,distributor,South,Automotive,Medium,active,2024-01-01
-SUP-00148,"Holmes, Williams and Wright",supplier,West,Textiles,Medium,active,2024-01-01
-SUP-00147,Robinson-Brock,supplier,West,Textiles,Small,active,2024-01-01
-WHS-00071,Landry Ltd,warehouse,North,Automotive,Enterprise,active,2024-01-01
-RET-00082,Moore-Ayala,retailer,West,Textiles,Enterprise,active,2024-01-01
-WHS-00090,Miller Group,warehouse,Central,Textiles,Small,active,2024-01-01
-WHS-00010,Chambers-Parker,warehouse,East,Chemicals,Large,active,2024-01-01
-MFG-00049,Schroeder-Kramer,manufacturer,Central,Chemicals,Medium,active,2024-01-01
-DST-00014,Spencer-Garcia,distributor,West,Textiles,Enterprise,active,2024-01-01
-MFG-00026,"Martinez, Richardson and Curry",manufacturer,West,Automotive,Medium,active,2024-01-01
-SUP-00187,Sanders-Espinoza,supplier,West,Chemicals,Medium,active,2024-01-01
-SUP-00124,"Joyce, Wilson and Lam",supplier,North,Chemicals,Medium,active,2024-01-01
-RET-00004,Li Inc,retailer,East,Electronics,Enterprise,active,2024-01-01
-DST-00159,Huang-Foster,distributor,Central,Pharmaceuticals,Enterprise,active,2024-01-01
-SUP-00144,"Lee, Horton and Snyder",supplier,South,Textiles,Large,active,2024-01-01
-RET-00109,Jones-Bradley,retailer,West,Electronics,Medium,active,2024-01-01
-SUP-00198,"Adams, Christian and Rivas",supplier,South,Food_Beverage,Medium,active,2024-01-01
-DST-00160,Blevins-Ballard,distributor,East,Automotive,Enterprise,active,2024-01-01
-SUP-00280,"Reyes, Chase and Jenkins",supplier,North,Chemicals,Medium,active,2024-01-01
-SUP-00294,Good-Hodges,supplier,South,Food_Beverage,Enterprise,active,2024-01-01
-MFG-00101,Wilson-Jimenez,manufacturer,South,Electronics,Enterprise,active,2024-01-01
-SUP-00123,Chandler-Edwards,supplier,Central,Electronics,Small,active,2024-01-01
-SUP-00184,"Higgins, Strickland and Martin",supplier,East,Pharmaceuticals,Large,active,2024-01-01
-SUP-00203,Peterson-Beard,supplier,North,Automotive,Enterprise,active,2024-01-01
-MFG-00139,Davis-Gregory,manufacturer,South,Textiles,Small,active,2024-01-01
-SUP-00247,Davis Ltd,supplier,East,Chemicals,Enterprise,active,2024-01-01
-MFG-00116,"Hicks, Bullock and Bailey",manufacturer,West,Food_Beverage,Large,active,2024-01-01
-RET-00083,"Craig, Wilson and Yang",retailer,Central,Food_Beverage,Enterprise,active,2024-01-01
-LOG-00016,Hawkins-Hunt,logistics_provider,Central,Chemicals,Medium,active,2024-01-01
-RET-00057,Cruz-Allen,retailer,East,Automotive,Large,active,2024-01-01
-LOG-00086,"Brown, Howard and Smith",logistics_provider,North,Chemicals,Enterprise,active,2024-01-01
-RET-00038,Mcneil Group,retailer,East,Textiles,Enterprise,active,2024-01-01
-SUP-00130,Cortez LLC,supplier,North,Automotive,Enterprise,active,2024-01-01
-DST-00188,Morales Inc,distributor,South,Food_Beverage,Small,active,2024-01-01
-MFG-00103,"Hall, Hansen and Barnett",manufacturer,Central,Electronics,Small,active,2024-01-01
-LOG-00035,Diaz-Frederick,logistics_provider,West,Pharmaceuticals,Medium,active,2024-01-01
-LOG-00021,Armstrong and Sons,logistics_provider,Central,Textiles,Medium,active,2024-01-01
-WHS-00086,Sutton-Abbott,warehouse,South,Food_Beverage,Medium,active,2024-01-01
-RET-00064,Hunter-Fuller,retailer,West,Electronics,Medium,active,2024-01-01
-SUP-00220,Terry-Martinez,supplier,North,Textiles,Medium,active,2024-01-01
-DST-00192,Turner-Sharp,distributor,East,Textiles,Large,active,2024-01-01
-RET-00066,"Herrera, Jensen and Ramirez",retailer,East,Textiles,Enterprise,active,2024-01-01
-LOG-00003,Davis and Sons,logistics_provider,East,Pharmaceuticals,Small,active,2024-01-01
-LOG-00057,Guerra Ltd,logistics_provider,South,Automotive,Medium,active,2024-01-01
-RET-00070,Collins Group,retailer,West,Automotive,Medium,active,2024-01-01
-DST-00175,Butler and Sons,distributor,East,Pharmaceuticals,Medium,active,2024-01-01
-RET-00025,Smith-Noble,retailer,East,Textiles,Small,active,2024-01-01
-LOG-00011,Moore-Dawson,logistics_provider,North,Chemicals,Large,active,2024-01-01
-MFG-00087,"Morales, Thomas and Schultz",manufacturer,West,Chemicals,Large,active,2024-01-01
-RET-00123,Green-Ewing,retailer,South,Automotive,Medium,active,2024-01-01
-DST-00060,Williams-Berg,distributor,Central,Pharmaceuticals,Small,active,2024-01-01
-SUP-00268,Jimenez Ltd,supplier,Central,Food_Beverage,Enterprise,active,2024-01-01
-LOG-00070,Goodwin-Stokes,logistics_provider,West,Pharmaceuticals,Large,active,2024-01-01
-MFG-00142,Rangel LLC,manufacturer,West,Chemicals,Small,active,2024-01-01
-DST-00047,Blackwell LLC,distributor,West,Textiles,Enterprise,active,2024-01-01
-SUP-00113,"Rodriguez, Brennan and Garrison",supplier,South,Automotive,Small,active,2024-01-01
-WHS-00042,Atkinson LLC,warehouse,South,Food_Beverage,Large,active,2024-01-01
-SUP-00233,"Clark, Guerrero and Moore",supplier,West,Textiles,Enterprise,active,2024-01-01
-RET-00020,Donaldson and Sons,retailer,South,Electronics,Enterprise,active,2024-01-01
-DST-00158,"Hill, Martinez and Rhodes",distributor,East,Food_Beverage,Small,active,2024-01-01
-WHS-00022,Avila LLC,warehouse,North,Food_Beverage,Enterprise,active,2024-01-01
-MFG-00074,"Watson, Anderson and Brown",manufacturer,Central,Textiles,Large,active,2024-01-01
-RET-00132,Davis LLC,retailer,South,Pharmaceuticals,Enterprise,active,2024-01-01
-LOG-00093,Cunningham-Barton,logistics_provider,Central,Pharmaceuticals,Enterprise,active,2024-01-01
-SUP-00234,Arnold and Sons,supplier,East,Electronics,Enterprise,active,2024-01-01
-LOG-00036,Vargas PLC,logistics_provider,West,Automotive,Enterprise,active,2024-01-01
-WHS-00027,Mendez-Mayer,warehouse,North,Food_Beverage,Medium,active,2024-01-01
-MFG-00018,Burgess-Thompson,manufacturer,South,Food_Beverage,Medium,active,2024-01-01
-DST-00199,"Zhang, Brooks and Miles",distributor,Central,Electronics,Small,active,2024-01-01
-MFG-00111,Kim Inc,manufacturer,South,Electronics,Large,active,2024-01-01
-RET-00049,"Cruz, Richmond and Edwards",retailer,West,Textiles,Enterprise,active,2024-01-01
-WHS-00060,Edwards-Williams,warehouse,East,Pharmaceuticals,Enterprise,active,2024-01-01
-MFG-00059,"Turner, Schneider and Johnson",manufacturer,South,Food_Beverage,Enterprise,active,2024-01-01
-SUP-00259,Gutierrez-Lopez,supplier,Central,Automotive,Enterprise,active,2024-01-01
-WHS-00095,Lam-Elliott,warehouse,East,Pharmaceuticals,Enterprise,active,2024-01-01
-DST-00178,Mcdowell-Smith,distributor,South,Food_Beverage,Small,active,2024-01-01
-DST-00183,Simon Ltd,distributor,Central,Food_Beverage,Enterprise,active,2024-01-01
-SUP-00283,"Pollard, Simpson and Johnson",supplier,South,Automotive,Medium,active,2024-01-01
-MFG-00077,Schmitt PLC,manufacturer,North,Food_Beverage,Small,active,2024-01-01
-MFG-00085,"Farmer, Dorsey and Bell",manufacturer,West,Electronics,Large,active,2024-01-01
-SUP-00225,Jones-Soto,supplier,North,Food_Beverage,Enterprise,active,2024-01-01
-RET-00104,Barnes Inc,retailer,South,Chemicals,Medium,active,2024-01-01
-LOG-00065,Hall-Sullivan,logistics_provider,West,Pharmaceuticals,Enterprise,active,2024-01-01
-DST-00023,Moody-Taylor,distributor,East,Electronics,Small,active,2024-01-01
-MFG-00048,Willis and Sons,manufacturer,South,Textiles,Enterprise,active,2024-01-01
-DST-00056,Morrison-Short,distributor,Central,Textiles,Enterprise,active,2024-01-01
-DST-00190,Boyle-Smith,distributor,East,Pharmaceuticals,Medium,active,2024-01-01
-RET-00138,Ramirez-Stephenson,retailer,East,Electronics,Large,active,2024-01-01
-RET-00079,Nelson-Brown,retailer,South,Chemicals,Large,active,2024-01-01
-RET-00056,"Brown, Hurst and Blevins",retailer,West,Pharmaceuticals,Medium,active,2024-01-01
-DST-00170,Russell Group,distributor,South,Electronics,Enterprise,active,2024-01-01
-RET-00006,Werner-Carter,retailer,Central,Textiles,Enterprise,active,2024-01-01
-LOG-00054,Barton-Chapman,logistics_provider,South,Textiles,Large,active,2024-01-01
-DST-00196,"Carrillo, Vaughn and Fowler",distributor,Central,Chemicals,Medium,active,2024-01-01
-LOG-00097,"Alexander, Robinson and Coleman",logistics_provider,South,Pharmaceuticals,Enterprise,active,2024-01-01
-DST-00107,Marshall-Peterson,distributor,East,Food_Beverage,Medium,active,2024-01-01
-RET-00108,"Miller, Davis and Anderson",retailer,South,Pharmaceuticals,Enterprise,active,2024-01-01
-DST-00128,Brooks-Hatfield,distributor,South,Electronics,Large,active,2024-01-01
-LOG-00046,"Woodard, Herrera and Little",logistics_provider,North,Electronics,Enterprise,active,2024-01-01
-SUP-00086,Smith PLC,supplier,West,Food_Beverage,Enterprise,active,2024-01-01
-SUP-00243,Gonzales-Harrison,supplier,East,Pharmaceuticals,Enterprise,active,2024-01-01
-WHS-00049,"Morrison, Russo and Lopez",warehouse,North,Textiles,Enterprise,active,2024-01-01
-SUP-00160,Russell-Daniels,supplier,East,Automotive,Medium,active,2024-01-01
-DST-00075,Gonzalez-Taylor,distributor,East,Pharmaceuticals,Small,active,2024-01-01
-SUP-00036,Rodriguez-Graham,supplier,Central,Food_Beverage,Enterprise,active,2024-01-01
-DST-00091,"Matthews, Saunders and Anderson",distributor,West,Automotive,Enterprise,active,2024-01-01
-SUP-00171,Meadows PLC,supplier,West,Food_Beverage,Enterprise,active,2024-01-01
-WHS-00005,Murphy PLC,warehouse,West,Automotive,Enterprise,active,2024-01-01
-RET-00041,Taylor-Ayala,retailer,South,Chemicals,Small,active,2024-01-01
-RET-00008,"Ochoa, Taylor and Brady",retailer,Central,Automotive,Small,active,2024-01-01
-LOG-00098,"Greer, Potter and Evans",logistics_provider,South,Textiles,Small,active,2024-01-01
-RET-00095,Wood LLC,retailer,North,Automotive,Enterprise,active,2024-01-01
-WHS-00084,Chung-Stevens,warehouse,North,Electronics,Medium,active,2024-01-01
-SUP-00096,Harris-Walters,supplier,South,Electronics,Small,active,2024-01-01
-DST-00114,Wright-Grimes,distributor,North,Electronics,Enterprise,active,2024-01-01
-SUP-00241,Jones and Sons,supplier,West,Chemicals,Enterprise,active,2024-01-01
-WHS-00093,Lewis Ltd,warehouse,South,Textiles,Enterprise,active,2024-01-01
-DST-00125,"Lee, Tran and Jones",distributor,North,Automotive,Small,active,2024-01-01
-WHS-00041,White-Medina,warehouse,East,Textiles,Large,active,2024-01-01
-DST-00011,Strickland-Shaw,distributor,North,Pharmaceuticals,Medium,active,2024-01-01
-DST-00104,Ballard Ltd,distributor,South,Electronics,Large,active,2024-01-01
-RET-00039,"Anderson, Jones and Reyes",retailer,West,Pharmaceuticals,Enterprise,active,2024-01-01
-SUP-00207,"Alvarez, Joseph and West",supplier,North,Food_Beverage,Small,active,2024-01-01
-MFG-00093,Webster Inc,manufacturer,Central,Food_Beverage,Medium,active,2024-01-01
-LOG-00045,"Barnes, Johnson and Schmitt",logistics_provider,South,Automotive,Medium,active,2024-01-01
-MFG-00098,"Estrada, Williams and Foster",manufacturer,South,Automotive,Small,active,2024-01-01
-LOG-00017,Johnson LLC,logistics_provider,South,Chemicals,Small,active,2024-01-01
-LOG-00099,Cole LLC,logistics_provider,Central,Electronics,Small,active,2024-01-01
-SUP-00218,Erickson and Sons,supplier,Central,Chemicals,Enterprise,active,2024-01-01
-SUP-00005,"Guzman, Hoffman and Baldwin",supplier,North,Electronics,Medium,active,2024-01-01
-LOG-00019,Smith-Gutierrez,logistics_provider,North,Textiles,Small,active,2024-01-01
-DST-00193,Green LLC,distributor,North,Automotive,Medium,active,2024-01-01
-RET-00080,"Proctor, Burton and Crawford",retailer,South,Automotive,Medium,active,2024-01-01
-DST-00163,"Scott, Mendoza and Harris",distributor,East,Chemicals,Large,active,2024-01-01
-WHS-00089,Walsh Ltd,warehouse,North,Electronics,Large,active,2024-01-01
-DST-00097,"Ferguson, Shaw and Jackson",distributor,North,Pharmaceuticals,Large,active,2024-01-01
-WHS-00076,Williamson Ltd,warehouse,South,Electronics,Medium,active,2024-01-01
-WHS-00034,"Flores, Harper and Chambers",warehouse,South,Electronics,Enterprise,active,2024-01-01
-SUP-00099,Williams-Cook,supplier,Central,Electronics,Enterprise,active,2024-01-01
-LOG-00055,"Hernandez, Cuevas and Webb",logistics_provider,South,Chemicals,Large,active,2024-01-01
-WHS-00078,"Arnold, Smith and Moreno",warehouse,West,Automotive,Enterprise,active,2024-01-01
-DST-00124,Williams-Williams,distributor,West,Automotive,Large,active,2024-01-01
-MFG-00107,Berry-Mckinney,manufacturer,South,Automotive,Medium,active,2024-01-01
-DST-00053,Morgan-Lopez,distributor,East,Food_Beverage,Enterprise,active,2024-01-01
-SUP-00048,"Martin, Rose and Obrien",supplier,Central,Pharmaceuticals,Small,active,2024-01-01
-SUP-00033,"Ferrell, Rice and Maddox",supplier,West,Chemicals,Enterprise,active,2024-01-01
-LOG-00030,"Mccann, Taylor and Flores",logistics_provider,North,Chemicals,Medium,active,2024-01-01
-LOG-00090,Miller Inc,logistics_provider,North,Automotive,Enterprise,active,2024-01-01
-SUP-00201,"Barnett, Rogers and Snyder",supplier,North,Chemicals,Enterprise,active,2024-01-01
-SUP-00135,Mitchell-Jordan,supplier,East,Pharmaceuticals,Small,active,2024-01-01
-SUP-00028,"Hoffman, Baker and Richards",supplier,East,Electronics,Medium,active,2024-01-01
-RET-00031,Watson Ltd,retailer,West,Chemicals,Medium,active,2024-01-01
-SUP-00231,"Branch, Torres and Oliver",supplier,East,Pharmaceuticals,Small,active,2024-01-01
-DST-00040,Cooper Ltd,distributor,North,Textiles,Small,active,2024-01-01
-LOG-00023,Thomas-Jackson,logistics_provider,North,Chemicals,Medium,active,2024-01-01
-MFG-00079,Moore Group,manufacturer,Central,Automotive,Small,active,2024-01-01
-SUP-00289,"Miller, Murphy and Craig",supplier,West,Electronics,Small,active,2024-01-01
-MFG-00119,Morrison Ltd,manufacturer,Central,Electronics,Large,active,2024-01-01
-WHS-00025,Hill Ltd,warehouse,West,Textiles,Enterprise,active,2024-01-01
-MFG-00092,Ware and Sons,manufacturer,West,Food_Beverage,Large,active,2024-01-01
-DST-00143,"Allen, Armstrong and Graves",distributor,North,Chemicals,Enterprise,active,2024-01-01
-DST-00049,"Kennedy, Johnson and Lucas",distributor,East,Pharmaceuticals,Enterprise,active,2024-01-01
-SUP-00139,"Harvey, Davis and Crane",supplier,South,Electronics,Medium,active,2024-01-01
-SUP-00063,Wright and Sons,supplier,West,Textiles,Enterprise,active,2024-01-01
-DST-00022,Combs Ltd,distributor,South,Automotive,Large,active,2024-01-01
-DST-00198,Mendoza Group,distributor,South,Chemicals,Large,active,2024-01-01
-SUP-00129,"Mccall, Hanson and Alvarado",supplier,East,Pharmaceuticals,Medium,active,2024-01-01
-RET-00127,Anderson Group,retailer,Central,Chemicals,Medium,active,2024-01-01
-DST-00071,Johnson and Sons,distributor,East,Electronics,Medium,active,2024-01-01
-LOG-00089,Mckinney-Wallace,logistics_provider,Central,Pharmaceuticals,Medium,active,2024-01-01
-RET-00113,Chavez-Hall,retailer,Central,Electronics,Medium,active,2024-01-01
-SUP-00065,Baxter Inc,supplier,North,Automotive,Small,active,2024-01-01
-LOG-00063,"Marsh, Spears and Yang",logistics_provider,Central,Automotive,Enterprise,active,2024-01-01
-SUP-00015,Williams and Sons,supplier,Central,Electronics,Enterprise,active,2024-01-01
-SUP-00157,"Mitchell, Nelson and Flores",supplier,West,Chemicals,Enterprise,active,2024-01-01
-SUP-00041,Ryan PLC,supplier,Central,Electronics,Enterprise,active,2024-01-01
-DST-00043,Li-Thompson,distributor,South,Electronics,Medium,active,2024-01-01
-MFG-00080,Boone LLC,manufacturer,West,Electronics,Large,active,2024-01-01
-SUP-00188,Vargas Ltd,supplier,South,Electronics,Enterprise,active,2024-01-01
-LOG-00014,Ward-Nelson,logistics_provider,South,Food_Beverage,Large,active,2024-01-01
-SUP-00217,Perez-White,supplier,Central,Electronics,Large,active,2024-01-01
-LOG-00042,"Moore, Henderson and Bennett",logistics_provider,East,Food_Beverage,Enterprise,active,2024-01-01
-SUP-00053,Chapman and Sons,supplier,North,Electronics,Large,active,2024-01-01
-RET-00029,Baxter LLC,retailer,South,Textiles,Medium,active,2024-01-01
-MFG-00038,Bass PLC,manufacturer,North,Automotive,Enterprise,active,2024-01-01
-WHS-00099,Hickman-Evans,warehouse,South,Textiles,Enterprise,active,2024-01-01
-WHS-00070,"Bernard, Warren and Combs",warehouse,East,Electronics,Large,active,2024-01-01
-WHS-00075,Wagner LLC,warehouse,South,Electronics,Medium,active,2024-01-01
-SUP-00296,Williams Inc,supplier,West,Electronics,Enterprise,active,2024-01-01
-WHS-00052,Giles Ltd,warehouse,North,Textiles,Small,active,2024-01-01
-SUP-00252,"Graham, Olsen and Costa",supplier,East,Chemicals,Large,active,2024-01-01
-WHS-00077,"Durham, Hopkins and Smith",warehouse,South,Electronics,Small,active,2024-01-01
-DST-00012,Burch-Montoya,distributor,Central,Electronics,Small,active,2024-01-01
-DST-00006,Diaz-Ball,distributor,North,Chemicals,Medium,active,2024-01-01
-RET-00147,Durham-Shaw,retailer,East,Automotive,Small,active,2024-01-01
-LOG-00066,Lopez Ltd,logistics_provider,South,Pharmaceuticals,Large,active,2024-01-01
-RET-00013,Burton-Brooks,retailer,East,Automotive,Enterprise,active,2024-01-01
-SUP-00270,Baird-Sanchez,supplier,East,Textiles,Small,active,2024-01-01
-SUP-00202,White-Lewis,supplier,South,Food_Beverage,Medium,active,2024-01-01
-SUP-00162,Stein-Silva,supplier,West,Food_Beverage,Enterprise,active,2024-01-01
-DST-00106,Moore Group,distributor,South,Pharmaceuticals,Small,active,2024-01-01
-WHS-00080,"Li, Craig and Drake",warehouse,North,Textiles,Medium,active,2024-01-01
-MFG-00102,Thompson-James,manufacturer,North,Chemicals,Medium,active,2024-01-01
-WHS-00053,Burgess Group,warehouse,South,Electronics,Enterprise,active,2024-01-01
-DST-00027,Scott and Sons,distributor,Central,Textiles,Large,active,2024-01-01
-LOG-00072,Diaz and Sons,logistics_provider,West,Automotive,Small,active,2024-01-01
-LOG-00022,"James, Taylor and Turner",logistics_provider,South,Automotive,Enterprise,active,2024-01-01
-SUP-00106,Nolan and Sons,supplier,North,Textiles,Medium,active,2024-01-01
-DST-00116,"Edwards, Hines and Jimenez",distributor,Central,Textiles,Medium,active,2024-01-01
-MFG-00090,Moore-Collins,manufacturer,West,Electronics,Small,active,2024-01-01
-SUP-00002,Doyle Ltd,supplier,South,Pharmaceuticals,Medium,active,2024-01-01
-RET-00088,"Rios, Walker and Wright",retailer,Central,Chemicals,Enterprise,active,2024-01-01
-RET-00133,Williams Group,retailer,Central,Textiles,Enterprise,active,2024-01-01
-DST-00112,Wright-Davis,distributor,East,Electronics,Small,active,2024-01-01
-SUP-00081,"Sanchez, Wheeler and Harvey",supplier,South,Food_Beverage,Medium,active,2024-01-01
-SUP-00206,Freeman-Chang,supplier,East,Food_Beverage,Large,active,2024-01-01
-SUP-00035,"Dyer, Potter and Mack",supplier,South,Chemicals,Large,active,2024-01-01
-LOG-00026,"Weber, Wheeler and Gonzalez",logistics_provider,West,Pharmaceuticals,Enterprise,active,2024-01-01
-DST-00059,Jackson-Wallace,distributor,East,Textiles,Enterprise,active,2024-01-01
-MFG-00128,Jones-Lin,manufacturer,West,Textiles,Enterprise,active,2024-01-01
-DST-00005,"Lamb, Martin and Kim",distributor,North,Pharmaceuticals,Small,active,2024-01-01
-MFG-00067,"Le, Lewis and Hayes",manufacturer,Central,Automotive,Medium,active,2024-01-01
-SUP-00092,"Smith, Montoya and Evans",supplier,South,Electronics,Small,active,2024-01-01
-MFG-00040,"Wood, Ramos and Sampson",manufacturer,Central,Electronics,Small,active,2024-01-01
-RET-00048,Goodwin PLC,retailer,North,Pharmaceuticals,Enterprise,active,2024-01-01
-DST-00115,Li PLC,distributor,Central,Textiles,Small,active,2024-01-01
-MFG-00046,Zhang PLC,manufacturer,North,Automotive,Large,active,2024-01-01
-LOG-00027,Taylor Inc,logistics_provider,West,Textiles,Small,active,2024-01-01
-SUP-00242,Larson-Holloway,supplier,West,Electronics,Small,active,2024-01-01
-SUP-00014,"Mcclure, Ward and Lee",supplier,North,Chemicals,Enterprise,active,2024-01-01
-MFG-00016,"Lucas, Parker and Alexander",manufacturer,Central,Chemicals,Large,active,2024-01-01
-DST-00151,Stevens PLC,distributor,East,Textiles,Enterprise,active,2024-01-01
-MFG-00088,Davis PLC,manufacturer,West,Electronics,Medium,active,2024-01-01
-SUP-00274,Hoover-Campbell,supplier,South,Pharmaceuticals,Medium,active,2024-01-01
-SUP-00167,"Hurst, Freeman and Nelson",supplier,South,Pharmaceuticals,Medium,active,2024-01-01
-LOG-00091,Carter LLC,logistics_provider,East,Pharmaceuticals,Medium,active,2024-01-01
-RET-00143,Gonzalez-Wilkerson,retailer,Central,Automotive,Small,active,2024-01-01
-DST-00197,Richardson-Walker,distributor,Central,Textiles,Medium,active,2024-01-01
-LOG-00069,Smith-Lewis,logistics_provider,Central,Textiles,Medium,active,2024-01-01
-DST-00035,"Butler, Beck and Miller",distributor,North,Food_Beverage,Small,active,2024-01-01
-RET-00131,Orr Group,retailer,East,Electronics,Enterprise,active,2024-01-01
-DST-00055,Acosta Inc,distributor,East,Electronics,Small,active,2024-01-01
-LOG-00082,Lopez-Reid,logistics_provider,East,Food_Beverage,Enterprise,active,2024-01-01
-SUP-00244,Lyons-Bender,supplier,South,Automotive,Large,active,2024-01-01
-DST-00117,"Owens, Koch and Jimenez",distributor,South,Automotive,Enterprise,active,2024-01-01
-RET-00026,Alexander Inc,retailer,South,Automotive,Small,active,2024-01-01
-DST-00113,Dougherty-Lin,distributor,South,Food_Beverage,Enterprise,active,2024-01-01
-WHS-00037,"Fry, Hobbs and Buck",warehouse,Central,Electronics,Small,active,2024-01-01
-SUP-00190,"Burke, Martinez and Riggs",supplier,West,Electronics,Medium,active,2024-01-01
-LOG-00033,Faulkner-Casey,logistics_provider,Central,Electronics,Small,active,2024-01-01
-WHS-00050,"Ramsey, Hansen and Mendoza",warehouse,South,Textiles,Enterprise,active,2024-01-01
-DST-00026,Gilbert-Bullock,distributor,Central,Chemicals,Medium,active,2024-01-01
-WHS-00032,"Robinson, Shields and Brown",warehouse,North,Food_Beverage,Enterprise,active,2024-01-01
-DST-00061,Mendez-Graham,distributor,West,Electronics,Large,active,2024-01-01
-SUP-00059,Lee-Davis,supplier,Central,Pharmaceuticals,Large,active,2024-01-01
-DST-00025,Blake Group,distributor,South,Pharmaceuticals,Enterprise,active,2024-01-01
-DST-00111,"Rodriguez, Allen and Martinez",distributor,North,Automotive,Medium,active,2024-01-01
-RET-00007,"Adams, Hodge and Duke",retailer,North,Electronics,Large,active,2024-01-01
-WHS-00098,Goodwin Ltd,warehouse,East,Textiles,Medium,active,2024-01-01
-SUP-00253,Bailey-Cook,supplier,North,Pharmaceuticals,Large,active,2024-01-01
-SUP-00022,"Watts, Robinson and Nguyen",supplier,South,Automotive,Large,active,2024-01-01
-MFG-00014,Byrd-Le,manufacturer,North,Chemicals,Medium,active,2024-01-01
-DST-00010,"Valentine, Joyce and Murray",distributor,Central,Textiles,Small,active,2024-01-01
-SUP-00161,Brown-Wall,supplier,West,Textiles,Large,active,2024-01-01
-SUP-00277,Cook-Hines,supplier,Central,Food_Beverage,Large,active,2024-01-01
-RET-00106,Morse PLC,retailer,East,Textiles,Enterprise,active,2024-01-01
-SUP-00192,"Wood, Hunter and Peterson",supplier,Central,Food_Beverage,Enterprise,active,2024-01-01
-MFG-00086,Kane PLC,manufacturer,Central,Pharmaceuticals,Small,active,2024-01-01
-LOG-00056,Perry-Nixon,logistics_provider,Central,Textiles,Large,active,2024-01-01
-MFG-00114,Cook and Sons,manufacturer,North,Pharmaceuticals,Enterprise,active,2024-01-01
-DST-00042,Anderson-Bell,distributor,East,Automotive,Medium,active,2024-01-01
-MFG-00044,Davis-Lewis,manufacturer,West,Pharmaceuticals,Large,active,2024-01-01
-LOG-00020,Hardy PLC,logistics_provider,North,Textiles,Medium,active,2024-01-01
-MFG-00009,"Phillips, Spence and Barrett",manufacturer,East,Food_Beverage,Enterprise,active,2024-01-01
-WHS-00012,"Robinson, Jones and Henderson",warehouse,East,Textiles,Small,active,2024-01-01
-SUP-00131,"Parker, Ortiz and Powell",supplier,Central,Chemicals,Medium,active,2024-01-01
-WHS-00014,Andersen Group,warehouse,North,Automotive,Enterprise,active,2024-01-01
-RET-00022,Kelley-Anderson,retailer,Central,Electronics,Small,active,2024-01-01
-SUP-00100,Walsh LLC,supplier,Central,Textiles,Large,active,2024-01-01
-MFG-00073,Reynolds Ltd,manufacturer,South,Textiles,Large,active,2024-01-01
-SUP-00088,Anderson-Bailey,supplier,South,Food_Beverage,Small,active,2024-01-01
-DST-00009,Mckee-Lee,distributor,East,Chemicals,Large,active,2024-01-01
-MFG-00031,Reid Group,manufacturer,West,Electronics,Medium,active,2024-01-01
-SUP-00215,"Washington, Hardy and Bray",supplier,East,Pharmaceuticals,Small,active,2024-01-01
-DST-00017,Davis-Lozano,distributor,West,Electronics,Large,active,2024-01-01
-SUP-00122,Johnson-Carlson,supplier,Central,Chemicals,Enterprise,active,2024-01-01
-DST-00165,Gilbert PLC,distributor,South,Food_Beverage,Enterprise,active,2024-01-01
-SUP-00021,Gray-Mayo,supplier,West,Chemicals,Large,active,2024-01-01
-WHS-00051,Turner-Stout,warehouse,South,Chemicals,Medium,active,2024-01-01
-SUP-00072,House-Glover,supplier,South,Textiles,Medium,active,2024-01-01
-SUP-00107,"Wright, Garcia and Deleon",supplier,Central,Automotive,Medium,active,2024-01-01
-SUP-00271,"Thomas, Lee and Greene",supplier,Central,Chemicals,Small,active,2024-01-01
-RET-00011,"Morris, Wright and Bridges",retailer,Central,Pharmaceuticals,Medium,active,2024-01-01
-MFG-00136,Cox LLC,manufacturer,West,Electronics,Small,active,2024-01-01
-SUP-00103,"Mckee, Gardner and Davenport",supplier,South,Chemicals,Large,active,2024-01-01
+organization_id,organization_name,organization_type,region,industry,size_category,status,created_at,entry_month,exit_month
+DST-00072,Holmes-Mcintyre,distributor,East,Automotive,Enterprise,inactive,2024-01-01,,2025-08
+WHS-00088,Gray-Tran,warehouse,South,Chemicals,Large,active,2024-01-01,,
+WHS-00091,"Mueller, Knight and Hodge",warehouse,East,Automotive,Enterprise,active,2024-01-01,2025-11,
+WHS-00011,Foster Inc,warehouse,East,Food_Beverage,Medium,active,2024-01-01,,
+MFG-00112,Graham Group,manufacturer,South,Textiles,Large,active,2024-01-01,,
+WHS-00029,Wheeler Group,warehouse,West,Automotive,Small,active,2024-01-01,,
+DST-00177,Lopez-Curry,distributor,North,Pharmaceuticals,Medium,active,2024-01-01,,
+DST-00064,Cisneros and Sons,distributor,West,Textiles,Medium,active,2024-01-01,,
+RET-00010,"Martinez, Cline and Wright",retailer,South,Electronics,Small,active,2024-01-01,,
+SUP-00137,"Lewis, Kennedy and Santana",supplier,South,Pharmaceuticals,Enterprise,active,2024-01-01,2024-02,
+LOG-00062,"Wilson, Sweeney and Wong",logistics_provider,North,Automotive,Enterprise,active,2024-01-01,,
+SUP-00077,"Woods, Calhoun and Schmidt",supplier,West,Food_Beverage,Small,active,2024-01-01,,
+DST-00187,Wilcox-Robertson,distributor,South,Textiles,Medium,inactive,2024-01-01,,2024-09
+RET-00124,Crane Group,retailer,Central,Food_Beverage,Enterprise,active,2024-01-01,,
+RET-00089,"Flores, Mckenzie and Duncan",retailer,East,Food_Beverage,Small,active,2024-01-01,,
+RET-00050,Wright Ltd,retailer,North,Electronics,Small,active,2024-01-01,,
+SUP-00281,Garner-Thornton,supplier,East,Chemicals,Medium,active,2024-01-01,,
+RET-00034,Rios-Padilla,retailer,South,Electronics,Large,active,2024-01-01,,
+LOG-00012,"Moore, Price and Ward",logistics_provider,East,Textiles,Medium,active,2024-01-01,,
+MFG-00020,"Shaw, Nelson and Martin",manufacturer,North,Automotive,Enterprise,active,2024-01-01,,
+DST-00100,Miller Ltd,distributor,West,Automotive,Small,active,2024-01-01,,
+SUP-00175,Ramirez-Bean,supplier,North,Textiles,Medium,active,2024-01-01,,
+MFG-00072,Davis Inc,manufacturer,West,Pharmaceuticals,Medium,active,2024-01-01,,
+DST-00078,Contreras-Mckinney,distributor,South,Pharmaceuticals,Large,active,2024-01-01,,
+SUP-00211,"Pierce, Bell and Chavez",supplier,South,Electronics,Medium,inactive,2024-01-01,,2024-04
+SUP-00236,"Harrison, Johnson and Roberts",supplier,South,Automotive,Large,inactive,2024-01-01,,2025-08
+SUP-00102,"Patterson, Smith and Jones",supplier,South,Automotive,Enterprise,active,2024-01-01,,
+RET-00137,Gomez and Sons,retailer,Central,Electronics,Medium,inactive,2024-01-01,,2025-07
+RET-00053,Abbott Ltd,retailer,West,Electronics,Large,active,2024-01-01,,
+RET-00098,Oconnor PLC,retailer,West,Pharmaceuticals,Enterprise,active,2024-01-01,,
+MFG-00047,Jones PLC,manufacturer,East,Food_Beverage,Medium,active,2024-01-01,,
+SUP-00140,Chambers and Sons,supplier,West,Automotive,Large,active,2024-01-01,,
+DST-00172,Morris-Brewer,distributor,North,Chemicals,Large,active,2024-01-01,,
+DST-00050,Kelly-Norman,distributor,North,Food_Beverage,Enterprise,active,2024-01-01,,
+MFG-00071,Mcdaniel Group,manufacturer,North,Automotive,Large,active,2024-01-01,2024-08,
+SUP-00199,Ramirez Group,supplier,Central,Textiles,Small,active,2024-01-01,,
+WHS-00038,"Shelton, Peters and Williams",warehouse,North,Pharmaceuticals,Large,active,2024-01-01,,
+DST-00135,"Patel, Erickson and Evans",distributor,Central,Food_Beverage,Enterprise,active,2024-01-01,,
+RET-00052,"Griffith, Mitchell and Pugh",retailer,Central,Textiles,Large,active,2024-01-01,,
+SUP-00060,Gomez-Jenkins,supplier,Central,Textiles,Enterprise,active,2024-01-01,,
+MFG-00029,Harvey PLC,manufacturer,East,Chemicals,Enterprise,active,2024-01-01,,
+SUP-00097,Wagner-King,supplier,South,Food_Beverage,Small,active,2024-01-01,,
+MFG-00013,Robinson-Lee,manufacturer,South,Electronics,Enterprise,active,2024-01-01,,
+RET-00125,"Adkins, Wright and Murray",retailer,Central,Pharmaceuticals,Enterprise,active,2024-01-01,,
+SUP-00300,Harvey-Allen,supplier,West,Automotive,Enterprise,active,2024-01-01,,
+SUP-00278,Gibson-Morris,supplier,North,Pharmaceuticals,Large,active,2024-01-01,,
+RET-00075,"Smith, Crawford and Reed",retailer,Central,Pharmaceuticals,Medium,active,2024-01-01,,
+DST-00152,Payne-Lowe,distributor,East,Chemicals,Small,inactive,2024-01-01,,2024-05
+MFG-00140,King-York,manufacturer,Central,Textiles,Large,active,2024-01-01,,
+LOG-00088,"Wagner, Simpson and Cohen",logistics_provider,East,Food_Beverage,Small,active,2024-01-01,,
+DST-00121,"Khan, Pena and Ruiz",distributor,Central,Automotive,Small,active,2024-01-01,2025-12,
+RET-00030,Pena LLC,retailer,Central,Food_Beverage,Large,active,2024-01-01,,
+SUP-00262,"Anderson, Roberts and Gilmore",supplier,West,Electronics,Small,active,2024-01-01,,
+DST-00129,"Mcmillan, Fischer and Gonzalez",distributor,Central,Automotive,Medium,active,2024-01-01,,
+SUP-00024,Morales-Jones,supplier,North,Textiles,Medium,active,2024-01-01,2024-06,
+SUP-00031,Burton Ltd,supplier,Central,Chemicals,Large,active,2024-01-01,,
+DST-00168,Love-Garcia,distributor,South,Textiles,Large,active,2024-01-01,,
+SUP-00011,Blair PLC,supplier,South,Automotive,Small,active,2024-01-01,2025-06,
+SUP-00222,Harrison-Alexander,supplier,Central,Electronics,Small,active,2024-01-01,,
+LOG-00071,Ray PLC,logistics_provider,South,Automotive,Small,inactive,2024-01-01,,2025-11
+SUP-00297,Howard-Jordan,supplier,East,Food_Beverage,Large,active,2024-01-01,,
+SUP-00055,Jones Inc,supplier,South,Textiles,Small,active,2024-01-01,,
+DST-00093,Torres and Sons,distributor,South,Pharmaceuticals,Medium,active,2024-01-01,,
+SUP-00210,"Wood, Tran and Cooper",supplier,North,Electronics,Medium,inactive,2024-01-01,,2025-10
+DST-00155,"Evans, David and Hendrix",distributor,North,Pharmaceuticals,Enterprise,active,2024-01-01,,
+WHS-00043,"Thomas, Ford and Brown",warehouse,Central,Automotive,Enterprise,active,2024-01-01,,
+WHS-00013,"Brown, Mcknight and Michael",warehouse,East,Pharmaceuticals,Enterprise,active,2024-01-01,,
+RET-00017,"Smith, Schroeder and Oconnor",retailer,North,Electronics,Enterprise,active,2024-01-01,,
+SUP-00071,Gray Group,supplier,East,Chemicals,Enterprise,active,2024-01-01,,
+DST-00094,Donovan-Perez,distributor,East,Electronics,Enterprise,active,2024-01-01,,
+SUP-00108,Dickson-Brady,supplier,East,Electronics,Medium,active,2024-01-01,,
+DST-00044,"Marshall, Dominguez and Welch",distributor,East,Pharmaceuticals,Medium,active,2024-01-01,,
+DST-00141,"Williams, Castillo and Warren",distributor,South,Food_Beverage,Enterprise,active,2024-01-01,,
+WHS-00092,Jacobson Inc,warehouse,Central,Textiles,Enterprise,active,2024-01-01,,
+SUP-00293,Bright-Francis,supplier,East,Textiles,Small,active,2024-01-01,,
+SUP-00290,"James, Stewart and Higgins",supplier,West,Chemicals,Large,active,2024-01-01,,
+WHS-00003,"Cox, Stark and Rodriguez",warehouse,West,Chemicals,Large,active,2024-01-01,2024-09,
+SUP-00040,"Romero, Gonzalez and Brooks",supplier,South,Chemicals,Enterprise,active,2024-01-01,,
+DST-00140,"Patton, Parsons and Lane",distributor,West,Food_Beverage,Large,active,2024-01-01,,
+MFG-00008,Armstrong-Andrews,manufacturer,East,Textiles,Medium,active,2024-01-01,2024-03,
+WHS-00030,"Powers, Brennan and Sanchez",warehouse,West,Electronics,Medium,active,2024-01-01,,
+SUP-00067,Williams PLC,supplier,Central,Pharmaceuticals,Small,active,2024-01-01,,
+SUP-00276,"Burns, Hernandez and Ryan",supplier,North,Food_Beverage,Enterprise,active,2024-01-01,,
+SUP-00068,Novak and Sons,supplier,North,Chemicals,Small,active,2024-01-01,,
+MFG-00019,Buchanan LLC,manufacturer,West,Pharmaceuticals,Medium,active,2024-01-01,,
+DST-00099,"Morgan, Bradshaw and Williams",distributor,West,Electronics,Medium,active,2024-01-01,,
+RET-00149,"Robinson, Huang and Osborne",retailer,South,Chemicals,Large,active,2024-01-01,,
+WHS-00065,"Pena, Cohen and Scott",warehouse,East,Automotive,Medium,active,2024-01-01,,
+LOG-00004,Peterson PLC,logistics_provider,East,Food_Beverage,Medium,active,2024-01-01,,
+MFG-00028,Rodriguez-Hall,manufacturer,South,Food_Beverage,Small,active,2024-01-01,,
+MFG-00083,"Austin, Day and Johnson",manufacturer,Central,Food_Beverage,Large,active,2024-01-01,2024-02,
+DST-00002,Stanley PLC,distributor,East,Automotive,Large,active,2024-01-01,2024-04,
+DST-00073,Green LLC,distributor,South,Textiles,Small,active,2024-01-01,,
+SUP-00219,Williams-Brown,supplier,West,Chemicals,Medium,active,2024-01-01,,
+LOG-00038,Benton Group,logistics_provider,North,Chemicals,Medium,active,2024-01-01,,
+MFG-00137,Ortiz-Morgan,manufacturer,North,Electronics,Enterprise,inactive,2024-01-01,,2024-02
+LOG-00015,Miller Group,logistics_provider,West,Chemicals,Enterprise,active,2024-01-01,,
+SUP-00089,Suarez LLC,supplier,West,Automotive,Enterprise,active,2024-01-01,,
+SUP-00064,"West, Henderson and Ramirez",supplier,North,Pharmaceuticals,Medium,active,2024-01-01,2025-09,
+LOG-00077,"Mccarthy, Evans and Mendez",logistics_provider,West,Pharmaceuticals,Large,active,2024-01-01,,
+WHS-00067,Murray-Oconnor,warehouse,East,Textiles,Large,active,2024-01-01,2025-06,
+MFG-00052,Guerrero Inc,manufacturer,West,Textiles,Medium,active,2024-01-01,,
+RET-00087,Tran Ltd,retailer,South,Chemicals,Small,active,2024-01-01,2025-12,
+SUP-00257,Cordova Group,supplier,Central,Automotive,Medium,active,2024-01-01,,
+DST-00186,Thompson Ltd,distributor,West,Food_Beverage,Large,active,2024-01-01,,
+DST-00195,Sullivan PLC,distributor,East,Textiles,Small,active,2024-01-01,,
+DST-00105,Evans-Jones,distributor,North,Chemicals,Large,active,2024-01-01,,
+RET-00110,Bates-Anderson,retailer,West,Textiles,Enterprise,active,2024-01-01,,
+SUP-00169,"Yates, Ramsey and Pittman",supplier,West,Textiles,Small,active,2024-01-01,,
+RET-00068,Herrera Group,retailer,West,Chemicals,Medium,active,2024-01-01,,
+DST-00079,"Daniels, Vance and York",distributor,West,Pharmaceuticals,Medium,active,2024-01-01,,
+LOG-00074,Rose-Fowler,logistics_provider,North,Automotive,Enterprise,active,2024-01-01,,
+RET-00136,Reyes Group,retailer,West,Pharmaceuticals,Small,active,2024-01-01,,
+LOG-00067,Foster-Mclaughlin,logistics_provider,South,Food_Beverage,Small,active,2024-01-01,2024-05,
+SUP-00087,"Ferrell, Jones and Lewis",supplier,South,Food_Beverage,Small,active,2024-01-01,,
+MFG-00133,Hayes LLC,manufacturer,West,Food_Beverage,Small,active,2024-01-01,,
+SUP-00185,Rodriguez-Johnson,supplier,East,Automotive,Small,active,2024-01-01,2024-12,
+RET-00129,Aguilar LLC,retailer,East,Pharmaceuticals,Medium,active,2024-01-01,2024-08,
+DST-00085,Salazar Inc,distributor,West,Electronics,Enterprise,active,2024-01-01,,
+SUP-00295,"Brennan, Wallace and Benson",supplier,East,Pharmaceuticals,Enterprise,active,2024-01-01,,
+RET-00043,Jones PLC,retailer,West,Chemicals,Medium,inactive,2024-01-01,,2025-09
+MFG-00126,"Brown, Romero and Collins",manufacturer,South,Automotive,Large,active,2024-01-01,,
+WHS-00064,Hudson-Sanchez,warehouse,Central,Automotive,Medium,active,2024-01-01,,
+SUP-00261,Wolf-Harris,supplier,South,Electronics,Large,active,2024-01-01,,
+SUP-00238,"Hall, Baker and Moody",supplier,Central,Electronics,Medium,active,2024-01-01,2025-01,
+DST-00110,Anderson-Wood,distributor,South,Pharmaceuticals,Enterprise,inactive,2024-01-01,,2024-03
+DST-00134,"Kirby, Wheeler and Romero",distributor,North,Automotive,Large,active,2024-01-01,,
+MFG-00146,"Osborn, Gaines and Davis",manufacturer,South,Electronics,Large,active,2024-01-01,,
+RET-00018,"Stanton, Reid and Terry",retailer,West,Food_Beverage,Enterprise,active,2024-01-01,,
+LOG-00051,Garcia and Sons,logistics_provider,South,Chemicals,Small,active,2024-01-01,,
+DST-00150,Fox-Edwards,distributor,East,Food_Beverage,Small,active,2024-01-01,,
+LOG-00100,Gonzales Inc,logistics_provider,North,Electronics,Enterprise,active,2024-01-01,,
+SUP-00266,Gay Inc,supplier,North,Pharmaceuticals,Small,active,2024-01-01,2025-01,
+RET-00146,Castillo-Harrington,retailer,East,Electronics,Enterprise,active,2024-01-01,,
+DST-00080,"Mckinney, Graves and Thompson",distributor,South,Pharmaceuticals,Small,active,2024-01-01,,
+SUP-00056,Jones-Young,supplier,North,Chemicals,Enterprise,active,2024-01-01,,
+SUP-00121,White-Estes,supplier,South,Chemicals,Enterprise,active,2024-01-01,,
+SUP-00216,"Carlson, Hooper and Wall",supplier,South,Automotive,Small,active,2024-01-01,2024-09,
+SUP-00026,Wilkerson-Day,supplier,South,Food_Beverage,Enterprise,active,2024-01-01,2025-12,
+SUP-00073,Henderson-Bernard,supplier,Central,Textiles,Enterprise,active,2024-01-01,,
+SUP-00045,"Arroyo, Miller and Tucker",supplier,East,Electronics,Large,active,2024-01-01,,
+SUP-00248,"Matthews, Smith and Hubbard",supplier,East,Automotive,Large,active,2024-01-01,,
+WHS-00072,Duran Group,warehouse,East,Chemicals,Enterprise,active,2024-01-01,,
+SUP-00282,Hughes-Alvarado,supplier,West,Electronics,Medium,inactive,2024-01-01,,2025-09
+RET-00044,Bishop and Sons,retailer,West,Automotive,Large,active,2024-01-01,2024-05,
+RET-00065,"Wang, Henderson and Morales",retailer,East,Electronics,Enterprise,active,2024-01-01,2025-07,
+LOG-00061,"Chavez, Jones and Williams",logistics_provider,West,Textiles,Enterprise,active,2024-01-01,,
+SUP-00245,"Fernandez, Kim and George",supplier,West,Textiles,Large,active,2024-01-01,,
+LOG-00073,Wilson-Lambert,logistics_provider,Central,Chemicals,Medium,active,2024-01-01,,
+MFG-00022,Brock-Mcdonald,manufacturer,North,Automotive,Large,active,2024-01-01,,
+DST-00194,"Young, Contreras and Marshall",distributor,Central,Automotive,Medium,inactive,2024-01-01,,2025-06
+SUP-00159,Mccarthy Inc,supplier,West,Textiles,Small,active,2024-01-01,2025-02,
+RET-00128,Parks-Pace,retailer,Central,Pharmaceuticals,Enterprise,active,2024-01-01,2025-08,
+MFG-00130,Ford-Spencer,manufacturer,Central,Chemicals,Medium,active,2024-01-01,,
+RET-00092,Finley Inc,retailer,West,Automotive,Enterprise,inactive,2024-01-01,,2025-01
+DST-00013,"Taylor, Wright and Davidson",distributor,East,Food_Beverage,Enterprise,active,2024-01-01,,
+MFG-00010,Smith-Grimes,manufacturer,North,Electronics,Medium,active,2024-01-01,,
+WHS-00048,"Calderon, Williams and Bennett",warehouse,East,Chemicals,Medium,inactive,2024-01-01,,2025-11
+SUP-00061,"Brown, Valdez and Lucas",supplier,South,Textiles,Medium,active,2024-01-01,,
+RET-00035,Lewis Inc,retailer,Central,Textiles,Enterprise,active,2024-01-01,2024-04,
+DST-00146,Shaw-Carr,distributor,North,Electronics,Large,active,2024-01-01,2025-09,
+LOG-00018,"Davis, George and Nguyen",logistics_provider,Central,Food_Beverage,Large,active,2024-01-01,2025-04,
+DST-00200,Todd-Pham,distributor,North,Electronics,Large,inactive,2024-01-01,,2024-04
+WHS-00001,Gill Ltd,warehouse,South,Textiles,Enterprise,active,2024-01-01,,
+RET-00016,Gibson-Freeman,retailer,South,Automotive,Small,active,2024-01-01,,
+WHS-00019,Miller-Brandt,warehouse,South,Pharmaceuticals,Enterprise,active,2024-01-01,2025-12,
+SUP-00299,"Sparks, Jackson and Miller",supplier,South,Automotive,Enterprise,active,2024-01-01,2024-10,
+WHS-00040,"Flores, Butler and Hernandez",warehouse,South,Textiles,Medium,active,2024-01-01,2024-02,
+MFG-00015,"Becker, Taylor and Davis",manufacturer,West,Chemicals,Large,active,2024-01-01,,
+MFG-00011,"Beltran, Lozano and Mcgee",manufacturer,South,Automotive,Small,active,2024-01-01,,
+MFG-00062,Lam LLC,manufacturer,East,Electronics,Enterprise,active,2024-01-01,,
+DST-00030,Barnes PLC,distributor,North,Automotive,Enterprise,active,2024-01-01,,
+SUP-00111,Patton-Jenkins,supplier,Central,Chemicals,Small,active,2024-01-01,,
+RET-00140,Holland Group,retailer,South,Food_Beverage,Enterprise,active,2024-01-01,,
+DST-00037,"Hartman, Romero and Smith",distributor,Central,Electronics,Enterprise,active,2024-01-01,,
+MFG-00064,"Kelley, Nguyen and Vang",manufacturer,Central,Chemicals,Enterprise,active,2024-01-01,2025-11,
+SUP-00255,Roberts-Landry,supplier,East,Electronics,Medium,active,2024-01-01,,
+SUP-00260,Dean-Jimenez,supplier,West,Food_Beverage,Large,active,2024-01-01,,
+LOG-00053,Griffin Group,logistics_provider,Central,Pharmaceuticals,Small,active,2024-01-01,,
+WHS-00028,Allen Inc,warehouse,East,Chemicals,Large,inactive,2024-01-01,,2024-07
+DST-00045,Brown Group,distributor,Central,Pharmaceuticals,Small,active,2024-01-01,,
+WHS-00021,"Long, Anderson and Irwin",warehouse,East,Food_Beverage,Small,active,2024-01-01,2025-05,
+MFG-00078,Bell-Lane,manufacturer,South,Pharmaceuticals,Enterprise,active,2024-01-01,2024-12,
+DST-00077,Osborn-Cochran,distributor,North,Automotive,Large,inactive,2024-01-01,,2024-11
+LOG-00096,Weaver-Sherman,logistics_provider,West,Pharmaceuticals,Large,active,2024-01-01,,
+SUP-00138,"Jackson, Miller and Robertson",supplier,East,Automotive,Medium,active,2024-01-01,2025-06,
+MFG-00056,Strickland-Palmer,manufacturer,North,Food_Beverage,Large,active,2024-01-01,,
+MFG-00066,"Wilson, Pena and Rich",manufacturer,South,Chemicals,Medium,active,2024-01-01,,
+RET-00093,Cline-Ayala,retailer,West,Chemicals,Medium,active,2024-01-01,,
+WHS-00100,"Allen, Davenport and Price",warehouse,West,Textiles,Large,active,2024-01-01,2024-07,
+RET-00099,Hernandez Group,retailer,East,Food_Beverage,Small,active,2024-01-01,,
+LOG-00080,Brooks and Sons,logistics_provider,West,Pharmaceuticals,Medium,active,2024-01-01,,
+WHS-00007,"Burns, Nolan and Griffin",warehouse,South,Food_Beverage,Enterprise,active,2024-01-01,,
+SUP-00200,Christensen PLC,supplier,West,Textiles,Small,active,2024-01-01,,
+SUP-00214,"Tapia, Vaughn and Lee",supplier,West,Chemicals,Large,active,2024-01-01,2025-09,
+MFG-00109,Jackson-Meza,manufacturer,South,Pharmaceuticals,Large,active,2024-01-01,2025-02,
+MFG-00033,Torres Group,manufacturer,North,Food_Beverage,Small,active,2024-01-01,,
+SUP-00209,Holt-Torres,supplier,South,Chemicals,Small,active,2024-01-01,,
+DST-00164,"Nelson, Hoffman and Nelson",distributor,South,Electronics,Small,active,2024-01-01,2025-10,
+SUP-00079,Jones Inc,supplier,East,Electronics,Medium,inactive,2024-01-01,,2024-06
+SUP-00030,"Snyder, Campos and Callahan",supplier,East,Electronics,Medium,active,2024-01-01,2025-01,
+DST-00086,Parker Ltd,distributor,East,Chemicals,Medium,active,2024-01-01,,
+WHS-00046,Rivera Inc,warehouse,North,Food_Beverage,Large,active,2024-01-01,2024-06,
+DST-00108,Edwards Ltd,distributor,West,Food_Beverage,Small,inactive,2024-01-01,,2024-10
+LOG-00087,Lee Group,logistics_provider,East,Pharmaceuticals,Large,active,2024-01-01,,
+DST-00147,Salas-Fitzgerald,distributor,East,Automotive,Enterprise,active,2024-01-01,,
+SUP-00166,Medina-Navarro,supplier,North,Pharmaceuticals,Large,active,2024-01-01,,
+RET-00069,"Walters, Davenport and Becker",retailer,East,Automotive,Medium,active,2024-01-01,,
+DST-00046,Carter Inc,distributor,South,Chemicals,Enterprise,inactive,2024-01-01,,2025-11
+LOG-00075,"Price, Long and Wilson",logistics_provider,Central,Textiles,Small,active,2024-01-01,,
+SUP-00066,Morton-Chase,supplier,Central,Textiles,Medium,active,2024-01-01,,
+SUP-00142,Riggs PLC,supplier,Central,Food_Beverage,Large,active,2024-01-01,,
+RET-00076,"Logan, Le and Jackson",retailer,Central,Electronics,Enterprise,active,2024-01-01,2025-05,
+LOG-00078,Powers LLC,logistics_provider,East,Electronics,Medium,active,2024-01-01,2024-11,
+WHS-00006,Wilson-Harris,warehouse,North,Chemicals,Small,active,2024-01-01,,
+MFG-00032,"Turner, Ortiz and Taylor",manufacturer,Central,Textiles,Large,inactive,2024-01-01,2024-02,2025-08
+WHS-00015,Mitchell and Sons,warehouse,South,Pharmaceuticals,Small,active,2024-01-01,,
+SUP-00250,Ruiz Ltd,supplier,East,Electronics,Medium,active,2024-01-01,,
+RET-00058,"Wheeler, Rice and Levine",retailer,West,Pharmaceuticals,Small,active,2024-01-01,,
+WHS-00059,"Harrison, Franco and Rocha",warehouse,West,Textiles,Enterprise,active,2024-01-01,,
+MFG-00006,Bruce-Gonzalez,manufacturer,Central,Automotive,Enterprise,active,2024-01-01,2024-02,
+WHS-00085,Branch and Sons,warehouse,Central,Chemicals,Small,active,2024-01-01,2025-03,
+RET-00126,Martinez Inc,retailer,West,Pharmaceuticals,Enterprise,active,2024-01-01,2024-03,
+SUP-00050,"Harris, Collins and Carney",supplier,South,Automotive,Medium,active,2024-01-01,,
+RET-00047,Miller Inc,retailer,East,Electronics,Medium,active,2024-01-01,,
+SUP-00003,"Mcclain, Miller and Henderson",supplier,North,Chemicals,Small,active,2024-01-01,,
+DST-00095,"Jacobson, Singleton and King",distributor,East,Textiles,Small,active,2024-01-01,2024-06,
+MFG-00051,Fernandez and Sons,manufacturer,Central,Food_Beverage,Medium,active,2024-01-01,,
+RET-00055,Adkins LLC,retailer,Central,Pharmaceuticals,Medium,active,2024-01-01,,
+DST-00087,"Mendoza, Jenkins and Ortiz",distributor,West,Textiles,Large,inactive,2024-01-01,,2024-10
+MFG-00045,"Harper, Smith and Buchanan",manufacturer,North,Electronics,Large,active,2024-01-01,,
+RET-00145,Mayo Ltd,retailer,West,Electronics,Medium,active,2024-01-01,,
+DST-00032,Carlson-Smith,distributor,East,Electronics,Enterprise,active,2024-01-01,2024-04,
+DST-00126,"Cole, Pierce and Bryan",distributor,East,Pharmaceuticals,Small,active,2024-01-01,,
+SUP-00034,Frazier Inc,supplier,South,Automotive,Medium,active,2024-01-01,,
+SUP-00032,Carlson-Cruz,supplier,South,Chemicals,Enterprise,active,2024-01-01,,
+SUP-00232,"Choi, Garcia and Farmer",supplier,East,Food_Beverage,Medium,active,2024-01-01,,
+RET-00114,Taylor PLC,retailer,East,Automotive,Medium,active,2024-01-01,,
+SUP-00193,Short-Garcia,supplier,North,Automotive,Large,active,2024-01-01,,
+MFG-00034,Davis PLC,manufacturer,Central,Food_Beverage,Small,active,2024-01-01,,
+SUP-00004,Davis and Sons,supplier,Central,Food_Beverage,Small,active,2024-01-01,2024-10,
+SUP-00205,Miller Ltd,supplier,East,Automotive,Enterprise,active,2024-01-01,2025-03,
+DST-00065,"Gregory, Kim and Martinez",distributor,East,Automotive,Large,active,2024-01-01,,
+LOG-00050,Sheppard-Jordan,logistics_provider,Central,Chemicals,Small,active,2024-01-01,,
+MFG-00007,Castaneda-Rodriguez,manufacturer,West,Electronics,Medium,active,2024-01-01,,
+SUP-00110,Johnson-Doyle,supplier,West,Textiles,Large,active,2024-01-01,2025-05,
+MFG-00131,"Huang, Cole and Pacheco",manufacturer,West,Food_Beverage,Medium,active,2024-01-01,,
+SUP-00078,Yu Inc,supplier,North,Electronics,Enterprise,active,2024-01-01,,
+SUP-00085,"Evans, Stewart and Walton",supplier,North,Pharmaceuticals,Medium,active,2024-01-01,,
+SUP-00287,"Booker, Jones and Harrington",supplier,East,Chemicals,Enterprise,active,2024-01-01,,
+SUP-00083,Donovan-Harris,supplier,North,Food_Beverage,Small,inactive,2024-01-01,,2025-03
+RET-00142,Ramirez and Sons,retailer,Central,Electronics,Large,active,2024-01-01,2025-05,
+LOG-00040,Fuentes Group,logistics_provider,Central,Food_Beverage,Medium,active,2024-01-01,,
+RET-00045,Bell-Lewis,retailer,North,Electronics,Small,active,2024-01-01,2024-09,
+MFG-00099,"Brown, Harris and Dougherty",manufacturer,East,Textiles,Large,active,2024-01-01,,
+MFG-00024,"Ramsey, Whitney and Coffey",manufacturer,South,Food_Beverage,Enterprise,active,2024-01-01,2025-06,
+DST-00070,"Richardson, Edwards and Ramirez",distributor,East,Automotive,Medium,inactive,2024-01-01,,2024-02
+RET-00067,Miller-Mccall,retailer,East,Food_Beverage,Large,active,2024-01-01,,
+RET-00073,Parker Ltd,retailer,East,Food_Beverage,Large,active,2024-01-01,2024-07,
+SUP-00006,"Gardner, Robinson and Lawrence",supplier,South,Textiles,Small,active,2024-01-01,,
+WHS-00082,"Hernandez, Lee and Fox",warehouse,West,Chemicals,Medium,active,2024-01-01,,
+DST-00016,Cole-Palmer,distributor,Central,Electronics,Large,active,2024-01-01,2025-11,
+SUP-00098,Davis Group,supplier,Central,Pharmaceuticals,Small,active,2024-01-01,2025-03,
+SUP-00267,Valentine-Holland,supplier,Central,Food_Beverage,Medium,active,2024-01-01,,
+MFG-00058,"Williams, Logan and Camacho",manufacturer,East,Food_Beverage,Large,active,2024-01-01,,
+RET-00019,Flynn Group,retailer,North,Chemicals,Small,active,2024-01-01,2025-12,
+LOG-00049,"Terrell, Byrd and Ross",logistics_provider,Central,Electronics,Enterprise,active,2024-01-01,2024-08,
+MFG-00081,"Richardson, Farmer and Andrews",manufacturer,Central,Electronics,Enterprise,active,2024-01-01,,
+DST-00182,"Mcdonald, Lee and Rodriguez",distributor,East,Food_Beverage,Enterprise,active,2024-01-01,2025-05,
+MFG-00082,Bruce-Villegas,manufacturer,East,Chemicals,Large,active,2024-01-01,,
+DST-00041,"Fuller, Ingram and Moss",distributor,Central,Textiles,Medium,active,2024-01-01,,
+SUP-00119,May-Ross,supplier,East,Electronics,Small,inactive,2024-01-01,,2025-09
+RET-00051,Wright PLC,retailer,East,Textiles,Small,active,2024-01-01,,
+SUP-00251,Moon-White,supplier,South,Pharmaceuticals,Enterprise,active,2024-01-01,,
+DST-00074,"Griffin, Davies and Mitchell",distributor,East,Textiles,Enterprise,active,2024-01-01,,
+SUP-00010,Abbott-Munoz,supplier,East,Automotive,Medium,active,2024-01-01,2025-08,
+SUP-00197,Marshall-Petersen,supplier,West,Automotive,Enterprise,active,2024-01-01,,
+DST-00154,Lee-Wright,distributor,East,Textiles,Medium,active,2024-01-01,,
+SUP-00082,Sandoval-Cunningham,supplier,East,Food_Beverage,Medium,active,2024-01-01,,
+LOG-00034,Bennett-Velasquez,logistics_provider,West,Electronics,Large,active,2024-01-01,,
+DST-00138,Robles-Swanson,distributor,East,Automotive,Small,active,2024-01-01,,
+LOG-00048,"Ortega, Jackson and Salazar",logistics_provider,South,Electronics,Small,active,2024-01-01,,
+SUP-00240,"Walker, Hernandez and Baker",supplier,West,Textiles,Medium,active,2024-01-01,,
+SUP-00291,Brennan-Johnson,supplier,Central,Automotive,Small,active,2024-01-01,,
+SUP-00212,King-Martinez,supplier,South,Pharmaceuticals,Enterprise,active,2024-01-01,,
+WHS-00068,Jackson-Cortez,warehouse,East,Electronics,Enterprise,active,2024-01-01,,
+MFG-00060,Boone-Simmons,manufacturer,North,Pharmaceuticals,Enterprise,active,2024-01-01,2025-09,
+MFG-00150,Jones Inc,manufacturer,Central,Chemicals,Large,active,2024-01-01,,
+SUP-00228,"Duran, Obrien and Gibbs",supplier,West,Pharmaceuticals,Large,active,2024-01-01,,
+RET-00101,"Franco, Wiley and Tapia",retailer,East,Electronics,Large,active,2024-01-01,,
+RET-00097,Vargas-Snyder,retailer,East,Automotive,Large,active,2024-01-01,,
+LOG-00047,Rodriguez and Sons,logistics_provider,Central,Electronics,Medium,active,2024-01-01,,
+DST-00052,Paul-Kline,distributor,East,Textiles,Small,inactive,2024-01-01,,2025-04
+DST-00015,"Rosales, Mitchell and Hines",distributor,West,Automotive,Medium,active,2024-01-01,2024-06,
+MFG-00063,"Hernandez, Martinez and Weber",manufacturer,East,Electronics,Small,active,2024-01-01,,
+DST-00019,Brown-Shaw,distributor,North,Pharmaceuticals,Enterprise,active,2024-01-01,,
+RET-00086,Mora-White,retailer,North,Pharmaceuticals,Large,active,2024-01-01,,
+MFG-00129,Gilbert PLC,manufacturer,North,Chemicals,Small,active,2024-01-01,2025-05,
+SUP-00008,"Henderson, Ramirez and Lewis",supplier,South,Food_Beverage,Large,active,2024-01-01,,
+SUP-00156,Hill Inc,supplier,Central,Pharmaceuticals,Medium,active,2024-01-01,,
+DST-00092,"Bartlett, Brown and Martinez",distributor,Central,Textiles,Enterprise,active,2024-01-01,,
+MFG-00141,"Marks, Cook and Aguilar",manufacturer,North,Food_Beverage,Large,active,2024-01-01,,
+DST-00033,"Andrews, Higgins and Carter",distributor,North,Automotive,Medium,active,2024-01-01,2024-11,
+MFG-00123,"Downs, Morris and Maddox",manufacturer,West,Chemicals,Enterprise,active,2024-01-01,,
+LOG-00029,Alexander-Jordan,logistics_provider,North,Food_Beverage,Large,active,2024-01-01,,
+RET-00100,Hall LLC,retailer,West,Chemicals,Enterprise,active,2024-01-01,,
+MFG-00035,Price LLC,manufacturer,South,Food_Beverage,Medium,active,2024-01-01,,
+DST-00127,"Becker, Wilson and Hester",distributor,Central,Chemicals,Large,active,2024-01-01,,
+RET-00085,Williams LLC,retailer,Central,Textiles,Small,active,2024-01-01,,
+DST-00118,Landry PLC,distributor,North,Textiles,Large,active,2024-01-01,,
+DST-00145,Hernandez-Vaughn,distributor,Central,Automotive,Large,active,2024-01-01,,
+DST-00081,Hicks-Martinez,distributor,East,Electronics,Small,active,2024-01-01,,
+DST-00132,"Barry, Taylor and Velazquez",distributor,West,Electronics,Large,active,2024-01-01,,
+WHS-00058,Owens-Lang,warehouse,Central,Pharmaceuticals,Large,active,2024-01-01,2024-10,
+MFG-00149,Lee-Cooke,manufacturer,West,Textiles,Small,active,2024-01-01,,
+DST-00004,White Ltd,distributor,Central,Chemicals,Enterprise,active,2024-01-01,,
+SUP-00229,Rowe Group,supplier,Central,Textiles,Enterprise,active,2024-01-01,,
+MFG-00053,Smith and Sons,manufacturer,South,Food_Beverage,Large,active,2024-01-01,,
+WHS-00079,Nichols-Mitchell,warehouse,North,Chemicals,Medium,active,2024-01-01,,
+SUP-00213,Stewart Ltd,supplier,North,Textiles,Medium,active,2024-01-01,,
+SUP-00080,"Hensley, Powell and David",supplier,South,Pharmaceuticals,Enterprise,active,2024-01-01,2024-08,
+SUP-00149,Bryant Group,supplier,East,Electronics,Enterprise,active,2024-01-01,,
+MFG-00003,Santana-Byrd,manufacturer,East,Electronics,Enterprise,inactive,2024-01-01,,2025-01
+DST-00179,"Morrison, Hebert and Rogers",distributor,East,Textiles,Large,inactive,2024-01-01,,2024-03
+LOG-00028,Cook-Oliver,logistics_provider,Central,Food_Beverage,Large,active,2024-01-01,,
+DST-00057,"Carter, Garcia and Murphy",distributor,West,Textiles,Small,active,2024-01-01,,
+MFG-00043,Lopez-Martinez,manufacturer,West,Electronics,Small,active,2024-01-01,,
+DST-00036,Jones-Fox,distributor,South,Food_Beverage,Enterprise,active,2024-01-01,,
+WHS-00062,Tran-Silva,warehouse,East,Textiles,Enterprise,active,2024-01-01,,
+SUP-00134,"Carroll, Sullivan and Bass",supplier,East,Food_Beverage,Medium,active,2024-01-01,,
+WHS-00054,Dominguez Ltd,warehouse,East,Food_Beverage,Medium,active,2024-01-01,,
+MFG-00012,Parsons-Hall,manufacturer,Central,Food_Beverage,Small,inactive,2024-01-01,,2025-03
+WHS-00073,Kirby and Sons,warehouse,South,Pharmaceuticals,Large,active,2024-01-01,,
+DST-00180,Hays-Daniels,distributor,West,Textiles,Medium,active,2024-01-01,,
+SUP-00001,"Rodriguez, Figueroa and Sanchez",supplier,North,Electronics,Large,active,2024-01-01,,
+MFG-00017,"Diaz, Anderson and Browning",manufacturer,West,Food_Beverage,Enterprise,active,2024-01-01,,
+WHS-00057,"Howard, Green and Hunt",warehouse,North,Chemicals,Medium,inactive,2024-01-01,,2024-11
+DST-00098,"Moore, Hopkins and Le",distributor,West,Textiles,Medium,active,2024-01-01,,
+RET-00023,Kramer-Shannon,retailer,South,Pharmaceuticals,Enterprise,active,2024-01-01,,
+DST-00083,Johnson-Spencer,distributor,Central,Food_Beverage,Medium,inactive,2024-01-01,,2025-02
+DST-00028,"Bentley, Lynch and Henderson",distributor,North,Food_Beverage,Small,active,2024-01-01,2024-12,
+MFG-00105,Graham Group,manufacturer,Central,Pharmaceuticals,Small,active,2024-01-01,,
+SUP-00173,White-Green,supplier,North,Food_Beverage,Medium,active,2024-01-01,,
+SUP-00126,Smith-Frost,supplier,Central,Textiles,Medium,active,2024-01-01,,
+MFG-00095,"Ramos, Nelson and Fischer",manufacturer,West,Textiles,Enterprise,active,2024-01-01,2025-03,
+MFG-00121,Marshall-Elliott,manufacturer,North,Food_Beverage,Enterprise,active,2024-01-01,,
+DST-00103,May-Turner,distributor,West,Electronics,Large,active,2024-01-01,,
+RET-00054,Harris-Lawson,retailer,West,Food_Beverage,Small,active,2024-01-01,,
+SUP-00091,"Turner, Riggs and Roman",supplier,South,Pharmaceuticals,Large,active,2024-01-01,,
+RET-00090,Shaw Inc,retailer,North,Electronics,Large,active,2024-01-01,,
+SUP-00182,"Gould, Marshall and Scott",supplier,Central,Food_Beverage,Medium,active,2024-01-01,,
+SUP-00275,Monroe-Carpenter,supplier,Central,Electronics,Medium,active,2024-01-01,,
+RET-00046,"Hernandez, Jenkins and Parks",retailer,East,Food_Beverage,Large,active,2024-01-01,,
+SUP-00070,Hancock Inc,supplier,East,Electronics,Medium,active,2024-01-01,,
+SUP-00292,Young Ltd,supplier,North,Pharmaceuticals,Small,inactive,2024-01-01,,2025-08
+SUP-00132,Spencer-Lee,supplier,South,Pharmaceuticals,Medium,active,2024-01-01,,
+MFG-00001,"Thomas, Murray and King",manufacturer,Central,Electronics,Enterprise,active,2024-01-01,,
+MFG-00125,Welch-Hogan,manufacturer,Central,Pharmaceuticals,Small,active,2024-01-01,,
+MFG-00027,Richards-Carson,manufacturer,South,Textiles,Enterprise,active,2024-01-01,,
+SUP-00145,Hernandez Ltd,supplier,North,Electronics,Enterprise,active,2024-01-01,,
+MFG-00124,Hernandez-Jones,manufacturer,North,Electronics,Large,active,2024-01-01,2025-02,
+DST-00131,"Cook, Wells and Bryant",distributor,South,Pharmaceuticals,Small,active,2024-01-01,,
+SUP-00136,"Lawson, Morris and Ramos",supplier,West,Electronics,Enterprise,active,2024-01-01,,
+DST-00001,"Wise, Conley and Stephenson",distributor,North,Pharmaceuticals,Large,active,2024-01-01,,
+SUP-00165,Castaneda-Ashley,supplier,East,Textiles,Large,active,2024-01-01,,
+SUP-00029,"Ross, Robinson and Bright",supplier,North,Automotive,Enterprise,active,2024-01-01,2024-09,
+LOG-00024,Fisher-Washington,logistics_provider,Central,Food_Beverage,Small,active,2024-01-01,2024-10,
+SUP-00194,Reid-Poole,supplier,West,Food_Beverage,Medium,active,2024-01-01,,
+MFG-00089,Bennett Group,manufacturer,North,Electronics,Large,active,2024-01-01,2025-04,
+RET-00003,Martin-Taylor,retailer,North,Pharmaceuticals,Enterprise,active,2024-01-01,2025-08,
+SUP-00170,Hooper PLC,supplier,West,Food_Beverage,Medium,active,2024-01-01,,
+WHS-00056,"Morris, Campbell and Owens",warehouse,West,Textiles,Enterprise,active,2024-01-01,,
+SUP-00141,Hernandez Inc,supplier,North,Automotive,Large,active,2024-01-01,,
+SUP-00174,Lewis-Murphy,supplier,South,Chemicals,Enterprise,active,2024-01-01,,
+SUP-00007,Blake and Sons,supplier,Central,Pharmaceuticals,Enterprise,active,2024-01-01,,
+WHS-00096,White LLC,warehouse,East,Chemicals,Medium,active,2024-01-01,,
+DST-00029,Young-Martinez,distributor,West,Electronics,Enterprise,active,2024-01-01,,
+SUP-00074,"Stanley, Tucker and Lee",supplier,South,Food_Beverage,Enterprise,active,2024-01-01,,
+RET-00061,Best-Townsend,retailer,North,Automotive,Large,active,2024-01-01,2025-06,
+LOG-00064,"Thompson, Moore and Castro",logistics_provider,West,Pharmaceuticals,Large,active,2024-01-01,,
+SUP-00239,"Guerrero, Peck and Coleman",supplier,North,Pharmaceuticals,Enterprise,active,2024-01-01,2024-07,
+SUP-00146,Stafford Inc,supplier,East,Chemicals,Large,active,2024-01-01,2024-09,
+LOG-00043,Ewing-Mendoza,logistics_provider,Central,Food_Beverage,Medium,active,2024-01-01,,
+SUP-00235,Ortiz Ltd,supplier,East,Pharmaceuticals,Enterprise,inactive,2024-01-01,,2024-07
+SUP-00221,Garcia-Smith,supplier,North,Chemicals,Large,inactive,2024-01-01,,2024-08
+RET-00074,"Yang, Wilson and Zimmerman",retailer,West,Automotive,Small,active,2024-01-01,2025-09,
+DST-00051,"Rivera, Martinez and Richardson",distributor,East,Automotive,Small,active,2024-01-01,,
+SUP-00133,"Bentley, Byrd and Orr",supplier,West,Electronics,Medium,active,2024-01-01,,
+RET-00141,Andrade-Mendoza,retailer,Central,Textiles,Small,active,2024-01-01,2025-07,
+LOG-00025,Ward and Sons,logistics_provider,Central,Food_Beverage,Small,inactive,2024-01-01,,2025-11
+SUP-00186,Johnston-Odonnell,supplier,South,Pharmaceuticals,Medium,active,2024-01-01,2025-07,
+SUP-00042,George Group,supplier,West,Textiles,Enterprise,active,2024-01-01,,
+WHS-00047,Boone-Davis,warehouse,North,Textiles,Enterprise,active,2024-01-01,2025-04,
+SUP-00109,Hancock and Sons,supplier,East,Automotive,Medium,active,2024-01-01,,
+DST-00139,"Soto, Carlson and Baker",distributor,East,Food_Beverage,Enterprise,active,2024-01-01,,
+SUP-00057,"Washington, Ryan and Cummings",supplier,North,Textiles,Medium,active,2024-01-01,2025-12,
+MFG-00106,Atkins PLC,manufacturer,Central,Pharmaceuticals,Medium,active,2024-01-01,2025-08,
+MFG-00143,"Hale, Myers and Larson",manufacturer,East,Textiles,Large,inactive,2024-01-01,2024-10,2025-04
+LOG-00008,Lopez-Willis,logistics_provider,South,Electronics,Small,active,2024-01-01,2025-05,
+RET-00148,Nelson-Johnson,retailer,West,Electronics,Medium,active,2024-01-01,,
+SUP-00025,"Walter, Edwards and Rios",supplier,Central,Chemicals,Medium,inactive,2024-01-01,,2024-12
+DST-00018,Wilkerson-Arias,distributor,Central,Food_Beverage,Large,active,2024-01-01,,
+DST-00090,Humphrey PLC,distributor,East,Chemicals,Enterprise,active,2024-01-01,2024-02,
+DST-00082,Conner and Sons,distributor,East,Textiles,Medium,active,2024-01-01,,
+DST-00169,Smith PLC,distributor,West,Pharmaceuticals,Small,inactive,2024-01-01,,2024-04
+WHS-00045,Price LLC,warehouse,North,Automotive,Large,active,2024-01-01,,
+RET-00077,Brady LLC,retailer,South,Food_Beverage,Large,active,2024-01-01,,
+MFG-00039,Crosby-Ramirez,manufacturer,East,Chemicals,Enterprise,active,2024-01-01,,
+SUP-00052,Walker LLC,supplier,Central,Automotive,Enterprise,active,2024-01-01,,
+DST-00058,Parker-Morrison,distributor,West,Textiles,Medium,active,2024-01-01,2024-03,
+DST-00067,Reyes-Bradley,distributor,Central,Electronics,Large,active,2024-01-01,2024-06,
+RET-00071,"Ashley, Allen and Sanchez",retailer,West,Automotive,Large,active,2024-01-01,,
+LOG-00032,Carter-Neal,logistics_provider,West,Automotive,Small,active,2024-01-01,2025-07,
+SUP-00265,Tran Inc,supplier,South,Pharmaceuticals,Large,active,2024-01-01,,
+LOG-00068,Cole Group,logistics_provider,Central,Food_Beverage,Enterprise,active,2024-01-01,,
+WHS-00061,Figueroa Inc,warehouse,Central,Automotive,Large,active,2024-01-01,,
+WHS-00033,"Holder, Young and Hendricks",warehouse,Central,Automotive,Small,inactive,2024-01-01,,2025-10
+LOG-00083,"Ellison, Arias and Thompson",logistics_provider,Central,Chemicals,Large,active,2024-01-01,2025-06,
+DST-00069,Hines-Berry,distributor,Central,Chemicals,Enterprise,active,2024-01-01,,
+MFG-00148,Bean LLC,manufacturer,East,Textiles,Medium,active,2024-01-01,,
+SUP-00019,"Adams, Zuniga and Wong",supplier,East,Electronics,Medium,inactive,2024-01-01,,2024-10
+WHS-00066,Levy-May,warehouse,West,Automotive,Enterprise,active,2024-01-01,,
+DST-00034,Mendez and Sons,distributor,Central,Food_Beverage,Large,active,2024-01-01,2025-03,
+DST-00119,Levy-Lewis,distributor,South,Textiles,Enterprise,active,2024-01-01,2024-07,
+MFG-00134,"Miller, Lucas and Williams",manufacturer,East,Food_Beverage,Large,active,2024-01-01,,
+MFG-00068,Gutierrez Group,manufacturer,North,Chemicals,Small,active,2024-01-01,2024-12,
+SUP-00084,"Edwards, Baker and Anderson",supplier,North,Chemicals,Small,active,2024-01-01,,
+SUP-00062,Powell LLC,supplier,East,Food_Beverage,Large,active,2024-01-01,2025-04,
+DST-00189,Holden Group,distributor,North,Textiles,Medium,active,2024-01-01,,
+SUP-00273,Morgan-French,supplier,East,Chemicals,Small,active,2024-01-01,,
+SUP-00286,Bowen Group,supplier,West,Electronics,Enterprise,active,2024-01-01,2024-10,
+MFG-00061,Henry Group,manufacturer,Central,Automotive,Large,active,2024-01-01,,
+MFG-00055,"Fisher, Wilson and Brown",manufacturer,West,Automotive,Medium,active,2024-01-01,,
+DST-00007,Bishop-Goodwin,distributor,West,Food_Beverage,Enterprise,active,2024-01-01,2024-11,
+SUP-00279,Pollard and Sons,supplier,East,Chemicals,Enterprise,active,2024-01-01,2025-07,
+SUP-00013,Arnold Ltd,supplier,East,Automotive,Large,active,2024-01-01,2024-05,
+SUP-00183,Jackson-Lawson,supplier,East,Food_Beverage,Small,active,2024-01-01,,
+MFG-00069,Perry-Davis,manufacturer,East,Food_Beverage,Small,active,2024-01-01,,
+RET-00032,Williams Ltd,retailer,North,Textiles,Large,active,2024-01-01,,
+DST-00166,Sanchez Ltd,distributor,Central,Electronics,Large,active,2024-01-01,,
+SUP-00224,Wilson-Jones,supplier,East,Electronics,Large,active,2024-01-01,,
+DST-00123,Luna-Gallagher,distributor,West,Food_Beverage,Small,active,2024-01-01,2025-06,
+RET-00121,Hernandez-Dawson,retailer,South,Automotive,Small,active,2024-01-01,,
+WHS-00004,"Leach, Harris and Herrera",warehouse,East,Food_Beverage,Medium,active,2024-01-01,,
+DST-00096,"Huber, Hill and Weber",distributor,Central,Electronics,Large,active,2024-01-01,,
+DST-00133,Martin-Ewing,distributor,South,Electronics,Medium,active,2024-01-01,,
+DST-00184,Higgins-Smith,distributor,Central,Electronics,Medium,active,2024-01-01,,
+SUP-00177,Curry Inc,supplier,West,Chemicals,Large,active,2024-01-01,,
+WHS-00016,Cannon Ltd,warehouse,North,Automotive,Enterprise,active,2024-01-01,,
+WHS-00024,"Gray, Hall and Murray",warehouse,North,Electronics,Large,active,2024-01-01,,
+DST-00136,Richardson Ltd,distributor,East,Electronics,Medium,active,2024-01-01,,
+RET-00024,Williams Ltd,retailer,East,Electronics,Small,active,2024-01-01,,
+MFG-00094,"Miller, Ramos and Coleman",manufacturer,West,Chemicals,Small,active,2024-01-01,,
+SUP-00164,Smith-Bell,supplier,South,Chemicals,Small,active,2024-01-01,,
+SUP-00249,Johnston-Hines,supplier,South,Electronics,Medium,active,2024-01-01,2024-12,
+DST-00185,Gibbs-Bradley,distributor,East,Chemicals,Small,active,2024-01-01,2025-10,
+RET-00036,Wheeler PLC,retailer,East,Electronics,Large,active,2024-01-01,2025-11,
+WHS-00020,"Anderson, Dalton and Wilson",warehouse,Central,Food_Beverage,Enterprise,active,2024-01-01,,
+MFG-00076,"Pugh, Henderson and Moon",manufacturer,East,Chemicals,Large,active,2024-01-01,,
+MFG-00113,"Miller, Harrell and Reese",manufacturer,North,Pharmaceuticals,Large,active,2024-01-01,,
+SUP-00075,Novak PLC,supplier,South,Electronics,Small,active,2024-01-01,,
+SUP-00114,Gonzalez Group,supplier,North,Chemicals,Medium,active,2024-01-01,,
+DST-00149,Hoffman Ltd,distributor,South,Chemicals,Enterprise,active,2024-01-01,,
+RET-00112,Haynes-Moss,retailer,South,Automotive,Small,active,2024-01-01,,
+MFG-00091,Frank-Bradley,manufacturer,South,Textiles,Medium,active,2024-01-01,,
+SUP-00105,Nolan-Flynn,supplier,North,Food_Beverage,Small,active,2024-01-01,,
+SUP-00115,Torres-Pope,supplier,East,Automotive,Medium,active,2024-01-01,,
+MFG-00118,Thomas and Sons,manufacturer,West,Textiles,Medium,active,2024-01-01,,
+DST-00076,Hayes Ltd,distributor,West,Textiles,Large,active,2024-01-01,,
+DST-00008,Young-Allen,distributor,East,Pharmaceuticals,Large,active,2024-01-01,,
+MFG-00110,Collier-Gillespie,manufacturer,South,Electronics,Small,active,2024-01-01,2024-02,
+SUP-00093,"Garcia, Humphrey and Baker",supplier,East,Electronics,Small,active,2024-01-01,2025-09,
+RET-00081,"Ward, Porter and Bradley",retailer,West,Food_Beverage,Small,inactive,2024-01-01,,2025-01
+SUP-00090,Moore-Bass,supplier,East,Food_Beverage,Enterprise,active,2024-01-01,,
+MFG-00037,"Newton, Moore and Perry",manufacturer,East,Textiles,Enterprise,active,2024-01-01,2025-10,
+RET-00139,Mendez PLC,retailer,South,Textiles,Large,inactive,2024-01-01,,2024-06
+RET-00072,Wilson-Salazar,retailer,West,Textiles,Medium,active,2024-01-01,,
+RET-00084,Williams Inc,retailer,Central,Electronics,Large,active,2024-01-01,,
+DST-00156,Bush-Vaughn,distributor,North,Pharmaceuticals,Small,active,2024-01-01,,
+DST-00144,Smith LLC,distributor,North,Food_Beverage,Medium,active,2024-01-01,,
+DST-00162,Reed Group,distributor,Central,Automotive,Enterprise,active,2024-01-01,,
+SUP-00095,Campbell-Clark,supplier,North,Textiles,Small,active,2024-01-01,,
+SUP-00012,Dudley Group,supplier,North,Food_Beverage,Small,active,2024-01-01,2024-02,
+MFG-00097,Gregory-Watkins,manufacturer,South,Food_Beverage,Enterprise,active,2024-01-01,2024-11,
+DST-00084,Mcdonald-Bird,distributor,South,Pharmaceuticals,Medium,active,2024-01-01,,
+SUP-00044,Allen-Allen,supplier,North,Chemicals,Large,active,2024-01-01,2025-08,
+SUP-00043,Rodriguez LLC,supplier,Central,Automotive,Small,active,2024-01-01,2024-04,
+MFG-00030,Herman-Walker,manufacturer,West,Food_Beverage,Medium,active,2024-01-01,2024-04,
+SUP-00168,Johnson-Rogers,supplier,North,Electronics,Medium,active,2024-01-01,,
+DST-00048,Robertson-Hays,distributor,Central,Chemicals,Large,inactive,2024-01-01,,2024-05
+RET-00027,Harris-Barker,retailer,South,Textiles,Medium,inactive,2024-01-01,,2025-12
+DST-00148,Thornton PLC,distributor,Central,Chemicals,Enterprise,active,2024-01-01,2025-01,
+LOG-00007,Kelly Group,logistics_provider,East,Chemicals,Large,active,2024-01-01,2024-04,
+SUP-00101,Figueroa PLC,supplier,East,Pharmaceuticals,Large,active,2024-01-01,,
+MFG-00127,Johnson-Wood,manufacturer,West,Textiles,Large,active,2024-01-01,,
+SUP-00179,"Williams, Johnson and Wright",supplier,Central,Food_Beverage,Medium,active,2024-01-01,,
+MFG-00145,"Conner, Li and Santiago",manufacturer,South,Chemicals,Enterprise,active,2024-01-01,,
+MFG-00117,"Mullen, Brewer and Hernandez",manufacturer,Central,Textiles,Small,active,2024-01-01,,
+RET-00021,Adams-Clayton,retailer,West,Chemicals,Large,active,2024-01-01,,
+RET-00033,Barber-Fischer,retailer,North,Electronics,Enterprise,active,2024-01-01,,
+WHS-00031,Morales and Sons,warehouse,East,Textiles,Large,active,2024-01-01,,
+SUP-00178,Walker-Jones,supplier,West,Textiles,Enterprise,active,2024-01-01,,
+MFG-00096,Reed Inc,manufacturer,East,Electronics,Large,active,2024-01-01,,
+RET-00062,Matthews Inc,retailer,South,Chemicals,Enterprise,active,2024-01-01,2025-08,
+LOG-00044,Ferguson-Mclean,logistics_provider,South,Food_Beverage,Large,active,2024-01-01,,
+RET-00111,Green-Edwards,retailer,West,Electronics,Medium,active,2024-01-01,2024-07,
+WHS-00035,Young-Walter,warehouse,East,Automotive,Large,active,2024-01-01,2024-12,
+MFG-00084,"Gallegos, Adams and White",manufacturer,North,Chemicals,Medium,active,2024-01-01,,
+RET-00107,Haynes-Watson,retailer,West,Pharmaceuticals,Enterprise,active,2024-01-01,,
+LOG-00002,"Ramsey, Mason and Mccann",logistics_provider,South,Pharmaceuticals,Enterprise,active,2024-01-01,,
+SUP-00258,"Bryan, Smith and Booth",supplier,West,Electronics,Small,active,2024-01-01,,
+DST-00089,Owens-Holmes,distributor,East,Food_Beverage,Medium,active,2024-01-01,,
+MFG-00036,"Avery, Horton and Fernandez",manufacturer,North,Food_Beverage,Large,active,2024-01-01,,
+SUP-00016,Galloway-Wyatt,supplier,North,Textiles,Large,inactive,2024-01-01,,2024-07
+MFG-00025,"Diaz, Gibbs and Smith",manufacturer,East,Automotive,Enterprise,active,2024-01-01,2024-08,
+LOG-00009,Miller-Montgomery,logistics_provider,West,Automotive,Medium,inactive,2024-01-01,,2024-11
+SUP-00223,Sheppard LLC,supplier,East,Textiles,Enterprise,active,2024-01-01,,
+SUP-00180,Howell and Sons,supplier,West,Food_Beverage,Large,active,2024-01-01,,
+RET-00134,Jackson PLC,retailer,West,Chemicals,Enterprise,inactive,2024-01-01,,2025-06
+SUP-00023,Perez Inc,supplier,South,Chemicals,Large,active,2024-01-01,,
+MFG-00057,Hayes and Sons,manufacturer,Central,Automotive,Enterprise,active,2024-01-01,2025-03,
+WHS-00017,"Stuart, Brooks and Vance",warehouse,Central,Food_Beverage,Medium,active,2024-01-01,2024-09,
+RET-00012,Burns-Ray,retailer,South,Textiles,Large,active,2024-01-01,2025-07,
+MFG-00041,Garcia-Jennings,manufacturer,South,Chemicals,Large,active,2024-01-01,,
+MFG-00132,"Lopez, Jacobs and Mason",manufacturer,West,Automotive,Enterprise,active,2024-01-01,,
+DST-00102,"Fowler, Jimenez and Burton",distributor,Central,Automotive,Medium,active,2024-01-01,,
+LOG-00084,Burns and Sons,logistics_provider,East,Automotive,Large,active,2024-01-01,,
+SUP-00204,"Beard, Peters and Black",supplier,East,Pharmaceuticals,Enterprise,active,2024-01-01,,
+DST-00181,Small-Anderson,distributor,Central,Electronics,Small,active,2024-01-01,,
+SUP-00094,Newton and Sons,supplier,Central,Food_Beverage,Medium,active,2024-01-01,,
+DST-00109,Gross-Valencia,distributor,North,Electronics,Large,inactive,2024-01-01,,2025-10
+SUP-00069,Russell Group,supplier,South,Electronics,Small,inactive,2024-01-01,,2025-12
+DST-00173,Pearson and Sons,distributor,East,Chemicals,Small,active,2024-01-01,2025-02,
+SUP-00285,Garcia-Lozano,supplier,East,Textiles,Large,active,2024-01-01,,
+LOG-00095,Adams PLC,logistics_provider,East,Food_Beverage,Enterprise,inactive,2024-01-01,,2025-07
+MFG-00135,"Kim, Gonzales and Mills",manufacturer,East,Automotive,Medium,active,2024-01-01,,
+SUP-00154,Green-Wright,supplier,Central,Automotive,Enterprise,active,2024-01-01,,
+SUP-00076,"Daniels, Adkins and Brown",supplier,West,Automotive,Enterprise,active,2024-01-01,2025-10,
+WHS-00081,Rodriguez Inc,warehouse,West,Chemicals,Enterprise,inactive,2024-01-01,,2024-09
+MFG-00147,"Henderson, Cox and Cox",manufacturer,Central,Automotive,Small,active,2024-01-01,,
+SUP-00189,Garcia LLC,supplier,West,Automotive,Enterprise,active,2024-01-01,,
+SUP-00272,"Suarez, Shields and Hill",supplier,South,Chemicals,Medium,active,2024-01-01,2024-11,
+SUP-00237,Warner-Gibson,supplier,East,Automotive,Large,active,2024-01-01,,
+DST-00038,Williams-Hughes,distributor,East,Chemicals,Large,active,2024-01-01,,
+SUP-00118,Rasmussen LLC,supplier,North,Electronics,Enterprise,active,2024-01-01,2024-05,
+RET-00094,Murphy-Tran,retailer,East,Electronics,Enterprise,active,2024-01-01,2025-12,
+DST-00063,"Sullivan, Palmer and Brady",distributor,North,Pharmaceuticals,Enterprise,inactive,2024-01-01,,2024-06
+LOG-00076,Bruce-Williamson,logistics_provider,North,Pharmaceuticals,Medium,active,2024-01-01,2025-10,
+DST-00142,"Harvey, Randall and Hernandez",distributor,East,Textiles,Large,active,2024-01-01,,
+SUP-00127,"Mcdaniel, Bentley and Mclaughlin",supplier,West,Pharmaceuticals,Small,active,2024-01-01,,
+SUP-00117,Ross LLC,supplier,Central,Food_Beverage,Large,active,2024-01-01,,
+DST-00024,Lowery-Kennedy,distributor,West,Chemicals,Enterprise,active,2024-01-01,2024-08,
+WHS-00044,Faulkner-Grant,warehouse,Central,Automotive,Enterprise,active,2024-01-01,,
+SUP-00058,"Johnston, Sanchez and Kennedy",supplier,South,Chemicals,Enterprise,active,2024-01-01,2024-11,
+RET-00014,Schultz Inc,retailer,North,Automotive,Enterprise,active,2024-01-01,2024-03,
+RET-00063,Lewis-Livingston,retailer,Central,Textiles,Medium,active,2024-01-01,,
+MFG-00070,Edwards-Scott,manufacturer,Central,Automotive,Medium,active,2024-01-01,,
+SUP-00269,Hicks-Hill,supplier,West,Automotive,Enterprise,inactive,2024-01-01,,2024-09
+SUP-00047,Anderson Group,supplier,North,Chemicals,Large,active,2024-01-01,2024-04,
+MFG-00050,"Smith, Garrison and Thomas",manufacturer,South,Pharmaceuticals,Small,inactive,2024-01-01,,2024-05
+SUP-00196,"Nelson, Morton and Medina",supplier,West,Food_Beverage,Small,inactive,2024-01-01,,2024-11
+RET-00150,Stokes Group,retailer,Central,Chemicals,Enterprise,active,2024-01-01,,
+LOG-00085,Edwards Group,logistics_provider,Central,Food_Beverage,Enterprise,active,2024-01-01,,
+WHS-00087,"Frey, Santos and Johnson",warehouse,North,Food_Beverage,Enterprise,active,2024-01-01,2024-07,
+SUP-00264,"Lloyd, Mckinney and Collins",supplier,Central,Chemicals,Small,active,2024-01-01,,
+MFG-00144,Collins Group,manufacturer,East,Electronics,Medium,active,2024-01-01,,
+WHS-00026,Johnson Ltd,warehouse,East,Textiles,Small,active,2024-01-01,,
+MFG-00005,"Evans, Hayden and Vaughn",manufacturer,West,Electronics,Medium,active,2024-01-01,,
+MFG-00042,"Winters, Newman and Brown",manufacturer,South,Chemicals,Small,active,2024-01-01,2025-07,
+RET-00117,"Howard, Townsend and Hayes",retailer,Central,Food_Beverage,Enterprise,inactive,2024-01-01,,2025-12
+SUP-00150,"Schmidt, Hansen and Stewart",supplier,North,Textiles,Medium,active,2024-01-01,,
+SUP-00125,Scott Ltd,supplier,Central,Electronics,Large,active,2024-01-01,,
+LOG-00037,Maldonado PLC,logistics_provider,West,Food_Beverage,Enterprise,active,2024-01-01,,
+SUP-00051,"Brooks, Lam and Hayes",supplier,Central,Textiles,Small,active,2024-01-01,,
+MFG-00054,"Morris, Thompson and Williams",manufacturer,West,Automotive,Small,inactive,2024-01-01,,2025-04
+RET-00078,"Tanner, Wise and Johnson",retailer,North,Food_Beverage,Enterprise,active,2024-01-01,2025-10,
+SUP-00143,Gibson Ltd,supplier,North,Electronics,Large,active,2024-01-01,2025-07,
+DST-00021,Walker-Flores,distributor,South,Automotive,Medium,active,2024-01-01,,
+MFG-00100,Duran LLC,manufacturer,North,Food_Beverage,Large,active,2024-01-01,,
+DST-00176,Osborn Group,distributor,East,Textiles,Medium,active,2024-01-01,,
+MFG-00021,Coffey-Phillips,manufacturer,East,Textiles,Large,active,2024-01-01,,
+SUP-00020,"Reid, Ferguson and Sanchez",supplier,North,Food_Beverage,Large,active,2024-01-01,,
+LOG-00060,Alvarez-Kim,logistics_provider,Central,Textiles,Medium,active,2024-01-01,,
+LOG-00041,"Porter, Schultz and Allen",logistics_provider,South,Electronics,Small,active,2024-01-01,,
+LOG-00059,Mueller-Boyd,logistics_provider,East,Automotive,Small,active,2024-01-01,,
+MFG-00108,Roberts-Sullivan,manufacturer,Central,Electronics,Large,active,2024-01-01,,
+DST-00088,"Jones, Compton and Day",distributor,West,Pharmaceuticals,Medium,active,2024-01-01,,
+DST-00171,Santos-Avila,distributor,South,Chemicals,Enterprise,active,2024-01-01,,
+SUP-00039,Harrell LLC,supplier,North,Electronics,Medium,active,2024-01-01,,
+SUP-00176,King-Miller,supplier,North,Food_Beverage,Medium,active,2024-01-01,2025-08,
+SUP-00246,Navarro-Munoz,supplier,West,Chemicals,Large,inactive,2024-01-01,,2025-06
+LOG-00079,Allen Inc,logistics_provider,South,Chemicals,Small,active,2024-01-01,2025-09,
+WHS-00018,Kane-Knox,warehouse,South,Automotive,Large,active,2024-01-01,,
+LOG-00005,"Sanders, Ayala and Johnson",logistics_provider,West,Automotive,Large,active,2024-01-01,,
+RET-00009,Sellers-Riddle,retailer,Central,Chemicals,Enterprise,active,2024-01-01,,
+SUP-00155,"Ramirez, Strickland and Washington",supplier,East,Food_Beverage,Large,active,2024-01-01,,
+SUP-00288,Morgan-Schwartz,supplier,East,Textiles,Enterprise,active,2024-01-01,,
+DST-00153,"Becker, Lara and Baker",distributor,North,Chemicals,Enterprise,active,2024-01-01,,
+DST-00120,Williams-Campbell,distributor,South,Chemicals,Small,active,2024-01-01,2024-05,
+WHS-00094,"Alvarez, Williams and Jones",warehouse,East,Pharmaceuticals,Small,inactive,2024-01-01,,2025-03
+SUP-00018,"Flowers, Martin and Kelly",supplier,North,Electronics,Medium,active,2024-01-01,,
+SUP-00128,Diaz Inc,supplier,East,Automotive,Small,active,2024-01-01,2025-10,
+MFG-00023,Taylor and Sons,manufacturer,Central,Textiles,Enterprise,active,2024-01-01,,
+SUP-00256,"Johnson, Miller and King",supplier,East,Electronics,Small,active,2024-01-01,,
+WHS-00008,Chavez PLC,warehouse,West,Food_Beverage,Medium,active,2024-01-01,2024-05,
+RET-00115,Moore and Sons,retailer,West,Electronics,Large,active,2024-01-01,2024-12,
+SUP-00191,Reed Group,supplier,West,Food_Beverage,Small,active,2024-01-01,,
+SUP-00116,Walker Ltd,supplier,East,Pharmaceuticals,Large,active,2024-01-01,,
+DST-00167,"Perez, Hall and Garcia",distributor,East,Chemicals,Enterprise,active,2024-01-01,2025-02,
+DST-00157,Stewart-Bailey,distributor,South,Chemicals,Large,active,2024-01-01,2025-06,
+SUP-00181,Wells Inc,supplier,South,Chemicals,Large,active,2024-01-01,,
+MFG-00002,Estrada-Nolan,manufacturer,North,Automotive,Large,active,2024-01-01,,
+LOG-00010,Marquez Inc,logistics_provider,West,Chemicals,Large,active,2024-01-01,,
+WHS-00063,"Butler, Hernandez and Rivera",warehouse,South,Pharmaceuticals,Large,active,2024-01-01,,
+WHS-00074,Mann Inc,warehouse,Central,Chemicals,Large,active,2024-01-01,,
+WHS-00036,"Boyd, Gutierrez and Hill",warehouse,South,Pharmaceuticals,Enterprise,active,2024-01-01,,
+RET-00130,Johnson Inc,retailer,East,Food_Beverage,Small,active,2024-01-01,,
+DST-00068,"Hernandez, Cole and Watson",distributor,North,Automotive,Small,active,2024-01-01,,
+RET-00135,Underwood-Foster,retailer,West,Chemicals,Enterprise,active,2024-01-01,,
+SUP-00046,Spence PLC,supplier,West,Pharmaceuticals,Enterprise,inactive,2024-01-01,,2025-02
+RET-00060,"Fisher, Payne and Thompson",retailer,West,Automotive,Enterprise,active,2024-01-01,2024-06,
+SUP-00158,"Miller, Hernandez and Reyes",supplier,South,Textiles,Large,active,2024-01-01,,
+RET-00002,"Norris, Callahan and Bishop",retailer,North,Chemicals,Medium,active,2024-01-01,,
+SUP-00172,"Alvarado, Miller and Patterson",supplier,South,Pharmaceuticals,Small,active,2024-01-01,,
+SUP-00017,James Group,supplier,Central,Automotive,Medium,active,2024-01-01,2025-01,
+DST-00062,"Whitney, Gould and Jones",distributor,North,Textiles,Medium,active,2024-01-01,,
+SUP-00049,Hickman Ltd,supplier,East,Chemicals,Medium,active,2024-01-01,,
+RET-00122,Foster-Williams,retailer,South,Automotive,Small,active,2024-01-01,2025-12,
+RET-00091,Walker PLC,retailer,South,Textiles,Medium,active,2024-01-01,,
+DST-00066,Osborne LLC,distributor,West,Food_Beverage,Large,active,2024-01-01,,
+RET-00103,"Acosta, Garcia and Moreno",retailer,North,Automotive,Small,active,2024-01-01,2025-02,
+DST-00031,Brown-Copeland,distributor,Central,Food_Beverage,Enterprise,active,2024-01-01,,
+SUP-00284,"Sanford, Rivera and Garcia",supplier,North,Electronics,Medium,active,2024-01-01,,
+WHS-00069,White-Preston,warehouse,West,Automotive,Medium,active,2024-01-01,,
+RET-00028,Khan LLC,retailer,West,Electronics,Large,active,2024-01-01,,
+SUP-00226,Hernandez PLC,supplier,North,Food_Beverage,Large,active,2024-01-01,,
+SUP-00027,Baker and Sons,supplier,East,Chemicals,Medium,active,2024-01-01,,
+RET-00105,Dawson Inc,retailer,Central,Pharmaceuticals,Medium,active,2024-01-01,,
+MFG-00138,"Williams, Mccoy and Cook",manufacturer,North,Chemicals,Large,active,2024-01-01,,
+RET-00102,Blake Group,retailer,North,Chemicals,Small,active,2024-01-01,,
+MFG-00065,"Phillips, Wagner and Jordan",manufacturer,East,Pharmaceuticals,Large,active,2024-01-01,2025-09,
+SUP-00230,Kerr-Evans,supplier,West,Food_Beverage,Large,active,2024-01-01,,
+SUP-00038,"Baker, Mason and White",supplier,Central,Food_Beverage,Small,active,2024-01-01,2024-04,
+RET-00116,Owens-Russell,retailer,West,Textiles,Large,active,2024-01-01,,
+MFG-00075,"Hoffman, Santiago and Jenkins",manufacturer,South,Automotive,Enterprise,active,2024-01-01,2024-10,
+DST-00020,Hughes Inc,distributor,Central,Electronics,Small,active,2024-01-01,2024-08,
+RET-00118,Baker-Wilson,retailer,Central,Electronics,Large,active,2024-01-01,,
+RET-00001,Clark Ltd,retailer,South,Chemicals,Medium,inactive,2024-01-01,,2024-09
+WHS-00055,Sanders and Sons,warehouse,West,Chemicals,Medium,active,2024-01-01,,
+LOG-00092,Medina and Sons,logistics_provider,East,Pharmaceuticals,Enterprise,active,2024-01-01,,
+SUP-00195,"Hernandez, Thompson and Boyd",supplier,West,Pharmaceuticals,Large,active,2024-01-01,,
+RET-00005,"Bell, Campbell and Ryan",retailer,West,Electronics,Small,active,2024-01-01,,
+RET-00015,Robertson-Ramirez,retailer,West,Textiles,Medium,active,2024-01-01,2025-12,
+DST-00054,"Jimenez, Glass and Stone",distributor,North,Electronics,Large,active,2024-01-01,,
+RET-00120,"Terry, Williams and Huff",retailer,East,Textiles,Small,active,2024-01-01,,
+LOG-00081,"Price, Carlson and Andrews",logistics_provider,West,Pharmaceuticals,Large,active,2024-01-01,,
+DST-00130,"Morales, Williams and Williams",distributor,West,Chemicals,Enterprise,active,2024-01-01,2025-02,
+RET-00119,Aguirre LLC,retailer,East,Food_Beverage,Medium,active,2024-01-01,,
+SUP-00163,"Smith, Gilmore and Johnston",supplier,South,Textiles,Enterprise,active,2024-01-01,,
+RET-00059,Peck-Anderson,retailer,South,Food_Beverage,Large,active,2024-01-01,,
+SUP-00153,Manning Group,supplier,North,Chemicals,Large,active,2024-01-01,,
+LOG-00052,"Burgess, Grant and Watts",logistics_provider,West,Food_Beverage,Medium,active,2024-01-01,,
+RET-00144,"Wright, Mcknight and Stephens",retailer,West,Textiles,Medium,active,2024-01-01,,
+LOG-00006,Bowers-Hayes,logistics_provider,East,Textiles,Small,active,2024-01-01,2025-11,
+SUP-00112,"Shields, Cochran and Adams",supplier,Central,Automotive,Small,active,2024-01-01,2024-10,
+SUP-00227,Miller-Wright,supplier,West,Chemicals,Medium,active,2024-01-01,,
+WHS-00039,David-Powers,warehouse,West,Textiles,Enterprise,active,2024-01-01,,
+SUP-00104,"Tran, Jordan and Williams",supplier,West,Automotive,Small,active,2024-01-01,2024-03,
+MFG-00122,"Cole, Glass and Cunningham",manufacturer,West,Chemicals,Small,active,2024-01-01,2025-05,
+MFG-00120,Thompson Ltd,manufacturer,West,Chemicals,Small,active,2024-01-01,2024-05,
+LOG-00001,"Rivera, Campos and Taylor",logistics_provider,North,Food_Beverage,Small,active,2024-01-01,,
+DST-00137,Whitney PLC,distributor,East,Automotive,Small,active,2024-01-01,2025-04,
+LOG-00031,"Harris, Edwards and Oconnell",logistics_provider,Central,Electronics,Small,active,2024-01-01,,
+WHS-00023,Nunez-Stephens,warehouse,South,Pharmaceuticals,Large,active,2024-01-01,,
+SUP-00120,"Rivera, Johnson and Wiley",supplier,East,Pharmaceuticals,Large,active,2024-01-01,2025-08,
+SUP-00054,"Robinson, Jones and Welch",supplier,East,Pharmaceuticals,Small,active,2024-01-01,2024-05,
+SUP-00152,"Simmons, Meadows and Griffin",supplier,East,Textiles,Large,active,2024-01-01,2024-06,
+MFG-00104,Jones-Hensley,manufacturer,East,Pharmaceuticals,Medium,active,2024-01-01,,
+RET-00096,"Mueller, Stevenson and Sanchez",retailer,North,Electronics,Medium,active,2024-01-01,,
+SUP-00208,Davis and Sons,supplier,Central,Electronics,Large,active,2024-01-01,,
+WHS-00009,Bryant-Brown,warehouse,East,Textiles,Medium,active,2024-01-01,,
+LOG-00094,Dunn-Wilson,logistics_provider,Central,Chemicals,Large,active,2024-01-01,,
+LOG-00013,Smith LLC,logistics_provider,South,Pharmaceuticals,Enterprise,active,2024-01-01,,
+SUP-00009,Garcia-James,supplier,North,Pharmaceuticals,Enterprise,active,2024-01-01,2025-04,
+LOG-00058,Bailey LLC,logistics_provider,Central,Pharmaceuticals,Enterprise,active,2024-01-01,2025-04,
+SUP-00037,Smith-Bowen,supplier,East,Pharmaceuticals,Medium,active,2024-01-01,,
+DST-00003,Harper and Sons,distributor,North,Pharmaceuticals,Medium,active,2024-01-01,,
+WHS-00002,"Marks, Miller and Griffin",warehouse,Central,Chemicals,Small,active,2024-01-01,,
+SUP-00254,"Garcia, Martin and Jenkins",supplier,South,Automotive,Medium,active,2024-01-01,,
+MFG-00004,Jones LLC,manufacturer,Central,Electronics,Enterprise,active,2024-01-01,,
+WHS-00097,Ali PLC,warehouse,North,Chemicals,Large,active,2024-01-01,,
+DST-00122,"Smith, Rodriguez and Anderson",distributor,Central,Textiles,Small,active,2024-01-01,2025-03,
+DST-00174,"Rodgers, Jefferson and Johnson",distributor,Central,Textiles,Large,active,2024-01-01,2024-09,
+WHS-00083,Adams-Sanders,warehouse,East,Automotive,Large,active,2024-01-01,2024-06,
+RET-00042,May Ltd,retailer,North,Automotive,Medium,active,2024-01-01,2025-10,
+SUP-00263,Martinez-Dudley,supplier,West,Food_Beverage,Small,active,2024-01-01,,
+DST-00161,Williams-Moses,distributor,North,Textiles,Medium,active,2024-01-01,2025-02,
+SUP-00298,Schmidt PLC,supplier,East,Chemicals,Small,active,2024-01-01,,
+MFG-00115,Dixon Inc,manufacturer,Central,Electronics,Small,active,2024-01-01,,
+SUP-00151,Salazar-Ball,supplier,East,Food_Beverage,Small,active,2024-01-01,,
+LOG-00039,"Clark, Salinas and Guerra",logistics_provider,East,Electronics,Medium,inactive,2024-01-01,,2024-02
+DST-00191,Young-Molina,distributor,East,Chemicals,Medium,inactive,2024-01-01,2024-09,2025-12
+RET-00040,"Shaffer, Garcia and Richardson",retailer,North,Textiles,Large,active,2024-01-01,,
+DST-00101,"Baker, Clark and Armstrong",distributor,West,Electronics,Enterprise,active,2024-01-01,,
+RET-00037,"Wallace, Smith and Cooper",retailer,West,Food_Beverage,Medium,active,2024-01-01,,
+DST-00039,King-Smith,distributor,South,Automotive,Medium,active,2024-01-01,2024-07,
+SUP-00148,"Holmes, Williams and Wright",supplier,West,Textiles,Medium,active,2024-01-01,,
+SUP-00147,Robinson-Brock,supplier,West,Textiles,Small,active,2024-01-01,,
+WHS-00071,Landry Ltd,warehouse,North,Automotive,Enterprise,inactive,2024-01-01,,2025-05
+RET-00082,Moore-Ayala,retailer,West,Textiles,Enterprise,active,2024-01-01,,
+WHS-00090,Miller Group,warehouse,Central,Textiles,Small,active,2024-01-01,,
+WHS-00010,Chambers-Parker,warehouse,East,Chemicals,Large,active,2024-01-01,,
+MFG-00049,Schroeder-Kramer,manufacturer,Central,Chemicals,Medium,active,2024-01-01,2024-07,
+DST-00014,Spencer-Garcia,distributor,West,Textiles,Enterprise,active,2024-01-01,,
+MFG-00026,"Martinez, Richardson and Curry",manufacturer,West,Automotive,Medium,active,2024-01-01,,
+SUP-00187,Sanders-Espinoza,supplier,West,Chemicals,Medium,active,2024-01-01,,
+SUP-00124,"Joyce, Wilson and Lam",supplier,North,Chemicals,Medium,active,2024-01-01,2025-10,
+RET-00004,Li Inc,retailer,East,Electronics,Enterprise,active,2024-01-01,,
+DST-00159,Huang-Foster,distributor,Central,Pharmaceuticals,Enterprise,active,2024-01-01,,
+SUP-00144,"Lee, Horton and Snyder",supplier,South,Textiles,Large,active,2024-01-01,,
+RET-00109,Jones-Bradley,retailer,West,Electronics,Medium,active,2024-01-01,2024-04,
+SUP-00198,"Adams, Christian and Rivas",supplier,South,Food_Beverage,Medium,active,2024-01-01,,
+DST-00160,Blevins-Ballard,distributor,East,Automotive,Enterprise,active,2024-01-01,,
+SUP-00280,"Reyes, Chase and Jenkins",supplier,North,Chemicals,Medium,active,2024-01-01,,
+SUP-00294,Good-Hodges,supplier,South,Food_Beverage,Enterprise,active,2024-01-01,,
+MFG-00101,Wilson-Jimenez,manufacturer,South,Electronics,Enterprise,active,2024-01-01,2025-03,
+SUP-00123,Chandler-Edwards,supplier,Central,Electronics,Small,active,2024-01-01,,
+SUP-00184,"Higgins, Strickland and Martin",supplier,East,Pharmaceuticals,Large,active,2024-01-01,,
+SUP-00203,Peterson-Beard,supplier,North,Automotive,Enterprise,active,2024-01-01,2024-06,
+MFG-00139,Davis-Gregory,manufacturer,South,Textiles,Small,active,2024-01-01,,
+SUP-00247,Davis Ltd,supplier,East,Chemicals,Enterprise,active,2024-01-01,,
+MFG-00116,"Hicks, Bullock and Bailey",manufacturer,West,Food_Beverage,Large,active,2024-01-01,,
+RET-00083,"Craig, Wilson and Yang",retailer,Central,Food_Beverage,Enterprise,active,2024-01-01,,
+LOG-00016,Hawkins-Hunt,logistics_provider,Central,Chemicals,Medium,active,2024-01-01,2025-01,
+RET-00057,Cruz-Allen,retailer,East,Automotive,Large,active,2024-01-01,,
+LOG-00086,"Brown, Howard and Smith",logistics_provider,North,Chemicals,Enterprise,active,2024-01-01,,
+RET-00038,Mcneil Group,retailer,East,Textiles,Enterprise,active,2024-01-01,,
+SUP-00130,Cortez LLC,supplier,North,Automotive,Enterprise,active,2024-01-01,,
+DST-00188,Morales Inc,distributor,South,Food_Beverage,Small,active,2024-01-01,,
+MFG-00103,"Hall, Hansen and Barnett",manufacturer,Central,Electronics,Small,active,2024-01-01,,
+LOG-00035,Diaz-Frederick,logistics_provider,West,Pharmaceuticals,Medium,active,2024-01-01,,
+LOG-00021,Armstrong and Sons,logistics_provider,Central,Textiles,Medium,active,2024-01-01,,
+WHS-00086,Sutton-Abbott,warehouse,South,Food_Beverage,Medium,active,2024-01-01,2025-10,
+RET-00064,Hunter-Fuller,retailer,West,Electronics,Medium,inactive,2024-01-01,2024-05,2025-05
+SUP-00220,Terry-Martinez,supplier,North,Textiles,Medium,inactive,2024-01-01,,2025-02
+DST-00192,Turner-Sharp,distributor,East,Textiles,Large,inactive,2024-01-01,,2025-05
+RET-00066,"Herrera, Jensen and Ramirez",retailer,East,Textiles,Enterprise,active,2024-01-01,2025-01,
+LOG-00003,Davis and Sons,logistics_provider,East,Pharmaceuticals,Small,active,2024-01-01,,
+LOG-00057,Guerra Ltd,logistics_provider,South,Automotive,Medium,active,2024-01-01,,
+RET-00070,Collins Group,retailer,West,Automotive,Medium,active,2024-01-01,,
+DST-00175,Butler and Sons,distributor,East,Pharmaceuticals,Medium,active,2024-01-01,,
+RET-00025,Smith-Noble,retailer,East,Textiles,Small,active,2024-01-01,2025-11,
+LOG-00011,Moore-Dawson,logistics_provider,North,Chemicals,Large,active,2024-01-01,,
+MFG-00087,"Morales, Thomas and Schultz",manufacturer,West,Chemicals,Large,active,2024-01-01,,
+RET-00123,Green-Ewing,retailer,South,Automotive,Medium,active,2024-01-01,,
+DST-00060,Williams-Berg,distributor,Central,Pharmaceuticals,Small,active,2024-01-01,,
+SUP-00268,Jimenez Ltd,supplier,Central,Food_Beverage,Enterprise,active,2024-01-01,,
+LOG-00070,Goodwin-Stokes,logistics_provider,West,Pharmaceuticals,Large,active,2024-01-01,,
+MFG-00142,Rangel LLC,manufacturer,West,Chemicals,Small,active,2024-01-01,2025-01,
+DST-00047,Blackwell LLC,distributor,West,Textiles,Enterprise,active,2024-01-01,,
+SUP-00113,"Rodriguez, Brennan and Garrison",supplier,South,Automotive,Small,inactive,2024-01-01,,2024-02
+WHS-00042,Atkinson LLC,warehouse,South,Food_Beverage,Large,active,2024-01-01,,
+SUP-00233,"Clark, Guerrero and Moore",supplier,West,Textiles,Enterprise,active,2024-01-01,,
+RET-00020,Donaldson and Sons,retailer,South,Electronics,Enterprise,active,2024-01-01,,
+DST-00158,"Hill, Martinez and Rhodes",distributor,East,Food_Beverage,Small,active,2024-01-01,,
+WHS-00022,Avila LLC,warehouse,North,Food_Beverage,Enterprise,inactive,2024-01-01,,2024-08
+MFG-00074,"Watson, Anderson and Brown",manufacturer,Central,Textiles,Large,active,2024-01-01,2025-08,
+RET-00132,Davis LLC,retailer,South,Pharmaceuticals,Enterprise,active,2024-01-01,,
+LOG-00093,Cunningham-Barton,logistics_provider,Central,Pharmaceuticals,Enterprise,active,2024-01-01,2025-02,
+SUP-00234,Arnold and Sons,supplier,East,Electronics,Enterprise,active,2024-01-01,2024-02,
+LOG-00036,Vargas PLC,logistics_provider,West,Automotive,Enterprise,active,2024-01-01,2024-11,
+WHS-00027,Mendez-Mayer,warehouse,North,Food_Beverage,Medium,active,2024-01-01,,
+MFG-00018,Burgess-Thompson,manufacturer,South,Food_Beverage,Medium,active,2024-01-01,,
+DST-00199,"Zhang, Brooks and Miles",distributor,Central,Electronics,Small,active,2024-01-01,,
+MFG-00111,Kim Inc,manufacturer,South,Electronics,Large,active,2024-01-01,,
+RET-00049,"Cruz, Richmond and Edwards",retailer,West,Textiles,Enterprise,active,2024-01-01,,
+WHS-00060,Edwards-Williams,warehouse,East,Pharmaceuticals,Enterprise,active,2024-01-01,,
+MFG-00059,"Turner, Schneider and Johnson",manufacturer,South,Food_Beverage,Enterprise,active,2024-01-01,,
+SUP-00259,Gutierrez-Lopez,supplier,Central,Automotive,Enterprise,active,2024-01-01,,
+WHS-00095,Lam-Elliott,warehouse,East,Pharmaceuticals,Enterprise,active,2024-01-01,,
+DST-00178,Mcdowell-Smith,distributor,South,Food_Beverage,Small,active,2024-01-01,2025-06,
+DST-00183,Simon Ltd,distributor,Central,Food_Beverage,Enterprise,active,2024-01-01,,
+SUP-00283,"Pollard, Simpson and Johnson",supplier,South,Automotive,Medium,active,2024-01-01,,
+MFG-00077,Schmitt PLC,manufacturer,North,Food_Beverage,Small,active,2024-01-01,,
+MFG-00085,"Farmer, Dorsey and Bell",manufacturer,West,Electronics,Large,active,2024-01-01,,
+SUP-00225,Jones-Soto,supplier,North,Food_Beverage,Enterprise,active,2024-01-01,,
+RET-00104,Barnes Inc,retailer,South,Chemicals,Medium,active,2024-01-01,,
+LOG-00065,Hall-Sullivan,logistics_provider,West,Pharmaceuticals,Enterprise,active,2024-01-01,,
+DST-00023,Moody-Taylor,distributor,East,Electronics,Small,active,2024-01-01,,
+MFG-00048,Willis and Sons,manufacturer,South,Textiles,Enterprise,active,2024-01-01,2024-03,
+DST-00056,Morrison-Short,distributor,Central,Textiles,Enterprise,active,2024-01-01,,
+DST-00190,Boyle-Smith,distributor,East,Pharmaceuticals,Medium,active,2024-01-01,,
+RET-00138,Ramirez-Stephenson,retailer,East,Electronics,Large,active,2024-01-01,,
+RET-00079,Nelson-Brown,retailer,South,Chemicals,Large,inactive,2024-01-01,,2025-06
+RET-00056,"Brown, Hurst and Blevins",retailer,West,Pharmaceuticals,Medium,active,2024-01-01,2024-03,
+DST-00170,Russell Group,distributor,South,Electronics,Enterprise,active,2024-01-01,2025-11,
+RET-00006,Werner-Carter,retailer,Central,Textiles,Enterprise,active,2024-01-01,,
+LOG-00054,Barton-Chapman,logistics_provider,South,Textiles,Large,active,2024-01-01,,
+DST-00196,"Carrillo, Vaughn and Fowler",distributor,Central,Chemicals,Medium,inactive,2024-01-01,2024-11,2025-02
+LOG-00097,"Alexander, Robinson and Coleman",logistics_provider,South,Pharmaceuticals,Enterprise,active,2024-01-01,,
+DST-00107,Marshall-Peterson,distributor,East,Food_Beverage,Medium,active,2024-01-01,2024-09,
+RET-00108,"Miller, Davis and Anderson",retailer,South,Pharmaceuticals,Enterprise,active,2024-01-01,,
+DST-00128,Brooks-Hatfield,distributor,South,Electronics,Large,active,2024-01-01,,
+LOG-00046,"Woodard, Herrera and Little",logistics_provider,North,Electronics,Enterprise,active,2024-01-01,,
+SUP-00086,Smith PLC,supplier,West,Food_Beverage,Enterprise,active,2024-01-01,,
+SUP-00243,Gonzales-Harrison,supplier,East,Pharmaceuticals,Enterprise,active,2024-01-01,2024-10,
+WHS-00049,"Morrison, Russo and Lopez",warehouse,North,Textiles,Enterprise,active,2024-01-01,,
+SUP-00160,Russell-Daniels,supplier,East,Automotive,Medium,active,2024-01-01,2025-07,
+DST-00075,Gonzalez-Taylor,distributor,East,Pharmaceuticals,Small,active,2024-01-01,,
+SUP-00036,Rodriguez-Graham,supplier,Central,Food_Beverage,Enterprise,active,2024-01-01,2025-07,
+DST-00091,"Matthews, Saunders and Anderson",distributor,West,Automotive,Enterprise,active,2024-01-01,,
+SUP-00171,Meadows PLC,supplier,West,Food_Beverage,Enterprise,active,2024-01-01,,
+WHS-00005,Murphy PLC,warehouse,West,Automotive,Enterprise,active,2024-01-01,,
+RET-00041,Taylor-Ayala,retailer,South,Chemicals,Small,active,2024-01-01,,
+RET-00008,"Ochoa, Taylor and Brady",retailer,Central,Automotive,Small,active,2024-01-01,,
+LOG-00098,"Greer, Potter and Evans",logistics_provider,South,Textiles,Small,active,2024-01-01,,
+RET-00095,Wood LLC,retailer,North,Automotive,Enterprise,active,2024-01-01,2024-02,
+WHS-00084,Chung-Stevens,warehouse,North,Electronics,Medium,inactive,2024-01-01,,2024-08
+SUP-00096,Harris-Walters,supplier,South,Electronics,Small,active,2024-01-01,,
+DST-00114,Wright-Grimes,distributor,North,Electronics,Enterprise,active,2024-01-01,2024-08,
+SUP-00241,Jones and Sons,supplier,West,Chemicals,Enterprise,active,2024-01-01,,
+WHS-00093,Lewis Ltd,warehouse,South,Textiles,Enterprise,active,2024-01-01,,
+DST-00125,"Lee, Tran and Jones",distributor,North,Automotive,Small,active,2024-01-01,,
+WHS-00041,White-Medina,warehouse,East,Textiles,Large,active,2024-01-01,,
+DST-00011,Strickland-Shaw,distributor,North,Pharmaceuticals,Medium,active,2024-01-01,,
+DST-00104,Ballard Ltd,distributor,South,Electronics,Large,active,2024-01-01,,
+RET-00039,"Anderson, Jones and Reyes",retailer,West,Pharmaceuticals,Enterprise,active,2024-01-01,,
+SUP-00207,"Alvarez, Joseph and West",supplier,North,Food_Beverage,Small,active,2024-01-01,2025-01,
+MFG-00093,Webster Inc,manufacturer,Central,Food_Beverage,Medium,active,2024-01-01,,
+LOG-00045,"Barnes, Johnson and Schmitt",logistics_provider,South,Automotive,Medium,active,2024-01-01,2025-03,
+MFG-00098,"Estrada, Williams and Foster",manufacturer,South,Automotive,Small,active,2024-01-01,2025-01,
+LOG-00017,Johnson LLC,logistics_provider,South,Chemicals,Small,active,2024-01-01,,
+LOG-00099,Cole LLC,logistics_provider,Central,Electronics,Small,active,2024-01-01,,
+SUP-00218,Erickson and Sons,supplier,Central,Chemicals,Enterprise,active,2024-01-01,,
+SUP-00005,"Guzman, Hoffman and Baldwin",supplier,North,Electronics,Medium,active,2024-01-01,,
+LOG-00019,Smith-Gutierrez,logistics_provider,North,Textiles,Small,active,2024-01-01,,
+DST-00193,Green LLC,distributor,North,Automotive,Medium,active,2024-01-01,2025-04,
+RET-00080,"Proctor, Burton and Crawford",retailer,South,Automotive,Medium,active,2024-01-01,,
+DST-00163,"Scott, Mendoza and Harris",distributor,East,Chemicals,Large,active,2024-01-01,,
+WHS-00089,Walsh Ltd,warehouse,North,Electronics,Large,active,2024-01-01,,
+DST-00097,"Ferguson, Shaw and Jackson",distributor,North,Pharmaceuticals,Large,active,2024-01-01,,
+WHS-00076,Williamson Ltd,warehouse,South,Electronics,Medium,active,2024-01-01,,
+WHS-00034,"Flores, Harper and Chambers",warehouse,South,Electronics,Enterprise,active,2024-01-01,,
+SUP-00099,Williams-Cook,supplier,Central,Electronics,Enterprise,active,2024-01-01,,
+LOG-00055,"Hernandez, Cuevas and Webb",logistics_provider,South,Chemicals,Large,active,2024-01-01,,
+WHS-00078,"Arnold, Smith and Moreno",warehouse,West,Automotive,Enterprise,active,2024-01-01,,
+DST-00124,Williams-Williams,distributor,West,Automotive,Large,active,2024-01-01,2024-04,
+MFG-00107,Berry-Mckinney,manufacturer,South,Automotive,Medium,active,2024-01-01,,
+DST-00053,Morgan-Lopez,distributor,East,Food_Beverage,Enterprise,active,2024-01-01,,
+SUP-00048,"Martin, Rose and Obrien",supplier,Central,Pharmaceuticals,Small,active,2024-01-01,,
+SUP-00033,"Ferrell, Rice and Maddox",supplier,West,Chemicals,Enterprise,active,2024-01-01,,
+LOG-00030,"Mccann, Taylor and Flores",logistics_provider,North,Chemicals,Medium,active,2024-01-01,,
+LOG-00090,Miller Inc,logistics_provider,North,Automotive,Enterprise,active,2024-01-01,,
+SUP-00201,"Barnett, Rogers and Snyder",supplier,North,Chemicals,Enterprise,inactive,2024-01-01,,2025-10
+SUP-00135,Mitchell-Jordan,supplier,East,Pharmaceuticals,Small,active,2024-01-01,,
+SUP-00028,"Hoffman, Baker and Richards",supplier,East,Electronics,Medium,inactive,2024-01-01,,2024-03
+RET-00031,Watson Ltd,retailer,West,Chemicals,Medium,active,2024-01-01,,
+SUP-00231,"Branch, Torres and Oliver",supplier,East,Pharmaceuticals,Small,active,2024-01-01,,
+DST-00040,Cooper Ltd,distributor,North,Textiles,Small,active,2024-01-01,,
+LOG-00023,Thomas-Jackson,logistics_provider,North,Chemicals,Medium,active,2024-01-01,,
+MFG-00079,Moore Group,manufacturer,Central,Automotive,Small,active,2024-01-01,,
+SUP-00289,"Miller, Murphy and Craig",supplier,West,Electronics,Small,active,2024-01-01,2025-09,
+MFG-00119,Morrison Ltd,manufacturer,Central,Electronics,Large,active,2024-01-01,,
+WHS-00025,Hill Ltd,warehouse,West,Textiles,Enterprise,active,2024-01-01,,
+MFG-00092,Ware and Sons,manufacturer,West,Food_Beverage,Large,active,2024-01-01,2025-05,
+DST-00143,"Allen, Armstrong and Graves",distributor,North,Chemicals,Enterprise,active,2024-01-01,,
+DST-00049,"Kennedy, Johnson and Lucas",distributor,East,Pharmaceuticals,Enterprise,active,2024-01-01,,
+SUP-00139,"Harvey, Davis and Crane",supplier,South,Electronics,Medium,active,2024-01-01,,
+SUP-00063,Wright and Sons,supplier,West,Textiles,Enterprise,inactive,2024-01-01,,2024-06
+DST-00022,Combs Ltd,distributor,South,Automotive,Large,active,2024-01-01,2025-08,
+DST-00198,Mendoza Group,distributor,South,Chemicals,Large,active,2024-01-01,,
+SUP-00129,"Mccall, Hanson and Alvarado",supplier,East,Pharmaceuticals,Medium,active,2024-01-01,2024-07,
+RET-00127,Anderson Group,retailer,Central,Chemicals,Medium,active,2024-01-01,2024-03,
+DST-00071,Johnson and Sons,distributor,East,Electronics,Medium,active,2024-01-01,2025-06,
+LOG-00089,Mckinney-Wallace,logistics_provider,Central,Pharmaceuticals,Medium,active,2024-01-01,,
+RET-00113,Chavez-Hall,retailer,Central,Electronics,Medium,active,2024-01-01,,
+SUP-00065,Baxter Inc,supplier,North,Automotive,Small,active,2024-01-01,,
+LOG-00063,"Marsh, Spears and Yang",logistics_provider,Central,Automotive,Enterprise,active,2024-01-01,,
+SUP-00015,Williams and Sons,supplier,Central,Electronics,Enterprise,inactive,2024-01-01,,2025-07
+SUP-00157,"Mitchell, Nelson and Flores",supplier,West,Chemicals,Enterprise,active,2024-01-01,,
+SUP-00041,Ryan PLC,supplier,Central,Electronics,Enterprise,active,2024-01-01,,
+DST-00043,Li-Thompson,distributor,South,Electronics,Medium,inactive,2024-01-01,,2024-08
+MFG-00080,Boone LLC,manufacturer,West,Electronics,Large,active,2024-01-01,2025-11,
+SUP-00188,Vargas Ltd,supplier,South,Electronics,Enterprise,active,2024-01-01,,
+LOG-00014,Ward-Nelson,logistics_provider,South,Food_Beverage,Large,active,2024-01-01,,
+SUP-00217,Perez-White,supplier,Central,Electronics,Large,active,2024-01-01,,
+LOG-00042,"Moore, Henderson and Bennett",logistics_provider,East,Food_Beverage,Enterprise,active,2024-01-01,,
+SUP-00053,Chapman and Sons,supplier,North,Electronics,Large,active,2024-01-01,2025-11,
+RET-00029,Baxter LLC,retailer,South,Textiles,Medium,inactive,2024-01-01,,2024-12
+MFG-00038,Bass PLC,manufacturer,North,Automotive,Enterprise,active,2024-01-01,,
+WHS-00099,Hickman-Evans,warehouse,South,Textiles,Enterprise,active,2024-01-01,2025-05,
+WHS-00070,"Bernard, Warren and Combs",warehouse,East,Electronics,Large,active,2024-01-01,,
+WHS-00075,Wagner LLC,warehouse,South,Electronics,Medium,active,2024-01-01,,
+SUP-00296,Williams Inc,supplier,West,Electronics,Enterprise,active,2024-01-01,,
+WHS-00052,Giles Ltd,warehouse,North,Textiles,Small,active,2024-01-01,,
+SUP-00252,"Graham, Olsen and Costa",supplier,East,Chemicals,Large,active,2024-01-01,,
+WHS-00077,"Durham, Hopkins and Smith",warehouse,South,Electronics,Small,active,2024-01-01,,
+DST-00012,Burch-Montoya,distributor,Central,Electronics,Small,active,2024-01-01,,
+DST-00006,Diaz-Ball,distributor,North,Chemicals,Medium,active,2024-01-01,,
+RET-00147,Durham-Shaw,retailer,East,Automotive,Small,active,2024-01-01,,
+LOG-00066,Lopez Ltd,logistics_provider,South,Pharmaceuticals,Large,active,2024-01-01,2025-02,
+RET-00013,Burton-Brooks,retailer,East,Automotive,Enterprise,active,2024-01-01,,
+SUP-00270,Baird-Sanchez,supplier,East,Textiles,Small,active,2024-01-01,,
+SUP-00202,White-Lewis,supplier,South,Food_Beverage,Medium,active,2024-01-01,,
+SUP-00162,Stein-Silva,supplier,West,Food_Beverage,Enterprise,active,2024-01-01,,
+DST-00106,Moore Group,distributor,South,Pharmaceuticals,Small,active,2024-01-01,,
+WHS-00080,"Li, Craig and Drake",warehouse,North,Textiles,Medium,active,2024-01-01,,
+MFG-00102,Thompson-James,manufacturer,North,Chemicals,Medium,active,2024-01-01,,
+WHS-00053,Burgess Group,warehouse,South,Electronics,Enterprise,active,2024-01-01,2024-12,
+DST-00027,Scott and Sons,distributor,Central,Textiles,Large,active,2024-01-01,,
+LOG-00072,Diaz and Sons,logistics_provider,West,Automotive,Small,active,2024-01-01,,
+LOG-00022,"James, Taylor and Turner",logistics_provider,South,Automotive,Enterprise,active,2024-01-01,,
+SUP-00106,Nolan and Sons,supplier,North,Textiles,Medium,active,2024-01-01,,
+DST-00116,"Edwards, Hines and Jimenez",distributor,Central,Textiles,Medium,active,2024-01-01,,
+MFG-00090,Moore-Collins,manufacturer,West,Electronics,Small,inactive,2024-01-01,,2024-05
+SUP-00002,Doyle Ltd,supplier,South,Pharmaceuticals,Medium,active,2024-01-01,,
+RET-00088,"Rios, Walker and Wright",retailer,Central,Chemicals,Enterprise,inactive,2024-01-01,2024-11,2025-04
+RET-00133,Williams Group,retailer,Central,Textiles,Enterprise,inactive,2024-01-01,,2025-11
+DST-00112,Wright-Davis,distributor,East,Electronics,Small,active,2024-01-01,,
+SUP-00081,"Sanchez, Wheeler and Harvey",supplier,South,Food_Beverage,Medium,active,2024-01-01,2024-08,
+SUP-00206,Freeman-Chang,supplier,East,Food_Beverage,Large,active,2024-01-01,,
+SUP-00035,"Dyer, Potter and Mack",supplier,South,Chemicals,Large,active,2024-01-01,,
+LOG-00026,"Weber, Wheeler and Gonzalez",logistics_provider,West,Pharmaceuticals,Enterprise,active,2024-01-01,,
+DST-00059,Jackson-Wallace,distributor,East,Textiles,Enterprise,active,2024-01-01,,
+MFG-00128,Jones-Lin,manufacturer,West,Textiles,Enterprise,active,2024-01-01,2024-03,
+DST-00005,"Lamb, Martin and Kim",distributor,North,Pharmaceuticals,Small,active,2024-01-01,,
+MFG-00067,"Le, Lewis and Hayes",manufacturer,Central,Automotive,Medium,active,2024-01-01,,
+SUP-00092,"Smith, Montoya and Evans",supplier,South,Electronics,Small,active,2024-01-01,,
+MFG-00040,"Wood, Ramos and Sampson",manufacturer,Central,Electronics,Small,active,2024-01-01,2024-12,
+RET-00048,Goodwin PLC,retailer,North,Pharmaceuticals,Enterprise,active,2024-01-01,,
+DST-00115,Li PLC,distributor,Central,Textiles,Small,active,2024-01-01,,
+MFG-00046,Zhang PLC,manufacturer,North,Automotive,Large,active,2024-01-01,,
+LOG-00027,Taylor Inc,logistics_provider,West,Textiles,Small,active,2024-01-01,,
+SUP-00242,Larson-Holloway,supplier,West,Electronics,Small,inactive,2024-01-01,,2024-03
+SUP-00014,"Mcclure, Ward and Lee",supplier,North,Chemicals,Enterprise,inactive,2024-01-01,,2024-12
+MFG-00016,"Lucas, Parker and Alexander",manufacturer,Central,Chemicals,Large,active,2024-01-01,,
+DST-00151,Stevens PLC,distributor,East,Textiles,Enterprise,active,2024-01-01,,
+MFG-00088,Davis PLC,manufacturer,West,Electronics,Medium,active,2024-01-01,,
+SUP-00274,Hoover-Campbell,supplier,South,Pharmaceuticals,Medium,active,2024-01-01,,
+SUP-00167,"Hurst, Freeman and Nelson",supplier,South,Pharmaceuticals,Medium,active,2024-01-01,2024-10,
+LOG-00091,Carter LLC,logistics_provider,East,Pharmaceuticals,Medium,active,2024-01-01,2024-06,
+RET-00143,Gonzalez-Wilkerson,retailer,Central,Automotive,Small,active,2024-01-01,,
+DST-00197,Richardson-Walker,distributor,Central,Textiles,Medium,active,2024-01-01,,
+LOG-00069,Smith-Lewis,logistics_provider,Central,Textiles,Medium,active,2024-01-01,,
+DST-00035,"Butler, Beck and Miller",distributor,North,Food_Beverage,Small,inactive,2024-01-01,,2024-07
+RET-00131,Orr Group,retailer,East,Electronics,Enterprise,active,2024-01-01,,
+DST-00055,Acosta Inc,distributor,East,Electronics,Small,inactive,2024-01-01,,2024-04
+LOG-00082,Lopez-Reid,logistics_provider,East,Food_Beverage,Enterprise,active,2024-01-01,,
+SUP-00244,Lyons-Bender,supplier,South,Automotive,Large,active,2024-01-01,,
+DST-00117,"Owens, Koch and Jimenez",distributor,South,Automotive,Enterprise,active,2024-01-01,,
+RET-00026,Alexander Inc,retailer,South,Automotive,Small,active,2024-01-01,,
+DST-00113,Dougherty-Lin,distributor,South,Food_Beverage,Enterprise,active,2024-01-01,2024-09,
+WHS-00037,"Fry, Hobbs and Buck",warehouse,Central,Electronics,Small,active,2024-01-01,,
+SUP-00190,"Burke, Martinez and Riggs",supplier,West,Electronics,Medium,active,2024-01-01,,
+LOG-00033,Faulkner-Casey,logistics_provider,Central,Electronics,Small,active,2024-01-01,,
+WHS-00050,"Ramsey, Hansen and Mendoza",warehouse,South,Textiles,Enterprise,active,2024-01-01,,
+DST-00026,Gilbert-Bullock,distributor,Central,Chemicals,Medium,active,2024-01-01,,
+WHS-00032,"Robinson, Shields and Brown",warehouse,North,Food_Beverage,Enterprise,active,2024-01-01,,
+DST-00061,Mendez-Graham,distributor,West,Electronics,Large,inactive,2024-01-01,,2025-01
+SUP-00059,Lee-Davis,supplier,Central,Pharmaceuticals,Large,active,2024-01-01,,
+DST-00025,Blake Group,distributor,South,Pharmaceuticals,Enterprise,active,2024-01-01,,
+DST-00111,"Rodriguez, Allen and Martinez",distributor,North,Automotive,Medium,active,2024-01-01,,
+RET-00007,"Adams, Hodge and Duke",retailer,North,Electronics,Large,inactive,2024-01-01,2024-08,2024-12
+WHS-00098,Goodwin Ltd,warehouse,East,Textiles,Medium,active,2024-01-01,,
+SUP-00253,Bailey-Cook,supplier,North,Pharmaceuticals,Large,active,2024-01-01,2024-12,
+SUP-00022,"Watts, Robinson and Nguyen",supplier,South,Automotive,Large,active,2024-01-01,,
+MFG-00014,Byrd-Le,manufacturer,North,Chemicals,Medium,active,2024-01-01,,
+DST-00010,"Valentine, Joyce and Murray",distributor,Central,Textiles,Small,inactive,2024-01-01,2025-03,2025-05
+SUP-00161,Brown-Wall,supplier,West,Textiles,Large,active,2024-01-01,2024-11,
+SUP-00277,Cook-Hines,supplier,Central,Food_Beverage,Large,active,2024-01-01,,
+RET-00106,Morse PLC,retailer,East,Textiles,Enterprise,active,2024-01-01,,
+SUP-00192,"Wood, Hunter and Peterson",supplier,Central,Food_Beverage,Enterprise,active,2024-01-01,2024-03,
+MFG-00086,Kane PLC,manufacturer,Central,Pharmaceuticals,Small,active,2024-01-01,,
+LOG-00056,Perry-Nixon,logistics_provider,Central,Textiles,Large,active,2024-01-01,,
+MFG-00114,Cook and Sons,manufacturer,North,Pharmaceuticals,Enterprise,active,2024-01-01,,
+DST-00042,Anderson-Bell,distributor,East,Automotive,Medium,active,2024-01-01,,
+MFG-00044,Davis-Lewis,manufacturer,West,Pharmaceuticals,Large,active,2024-01-01,,
+LOG-00020,Hardy PLC,logistics_provider,North,Textiles,Medium,active,2024-01-01,2025-12,
+MFG-00009,"Phillips, Spence and Barrett",manufacturer,East,Food_Beverage,Enterprise,inactive,2024-01-01,,2025-09
+WHS-00012,"Robinson, Jones and Henderson",warehouse,East,Textiles,Small,active,2024-01-01,,
+SUP-00131,"Parker, Ortiz and Powell",supplier,Central,Chemicals,Medium,active,2024-01-01,,
+WHS-00014,Andersen Group,warehouse,North,Automotive,Enterprise,active,2024-01-01,,
+RET-00022,Kelley-Anderson,retailer,Central,Electronics,Small,active,2024-01-01,2024-07,
+SUP-00100,Walsh LLC,supplier,Central,Textiles,Large,active,2024-01-01,2024-05,
+MFG-00073,Reynolds Ltd,manufacturer,South,Textiles,Large,active,2024-01-01,,
+SUP-00088,Anderson-Bailey,supplier,South,Food_Beverage,Small,active,2024-01-01,,
+DST-00009,Mckee-Lee,distributor,East,Chemicals,Large,active,2024-01-01,2025-04,
+MFG-00031,Reid Group,manufacturer,West,Electronics,Medium,active,2024-01-01,,
+SUP-00215,"Washington, Hardy and Bray",supplier,East,Pharmaceuticals,Small,inactive,2024-01-01,2025-11,2025-12
+DST-00017,Davis-Lozano,distributor,West,Electronics,Large,active,2024-01-01,,
+SUP-00122,Johnson-Carlson,supplier,Central,Chemicals,Enterprise,inactive,2024-01-01,,2025-07
+DST-00165,Gilbert PLC,distributor,South,Food_Beverage,Enterprise,inactive,2024-01-01,,2025-03
+SUP-00021,Gray-Mayo,supplier,West,Chemicals,Large,active,2024-01-01,2025-09,
+WHS-00051,Turner-Stout,warehouse,South,Chemicals,Medium,active,2024-01-01,,
+SUP-00072,House-Glover,supplier,South,Textiles,Medium,active,2024-01-01,,
+SUP-00107,"Wright, Garcia and Deleon",supplier,Central,Automotive,Medium,active,2024-01-01,,
+SUP-00271,"Thomas, Lee and Greene",supplier,Central,Chemicals,Small,active,2024-01-01,2025-04,
+RET-00011,"Morris, Wright and Bridges",retailer,Central,Pharmaceuticals,Medium,active,2024-01-01,,
+MFG-00136,Cox LLC,manufacturer,West,Electronics,Small,inactive,2024-01-01,,2024-10
+SUP-00103,"Mckee, Gardner and Davenport",supplier,South,Chemicals,Large,active,2024-01-01,,

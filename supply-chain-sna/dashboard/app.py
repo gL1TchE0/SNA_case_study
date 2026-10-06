@@ -310,7 +310,7 @@ def page_network_explorer() -> None:
     from reports.visualization import plot_network_graph
     fig = plot_network_graph(
         subG,
-        node_attr="organization_type" if color_by != "community" else "organization_type",
+        node_attr=color_by if color_by != "community" else "organization_type",
         centrality_df=centrality_df if not centrality_df.empty else None,
         community_df=community_df if (color_by == "community" and not community_df.empty) else None,
         max_nodes=max_nodes,
@@ -336,7 +336,7 @@ def page_network_explorer() -> None:
                                 st.write(f"- **{col.replace('_',' ').title()}**: {org_row.iloc[0][col]}")
                 with col_b:
                     st.write("**Centrality Metrics**")
-                    for metric in ["in_degree", "out_degree", "total_degree", "betweenness", "closeness", "eigenvector", "pagerank"]:
+                    for metric in ["in_degree", "out_degree", "total_degree", "betweenness", "closeness", "eigenvector", "pagerank", "pagerank_reversed"]:
                         if metric in r.index:
                             st.write(f"- **{metric.replace('_',' ').title()}**: {r[metric]:.6f}")
 
@@ -541,7 +541,11 @@ def page_dependencies() -> None:
     if gt_results.get("experiment_D_dependency_recovery"):
         st.subheader("Ground-Truth Dependency Group Evaluation")
         dep_eval = gt_results["experiment_D_dependency_recovery"]
-        st.write(f"Average connectivity rate across planted groups: {dep_eval.get('avg_connectivity_rate', 0):.3f}")
+        st.write(
+            f"Planted dependents whose top supplier is the planted critical supplier: "
+            f"{dep_eval.get('top_supplier_identification_rate', 0):.0%}; flagged as high-dependency: "
+            f"{dep_eval.get('high_dependency_flag_rate', 0):.0%}"
+        )
         if dep_eval.get("dependency_group_results"):
             dep_group_df = pd.DataFrame(dep_eval["dependency_group_results"])
             st.dataframe(dep_group_df, use_container_width=True)

@@ -31,3 +31,6 @@ pytest-cov>=4.1.0
 # Utilities
 tqdm>=4.65.0
 python-dateutil>=2.8.2
+
+# Evaluation (ARI / NMI for community recovery)
+scikit-learn>=1.3.0

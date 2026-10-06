@@ -22,6 +22,8 @@ import pandas as pd
 
 logger = logging.getLogger(__name__)
 
+NON_SUPPLIER_TYPE = "logistics_provider"
+
 
 def analyze_dependencies(
     G: nx.DiGraph,
@@ -44,11 +46,19 @@ def analyze_dependencies(
     """
     results: dict[str, Any] = {}
 
+    # Logistics providers move goods but do not supply material, so their
+    # edges are not counted as supply dependencies.
+    def _suppliers(node: str) -> list[str]:
+        return [
+            p for p in G.predecessors(node)
+            if G.nodes[p].get("organization_type", "") != NON_SUPPLIER_TYPE
+        ]
+
     # ── 1. Single-source dependency ───────────────────────────────────────────
     # Nodes whose entire upstream supply comes from one predecessor
     single_source: list[dict[str, Any]] = []
     for node in G.nodes():
-        predecessors = list(G.predecessors(node))
+        predecessors = _suppliers(node)
         if len(predecessors) == 1:
             pred = predecessors[0]
             single_source.append(
@@ -62,6 +72,9 @@ def analyze_dependencies(
 
     results["single_source_nodes"] = single_source
     results["single_source_count"] = len(single_source)
+    results["dependency_note"] = (
+        "Supplier counts and concentration ratios exclude logistics-provider edges"
+    )
 
     # ── 2. Upstream concentration ratio ──────────────────────────────────────
     # For each node, what fraction of its total incoming weight comes from
@@ -69,7 +82,7 @@ def analyze_dependencies(
     #   supplier_dependency_ratio = weight_from_top_supplier / total_weight
     concentration_records: list[dict[str, Any]] = []
     for node in G.nodes():
-        predecessors = list(G.predecessors(node))
+        predecessors = _suppliers(node)
         if not predecessors:
             continue
 
@@ -136,7 +149,7 @@ def analyze_dependencies(
     # ── 4. Bridge-based dependency ────────────────────────────────────────────
     if centrality_df is not None and "betweenness" in centrality_df.columns:
         top_n = min(20, len(centrality_df))
-        bridge_nodes = centrality_df.head(top_n)["node"].tolist()
+        bridge_nodes = centrality_df.nlargest(top_n, "betweenness")["node"].tolist()
         bridge_dependency = []
         for bridge in bridge_nodes:
             downstream = list(G.successors(bridge))

@@ -49,10 +49,15 @@ planted_structures:
   num_dependency_groups: 1
   hub_connectivity_multiplier: 4.0
   bridge_inter_community_links: 2
+  bridge_links_per_community: 4
+  bridge_inbound_links: 3
+  intra_community_edge_prob: 0.92
+  dependency_group_size: 3
+  dependency_volume_multiplier: 8.0
 
 temporal:
-  organization_entry_rate: 0.02
-  organization_exit_rate: 0.01
+  organization_entry_rate: 0.01
+  organization_exit_rate: 0.02
   relationship_new_rate: 0.03
   relationship_drop_rate: 0.01
   disruption_months: [2]

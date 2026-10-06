@@ -1,122 +1,143 @@
 {
   "rank_correlations": {
     "total_degree_vs_betweenness": {
-      "spearman_r": 0.775277913732637,
-      "p_value": 2.331646821609598e-201
+      "spearman_r": 0.7083749001673711,
+      "p_value": 3.6158123964727463e-153
     },
     "total_degree_vs_pagerank": {
-      "spearman_r": 0.7461157142085109,
-      "p_value": 1.7251493550301047e-178
+      "spearman_r": 0.7635733325304704,
+      "p_value": 8.79036990466113e-192
     },
     "betweenness_vs_pagerank": {
-      "spearman_r": 0.5775103762890075,
-      "p_value": 5.130860797999482e-90
+      "spearman_r": 0.6015546631682801,
+      "p_value": 1.8731616394465034e-99
     },
     "eigenvector_vs_pagerank": {
-      "spearman_r": 0.9657401396670137,
+      "spearman_r": 0.9591175736958629,
       "p_value": 0.0
     },
     "betweenness_vs_closeness": {
-      "spearman_r": 0.4822709170259643,
-      "p_value": 2.226373959878076e-59
+      "spearman_r": 0.5189445771672746,
+      "p_value": 4.906352095237158e-70
+    },
+    "total_degree_vs_pagerank_reversed": {
+      "spearman_r": 0.21943557488822465,
+      "p_value": 2.2803463329239254e-12
+    },
+    "pagerank_vs_pagerank_reversed": {
+      "spearman_r": -0.2499790456869181,
+      "p_value": 1.0331491967652932e-15
     }
   },
   "top_by_degree": [
-    "MFG-00131",
-    "MFG-00028",
+    "WHS-00014",
     "MFG-00141",
-    "WHS-00080",
-    "DST-00116",
-    "WHS-00025",
-    "WHS-00026",
-    "WHS-00031",
-    "WHS-00038",
-    "DST-00147"
+    "MFG-00131",
+    "WHS-00063",
+    "MFG-00028",
+    "WHS-00044",
+    "WHS-00041",
+    "DST-00149",
+    "WHS-00092",
+    "DST-00162"
   ],
   "top_by_betweenness": [
+    "WHS-00014",
+    "DST-00112",
+    "WHS-00063",
+    "DST-00042",
+    "WHS-00044",
     "MFG-00131",
-    "WHS-00012",
-    "WHS-00068",
-    "WHS-00026",
-    "WHS-00086",
-    "WHS-00089",
-    "WHS-00064",
-    "WHS-00076",
-    "WHS-00020",
-    "WHS-00075"
+    "DST-00162",
+    "DST-00149",
+    "MFG-00028",
+    "WHS-00036"
   ],
   "top_by_pagerank": [
-    "RET-00032",
-    "RET-00029",
-    "WHS-00002",
-    "RET-00006",
-    "MFG-00147",
+    "WHS-00041",
+    "WHS-00014",
     "RET-00067",
-    "DST-00057",
-    "WHS-00037",
-    "WHS-00064",
-    "WHS-00095"
+    "WHS-00065",
+    "RET-00033",
+    "RET-00010",
+    "WHS-00056",
+    "WHS-00092",
+    "RET-00095",
+    "RET-00032"
   ],
+  "top_by_pagerank_reversed": [
+    "MFG-00028",
+    "MFG-00131",
+    "MFG-00141",
+    "WHS-00014",
+    "WHS-00063",
+    "SUP-00224",
+    "WHS-00044",
+    "LOG-00027",
+    "SUP-00245",
+    "SUP-00041"
+  ],
+  "weighting_note": "PageRank and eigenvector use edge weights (transaction frequency). Degree, betweenness and closeness are unweighted: frequency is a strength, not a distance, so it is not used as a path cost.",
   "bridge_without_hub_nodes": [
     {
-      "node": "RET-00029",
-      "bridge_without_hub": -389,
-      "betweenness": 0.0,
-      "total_degree": 23
+      "node": "DST-00110",
+      "bridge_without_hub": 496,
+      "betweenness": 0.00017397567616230737,
+      "total_degree": 4
     },
     {
-      "node": "RET-00032",
-      "bridge_without_hub": -389,
-      "betweenness": 0.0,
-      "total_degree": 23
+      "node": "DST-00157",
+      "bridge_without_hub": 488,
+      "betweenness": 0.0006792594209331037,
+      "total_degree": 6
     },
     {
-      "node": "RET-00117",
-      "bridge_without_hub": -374,
-      "betweenness": 0.0,
-      "total_degree": 22
+      "node": "DST-00200",
+      "bridge_without_hub": 479,
+      "betweenness": 0.00029802757739222607,
+      "total_degree": 5
     },
     {
-      "node": "RET-00051",
-      "bridge_without_hub": -357,
+      "node": "RET-00015",
+      "bridge_without_hub": 474,
       "betweenness": 0.0,
-      "total_degree": 21
+      "total_degree": 0
     },
     {
-      "node": "RET-00019",
-      "bridge_without_hub": -357,
+      "node": "SUP-00021",
+      "bridge_without_hub": 469,
       "betweenness": 0.0,
-      "total_degree": 21
+      "total_degree": 1
     },
     {
-      "node": "RET-00067",
-      "bridge_without_hub": -357,
+      "node": "LOG-00047",
+      "bridge_without_hub": 469,
       "betweenness": 0.0,
-      "total_degree": 21
+      "total_degree": 1
     },
     {
-      "node": "MFG-00141",
-      "bridge_without_hub": -335,
-      "betweenness": 0.0010344464025157027,
-      "total_degree": 62
+      "node": "SUP-00057",
+      "bridge_without_hub": 469,
+      "betweenness": 0.0,
+      "total_degree": 1
     },
     {
-      "node": "RET-00043",
-      "bridge_without_hub": -332,
+      "node": "RET-00064",
+      "bridge_without_hub": 469,
       "betweenness": 0.0,
-      "total_degree": 20
+      "total_degree": 1
     },
     {
-      "node": "RET-00006",
-      "bridge_without_hub": -332,
+      "node": "LOG-00009",
+      "bridge_without_hub": 469,
       "betweenness": 0.0,
-      "total_degree": 20
+      "total_degree": 1
     },
     {
-      "node": "RET-00066",
-      "bridge_without_hub": -311,
-      "betweenness": 0.0,
-      "total_degree": 19
+      "node": "DST-00089",
+      "bridge_without_hub": 465,
+      "betweenness": 0.00195854554040543,
+      "total_degree": 8
     }
   ]
 }
