@@ -37,11 +37,3 @@ Total degree against betweenness for every organization, with the planted hubs a
 ## Figure 9: `dependency_concentration.png`
 
 Supplier dependency ratio of every manufacturer: the share of its inbound transaction volume that comes from its single largest supplier (logistics edges excluded). The manufacturers planted as dependent on a critical supplier are marked.
-
-## Figure 10: `temporal_metrics.png`
-
-Monthly evolution of the network. Each panel is one measure computed on that month's snapshot (organizations and relationships active in that month).
-
-## Figure 11: `resilience_curves.png`
-
-Network degradation as organizations are removed, under random failure and three targeted attacks. Left: share of remaining organizations in the largest connected component. Right: global efficiency. Random failure is the mean over several seeds.

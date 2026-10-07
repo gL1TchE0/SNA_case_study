@@ -67,18 +67,21 @@ def main(argv: list[str] | None = None) -> None:
     output_dir = Path(config["output"]["data_dir"])
     output_dir.mkdir(parents=True, exist_ok=True)
 
-    # ── Run temporal generation (covers Phases 1–4) ───────────────────────────
+    # ── Run generation (covers Phases 1–3) ───────────────────────────
     logger.info("=== Starting Supply Chain Data Generation ===")
     logger.info("Config: %s, Seed: %d", args.config, config["seed"])
 
-    from generator.temporal_generator import generate_temporal_dataset
+    from generator.organization_generator import generate_organizations
+    from generator.network_generator import generate_network
+    from generator.transaction_generator import generate_transactions
 
-    organizations, transactions, event_log, ground_truth = generate_temporal_dataset(config)
+    organizations, ground_truth = generate_organizations(config)
+    edges_df, ground_truth = generate_network(organizations, ground_truth, config)
+    transactions = generate_transactions(edges_df, organizations, config)
 
     # ── Save outputs ──────────────────────────────────────────────────────────
     orgs_path = output_dir / "organizations.csv"
     txns_path = output_dir / "transactions.csv"
-    events_path = output_dir / "events.csv"
     gt_path = output_dir / "ground_truth.json"
     meta_path = output_dir / "dataset_metadata.json"
 
@@ -87,10 +90,6 @@ def main(argv: list[str] | None = None) -> None:
 
     transactions.to_csv(txns_path, index=False)
     logger.info("Saved transactions → %s (%d rows)", txns_path, len(transactions))
-
-    if not event_log.empty:
-        event_log.to_csv(events_path, index=False)
-        logger.info("Saved events → %s (%d rows)", events_path, len(event_log))
 
     # Convert ground_truth to JSON-serializable form
     gt_json = _serialize_ground_truth(ground_truth)

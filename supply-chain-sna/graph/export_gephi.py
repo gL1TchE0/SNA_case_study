@@ -41,7 +41,6 @@ def build_export_graph(
     G: nx.DiGraph,
     centrality_df: pd.DataFrame,
     community_df: pd.DataFrame,
-    kcore_df: pd.DataFrame,
     ground_truth: dict[str, Any],
 ) -> nx.DiGraph:
     """Return a copy of G with analysis results attached as node attributes.
@@ -50,7 +49,6 @@ def build_export_graph(
         G: Directed supply-chain graph.
         centrality_df: Combined centrality DataFrame.
         community_df: Community assignment DataFrame.
-        kcore_df: K-core DataFrame.
         ground_truth: Ground-truth dictionary with planted structures.
 
     Returns:
@@ -60,7 +58,6 @@ def build_export_graph(
 
     centrality = centrality_df.set_index("node") if not centrality_df.empty else pd.DataFrame()
     community = dict(zip(community_df["node"], community_df["community_id"])) if not community_df.empty else {}
-    core = dict(zip(kcore_df["node"], kcore_df["core_number"])) if not kcore_df.empty else {}
 
     hubs = set(ground_truth.get("planted_hubs", []))
     bridges = set(ground_truth.get("planted_bridges", []))
@@ -86,8 +83,6 @@ def build_export_graph(
                     attrs[f"nx_{col}"] = int(value) if col.endswith("degree") else float(value)
         if node in community:
             attrs["nx_community"] = int(community[node])
-        if node in core:
-            attrs["nx_core_number"] = int(core[node])
         attrs["planted_role"] = (
             "hub" if node in hubs
             else "bridge" if node in bridges
@@ -147,7 +142,7 @@ def main(argv: list[str] | None = None) -> None:
     gt_path = data_dir / "ground_truth.json"
     ground_truth = json.loads(gt_path.read_text()) if gt_path.exists() else {}
 
-    H = build_export_graph(G, centrality_df, load_csv("communities.csv"), load_csv("kcore.csv"), ground_truth)
+    H = build_export_graph(G, centrality_df, load_csv("communities.csv"), ground_truth)
 
     gexf_path = out_dir / "supply_chain.gexf"
     nx.write_gexf(H, gexf_path)

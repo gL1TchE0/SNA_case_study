@@ -6,9 +6,6 @@ CLI usage:
     python -m experiments.run --experiment all
     python -m experiments.run --experiment centrality
     python -m experiments.run --experiment communities
-    python -m experiments.run --experiment resilience
-    python -m experiments.run --experiment temporal
-    python -m experiments.run --experiment ground_truth
 """
 from __future__ import annotations
 
@@ -41,9 +38,10 @@ def main(argv: list[str] | None = None) -> None:
     parser.add_argument(
         "--experiment",
         default="all",
-        choices=["all", "centrality", "communities", "resilience", "temporal", "ground_truth"],
+        choices=["all", "centrality", "communities"],
     )
     args = parser.parse_args(argv)
+    run_all = args.experiment == "all"
 
     from config import load_config
     config = load_config(args.config)
@@ -60,10 +58,7 @@ def main(argv: list[str] | None = None) -> None:
 
     with (data_dir / "ground_truth.json").open() as fh:
         ground_truth = json.load(fh)
-
-    # Load graphs
     graph_path = graph_dir / "supply_chain_graph_frequency.pkl"
-    temporal_path = graph_dir / "temporal_graphs_frequency.pkl"
 
     if not graph_path.exists():
         logger.error("Graph not found. Run: python -m graph.build")
@@ -72,15 +67,7 @@ def main(argv: list[str] | None = None) -> None:
     with graph_path.open("rb") as fh:
         G = pickle.load(fh)
 
-    if temporal_path.exists():
-        with temporal_path.open("rb") as fh:
-            temporal_graphs = pickle.load(fh)
-    else:
-        temporal_graphs = {}
-
     logger.info("Graph loaded: %d nodes, %d edges", G.number_of_nodes(), G.number_of_edges())
-
-    run_all = args.experiment == "all"
 
     summary: dict[str, Any] = {
         "config": args.config,
@@ -91,7 +78,6 @@ def main(argv: list[str] | None = None) -> None:
     }
 
     centrality_df: pd.DataFrame | None = None
-    community_df: pd.DataFrame | None = None
 
     # ── Centrality ────────────────────────────────────────────────────────────
     if run_all or args.experiment == "centrality":
@@ -126,17 +112,7 @@ def main(argv: list[str] | None = None) -> None:
         summary["experiments_run"].append("communities")
         summary["communities"] = {
             "num_communities": comm_stats.get("num_communities"),
-            "modularity": comm_stats.get("modularity"),
         }
-
-    # ── K-Core ────────────────────────────────────────────────────────────────
-    if run_all or args.experiment == "centrality":
-        logger.info("=== Running K-Core Analysis ===")
-        from sna.kcore import compute_kcore
-        kcore_df, kcore_stats = compute_kcore(G)
-        kcore_df.to_csv(results_dir / "kcore.csv", index=False)
-        with (results_dir / "kcore_stats.json").open("w") as fh:
-            json.dump(kcore_stats, fh, indent=2, default=str)
 
     # ── Dependencies ──────────────────────────────────────────────────────────
     if run_all or args.experiment == "centrality":
@@ -163,51 +139,6 @@ def main(argv: list[str] | None = None) -> None:
             json.dump(net_stats, fh, indent=2, default=str)
         summary["network_statistics"] = net_stats
 
-    # ── Temporal ──────────────────────────────────────────────────────────────
-    if (run_all or args.experiment == "temporal") and temporal_graphs:
-        logger.info("=== Running Temporal Analysis ===")
-        from sna.temporal import analyze_temporal_snapshots
-        snapshot_df, node_time_df, temp_summary = analyze_temporal_snapshots(temporal_graphs)
-        snapshot_df.to_csv(results_dir / "temporal.csv", index=False)
-        node_time_df.to_csv(results_dir / "temporal_centrality.csv", index=False)
-        with (results_dir / "temporal_summary.json").open("w") as fh:
-            json.dump(temp_summary, fh, indent=2, default=str)
-        logger.info("Temporal analysis: %d snapshots", len(snapshot_df))
-        summary["experiments_run"].append("temporal")
-        summary["temporal"] = temp_summary
-
-    # ── Resilience ────────────────────────────────────────────────────────────
-    if run_all or args.experiment == "resilience":
-        logger.info("=== Running Resilience Experiments ===")
-        from sna.resilience import run_resilience_experiments
-        resil_cfg = config.get("resilience", {})
-        resilience_results = run_resilience_experiments(
-            G,
-            removal_fractions=resil_cfg.get("removal_fractions"),
-            random_seeds=resil_cfg.get("random_seeds"),
-        )
-        for strategy, df in resilience_results.items():
-            df.to_csv(results_dir / f"resilience_{strategy}.csv", index=False)
-        logger.info("Resilience experiments complete")
-        summary["experiments_run"].append("resilience")
-
-    # ── Ground Truth ─────────────────────────────────────────────────────────
-    if (run_all or args.experiment == "ground_truth") and centrality_df is not None:
-        logger.info("=== Running Ground-Truth Experiments ===")
-        from experiments.ground_truth import run_ground_truth_experiments
-        if community_df is None:
-            from sna.communities import compute_communities
-            comm_cfg = config.get("community", {})
-            community_df, _ = compute_communities(G, algorithm=comm_cfg.get("algorithm", "louvain"))
-
-        gt_results = run_ground_truth_experiments(
-            G, centrality_df, community_df, ground_truth, config
-        )
-        with (results_dir / "ground_truth_results.json").open("w") as fh:
-            json.dump(gt_results, fh, indent=2, default=str)
-        logger.info("Ground-truth results → %s", results_dir / "ground_truth_results.json")
-        summary["experiments_run"].append("ground_truth")
-
     # ── Save summary ──────────────────────────────────────────────────────────
     with (results_dir / "summary.json").open("w") as fh:
         json.dump(summary, fh, indent=2, default=str)
@@ -217,3 +148,4 @@ def main(argv: list[str] | None = None) -> None:
 
 if __name__ == "__main__":
     main()
+

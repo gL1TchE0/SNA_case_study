@@ -1,12 +1,9 @@
 """
 Supply Chain SNA — Community Detection
-PHASE 10: Detects and evaluates supply-chain communities.
+PHASE 10: Detects supply-chain communities.
 
 Primary algorithm: Louvain (applied on undirected projection).
 Secondary: Greedy modularity (for comparison).
-
-Ground-truth evaluation uses Adjusted Rand Index (ARI) and
-Normalized Mutual Information (NMI) where planted labels exist.
 """
 from __future__ import annotations
 
@@ -70,13 +67,6 @@ def compute_communities(
     # Community statistics
     community_sizes = df["community_id"].value_counts().to_dict()
 
-    # Modularity
-    try:
-        modularity = nx.community.modularity(U, communities)
-    except Exception as exc:
-        logger.warning("Could not compute modularity: %s", exc)
-        modularity = None
-
     # Inter-community edges
     inter_edges = sum(
         1
@@ -88,7 +78,6 @@ def compute_communities(
         "algorithm": algorithm,
         "num_communities": len(communities),
         "community_sizes": community_sizes,
-        "modularity": modularity,
         "inter_community_edges": inter_edges,
         "total_edges": U.number_of_edges(),
         "inter_community_fraction": inter_edges / max(1, U.number_of_edges()),
@@ -96,9 +85,8 @@ def compute_communities(
     }
 
     logger.info(
-        "Communities: %d detected, modularity=%.4f",
+        "Communities: %d detected",
         stats["num_communities"],
-        modularity or 0.0,
     )
     return df, stats
 
@@ -142,76 +130,3 @@ def _greedy_modularity_communities(U: nx.Graph) -> list[set]:
     """
     result = nx.community.greedy_modularity_communities(U)
     return [set(c) for c in result]
-
-
-def evaluate_community_recovery(
-    detected_df: pd.DataFrame,
-    ground_truth_communities: dict[str, list[str]],
-) -> dict[str, Any]:
-    """Evaluate how well detected communities match planted communities.
-
-    Uses Adjusted Rand Index (ARI) and Normalized Mutual Information (NMI).
-
-    Args:
-        detected_df: DataFrame with columns: node, community_id.
-        ground_truth_communities: Dict mapping region/label → list of node IDs.
-
-    Returns:
-        Dictionary with ARI, NMI, and interpretation.
-    """
-    from sklearn.metrics import adjusted_rand_score, normalized_mutual_info_score
-
-    # Build ground-truth node → label mapping
-    gt_labels: dict[str, str] = {}
-    for label, nodes in ground_truth_communities.items():
-        for node in nodes:
-            gt_labels[node] = label
-
-    # Align on common nodes
-    common_nodes = [
-        node
-        for node in detected_df["node"].tolist()
-        if node in gt_labels
-    ]
-
-    if len(common_nodes) < 2:
-        return {
-            "ari": None,
-            "nmi": None,
-            "note": "Insufficient common nodes for evaluation",
-        }
-
-    detected_map = dict(zip(detected_df["node"], detected_df["community_id"]))
-    gt_node_list = [gt_labels[n] for n in common_nodes]
-    det_node_list = [str(detected_map[n]) for n in common_nodes]
-
-    ari = adjusted_rand_score(gt_node_list, det_node_list)
-    nmi = normalized_mutual_info_score(gt_node_list, det_node_list)
-
-    return {
-        "ari": float(ari),
-        "nmi": float(nmi),
-        "common_nodes_evaluated": len(common_nodes),
-        "interpretation": _interpret_ari(ari),
-    }
-
-
-def _interpret_ari(ari: float) -> str:
-    """Return a textual interpretation of the ARI score.
-
-    Args:
-        ari: Adjusted Rand Index value.
-
-    Returns:
-        Interpretation string.
-    """
-    if ari >= 0.8:
-        return "Excellent community recovery"
-    elif ari >= 0.6:
-        return "Good community recovery"
-    elif ari >= 0.4:
-        return "Moderate community recovery"
-    elif ari >= 0.2:
-        return "Weak community recovery"
-    else:
-        return "Poor community recovery (near random)"

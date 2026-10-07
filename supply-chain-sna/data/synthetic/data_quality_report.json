@@ -2,7 +2,7 @@
   "is_valid": true,
   "issues": [],
   "warnings": [
-    "1 organizations have no transactions (orphans)"
+    "6 organizations have no transactions (orphans)"
   ],
   "stats": {
     "organization_count": 1000,
@@ -21,38 +21,15 @@
       "South": 196,
       "North": 180
     },
-    "transaction_count": 406276,
-    "orphan_org_count": 1,
-    "unique_source_nodes": 850,
-    "unique_target_nodes": 674,
-    "unique_edges": 6806,
+    "transaction_count": 18981,
+    "orphan_org_count": 6,
+    "unique_source_nodes": 844,
+    "unique_target_nodes": 628,
+    "unique_edges": 5000,
     "month_counts": {
-      "2024-01": 12149,
-      "2024-02": 12365,
-      "2024-03": 19284,
-      "2024-04": 13051,
-      "2024-05": 13356,
-      "2024-06": 13683,
-      "2024-07": 14014,
-      "2024-08": 14370,
-      "2024-09": 21575,
-      "2024-10": 14550,
-      "2024-11": 15108,
-      "2024-12": 14480,
-      "2025-01": 15956,
-      "2025-02": 16231,
-      "2025-03": 24954,
-      "2025-04": 16942,
-      "2025-05": 17181,
-      "2025-06": 16240,
-      "2025-07": 17605,
-      "2025-08": 18119,
-      "2025-09": 27546,
-      "2025-10": 18895,
-      "2025-11": 19210,
-      "2025-12": 19412
+      "2024-01": 18981
     },
-    "total_transaction_value": 2539449509619.51,
-    "avg_quantity": 3370.260718132501
+    "total_transaction_value": 88714680954.6,
+    "avg_quantity": 2525.6420710183866
   }
 }

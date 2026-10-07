@@ -1,17 +1,13 @@
 {
-  "max_core_number": 9,
+  "max_core_number": 7,
   "core_distribution": {
-    "0": 1,
-    "1": 5,
-    "2": 9,
-    "3": 23,
-    "4": 45,
-    "5": 61,
-    "6": 71,
-    "7": 93,
-    "8": 117,
-    "9": 575
+    "2": 4,
+    "3": 2,
+    "4": 12,
+    "5": 13,
+    "6": 20,
+    "7": 49
   },
-  "num_nodes_in_max_core": 575,
+  "num_nodes_in_max_core": 49,
   "note": "Applied on undirected projection of DiGraph"
 }

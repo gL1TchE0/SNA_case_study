@@ -65,7 +65,7 @@ def main(argv: list[str] | None = None) -> None:
         sys.exit(1)
 
     # Build full graph
-    from graph.builder import build_graph, build_temporal_graphs
+    from graph.builder import build_graph
 
     weight_mode = args.weight_mode
     G = build_graph(organizations, transactions, weight_mode=weight_mode)
@@ -76,15 +76,7 @@ def main(argv: list[str] | None = None) -> None:
         pickle.dump(G, fh)
     logger.info("Saved graph → %s (%d nodes, %d edges)", graph_path, G.number_of_nodes(), G.number_of_edges())
 
-    # Build temporal graphs
-    snapshot_mode = config.get("snapshots", {}).get("mode", "monthly")
-    temporal_graphs = build_temporal_graphs(
-        organizations, transactions, weight_mode=weight_mode, mode=snapshot_mode
-    )
-    temporal_path = graph_dir / f"temporal_graphs_{weight_mode}.pkl"
-    with temporal_path.open("wb") as fh:
-        pickle.dump(temporal_graphs, fh)
-    logger.info("Saved temporal graphs → %s (%d months)", temporal_path, len(temporal_graphs))
+
 
     logger.info("=== Graph Build Complete ===")
 

@@ -8,8 +8,6 @@ Pages:
   3. Centrality Analysis
   4. Community Analysis
   5. Dependency Analysis
-  6. Temporal Analysis
-  7. Resilience Simulation
 
 All displayed data comes from pre-computed experiment results.
 No analytical values are hard-coded.
@@ -91,15 +89,6 @@ def load_community() -> pd.DataFrame:
 
 
 @st.cache_data
-def load_kcore() -> pd.DataFrame:
-    """Load k-core results."""
-    p = Path("reports/results/kcore.csv")
-    if p.exists():
-        return pd.read_csv(p)
-    return pd.DataFrame()
-
-
-@st.cache_data
 def load_dependencies() -> pd.DataFrame:
     """Load dependency concentration results."""
     p = Path("reports/results/dependencies.csv")
@@ -107,23 +96,6 @@ def load_dependencies() -> pd.DataFrame:
         return pd.read_csv(p)
     return pd.DataFrame()
 
-
-@st.cache_data
-def load_temporal() -> pd.DataFrame:
-    """Load temporal snapshot data."""
-    p = Path("reports/results/temporal.csv")
-    if p.exists():
-        return pd.read_csv(p)
-    return pd.DataFrame()
-
-
-@st.cache_data
-def load_temporal_centrality() -> pd.DataFrame:
-    """Load temporal centrality data."""
-    p = Path("reports/results/temporal_centrality.csv")
-    if p.exists():
-        return pd.read_csv(p)
-    return pd.DataFrame()
 
 
 @st.cache_data
@@ -134,15 +106,6 @@ def load_json_result(filename: str) -> dict[str, Any]:
         with p.open() as fh:
             return json.load(fh)
     return {}
-
-
-@st.cache_data
-def load_resilience(strategy: str) -> pd.DataFrame:
-    """Load resilience results for a strategy."""
-    p = Path(f"reports/results/resilience_{strategy}.csv")
-    if p.exists():
-        return pd.read_csv(p)
-    return pd.DataFrame()
 
 
 def load_ground_truth() -> dict[str, Any]:
@@ -181,8 +144,6 @@ def sidebar_nav() -> str:
             "📈 Centrality Analysis",
             "🏘️ Community Analysis",
             "⚠️ Dependency Analysis",
-            "⏱️ Temporal Analysis",
-            "🛡️ Resilience Simulation",
         ],
     )
 
@@ -437,21 +398,16 @@ def page_communities() -> None:
 
     community_df = load_community()
     comm_stats = load_json_result("community_stats.json")
-    gt_results = load_json_result("ground_truth_results.json")
 
     if community_df.empty:
         st.warning("Community results not found. Run experiments first.")
         return
 
     # Stats
-    col1, col2, col3 = st.columns(3)
+    col1, col2 = st.columns(2)
     with col1:
         st.metric("Communities Detected", comm_stats.get("num_communities", "N/A"))
     with col2:
-        mod = comm_stats.get("modularity")
-        st.metric("Modularity", f"{mod:.4f}" if mod else "N/A",
-                  help="Higher modularity = more distinct communities")
-    with col3:
         frac = comm_stats.get("inter_community_fraction", 0)
         st.metric("Inter-community Edge Fraction", f"{frac:.4f}")
 
@@ -467,21 +423,6 @@ def page_communities() -> None:
     members = community_df[community_df["community_id"] == selected_community]
     st.write(f"Members: {len(members)}")
     st.dataframe(members, use_container_width=True)
-
-    # Ground-truth evaluation
-    if gt_results.get("experiment_C_community_recovery"):
-        st.subheader("Community Recovery Evaluation")
-        comm_eval = gt_results["experiment_C_community_recovery"]
-        ari = comm_eval.get("ari")
-        nmi = comm_eval.get("nmi")
-        col_a, col_b = st.columns(2)
-        with col_a:
-            st.metric("Adjusted Rand Index (ARI)", f"{ari:.4f}" if ari is not None else "N/A",
-                      help="1.0 = perfect recovery, 0.0 = random")
-        with col_b:
-            st.metric("Normalized Mutual Information (NMI)", f"{nmi:.4f}" if nmi is not None else "N/A")
-        if comm_eval.get("interpretation"):
-            st.info(comm_eval["interpretation"])
 
 
 # ── Page: Dependency Analysis ─────────────────────────────────────────────
@@ -507,7 +448,6 @@ def page_dependencies() -> None:
     dep_df = load_dependencies()
     dep_summary = load_json_result("dependency_summary.json")
     centrality_df = load_centrality()
-    gt_results = load_json_result("ground_truth_results.json")
 
     col1, col2, col3 = st.columns(3)
     with col1:
@@ -537,142 +477,6 @@ def page_dependencies() -> None:
         bridges = centrality_df.nlargest(20, "betweenness")[["node", "betweenness", "in_degree", "out_degree"]]
         st.dataframe(bridges, use_container_width=True)
 
-    # Dependency group evaluation
-    if gt_results.get("experiment_D_dependency_recovery"):
-        st.subheader("Ground-Truth Dependency Group Evaluation")
-        dep_eval = gt_results["experiment_D_dependency_recovery"]
-        st.write(
-            f"Planted dependents whose top supplier is the planted critical supplier: "
-            f"{dep_eval.get('top_supplier_identification_rate', 0):.0%}; flagged as high-dependency: "
-            f"{dep_eval.get('high_dependency_flag_rate', 0):.0%}"
-        )
-        if dep_eval.get("dependency_group_results"):
-            dep_group_df = pd.DataFrame(dep_eval["dependency_group_results"])
-            st.dataframe(dep_group_df, use_container_width=True)
-
-
-# ── Page: Temporal Analysis ────────────────────────────────────────────────
-
-
-def page_temporal() -> None:
-    """Render the Temporal Analysis page."""
-    st.title("⏱️ Temporal Analysis")
-    st.markdown("How does the supply-chain network evolve over time?")
-
-    snapshot_df = load_temporal()
-    node_time_df = load_temporal_centrality()
-
-    if snapshot_df.empty:
-        st.warning("Temporal results not found. Run: python -m experiments.run --experiment temporal")
-        return
-
-    # Date range selector
-    months = sorted(snapshot_df["month"].unique().tolist())
-    col1, col2 = st.columns(2)
-    with col1:
-        start_idx = st.selectbox("Start Month", range(len(months)), format_func=lambda i: months[i])
-    with col2:
-        end_idx = st.selectbox("End Month", range(len(months)), index=len(months)-1, format_func=lambda i: months[i])
-
-    filtered = snapshot_df.iloc[start_idx:end_idx+1]
-
-    # Network evolution
-    from reports.visualization import plot_temporal_metrics
-    fig = plot_temporal_metrics(filtered)
-    st.plotly_chart(fig, use_container_width=True)
-
-    # Per-node centrality over time
-    if not node_time_df.empty:
-        st.subheader("Node Centrality Evolution")
-        available_nodes = sorted(node_time_df["node"].unique().tolist())
-        selected_nodes = st.multiselect("Select nodes to track", available_nodes, default=available_nodes[:3])
-
-        if selected_nodes:
-            metric = st.selectbox("Centrality metric", ["betweenness", "pagerank", "total_degree"])
-            node_filtered = node_time_df[node_time_df["node"].isin(selected_nodes)]
-            fig2 = px.line(node_filtered, x="month", y=metric, color="node",
-                          title=f"{metric.title()} Evolution for Selected Nodes",
-                          markers=True)
-            st.plotly_chart(fig2, use_container_width=True)
-
-    # Raw snapshot table
-    with st.expander("Snapshot Data Table"):
-        st.dataframe(filtered, use_container_width=True)
-
-
-# ── Page: Resilience Simulation ────────────────────────────────────────────
-
-
-def page_resilience() -> None:
-    """Render the Resilience Simulation page."""
-    st.title("🛡️ Resilience Simulation")
-    st.markdown(
-        """
-        Node removal experiments comparing four attack strategies.
-        **Random removal** uses multiple seeds; mean ± std shown.
-        """
-    )
-
-    strategies = ["random", "degree", "betweenness", "pagerank"]
-    loaded = {s: load_resilience(s) for s in strategies}
-    available = {s: df for s, df in loaded.items() if not df.empty}
-
-    if not available:
-        st.warning("Resilience results not found. Run: python -m experiments.run --experiment resilience")
-        return
-
-    selected_strategies = st.multiselect(
-        "Attack strategies to compare",
-        list(available.keys()),
-        default=list(available.keys()),
-    )
-
-    # Degradation curves
-    st.subheader("Network Degradation Curves")
-    from reports.visualization import plot_resilience_curves
-    fig = plot_resilience_curves(
-        {s: available[s] for s in selected_strategies if s in available}
-    )
-    st.plotly_chart(fig, use_container_width=True)
-
-    # Stats at specific removal fractions
-    st.subheader("Metrics at Specific Removal Fractions")
-    target_frac = st.select_slider("View at fraction removed",
-                                    options=[0.0, 0.05, 0.10, 0.15, 0.20, 0.30],
-                                    value=0.10)
-
-    rows = []
-    for strategy in selected_strategies:
-        df = available.get(strategy, pd.DataFrame())
-        if df.empty:
-            continue
-        col_lcc = "lcc_mean" if "lcc_mean" in df.columns else "largest_component_fraction"
-        col_eff = "efficiency_mean" if "efficiency_mean" in df.columns else "network_efficiency"
-        closest = df.iloc[(df["fraction_removed"] - target_frac).abs().argsort()[:1]]
-        if not closest.empty:
-            r = closest.iloc[0]
-            rows.append({
-                "Strategy": strategy,
-                "Fraction Removed": f"{r['fraction_removed']:.2f}",
-                "LCC Fraction": f"{r.get(col_lcc, 0):.4f}",
-                "Network Efficiency": f"{r.get(col_eff, 0):.4f}",
-            })
-
-    if rows:
-        st.dataframe(pd.DataFrame(rows), use_container_width=True)
-
-    # Critical node resilience from ground truth
-    gt_results = load_json_result("ground_truth_results.json")
-    if gt_results.get("experiment_E_critical_node_resilience"):
-        st.subheader("Critical Node Removal (Ground-Truth Experiment)")
-        exp_e = gt_results["experiment_E_critical_node_resilience"]
-        col_a, col_b, col_c = st.columns(3)
-        with col_a:
-            st.metric("Nodes Removed", exp_e.get("nodes_removed", "N/A"))
-        with col_b:
-            st.metric("Efficiency Change", f"{exp_e.get('efficiency_change', 0):.4f}")
-        with col_c:
-            st.metric("LCC Change", exp_e.get("lcc_change", "N/A"))
 
 
 # ── Main routing ─────────────────────────────────────────────────────────
@@ -692,10 +496,6 @@ def main() -> None:
         page_communities()
     elif page == "⚠️ Dependency Analysis":
         page_dependencies()
-    elif page == "⏱️ Temporal Analysis":
-        page_temporal()
-    elif page == "🛡️ Resilience Simulation":
-        page_resilience()
 
 
 if __name__ == "__main__":

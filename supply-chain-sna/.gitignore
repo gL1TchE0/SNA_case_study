@@ -2,3 +2,21 @@
 __pycache__/
 *.pyc
 .pytest_cache/
+
+# Auto-generated data and exports
+data/synthetic/
+data/processed/
+data/exports/
+
+# Auto-generated results and figures
+reports/results/
+reports/figures/*.png
+reports/figures/*.html
+!reports/figures/README.md
+
+# File extensions to ignore
+*.pkl
+*.csv
+*.gexf
+*.log
+.DS_Store

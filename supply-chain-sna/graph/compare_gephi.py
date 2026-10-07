@@ -86,12 +86,6 @@ def main(argv: list[str] | None = None) -> None:
         sys.exit(1)
 
     print(result.to_string(index=False))
-    if "modularity_class" in gephi_df.columns and "nx_community" in gephi_df.columns:
-        from sklearn.metrics import adjusted_rand_score
-        ari = adjusted_rand_score(gephi_df["nx_community"], gephi_df["modularity_class"])
-        print(f"\nCommunity agreement (ARI, Gephi modularity_class vs nx_community): {ari:.4f}")
-        result.loc[len(result)] = ["community (ARI)", "modularity_class", round(float(ari), 4), None, None]
-
     out = Path(args.output)
     out.parent.mkdir(parents=True, exist_ok=True)
     result.to_csv(out, index=False)

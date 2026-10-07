@@ -74,7 +74,7 @@ def main(argv: list[str] | None = None) -> None:
     community_df = load_csv("communities.csv")
     kcore_df = load_csv("kcore.csv")
     dep_df = load_csv("dependencies.csv")
-    snapshot_df = load_csv("temporal.csv")
+
     net_stats = load_json("network_statistics.json")
     comm_stats = load_json("community_stats.json")
     gt_results = load_json("ground_truth_results.json")
@@ -101,17 +101,15 @@ def main(argv: list[str] | None = None) -> None:
         G=G,
         centrality_df=centrality_df,
         community_df=community_df,
-        snapshot_df=snapshot_df,
-        resilience_results=resilience_results,
+
         figures_dir=figures_dir,
-        kcore_df=kcore_df,
         dep_df=dep_df,
         ground_truth=ground_truth,
     )
 
     # ── Generate tables ───────────────────────────────────────────────────────
     logger.info("Generating tables…")
-    _generate_tables(centrality_df, community_df, kcore_df, dep_df, tables_dir)
+    _generate_tables(centrality_df, community_df, dep_df, tables_dir)
 
     # ── Generate summary markdown ─────────────────────────────────────────────
     logger.info("Generating research summary…")
@@ -122,8 +120,7 @@ def main(argv: list[str] | None = None) -> None:
         comm_stats=comm_stats,
         community_df=community_df,
         dep_df=dep_df,
-        snapshot_df=snapshot_df,
-        resilience_results=resilience_results,
+
         gt_results=gt_results,
         config=config,
     )
@@ -138,7 +135,6 @@ def main(argv: list[str] | None = None) -> None:
 def _generate_tables(
     centrality_df: pd.DataFrame,
     community_df: pd.DataFrame,
-    kcore_df: pd.DataFrame,
     dep_df: pd.DataFrame,
     tables_dir: Path,
 ) -> None:
@@ -147,7 +143,6 @@ def _generate_tables(
     Args:
         centrality_df: Centrality DataFrame.
         community_df: Community DataFrame.
-        kcore_df: K-core DataFrame.
         dep_df: Dependency concentration DataFrame.
         tables_dir: Output directory.
     """
@@ -166,8 +161,7 @@ def _generate_tables(
         comm_sizes.columns = ["community_id", "size"]
         comm_sizes.to_csv(tables_dir / "community_sizes.csv", index=False)
 
-    if not kcore_df.empty:
-        kcore_df.to_csv(tables_dir / "kcore_decomposition.csv", index=False)
+
 
     if not dep_df.empty:
         dep_df.head(50).to_csv(tables_dir / "top50_dependencies.csv", index=False)
@@ -180,8 +174,7 @@ def _generate_summary_markdown(
     comm_stats: dict,
     community_df: pd.DataFrame,
     dep_df: pd.DataFrame,
-    snapshot_df: pd.DataFrame,
-    resilience_results: dict,
+
     gt_results: dict,
     config: dict,
 ) -> str:
@@ -196,8 +189,7 @@ def _generate_summary_markdown(
         comm_stats: Community statistics.
         community_df: Community DataFrame.
         dep_df: Dependency DataFrame.
-        snapshot_df: Temporal snapshot DataFrame.
-        resilience_results: Resilience results per strategy.
+
         gt_results: Ground-truth experiment results.
         config: Configuration dictionary.
 
@@ -252,7 +244,6 @@ def _generate_summary_markdown(
         lines += [
             f"- **Algorithm**: {comm_stats.get('algorithm', 'N/A')}",
             f"- **Communities Detected**: {comm_stats.get('num_communities', 'N/A')}",
-            f"- **Modularity**: {comm_stats.get('modularity', 'N/A')}",
             f"- **Inter-community Edge Fraction**: {comm_stats.get('inter_community_fraction', 0):.4f}",
         ]
     lines.append("\n---\n")
@@ -268,33 +259,8 @@ def _generate_summary_markdown(
         ]
     lines.append("\n---\n")
 
-    # Temporal findings
-    lines.append("## 5. Temporal Analysis\n")
-    if not snapshot_df.empty:
-        lines += [
-            f"- **Months analyzed**: {len(snapshot_df)}",
-            f"- **Node count range**: {int(snapshot_df['num_nodes'].min())}–{int(snapshot_df['num_nodes'].max())}",
-            f"- **Edge count range**: {int(snapshot_df['num_edges'].min())}–{int(snapshot_df['num_edges'].max())}",
-            f"- **Density trend**: {snapshot_df.iloc[0]['density']:.6f} → {snapshot_df.iloc[-1]['density']:.6f}",
-        ]
-        if "num_communities" in snapshot_df.columns:
-            lines.append(f"- **Detected communities per month**: {int(snapshot_df['num_communities'].min())}–{int(snapshot_df['num_communities'].max())}")
-            lines.append(f"- **Modularity range**: {snapshot_df['modularity'].min():.4f}–{snapshot_df['modularity'].max():.4f}")
-    lines.append("\n---\n")
-
-    # Resilience findings
-    lines.append("## 6. Resilience Findings\n")
-    for strategy, df in resilience_results.items():
-        if df.empty:
-            continue
-        col = "lcc_mean" if "lcc_mean" in df.columns else "largest_component_fraction"
-        if col in df.columns and len(df) > 1:
-            lcc_at_10 = df[df["fraction_removed"] >= 0.10].iloc[0][col] if len(df[df["fraction_removed"] >= 0.10]) > 0 else "N/A"
-            lines.append(f"- **{strategy.title()} removal at 10%**: LCC = {lcc_at_10:.4f}" if lcc_at_10 != "N/A" else f"- **{strategy}**: no 10% data")
-    lines.append("\n---\n")
-
     # Ground-truth evaluation
-    lines.append("## 7. Ground-Truth Evaluation\n")
+    lines.append("## 5. Ground-Truth Evaluation\n")
     if gt_results:
         exp_a = gt_results.get("experiment_A_hub_recovery", {})
         for metric in ["total_degree", "betweenness", "pagerank", "pagerank_reversed"]:
@@ -306,10 +272,6 @@ def _generate_summary_markdown(
             lines.append(f"- **Bridge recovery in top-{exp_b.get('top_n')} betweenness**: {exp_b.get('recovery_rate', 'N/A')}")
             lines.append(f"- **Median betweenness rank of planted bridges**: {exp_b.get('median_betweenness_rank', 'N/A')}")
             lines.append(f"- **Median degree rank of planted bridges**: {exp_b.get('median_total_degree_rank', 'N/A')}")
-        exp_c = gt_results.get("experiment_C_community_recovery", {})
-        if exp_c:
-            lines.append(f"- **Community ARI**: {exp_c.get('ari', 'N/A')}")
-            lines.append(f"- **Community NMI**: {exp_c.get('nmi', 'N/A')}")
         exp_d = gt_results.get("experiment_D_dependency_recovery", {})
         if exp_d.get("dependency_group_results"):
             lines.append(f"- **Planted dependents whose top supplier is the planted critical supplier**: {exp_d.get('top_supplier_identification_rate', 0):.2f}")
@@ -317,12 +279,9 @@ def _generate_summary_markdown(
             n_groups = len(exp_d["dependency_group_results"])
             lines.append(f"- **Critical suppliers in top {exp_d.get('top_fraction', 0):.0%} of suppliers by weighted out-degree**: {exp_d.get('critical_suppliers_in_top_by_out_strength')}/{n_groups}")
             lines.append(f"- **Critical suppliers in top {exp_d.get('top_fraction', 0):.0%} of suppliers by reversed PageRank**: {exp_d.get('critical_suppliers_in_top_by_pagerank_reversed')}/{n_groups}")
-        exp_e = gt_results.get("experiment_E_critical_node_resilience", {})
-        if exp_e:
-            lines.append(f"- **Efficiency change after removing planted hubs**: {exp_e.get('efficiency_change', 'N/A')}")
     lines.append("\n---\n")
 
-    lines.append("## 8. Limitations\n")
+    lines.append("## 7. Limitations\n")
     lines += [
         "- Dataset is synthetic and not equivalent to real enterprise supply-chain data",
         "- Synthetic generation rules influence network structure and SNA findings",

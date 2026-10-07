@@ -104,15 +104,7 @@ CAPTIONS: dict[str, str] = {
         "volume that comes from its single largest supplier (logistics edges excluded). The "
         "manufacturers planted as dependent on a critical supplier are marked."
     ),
-    "temporal_metrics": (
-        "Monthly evolution of the network. Each panel is one measure computed on that month's "
-        "snapshot (organizations and relationships active in that month)."
-    ),
-    "resilience_curves": (
-        "Network degradation as organizations are removed, under random failure and three "
-        "targeted attacks. Left: share of remaining organizations in the largest connected "
-        "component. Right: global efficiency. Random failure is the mean over several seeds."
-    ),
+
 }
 
 
@@ -694,102 +686,7 @@ def plot_dependency_concentration(
     return fig
 
 
-def plot_temporal_metrics(
-    snapshot_df: pd.DataFrame,
-    output_dir: Path | None = None,
-) -> go.Figure:
-    """Plot network evolution over time as small multiples (one measure per panel).
 
-    Args:
-        snapshot_df: Temporal snapshot DataFrame with per-month statistics.
-        output_dir: Directory to save figure.
-
-    Returns:
-        Plotly figure.
-    """
-    if snapshot_df.empty:
-        return go.Figure()
-
-    panels = [
-        ("num_nodes", "Active organizations"),
-        ("num_edges", "Active relationships"),
-        ("density", "Density"),
-        ("num_communities", "Detected communities"),
-        ("modularity", "Modularity"),
-        ("global_efficiency", "Global efficiency"),
-    ]
-    panels = [(c, t) for c, t in panels if c in snapshot_df.columns and snapshot_df[c].notna().any()]
-    n_cols = 3
-    n_rows = math.ceil(len(panels) / n_cols)
-    fig = make_subplots(rows=n_rows, cols=n_cols, subplot_titles=[t for _, t in panels], vertical_spacing=0.16)
-
-    x = pd.to_datetime(snapshot_df["month"])
-    for idx, (col, label) in enumerate(panels):
-        fig.add_trace(
-            go.Scatter(
-                x=x, y=snapshot_df[col], mode="lines+markers",
-                line=dict(color=SEQUENTIAL_HUE, width=2), marker=dict(size=5),
-                hovertemplate="%{x|%b %Y}<br>" + label + ": %{y:.4g}<extra></extra>",
-            ),
-            row=idx // n_cols + 1, col=idx % n_cols + 1,
-        )
-        if col == "num_communities":
-            fig.update_yaxes(dtick=1, row=idx // n_cols + 1, col=idx % n_cols + 1)
-    _style(fig, "Monthly evolution of the network", height=330 * n_rows + 60, width=1200, showlegend=False)
-    fig.update_xaxes(tickformat="%b %y", nticks=5)
-    if output_dir:
-        save_figure(fig, output_dir / "temporal_metrics", ["png"])
-    return fig
-
-
-def plot_resilience_curves(
-    resilience_results: dict[str, pd.DataFrame],
-    output_dir: Path | None = None,
-) -> go.Figure:
-    """Plot network degradation curves for all attack strategies.
-
-    Args:
-        resilience_results: Dict strategy → DataFrame with resilience metrics.
-        output_dir: Directory to save figure.
-
-    Returns:
-        Plotly figure.
-    """
-    fig = make_subplots(rows=1, cols=2, subplot_titles=["Largest connected component", "Global efficiency"])
-
-    for strategy in [s for s in STRATEGY_STYLE if s in resilience_results] + [
-        s for s in resilience_results if s not in STRATEGY_STYLE
-    ]:
-        df = resilience_results[strategy]
-        name, color = STRATEGY_STYLE.get(strategy, (_label(strategy), OTHER_COLOR))
-        x = df["fraction_removed"]
-        y_lcc = df["lcc_mean"] if "lcc_mean" in df.columns else df.get("largest_component_fraction")
-        y_eff = df["efficiency_mean"] if "efficiency_mean" in df.columns else df.get("network_efficiency")
-        line = dict(color=color, width=2, dash="dash" if strategy == "random" else "solid")
-
-        if y_lcc is not None:
-            fig.add_trace(
-                go.Scatter(x=x, y=y_lcc, name=name, legendgroup=strategy, line=line, mode="lines+markers",
-                           marker=dict(size=8),
-                           hovertemplate=name + "<br>%{x:.0%} removed<br>LCC share: %{y:.3f}<extra></extra>"),
-                row=1, col=1,
-            )
-        if y_eff is not None:
-            fig.add_trace(
-                go.Scatter(x=x, y=y_eff, name=name, legendgroup=strategy, line=line, mode="lines+markers",
-                           marker=dict(size=8), showlegend=False,
-                           hovertemplate=name + "<br>%{x:.0%} removed<br>Efficiency: %{y:.3f}<extra></extra>"),
-                row=1, col=2,
-            )
-
-    _style(fig, "Network resilience under random failure and targeted attacks", height=500, width=1200)
-    fig.update_xaxes(title_text="Share of organizations removed", tickformat=".0%")
-    fig.update_yaxes(title_text="Share of remaining organizations in largest component", row=1, col=1)
-    fig.update_yaxes(title_text="Global efficiency", row=1, col=2)
-    fig.update_layout(legend=dict(title_text="Removal strategy"))
-    if output_dir:
-        save_figure(fig, output_dir / "resilience_curves", ["png"])
-    return fig
 
 
 def write_captions(figures_dir: Path) -> None:
@@ -812,8 +709,6 @@ def generate_all_figures(
     G: nx.DiGraph,
     centrality_df: pd.DataFrame,
     community_df: pd.DataFrame,
-    snapshot_df: pd.DataFrame,
-    resilience_results: dict[str, pd.DataFrame],
     figures_dir: Path,
     kcore_df: pd.DataFrame | None = None,
     dep_df: pd.DataFrame | None = None,
@@ -825,8 +720,7 @@ def generate_all_figures(
         G: Directed supply-chain graph.
         centrality_df: Centrality DataFrame.
         community_df: Community DataFrame.
-        snapshot_df: Temporal snapshot DataFrame.
-        resilience_results: Resilience experiment results.
+
         figures_dir: Directory to save figures.
         kcore_df: Optional k-core DataFrame.
         dep_df: Optional upstream concentration DataFrame.
@@ -851,8 +745,7 @@ def generate_all_figures(
         plot_kcore_distribution(kcore_df, output_dir=figures_dir)
     if dep_df is not None and not dep_df.empty:
         plot_dependency_concentration(dep_df, ground_truth, output_dir=figures_dir)
-    plot_temporal_metrics(snapshot_df, output_dir=figures_dir)
-    plot_resilience_curves(resilience_results, output_dir=figures_dir)
+
 
     write_captions(figures_dir)
     logger.info("All figures generated")

@@ -36,8 +36,7 @@ This project applies **Social Network Analysis** techniques to a supply-chain co
 - **Bridge nodes** that link disparate parts of the network
 - **Community clusters** reflecting regional or industry groupings
 - **Critical dependencies** and single-source supply risks
-- **Network resilience** under random vs. targeted disruptions
-- **Temporal evolution** of the network over 24 months
+
 
 The entire pipeline — from data generation to report output — is reproducible and configurable via YAML.
 
@@ -47,16 +46,13 @@ The entire pipeline — from data generation to report output — is reproducibl
 
 | Feature | Description |
 |---|---|
-| **Synthetic Data Generator** | Produces organizations (with type, region, industry, size), edges with heterogeneous connectivity (planted hubs plus preferential attachment), transactions with pricing/quantity, and temporal dynamics (entry/exit, disruptions, seasonality) |
+| **Synthetic Data Generator** | Produces organizations (with type, region, industry, size), edges with heterogeneous connectivity (planted hubs plus preferential attachment), transactions with pricing/quantity |
 | **Graph Construction** | Builds a `networkx.DiGraph` with configurable edge weights (`frequency`, `quantity`, `transaction_value`) |
 | **Centrality Analysis** | Degree (in/out/total), Betweenness, Closeness, Eigenvector, PageRank and reversed PageRank (upstream importance) — with rank correlation (Spearman) |
-| **Community Detection** | Louvain algorithm on undirected projection; modularity score and inter-community edge analysis |
-| **K-Core Decomposition** | Identifies the densely connected core of the network |
+| **Community Detection** | Louvain algorithm on undirected projection; inter-community edge analysis |
 | **Hidden Dependency Analysis** | Computes supplier dependency ratios, single-source nodes, and critical upstream organizations (logistics-provider edges excluded) |
-| **Temporal SNA** | Monthly snapshots of the organizations and relationships active in each month, tracking node/edge count, density, communities and centrality over time |
-| **Resilience Testing** | Node-removal experiments comparing Random, Degree, Betweenness, and PageRank attack strategies (multi-seed) |
-| **Ground-Truth Evaluation** | Validates SNA findings against planted structural features (hubs, bridges, communities, dependency groups) |
-| **Interactive Dashboard** | 7-page Streamlit app with Plotly visualizations for exploring all analytics |
+
+| **Interactive Dashboard** | 6-page Streamlit app with Plotly visualizations for exploring all analytics |
 | **Report Generation** | Automated Markdown summary, CSV tables, and Plotly figures |
 | **Decentralized Backend** | Abstract `TransactionStore` interface with `SyntheticTransactionStore` (CSV-backed) and a `BlockchainTransactionStore` placeholder for future Hyperledger/Ethereum integration |
 
@@ -73,28 +69,28 @@ The entire pipeline — from data generation to report output — is reproducibl
 ┌─────────────────────────────────────────────────────────────────────┐
 │              PHASE 1–5: Data Generation (generator/)               │
 │  Organization Generator → Network Generator → Transaction Generator│
-│                    → Temporal Dynamics → Validation                 │
+│                    → Validation                 │
 └────────────────────────────────┬────────────────────────────────────┘
                                  │  CSV + JSON (ground_truth)
                                  ▼
 ┌─────────────────────────────────────────────────────────────────────┐
 │                  PHASE 6: Graph Builder (graph/)                   │
 │             CSV → networkx.DiGraph (frequency/quantity)            │
-│                  + Monthly Temporal Snapshots                      │
+
 └────────────────────────────────┬────────────────────────────────────┘
                                  │  Pickle (.pkl)
                                  ▼
 ┌─────────────────────────────────────────────────────────────────────┐
 │              PHASE 7–16: SNA Engine (sna/ + experiments/)          │
-│  Network Stats │ Centrality │ Communities │ K-Core │ Dependencies  │
-│           Temporal │ Resilience │ Ground-Truth Validation          │
+│  Network Stats │ Centrality │ Communities │ Dependencies  │
+│                                                                  │
 └────────────────────────────────┬────────────────────────────────────┘
                                  │  CSV + JSON
                                  ▼
 ┌──────────────────────────┬──────────────────────────────────────────┐
 │  PHASE 17: Visualization │   PHASE 18: Streamlit Dashboard         │
 │  (reports/visualization) │   (dashboard/app.py)                    │
-│  Plotly Figures + Tables │   7-page interactive analytics          │
+│  Plotly Figures + Tables │   6-page interactive analytics          │
 └──────────────────────────┴──────────────────────────────────────────┘
 ```
 
@@ -113,11 +109,11 @@ supply-chain-sna/
 │   ├── organization_generator.py    # Creates orgs with types, regions, industries
 │   ├── network_generator.py         # Region-aware edge generation with planted hubs/bridges
 │   ├── transaction_generator.py     # Pricing, quantity, and transaction records
-│   ├── temporal_generator.py        # Entry/exit, disruptions, seasonal dynamics
+
 │   └── generate.py                  # CLI entry point: python -m generator.generate
 │
 ├── graph/                           # Graph construction
-│   ├── builder.py                   # Builds networkx.DiGraph + temporal snapshots
+│   ├── builder.py                   # Builds networkx.DiGraph
 │   ├── validation.py                # Validates graph integrity
 │   ├── build.py                     # CLI entry point: python -m graph.build
 │   ├── export_gephi.py              # Exports the graph to GEXF for Gephi
@@ -131,15 +127,12 @@ supply-chain-sna/
 │   ├── closeness.py                 # Wasserman-Faust closeness (handles disconnected)
 │   ├── eigenvector.py               # Eigenvector centrality with PageRank fallback
 │   ├── pagerank.py                  # PageRank centrality
-│   ├── communities.py               # Louvain community detection + modularity
-│   ├── kcore.py                     # K-core decomposition (on undirected projection)
+│   ├── communities.py               # Louvain community detection
 │   ├── dependencies.py              # Upstream concentration & single-source analysis
-│   ├── temporal.py                  # Temporal snapshot analysis
-│   └── resilience.py                # Random vs. targeted node-removal experiments
+
 │
 ├── experiments/                     # Experiment orchestration
-│   ├── run.py                       # CLI: python -m experiments.run --experiment all
-│   └── ground_truth.py              # Ground-truth structural evaluation
+│   └── run.py                       # CLI: python -m experiments.run --experiment all
 │
 ├── reports/                         # Report generation & visualization
 │   ├── generate.py                  # CLI: python -m reports.generate
@@ -219,7 +212,7 @@ This installs all required packages:
 
 | Category | Packages |
 |---|---|
-| Core | `numpy`, `pandas`, `scipy`, `scikit-learn` (ARI/NMI) |
+| Core | `numpy`, `pandas`, `scipy` |
 | Graph Analysis | `networkx`, `python-louvain` |
 | Data Generation | `Faker` |
 | Visualization | `plotly`, `matplotlib`, `kaleido` |
@@ -300,10 +293,8 @@ The dashboard opens at `http://localhost:8501` and provides **7 interactive page
 | 📊 **Overview** | KPI cards (nodes, edges, density, communities), organization type/region distributions, monthly transaction volume |
 | 🌐 **Network Explorer** | Interactive graph visualization with filters (org type, color-by), node detail lookup |
 | 📈 **Centrality Analysis** | Top-N organizations by Degree, Betweenness, PageRank, Closeness; rank correlation charts; degree distribution |
-| 🏘️ **Community Analysis** | Community sizes, modularity, member lookup; ground-truth ARI/NMI evaluation |
+| 🏘️ **Community Analysis** | Community sizes, member lookup |
 | ⚠️ **Dependency Analysis** | Supplier dependency ratios, single-source nodes, critical upstream nodes, bridge organizations |
-| ⏱️ **Temporal Analysis** | Network evolution over time, per-node centrality tracking across months |
-| 🛡️ **Resilience Simulation** | Degradation curves comparing Random vs. Degree vs. Betweenness vs. PageRank attack strategies |
 
 ---
 
@@ -312,20 +303,11 @@ The dashboard opens at `http://localhost:8501` and provides **7 interactive page
 You can run specific experiments instead of the full suite:
 
 ```bash
-# Centrality metrics only (also runs K-Core and Dependencies)
+# Centrality metrics only (also runs Dependencies)
 python -m experiments.run --experiment centrality
 
 # Community detection only
 python -m experiments.run --experiment communities
-
-# Resilience testing only
-python -m experiments.run --experiment resilience
-
-# Temporal analysis only
-python -m experiments.run --experiment temporal
-
-# Ground-truth evaluation only (requires centrality to have been run first)
-python -m experiments.run --experiment ground_truth
 ```
 
 ---
@@ -344,7 +326,7 @@ Every node carries its organization attributes, the centrality scores computed h
 To compare Gephi's own statistics with this project's:
 
 1. Open `data/exports/supply_chain.gexf` in Gephi.
-2. In the Statistics panel run Average Degree, Network Diameter (betweenness, closeness), Eigenvector Centrality, PageRank and Modularity.
+2. In the Statistics panel run Average Degree, Network Diameter (betweenness, closeness), Eigenvector Centrality, and PageRank.
 3. In the Data Laboratory, export the nodes table to `data/exports/gephi_statistics.csv`.
 4. Run the comparison:
 
@@ -352,7 +334,7 @@ To compare Gephi's own statistics with this project's:
 python -m graph.compare_gephi data/exports/gephi_statistics.csv
 ```
 
-This prints, per metric, the Spearman rank correlation, the top-20 overlap and the largest absolute difference, plus the ARI between Gephi's modularity classes and the detected communities, and saves the table to `reports/tables/gephi_comparison.csv`. Rank agreement is the figure to read: Gephi normalises some measures differently (betweenness, closeness), so absolute values can differ while the rankings match.
+This prints, per metric, the Spearman rank correlation, the top-20 overlap and the largest absolute difference, and saves the table to `reports/tables/gephi_comparison.csv`. Rank agreement is the figure to read: Gephi normalises some measures differently (betweenness, closeness), so absolute values can differ while the rankings match.
 
 ---
 
@@ -397,9 +379,7 @@ All parameters are controlled via YAML configuration files in `config/`.
 | `regions` | List of region names | Geographic regions for orgs |
 | `industries` | List of industry names | Industry classifications |
 | `planted_structures` | `num_hubs`, `num_bridges`, `num_communities`, `num_dependency_groups` | Ground-truth features injected into the network for validation |
-| `temporal` | `organization_entry_rate`, `organization_exit_rate`, `disruption_months`, `seasonal_peak_months` | Controls network evolution dynamics |
-| `snapshots` | `mode` | `monthly` (default) or `cumulative` temporal snapshots |
-| `resilience` | `removal_fractions`, `random_seeds` | Resilience experiment parameters |
+| `snapshots` | `mode` | `monthly` (default) or `cumulative` snapshots |
 | `centrality` | `eigenvector_max_iter`, `pagerank_alpha` | Algorithm hyperparameters |
 | `community` | `algorithm`, `louvain_resolution` | Community detection settings |
 | `output` | `data_dir`, `graph_dir`, `reports_dir`, etc. | Output directory paths |
@@ -440,18 +420,10 @@ reports/
 │   ├── centrality.csv             # Per-node centrality scores
 │   ├── centrality_stats.json      # Rank correlations and statistics
 │   ├── communities.csv            # Community assignments
-│   ├── community_stats.json       # Modularity and community stats
-│   ├── kcore.csv                  # K-core decomposition
+│   ├── community_stats.json       # Community stats
 │   ├── dependencies.csv           # Upstream concentration per node
 │   ├── dependency_summary.json    # Single-source and critical node counts
 │   ├── network_statistics.json    # Global network metrics
-│   ├── temporal.csv               # Temporal snapshot metrics
-│   ├── temporal_centrality.csv    # Per-node centrality over time
-│   ├── resilience_random.csv      # Resilience results (random removal)
-│   ├── resilience_degree.csv      # Resilience results (degree-targeted)
-│   ├── resilience_betweenness.csv # Resilience results (betweenness-targeted)
-│   ├── resilience_pagerank.csv    # Resilience results (pagerank-targeted)
-│   ├── ground_truth_results.json  # Hub, bridge, community, dependency recovery
 │   └── summary.json              # Run metadata
 ├── figures/                       # Exported Plotly charts (PNG) + README.md with captions
 └── tables/                        # Formatted CSV tables for reporting
@@ -468,8 +440,6 @@ Key architectural and methodological choices are documented in [`BUILD_DECISIONS
 - **Directed Graph**: Supply chains have directional flow (Supplier → Manufacturer → Distributor → Retailer), so `networkx.DiGraph` is used.
 - **Louvain on Undirected Projection**: Community detection requires undirected graphs; the directed graph is projected before applying Louvain.
 - **Eigenvector → PageRank Fallback**: If eigenvector centrality fails to converge on the directed graph, PageRank is used as a fallback.
-- **Multi-Seed Resilience**: Random removal uses 5 seeds (set in `resilience.random_seeds`) with mean ± std for statistical reliability.
-- **Monthly Temporal Snapshots**: Each snapshot contains the organizations and relationships active in that month. Set `snapshots.mode: cumulative` to accumulate instead.
 - **Edge Weights**: PageRank and eigenvector centrality use transaction frequency as weight; degree, betweenness and closeness are unweighted.
 - **Reversed PageRank**: Standard PageRank rewards sinks (retailers); PageRank on the reversed graph measures upstream importance.
 - **Logistics Edges**: Excluded from supplier counts and dependency ratios.

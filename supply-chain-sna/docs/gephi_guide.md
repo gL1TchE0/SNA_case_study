@@ -27,7 +27,6 @@ Run these from the Statistics panel. The settings matter for a fair comparison.
 | Network Diameter | Directed, tick *Normalize centralities in [0,1]* | `betweenesscentrality`, `closnesscentrality` |
 | PageRank | Directed, probability 0.85, epsilon 0.000001, tick *Use edge weight* | `pageranks` |
 | Eigenvector Centrality | Directed, 1000 iterations | `eigencentrality` |
-| Modularity | Resolution 1.0, untick *Use weights* is optional | `modularity_class` |
 
 ## 4. Export and compare
 
@@ -47,4 +46,3 @@ It prints, for each metric, the Spearman rank correlation with the NetworkX valu
 - **Betweenness**: identical ranking; values match only if normalization is ticked.
 - **Eigenvector**: same ranking, different scale. Gephi scales the largest value to 1; NetworkX scales the vector to unit length.
 - **Closeness**: expect the largest disagreement. Gephi averages over reachable nodes only; NetworkX applies the Wasserman–Faust correction and measures inbound distance.
-- **Modularity**: Louvain is randomized, so community labels differ between runs. Compare the number of communities and the agreement score the script prints, not the labels.

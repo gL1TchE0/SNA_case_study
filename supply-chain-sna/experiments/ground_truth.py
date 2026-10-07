@@ -5,9 +5,7 @@ PHASE 15: Evaluates whether SNA algorithms recover planted structures.
 Experiments:
   A. Hub recovery: Does high degree/PageRank identify planted hubs?
   B. Bridge recovery: Does high betweenness identify planted bridges?
-  C. Community recovery: Does community detection recover planted communities?
   D. Dependency recovery: Does dependency analysis find planted dep groups?
-  E. Critical node resilience: Does removing planted critical nodes degrade the network?
 """
 from __future__ import annotations
 
@@ -23,7 +21,6 @@ logger = logging.getLogger(__name__)
 def run_ground_truth_experiments(
     G: nx.DiGraph,
     centrality_df: pd.DataFrame,
-    community_df: pd.DataFrame,
     ground_truth: dict[str, Any],
     config: dict[str, Any] | None = None,
 ) -> dict[str, Any]:
@@ -32,7 +29,6 @@ def run_ground_truth_experiments(
     Args:
         G: Directed supply-chain graph.
         centrality_df: Combined centrality DataFrame.
-        community_df: Community assignment DataFrame.
         ground_truth: Ground truth dictionary with planted structures.
         config: Optional configuration dictionary.
 
@@ -51,28 +47,9 @@ def run_ground_truth_experiments(
         centrality_df, ground_truth.get("planted_bridges", [])
     )
 
-    # ── Experiment C: Community recovery ─────────────────────────────────────
-    planted_communities = ground_truth.get("planted_communities", {})
-    if planted_communities and not community_df.empty:
-        from sna.communities import evaluate_community_recovery
-        try:
-            comm_eval = evaluate_community_recovery(community_df, planted_communities)
-        except ImportError:
-            comm_eval = {"ari": None, "nmi": None, "note": "sklearn not available for evaluation"}
-        results["experiment_C_community_recovery"] = comm_eval
-    else:
-        results["experiment_C_community_recovery"] = {
-            "ari": None, "nmi": None, "note": "No planted communities or community data available"
-        }
-
     # ── Experiment D: Dependency recovery ────────────────────────────────────
     results["experiment_D_dependency_recovery"] = _dependency_recovery(
         G, centrality_df, ground_truth.get("planted_dependency_groups", [])
-    )
-
-    # ── Experiment E: Critical node resilience ────────────────────────────────
-    results["experiment_E_critical_node_resilience"] = _critical_node_resilience(
-        G, ground_truth.get("planted_hubs", [])
     )
 
     logger.info("Ground-truth experiments complete")
@@ -260,50 +237,3 @@ def _dependency_recovery(
     }
 
 
-def _critical_node_resilience(
-    G: nx.DiGraph,
-    critical_nodes: list[str],
-) -> dict[str, Any]:
-    """Measure network degradation after removing planted critical nodes.
-
-    Args:
-        G: Original directed graph.
-        critical_nodes: Planted critical (hub) node IDs.
-
-    Returns:
-        Comparison of before/after network metrics.
-    """
-    if not critical_nodes:
-        return {"note": "No critical nodes to remove"}
-
-    # Baseline
-    wcc_before = list(nx.weakly_connected_components(G))
-    lcc_before = max(len(c) for c in wcc_before) if wcc_before else 0
-    U_before = G.to_undirected()
-    eff_before = nx.global_efficiency(U_before) if U_before.number_of_nodes() > 0 else 0.0
-
-    # Remove critical nodes
-    H = G.copy()
-    actually_removed = [n for n in critical_nodes if n in H]
-    H.remove_nodes_from(actually_removed)
-
-    wcc_after = list(nx.weakly_connected_components(H))
-    lcc_after = max(len(c) for c in wcc_after) if wcc_after else 0
-    U_after = H.to_undirected()
-    eff_after = nx.global_efficiency(U_after) if U_after.number_of_nodes() > 0 else 0.0
-
-    n = G.number_of_nodes()
-    return {
-        "nodes_removed": len(actually_removed),
-        "fraction_removed": len(actually_removed) / max(1, n),
-        "lcc_before": lcc_before,
-        "lcc_after": lcc_after,
-        "lcc_fraction_before": lcc_before / max(1, n),
-        "lcc_fraction_after": lcc_after / max(1, H.number_of_nodes() + len(actually_removed)),
-        "lcc_change": lcc_after - lcc_before,
-        "efficiency_before": eff_before,
-        "efficiency_after": eff_after,
-        "efficiency_change": eff_after - eff_before,
-        "components_before": len(wcc_before),
-        "components_after": len(wcc_after),
-    }

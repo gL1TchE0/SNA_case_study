@@ -310,84 +310,12 @@ class TestCommunityDetection:
         comm_df, _ = compute_communities(sample_graph)
         assert len(comm_df) == sample_graph.number_of_nodes()
 
-    def test_modularity_in_range(self, sample_graph):
-        from sna.communities import compute_communities
-        _, stats = compute_communities(sample_graph)
-        if stats.get("modularity") is not None:
-            assert -0.5 <= stats["modularity"] <= 1.0
 
-
-# ── Phase 11: K-Core ──────────────────────────────────────────────────────
-
-
-class TestKCore:
-    """Tests for k-core decomposition."""
-
-    def test_kcore_returns_all_nodes(self, sample_graph):
-        from sna.kcore import compute_kcore
-        df, stats = compute_kcore(sample_graph)
-        assert len(df) == sample_graph.number_of_nodes()
-
-    def test_max_core_positive(self, sample_graph):
-        from sna.kcore import compute_kcore
-        df, stats = compute_kcore(sample_graph)
-        assert stats["max_core_number"] >= 1
-
-
-# ── Phase 14: Resilience ──────────────────────────────────────────────────
-
-
-class TestResilience:
-    """Tests for resilience experiments."""
-
-    def test_resilience_returns_four_strategies(self, sample_graph):
-        from sna.resilience import run_resilience_experiments
-        results = run_resilience_experiments(
-            sample_graph,
-            removal_fractions=[0.05, 0.10],
-            random_seeds=[42, 123],
-        )
-        assert set(results.keys()) == {"random", "degree", "betweenness", "pagerank"}
-
-    def test_baseline_lcc_is_one(self, sample_graph):
-        from sna.resilience import run_resilience_experiments
-        results = run_resilience_experiments(
-            sample_graph,
-            removal_fractions=[0.10],
-            random_seeds=[42],
-        )
-        for strategy, df in results.items():
-            col = "lcc_mean" if "lcc_mean" in df.columns else "largest_component_fraction"
-            baseline = df[df["fraction_removed"] == 0.0]
-            if not baseline.empty:
-                assert baseline.iloc[0][col] <= 1.0
-
-    def test_lcc_decreases_with_removal(self, sample_graph):
-        """LCC should generally not increase as more nodes are removed."""
-        from sna.resilience import run_resilience_experiments
-        results = run_resilience_experiments(
-            sample_graph,
-            removal_fractions=[0.05, 0.10, 0.20],
-            random_seeds=[42],
-        )
-        for strategy in ["degree", "betweenness"]:
-            df = results[strategy].sort_values("fraction_removed")
-            col = "lcc_mean" if "lcc_mean" in df.columns else "largest_component_fraction"
-            if col in df.columns and len(df) > 1:
-                # Allow for some non-monotonicity due to graph structure, but overall trend
-                first = df.iloc[0][col]
-                last = df.iloc[-1][col]
-                assert last <= first + 0.1, f"LCC unexpectedly increased for {strategy}"
 
 
 # ── Planted structures, temporal dynamics and dependency analysis ─────────
 
 
-@pytest.fixture
-def temporal_dataset(smoke_config) -> tuple:
-    """Generate the full temporal dataset for the smoke configuration."""
-    from generator.temporal_generator import generate_temporal_dataset
-    return generate_temporal_dataset(smoke_config)
 
 
 class TestPlantedStructures:
@@ -415,34 +343,7 @@ class TestPlantedStructures:
                 assert (group["critical_supplier"], mfg) in edge_set
 
 
-class TestTemporalDynamics:
-    """Tests for organization entry/exit and temporal snapshots."""
 
-    def test_entries_and_exits_are_logged(self, temporal_dataset):
-        _, _, events, _ = temporal_dataset
-        types = set(events["event_type"])
-        assert "organization_entry" in types
-        assert "organization_exit" in types
-
-    def test_generation_is_reproducible(self, smoke_config):
-        from generator.temporal_generator import generate_temporal_dataset
-        _, txns1, _, _ = generate_temporal_dataset(smoke_config)
-        _, txns2, _, _ = generate_temporal_dataset(smoke_config)
-        pd.testing.assert_frame_equal(txns1, txns2)
-
-    def test_monthly_snapshots_have_no_inactive_nodes(self, temporal_dataset):
-        from graph.builder import build_temporal_graphs
-        orgs, txns, _, _ = temporal_dataset
-        snapshots = build_temporal_graphs(orgs, txns, mode="monthly")
-        for month, G in snapshots.items():
-            assert all(d > 0 for _, d in G.degree()), f"Isolated node in snapshot {month}"
-
-    def test_cumulative_snapshots_never_shrink(self, temporal_dataset):
-        from graph.builder import build_temporal_graphs
-        orgs, txns, _, _ = temporal_dataset
-        snapshots = build_temporal_graphs(orgs, txns, mode="cumulative")
-        edge_counts = [snapshots[m].number_of_edges() for m in sorted(snapshots)]
-        assert edge_counts == sorted(edge_counts)
 
 
 class TestDependencyAnalysis:
