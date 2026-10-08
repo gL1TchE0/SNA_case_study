@@ -974,140 +974,140 @@
     {
       "bridge_node": "WHS-00014",
       "bridge_type": "warehouse",
-      "betweenness": 0.05972852563964302,
+      "betweenness": 0.060452867166714754,
       "upstream_count": 39,
       "downstream_count": 36
     },
     {
       "bridge_node": "DST-00112",
       "bridge_type": "distributor",
-      "betweenness": 0.055029977827593904,
+      "betweenness": 0.05569733898790198,
       "upstream_count": 11,
       "downstream_count": 37
     },
     {
       "bridge_node": "WHS-00063",
       "bridge_type": "warehouse",
-      "betweenness": 0.05068388107119086,
+      "betweenness": 0.05129853611950937,
       "upstream_count": 29,
       "downstream_count": 36
     },
     {
       "bridge_node": "DST-00042",
       "bridge_type": "distributor",
-      "betweenness": 0.040333780670527515,
+      "betweenness": 0.04082291767785514,
       "upstream_count": 10,
       "downstream_count": 39
     },
     {
       "bridge_node": "WHS-00044",
       "bridge_type": "warehouse",
-      "betweenness": 0.03514598825152669,
+      "betweenness": 0.03557221171055108,
       "upstream_count": 20,
       "downstream_count": 36
     },
     {
       "bridge_node": "DST-00162",
       "bridge_type": "distributor",
-      "betweenness": 0.028882035537062336,
+      "betweenness": 0.029232294605100847,
       "upstream_count": 13,
       "downstream_count": 37
     },
     {
       "bridge_node": "MFG-00131",
       "bridge_type": "manufacturer",
-      "betweenness": 0.028483725645742478,
+      "betweenness": 0.028829154318390574,
       "upstream_count": 16,
       "downstream_count": 54
     },
     {
       "bridge_node": "DST-00149",
       "bridge_type": "distributor",
-      "betweenness": 0.027907518834098838,
+      "betweenness": 0.02824595971460933,
       "upstream_count": 15,
       "downstream_count": 38
     },
     {
       "bridge_node": "WHS-00081",
       "bridge_type": "warehouse",
-      "betweenness": 0.023173214181168127,
+      "betweenness": 0.023454241063506017,
       "upstream_count": 12,
       "downstream_count": 3
     },
     {
       "bridge_node": "MFG-00028",
       "bridge_type": "manufacturer",
-      "betweenness": 0.023084788826501747,
+      "betweenness": 0.02336474335428635,
       "upstream_count": 9,
       "downstream_count": 50
     },
     {
       "bridge_node": "DST-00115",
       "bridge_type": "distributor",
-      "betweenness": 0.022682218942050365,
+      "betweenness": 0.022957291412530962,
       "upstream_count": 13,
       "downstream_count": 36
     },
     {
       "bridge_node": "WHS-00003",
       "bridge_type": "warehouse",
-      "betweenness": 0.022249653910132606,
+      "betweenness": 0.022519480565277535,
       "upstream_count": 24,
       "downstream_count": 5
     },
     {
       "bridge_node": "WHS-00041",
       "bridge_type": "warehouse",
-      "betweenness": 0.022107972960614262,
+      "betweenness": 0.02237608141839483,
       "upstream_count": 43,
       "downstream_count": 8
     },
     {
       "bridge_node": "WHS-00036",
       "bridge_type": "warehouse",
-      "betweenness": 0.020003966858533666,
+      "betweenness": 0.020246559551834395,
       "upstream_count": 11,
       "downstream_count": 7
     },
     {
       "bridge_node": "DST-00084",
       "bridge_type": "distributor",
-      "betweenness": 0.018377172073835924,
+      "betweenness": 0.01860003625373437,
       "upstream_count": 15,
       "downstream_count": 37
     },
     {
       "bridge_node": "WHS-00070",
       "bridge_type": "warehouse",
-      "betweenness": 0.015352845050453864,
+      "betweenness": 0.015539032523016564,
       "upstream_count": 18,
       "downstream_count": 7
     },
     {
       "bridge_node": "WHS-00093",
       "bridge_type": "warehouse",
-      "betweenness": 0.01323300870408537,
+      "betweenness": 0.013393488435165638,
       "upstream_count": 19,
       "downstream_count": 5
     },
     {
       "bridge_node": "WHS-00092",
       "bridge_type": "warehouse",
-      "betweenness": 0.01258264988498441,
+      "betweenness": 0.012735242565528486,
       "upstream_count": 38,
       "downstream_count": 4
     },
     {
       "bridge_node": "DST-00116",
       "bridge_type": "distributor",
-      "betweenness": 0.01192902580206835,
+      "betweenness": 0.012073691833473172,
       "upstream_count": 7,
       "downstream_count": 32
     },
     {
       "bridge_node": "WHS-00025",
       "bridge_type": "warehouse",
-      "betweenness": 0.01173774252742171,
+      "betweenness": 0.01188008882269079,
       "upstream_count": 25,
       "downstream_count": 7
     }

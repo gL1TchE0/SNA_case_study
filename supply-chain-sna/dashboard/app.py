@@ -220,11 +220,7 @@ python -m reports.generate""")
             fig2 = px.bar(region_counts, x="Region", y="Count", title="Organizations by Region")
             st.plotly_chart(fig2, use_container_width=True)
         with col_b:
-            if "month" in txns.columns:
-                month_vol = txns.groupby("month")["transaction_value"].sum().reset_index()
-                month_vol.columns = ["Month", "Transaction Volume"]
-                fig3 = px.line(month_vol, x="Month", y="Transaction Volume", title="Monthly Transaction Volume")
-                st.plotly_chart(fig3, use_container_width=True)
+            pass
 
 
 # ── Page: Network Explorer ─────────────────────────────────────────────────
@@ -330,6 +326,11 @@ def page_centrality() -> None:
         st.plotly_chart(fig, use_container_width=True)
         st.dataframe(top, use_container_width=True)
 
+        st.subheader("Degree Distribution")
+        from reports.visualization import plot_degree_distribution
+        fig_dist = plot_degree_distribution(centrality_df, output_dir=Path("reports/figures"))
+        st.plotly_chart(fig_dist, use_container_width=True)
+
     with tab2:
         st.subheader("Top Organizations by Betweenness Centrality")
         st.markdown("> **High betweenness**: lies on many shortest paths — a bridge or bottleneck.")
@@ -382,11 +383,7 @@ def page_centrality() -> None:
             )
             st.plotly_chart(fig2, use_container_width=True)
 
-    # Degree distribution
-    st.subheader("Degree Distribution")
-    from reports.visualization import plot_degree_distribution
-    fig = plot_degree_distribution(centrality_df, output_dir=Path("reports/figures"))
-    st.plotly_chart(fig, use_container_width=True)
+
 
 
 # ── Page: Community Analysis ─────────────────────────────────────────────

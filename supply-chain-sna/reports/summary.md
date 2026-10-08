@@ -1,6 +1,6 @@
 # Supply Chain Social Network Analysis — Research Summary
 
-**Generated**: 2026-10-07 17:26 UTC  
+**Generated**: 2026-10-08 03:57 UTC  
 **Seed**: 42  
 **Dataset Version**: v1  
 
@@ -8,14 +8,14 @@
 
 ## 1. Dataset Statistics
 
-- **Nodes**: 1000
+- **Nodes**: 994
 - **Edges**: 5000
-- **Density**: 0.005005
-- **Weakly Connected Components**: 7
-- **Largest WCC Fraction**: 0.9940
-- **Average Total Degree**: 10.00
-- **Avg Clustering (undirected)**: 0.0492
-- **Global Efficiency**: 0.3182854521189821
+- **Density**: 0.005066
+- **Weakly Connected Components**: 1
+- **Largest WCC Fraction**: 1.0000
+- **Average Total Degree**: 10.06
+- **Avg Clustering (undirected)**: 0.0495
+- **Global Efficiency**: 0.3221414759117273
 
 ---
 
@@ -26,34 +26,34 @@
 - MFG-00131: 70.000000
 - WHS-00063: 65.000000
 ### Top 3 by Betweenness
-- WHS-00014: 0.059729
-- DST-00112: 0.055030
-- WHS-00063: 0.050684
+- WHS-00014: 0.060453
+- DST-00112: 0.055697
+- WHS-00063: 0.051299
 ### Top 3 by Pagerank
-- WHS-00041: 0.006118
-- WHS-00014: 0.005071
-- RET-00033: 0.004633
+- WHS-00041: 0.006132
+- WHS-00014: 0.005083
+- RET-00033: 0.004643
 ### Top 3 by Pagerank Reversed
-- MFG-00028: 0.006896
-- MFG-00131: 0.006227
-- MFG-00141: 0.005303
+- MFG-00028: 0.006917
+- MFG-00131: 0.006245
+- MFG-00141: 0.005319
 
 ### Rank Correlations (Spearman)
-- total_degree_vs_betweenness: r = 0.6893
-- total_degree_vs_pagerank: r = 0.7618
-- betweenness_vs_pagerank: r = 0.6015
-- eigenvector_vs_pagerank: r = 0.9466
-- betweenness_vs_closeness: r = 0.5348
-- total_degree_vs_pagerank_reversed: r = 0.1854
-- pagerank_vs_pagerank_reversed: r = -0.2986
+- total_degree_vs_betweenness: r = 0.6881
+- total_degree_vs_pagerank: r = 0.7599
+- betweenness_vs_pagerank: r = 0.5985
+- eigenvector_vs_pagerank: r = 0.9457
+- betweenness_vs_closeness: r = 0.5311
+- total_degree_vs_pagerank_reversed: r = 0.1734
+- pagerank_vs_pagerank_reversed: r = -0.3107
 
 ---
 
 ## 3. Community Detection
 
 - **Algorithm**: louvain
-- **Communities Detected**: 11
-- **Inter-community Edge Fraction**: 0.1315
+- **Communities Detected**: 5
+- **Inter-community Edge Fraction**: 0.1337
 
 ---
 

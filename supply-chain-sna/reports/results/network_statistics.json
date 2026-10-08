@@ -1,41 +1,41 @@
 {
-  "num_nodes": 1000,
+  "num_nodes": 994,
   "num_edges": 5000,
   "is_directed": true,
-  "density": 0.005005005005005005,
-  "avg_in_degree": 5.0,
-  "avg_out_degree": 5.0,
-  "avg_total_degree": 10.0,
+  "density": 0.005065640570512704,
+  "avg_in_degree": 5.030181086519114,
+  "avg_out_degree": 5.030181086519114,
+  "avg_total_degree": 10.060362173038229,
   "max_in_degree": 43,
   "max_out_degree": 54,
   "degree_distribution": {
     "in": {
       "min": 0,
       "max": 43,
-      "mean": 5.0,
-      "std": 6.207092717206663,
+      "mean": 5.030181086519114,
+      "std": 6.213593730660434,
       "median": 3.0,
       "p90": 13.0,
-      "p99": 24.00999999999999
+      "p99": 24.069999999999936
     },
     "out": {
       "min": 0,
       "max": 54,
-      "mean": 5.0,
-      "std": 5.113511513627402,
+      "mean": 5.030181086519114,
+      "std": 5.11409998723933,
       "median": 5.0,
       "p90": 8.0,
       "p99": 36.0
     }
   },
-  "weakly_connected_components": 7,
+  "weakly_connected_components": 1,
   "largest_wcc_size": 994,
-  "largest_wcc_fraction": 0.994,
-  "strongly_connected_components": 694,
+  "largest_wcc_fraction": 1.0,
+  "strongly_connected_components": 688,
   "largest_scc_size": 307,
-  "avg_clustering_undirected": 0.04915397385882971,
+  "avg_clustering_undirected": 0.04945067792638804,
   "clustering_note": "Computed on undirected projection of DiGraph",
   "avg_path_length_largest_wcc": 3.3271289367625694,
-  "global_efficiency": 0.3182854521189821,
+  "global_efficiency": 0.3221414759117273,
   "reciprocity": 0.0104
 }

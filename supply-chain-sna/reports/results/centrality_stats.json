@@ -1,32 +1,32 @@
 {
   "rank_correlations": {
     "total_degree_vs_betweenness": {
-      "spearman_r": 0.6892704389343971,
-      "p_value": 7.659369035319685e-142
+      "spearman_r": 0.6881213459704323,
+      "p_value": 2.368778320391078e-140
     },
     "total_degree_vs_pagerank": {
-      "spearman_r": 0.7618265338275068,
-      "p_value": 2.1159317349239107e-190
+      "spearman_r": 0.7599291191662081,
+      "p_value": 8.639238052233649e-188
     },
     "betweenness_vs_pagerank": {
-      "spearman_r": 0.6014875328200073,
-      "p_value": 1.9954849492587255e-99
+      "spearman_r": 0.5984832253633487,
+      "p_value": 1.264692196354172e-97
     },
     "eigenvector_vs_pagerank": {
-      "spearman_r": 0.9465938253797752,
+      "spearman_r": 0.9457115701851732,
       "p_value": 0.0
     },
     "betweenness_vs_closeness": {
-      "spearman_r": 0.5347585978254006,
-      "p_value": 4.770100778770288e-75
+      "spearman_r": 0.5310510416683462,
+      "p_value": 2.04406455041236e-73
     },
     "total_degree_vs_pagerank_reversed": {
-      "spearman_r": 0.1853667531073019,
-      "p_value": 3.5108069972205103e-09
+      "spearman_r": 0.17335976213450063,
+      "p_value": 3.787853774957818e-08
     },
     "pagerank_vs_pagerank_reversed": {
-      "spearman_r": -0.2985740061345232,
-      "p_value": 4.872103856768128e-22
+      "spearman_r": -0.3107324652896482,
+      "p_value": 1.0827399386660239e-23
     }
   },
   "top_by_degree": [
@@ -82,44 +82,32 @@
     {
       "node": "SUP-00144",
       "bridge_without_hub": 557,
-      "betweenness": 0.0004904704303501898,
+      "betweenness": 0.0004964184777312153,
       "total_degree": 3
     },
     {
-      "node": "LOG-00094",
-      "bridge_without_hub": 516,
+      "node": "LOG-00054",
+      "bridge_without_hub": 506,
       "betweenness": 0.0,
-      "total_degree": 0
+      "total_degree": 1
     },
     {
-      "node": "LOG-00068",
-      "bridge_without_hub": 516,
+      "node": "SUP-00237",
+      "bridge_without_hub": 506,
       "betweenness": 0.0,
-      "total_degree": 0
+      "total_degree": 1
     },
     {
-      "node": "LOG-00009",
-      "bridge_without_hub": 516,
+      "node": "LOG-00019",
+      "bridge_without_hub": 506,
       "betweenness": 0.0,
-      "total_degree": 0
+      "total_degree": 1
     },
     {
-      "node": "LOG-00074",
-      "bridge_without_hub": 516,
+      "node": "RET-00136",
+      "bridge_without_hub": 506,
       "betweenness": 0.0,
-      "total_degree": 0
-    },
-    {
-      "node": "LOG-00021",
-      "bridge_without_hub": 516,
-      "betweenness": 0.0,
-      "total_degree": 0
-    },
-    {
-      "node": "RET-00015",
-      "bridge_without_hub": 516,
-      "betweenness": 0.0,
-      "total_degree": 0
+      "total_degree": 1
     },
     {
       "node": "LOG-00077",
@@ -134,7 +122,19 @@
       "total_degree": 1
     },
     {
-      "node": "RET-00126",
+      "node": "LOG-00050",
+      "bridge_without_hub": 506,
+      "betweenness": 0.0,
+      "total_degree": 1
+    },
+    {
+      "node": "LOG-00047",
+      "bridge_without_hub": 506,
+      "betweenness": 0.0,
+      "total_degree": 1
+    },
+    {
+      "node": "LOG-00026",
       "bridge_without_hub": 506,
       "betweenness": 0.0,
       "total_degree": 1

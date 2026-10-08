@@ -135,6 +135,11 @@ def build_graph(
             weight_mode=weight_mode,
         )
 
+    isolated = list(nx.isolates(G))
+    if isolated:
+        logger.info("Removing %d isolated nodes (zero degree)", len(isolated))
+        G.remove_nodes_from(isolated)
+
     logger.info(
         "Graph built: %d nodes, %d edges",
         G.number_of_nodes(),
